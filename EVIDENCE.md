@@ -17,7 +17,7 @@ This document accompanies a pull request to [mwenge/lineara.xyz](https://github.
 2. [Readings, sign labels and data entries](#readings-sign-labels-and-data-entries)
 3. [Image maps: boxes on the wrong signs (known items)](#image-maps-boxes-on-the-wrong-signs-known-items)
 4. [Image maps and item pages (found in this review)](#image-maps-and-item-pages-found-in-this-review)
-5. [Ruling lines, pictures, and notes on what was not changed](#ruling-lines-pictures-and-notes-on-what-was-not-changed)
+5. [Ruling lines, pictures, MA4a, and a note on PA1](#ruling-lines-pictures-ma4a-and-a-note-on-pa1)
 6. [GORILA page links](#gorila-page-links)
 
 ## Erased text shown as live text
@@ -858,9 +858,9 @@ On the drawing `KH9-Facsimile`, entry 27 of `items_image_map.js` (word 19, the n
 
 *INSCRIBE relief of KH 9 at the broken edge right of \*304 (end of line .6), under four lights: azimuth 90° and 270° at elevation 35° (top row), azimuth 0° at elevation 35° and azimuth 135° at elevation 20° (bottom row). A short vertical groove runs down from the break edge; its shading reverses between azimuth 90° and 270°, and it almost vanishes under the azimuth 0° light, which runs along it, as a vertical incision does. Yellow corner ticks: the proposed facsimile box mapped into the render by an affine fit to the 25 boxed facsimile signs (median residual 2.3 render px).* (INSCRIBE 3D model Clay_tablet_KH_9 (INSCRIBE project, ERC, University of Bologna; https://www.inscribercproject.com/Linear_A.php); renders made for this PR)
 
-## Ruling lines, pictures, and notes on what was not changed
+## Ruling lines, pictures, MA4a, and a note on PA1
 
-This part covers one correction that touches 38 inscriptions (the ruled lines), the pictures of HTWa1005 and the drawings of HTWa1002–1004, which show other nodules, and the PH3a drawing, which cuts off a sign. It ends with two readings that were checked against the sources and are left as they are (MA4a, PA1). Entry and area numbers count from 0, as in the files, and boxes are given as (x, y, width, height) in the image's own pixels. "Before" figures show master (9c81beb).
+This part covers one correction that touches 38 inscriptions (the ruled lines), the pictures of HTWa1005, KHWa1017, KHWa1018 and KHWa1020 and the drawings of HTWa1002–1004, which show other nodules, and the PH3a drawing, which cuts off a sign. It ends with MA4a, where this PR reads a sixth ten-dot, and with PA1, a reading that was checked against the sources and is left as it is. Entry and area numbers count from 0, as in the files, and boxes are given as (x, y, width, height) in the image's own pixels. "Before" figures show master (9c81beb).
 
 ### 38 inscriptions — rulings stored as the numeral 10
 
@@ -954,6 +954,62 @@ The three records read DA-KA, and their photos show the right nodules, but `imag
 
 *This PR: the same image with DA (54, 32, 43, 78) and KA (97, 34, 53, 59) fitted to the signs; the explorer areas equal the boxes.* (lineara.xyz picture from GORILA II p. 4, © École française d'Athènes; boxes drawn for this document)
 
+### KHWa1017, KHWa1018, KHWa1020 — the photos and drawings show other nodules
+
+All six pictures come from earlier entries of GORILA III. `images/KHWa1017-Inscription.jpg` and `KHWa1017-Facsimile.jpg` show KH Wa 1015 (p. 109, PDF p. 134; the photo is its face γ, the drawing its face α), KHWa1018's pictures show both faces of KH Wa 1016 (p. 110, PDF p. 135), and KHWa1020's show KH Wa 1017 (p. 110, PDF p. 135), the nodule that KHWa1017 describes; template matching finds each file in those entries (normalised cross-correlation 0.979–1.000). So KHWa1017's `*301` boxes frame KH Wa 1015's signs and KHWa1018's `*371` boxes frame face α of KH Wa 1016. The records' own entries are KH Wa 1017 (the lower entry on p. 110, PDF p. 135) and KH Wa 1018 and 1020 (the top and bottom entries on p. 111, PDF p. 136), the pages the records link after commit 6. This PR replaces the six files with 1:1 crops of the records' own photos and drawings from the 150-dpi scans in `papers/GORILA-Vol3.pdf`, in the file format of KHWa1015 and KHWa1019, whose pictures show their own nodules (KHWa1017's crops take the areas of master's KHWa1020 files, which already show KH Wa 1017; KHWa1018's and KHWa1020's take KHWa1019's margins), redraws the boxes of KHWa1017 and KHWa1018 in `items_image_map.js` and `imagemaps.js`, and removes KHWa1020-Facsimile's one explorer area: the record's text, a trace and a divider, has no letters for the explorer. The readings do not change: KHWa1018's `*371` agrees with GORILA V p. 310; GORILA prints no reading for KH Wa 1017 and 1020, so KHWa1017's `*301` and KHWa1020's trace cannot be checked against it.
+
+![KHWa1017, 1018, 1020 pictures beside GORILA III pp. 109-111](evidence/KHWa1017-1020-pictures/KHWa1017_1018_1020_pictures_are_KHWa1015-1017_GORILA_III_pp109-111.jpg)
+
+*Row 1: lineara.xyz on master (9c81beb), 0.75×: images/KHWa1017-, KHWa1018- and KHWa1020-Inscription.jpg and -Facsimile.jpg. KHWa1017's photo is face γ of KH Wa 1015 (the cross) and its drawing face α of the same nodule; KHWa1018's photo and drawing each hold both faces of KH Wa 1016; KHWa1020's photo and drawing are KH Wa 1017. Row 2: the GORILA III entries these pictures come from, KH Wa 1015 (p. 109, PDF p. 134) and KH Wa 1016 and 1017 (p. 110, PDF p. 135), each under its printed heading (heading 1×, entry 0.4×); the red frames mark the areas of the site's files (template matching, normalised cross-correlation 0.979–1.000). Row 3, this PR: the records' own nodules, KH Wa 1017 (p. 110, PDF p. 135) and KH Wa 1018 and 1020 (p. 111, PDF p. 136), photo and drawing as cut for the new files (0.75×).* (GORILA III, © École française d'Athènes; page scans from lineara.xyz papers/GORILA-Vol3.pdf; row 1: lineara.xyz pictures; frames drawn for this document)
+
+![KHWa1017-Inscription on master with its boxes](evidence/KHWa1017-1020-pictures/KHWa1017-Inscription_before.jpg)
+
+*Master (9c81beb): images/KHWa1017-Inscription.jpg, 3×, with its items_image_map.js box (red) and imagemaps.js area (blue), which coincide. The photo is face γ of KH Wa 1015 (GORILA III p. 109, PDF p. 134), and the \*301 box frames that face's RO, the incised cross.* (lineara.xyz picture from GORILA III p. 109, © École française d'Athènes; boxes drawn for this document)
+
+![KHWa1017-Inscription new, with its boxes](evidence/KHWa1017-1020-pictures/KHWa1017-Inscription_after.jpg)
+
+*This PR: the new images/KHWa1017-Inscription.jpg, 3×: the photo of KH Wa 1017, a 1:1 crop x 352–566, y 1124–1347 of GORILA III PDF p. 135 (p. 110), the area of master's KHWa1020-Inscription.jpg. The new \*301 box (image map red, explorer blue, coinciding) sits on the incised strokes below the break.* (GORILA III p. 110, © École française d'Athènes; boxes drawn for this document)
+
+![KHWa1017-Facsimile on master with its boxes](evidence/KHWa1017-1020-pictures/KHWa1017-Facsimile_before.png)
+
+*Master (9c81beb): images/KHWa1017-Facsimile.jpg, 3×, with its items_image_map.js box (red) and imagemaps.js area (blue), which coincide. The drawing is face α of KH Wa 1015 (GORILA III p. 109, PDF p. 134), and the \*301 box frames that face's curved strokes.* (lineara.xyz picture from GORILA III p. 109, © École française d'Athènes; boxes drawn for this document)
+
+![KHWa1017-Facsimile new, with its boxes](evidence/KHWa1017-1020-pictures/KHWa1017-Facsimile_after.png)
+
+*This PR: the new images/KHWa1017-Facsimile.jpg, 3×: the drawing of KH Wa 1017, a 1:1 crop x 777–951, y 1187–1310 of PDF p. 135 (p. 110), the area of master's KHWa1020-Facsimile.jpg. The new \*301 box (image map red, explorer blue, coinciding) holds the three strokes under the stippled break.* (GORILA III p. 110, © École française d'Athènes; boxes drawn for this document)
+
+![KHWa1018-Inscription on master with its boxes](evidence/KHWa1017-1020-pictures/KHWa1018-Inscription_before.jpg)
+
+*Master (9c81beb): images/KHWa1018-Inscription.jpg, 2×, with its items_image_map.js box (red) and imagemaps.js area (blue), which coincide. The picture holds both photos of KH Wa 1016 (GORILA III p. 110, PDF p. 135): face α on the left (curved strokes) and face γ on the right (a cross). The \*371 box frames face α.* (lineara.xyz picture from GORILA III p. 110, © École française d'Athènes; boxes drawn for this document)
+
+![KHWa1018-Inscription new, with its boxes](evidence/KHWa1017-1020-pictures/KHWa1018-Inscription_after.jpg)
+
+*This PR: the new images/KHWa1018-Inscription.jpg, 2×: the photo of KH Wa 1018, a 1:1 crop x 197–543, y 145–460 of GORILA III PDF p. 136 (p. 111). The new \*371 box (image map red, explorer blue, coinciding) frames the sign, a stem with pairs of branches.* (GORILA III p. 111, © École française d'Athènes; boxes drawn for this document)
+
+![KHWa1018-Facsimile on master with its boxes](evidence/KHWa1017-1020-pictures/KHWa1018-Facsimile_before.png)
+
+*Master (9c81beb): images/KHWa1018-Facsimile.jpg, 2×, with its items_image_map.js box (red) and imagemaps.js area (blue), which coincide. The picture holds both drawings of KH Wa 1016 (GORILA III p. 110, PDF p. 135): face α on the left and face γ on the right (a cross). The \*371 box frames face α's strokes.* (lineara.xyz picture from GORILA III p. 110, © École française d'Athènes; boxes drawn for this document)
+
+![KHWa1018-Facsimile new, with its boxes](evidence/KHWa1017-1020-pictures/KHWa1018-Facsimile_after.png)
+
+*This PR: the new images/KHWa1018-Facsimile.jpg, 2×: the drawing of KH Wa 1018, a 1:1 crop x 715–982, y 121–381 of PDF p. 136 (p. 111), the dimension line left out as in KHWa1019. The new \*371 box (image map red, explorer blue, coinciding) holds the whole sign: bar, stem, side strokes and two pairs of branches.* (GORILA III p. 111, © École française d'Athènes; boxes drawn for this document)
+
+![KHWa1020-Inscription on master with its boxes](evidence/KHWa1017-1020-pictures/KHWa1020-Inscription_before.jpg)
+
+*Master (9c81beb): images/KHWa1020-Inscription.jpg, 3×: the photo of KH Wa 1017 (GORILA III p. 110, PDF p. 135), the same area as the new KHWa1017-Inscription.jpg. No boxes: the image has no items_image_map.js key and no imagemaps.js line.* (lineara.xyz picture from GORILA III p. 110, © École française d'Athènes)
+
+![KHWa1020-Inscription new, with its boxes](evidence/KHWa1017-1020-pictures/KHWa1020-Inscription_after.jpg)
+
+*This PR: the new images/KHWa1020-Inscription.jpg, 2×: the photo of KH Wa 1020, a 1:1 crop x 207–520, y 1222–1494 of GORILA III PDF p. 136 (p. 111). Still no boxes: the record reads a trace and a divider.* (GORILA III p. 111, © École française d'Athènes)
+
+![KHWa1020-Facsimile on master with its boxes](evidence/KHWa1017-1020-pictures/KHWa1020-Facsimile_before.png)
+
+*Master (9c81beb): images/KHWa1020-Facsimile.jpg, 3×, with its one imagemaps.js area (blue). The drawing is KH Wa 1017's (GORILA III p. 110, PDF p. 135). The area frames KH Wa 1017's three strokes and part of the stippled break, although the record has no letter for the explorer (a trace and a divider). The image map's one entry, the divider '\*900', has no coordinates, so there is no red box.* (lineara.xyz picture from GORILA III p. 110, © École française d'Athènes; boxes drawn for this document)
+
+![KHWa1020-Facsimile new, with its boxes](evidence/KHWa1017-1020-pictures/KHWa1020-Facsimile_after.png)
+
+*This PR: the new images/KHWa1020-Facsimile.jpg, 3×: the drawing of KH Wa 1020 (a stippled break and one horizontal stroke near the top), a 1:1 crop x 689–924, y 1257–1394 of PDF p. 136 (p. 111), the dimension line left out. No boxes: the explorer area is dropped (0 letters), and the '\*900' entry stays without coordinates.* (GORILA III p. 111, © École française d'Athènes)
+
 ### PH3a — the drawing is cropped through a sign
 
 `images/PH3a-Facsimile.jpg`, a crop of the PH 3a drawing in GORILA I p. 290 (PDF p. 326), cuts through the sign that opens line .3 (word 7; `*560` on master, `*558` after this PR): about three quarters of the sign lies outside the picture, and its box (1, 203, 26, 116) frames only the right corner of its triangle. The drawing shows the whole sign (triangle, stem, bowl) inside the tablet's dotted left edge, the transliteration on p. 291 (PDF p. 327) draws it in full at the start of .3 and gives no number (GORILA V p. 266, PDF p. 319, lists it as A 558), and the INSCRIBE 3D model Clay_tablet_PH_3 shows it incised in full under raking light (az 315°/el 20° and az 135°/el 20°). This PR replaces the file with a wider crop of the same 150-dpi scan, made the same way (−1.76° rotation, scale 1, greyscale JPEG with the original's quantisation tables): 361×456 instead of 273×428 (80 px more on the left, 8 on the right, 28 at the bottom), so it also shows the tablet's outline and the traces at the left of .2 and .4. The old picture sits in the new one at exactly (+80, 0), so the other 13 boxes and explorer areas of `PH3a-Facsimile` move by x + 80, and box 7 becomes (31, 199, 77, 126) around the whole sign (`item.js` and the explorer scale boxes by the image's natural size). The re-crop changes no text, word number or photo (`PH3a-Inscription`).
@@ -978,27 +1034,27 @@ The three records read DA-KA, and their photos show the right nodules, but `imag
 
 *PH 3a, left end of line .3: the INSCRIBE 3D model Clay_tablet_PH_3 under two low raking lights (az 315°/el 20°; az 135°/el 20°). The sign is incised in full: triangle with a flat base, stem, bowl. Red dashes: the left edge of the master crop. Green: the new box 7. Both lines are approximate, mapped through an image registration, and are not used in the fix.* (INSCRIBE project, ERC, University of Bologna, <https://www.inscribercproject.com/Linear_A.php>; renders and lines made for this document)
 
-### MA4a — a possible sixth ten-dot: checked, not changed
+### MA4a — HIDE+SA+L 63, not 53: a sixth ten-dot
 
-The site reads HIDE+SA+L 53, as GORILA I p. 273 (PDF p. 309) and Younger do; GORILA prints no apparatus note on this numeral. GORILA's drawing (I p. 272, PDF p. 308; the site's `MA4a-Facsimile.jpg`) arranges the ten-dots 2+1+1+1: it leaves out a round pit at the right of the second row, which GORILA's own photo (`MA4a-Inscription.jpg`) and the INSCRIBE 3D model Clay_tablet_MA_4 (six light directions, e.g. az 315° and az 135° at el 20°) both show, and it puts its lowest dot on the edge of a break below the third row. The five certain dots thus stand 2+2+1 (= 50), so 53 holds unless that damaged spot is a sixth dot, which would make the number 63: in the relief the spot keeps a dot-sized, dot-deep wall on its intact side, but it is less round than the certain dots and its floor runs into the break. Neither the photo nor the relief can tell a broken dot from a notch in the break edge, and the tablet has no total to check against, so this PR leaves the reading 53 and the `50` boxes, which already cover every dot position in both images, as they are. Only an examination of the tablet itself could settle the question; whether to record a possible 63 is left to the maintainer.
+The site reads HIDE+SA+L 53, as GORILA I p. 273 (PDF p. 309) and Younger do; GORILA prints no apparatus note on this numeral. GORILA's drawing (I p. 272, PDF p. 308; the site's `MA4a-Facsimile.jpg`) has five ten-dots, 2+1+1+1: it leaves out a round pit at the right of the second row, which GORILA's own photo (`MA4a-Inscription.jpg`) and the INSCRIBE 3D model Clay_tablet_MA_4 (six light directions, e.g. az 315° and az 135° at el 20°) both show clearly, and it draws its lowest dot on the edge of a break below the third row. There the relief keeps a dot-sized wall, steep and 1.7 mm deep, on the intact side, while the other half and the floor run into the break, so a rounded notch in the edge of the break would leave the same relief. This PR counts both the pit the drawing omits and the dot the draftsman drew at the break: six ten-dots, so the number is 63. 63 is therefore a new reading, against GORILA's and Younger's 53; since the spot is damaged, only an examination of the tablet (HM 1377) could settle it. The 50 becomes 60 in `words`, `parsedInscription` and `transcription`, 53 becomes 63 in `transliteratedWords` and `translatedWords`, the dot box is labelled `60` instead of `50` in both image maps (it already covers every dot position), and `wordsInCorpus`, `annotations.js`, the notebook's copy `items_analysis/inscriptions.json`, `items_analysis/supplement.json` and the regenerated `items/MA4a.html` follow (Younger's commentary on that page keeps his 53).
 
-![MA 4a dot group in GORILA's photo and drawing](evidence/MA4a-note/MA4a_gorila_I272_photo_drawing_dot_group.jpg)
+![MA 4a dot group in GORILA's photo and drawing](evidence/MA4a/MA4a_gorila_I272_photo_drawing_dot_group.jpg)
 
 *GORILA I p. 272 (PDF p. 308), MA 4a, the dot group after HIDE+SA+L (word 5), enlarged 4× from the site's own crops. Left, the photo (MA4a-Inscription.jpg x 378–468, y 22–182): four dark pits in a 2×2 block and a fifth below on the left, each with a bright crescent on its right wall; the three unit strokes lie to the right of the fifth; below it is the bright broken surface. Right, the drawing (MA4a-Facsimile.jpg x 352–427, y 0–135): five dots arranged 2+1+1+1, with nothing at row 2 right and the lowest dot drawn inside the stippled damage.* (lineara.xyz pictures from GORILA I p. 272, © École française d'Athènes)
 
-![GORILA I p. 273: MA 4a, reading 53](evidence/MA4a-note/MA4a_gorila_I273_normalised_reading53.png)
+![GORILA I p. 273: MA 4a, reading 53](evidence/MA4a/MA4a_gorila_I273_normalised_reading53.png)
 
 *GORILA I p. 273 (PDF p. 309), MA 4a: the normalised line copies the drawing's five dots (2, then a column of 3) and three strokes, and the transliteration reads 53. The page has no apparatus note on this numeral.* (GORILA I, © École française d'Athènes)
 
-![INSCRIBE relief of the MA 4a dot group under six lights](evidence/MA4a-note/MA4a_INSCRIBE_dot_group_6lights.jpg)
+![INSCRIBE relief of the MA 4a dot group under six lights](evidence/MA4a/MA4a_INSCRIBE_dot_group_6lights.jpg)
 
-*The same dot group on the INSCRIBE 3D model Clay_tablet_MA_4 under six light directions (az 315° and 135° at el 20°; az 0°, 180°, 90° and 270° at el 35°), 0.1 mm/px, 2×. Five clear round pits in rows of 2+2+1. Blue dashed: the pit at row 2 right that GORILA's drawing omits. Red dashed: GORILA's lowest drawn dot, a hollow at the corner of the break that never shows as an isolated round pit.* (INSCRIBE project, ERC, University of Bologna, <https://www.inscribercproject.com/Linear_A.php>)
+*The same dot group on the INSCRIBE 3D model Clay_tablet_MA_4 under six light directions (az 315° and 135° at el 20°; az 0°, 180°, 90° and 270° at el 35°), 0.1 mm/px, 2×. Five clear round pits in rows of 2+2+1. Blue dashed: the pit at row 2 right that GORILA's drawing omits. Red dashed: GORILA's lowest drawn dot (r4L), at the corner of the break; its intact side keeps a dot-like wall, but with its other half broken away it never shows as a whole round pit.* (INSCRIBE project, ERC, University of Bologna, <https://www.inscribercproject.com/Linear_A.php>)
 
-![INSCRIBE depth contours of the dot group with GORILA's drawing ink](evidence/MA4a-note/MA4a_INSCRIBE_depth_contours_drawing_ink.png)
+![INSCRIBE depth contours of the dot group with GORILA's drawing ink](evidence/MA4a/MA4a_INSCRIBE_depth_contours_drawing_ink.png)
 
 *Height field of the INSCRIBE 3D model Clay_tablet_MA_4: depth below the tablet surface (contours every 0.25 mm), with GORILA's drawing ink (red) warped on through an image registration. r2R (row 2, right) is a round pit with no ink. The ink of the lowest drawn dot (r4L) sits on a rounded lobe at the top edge of the deep broken area, and the lobe's floor is continuous with the break.* (INSCRIBE project, ERC, University of Bologna, <https://www.inscribercproject.com/Linear_A.php>; red ink from lineara.xyz MA4a-Facsimile.jpg, GORILA I p. 272, © École française d'Athènes)
 
-![INSCRIBE depth profiles from the centres of the dots](evidence/MA4a-note/MA4a_INSCRIBE_wall_profiles.png)
+![INSCRIBE depth profiles from the centres of the dots](evidence/MA4a/MA4a_INSCRIBE_wall_profiles.png)
 
 *Depth profiles from each pit centre along the three directions in which the r4L spot is still intact (up, up-right, right). Grey: the five clear pits. Red: GORILA's drawn row-4 dot, from its drawn centre; orange: the same, from the centre of a circle fitted to its preserved arc. On this side the spot's wall is as steep and as deep as the dots', but a rounded notch in the edge of a break would give the same profile. In the other directions it opens into the 1.6–2.0 mm deep break.* (INSCRIBE project, ERC, University of Bologna, <https://www.inscribercproject.com/Linear_A.php>)
 
