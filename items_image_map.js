@@ -75745,20 +75745,20 @@ const coordinates =
             "word": "0",
             "ideogram": "DA",
             "coords": {
-                "x": 60,
-                "y": 41,
-                "width": 49,
-                "height": 70
+                "x": 54,
+                "y": 32,
+                "width": 43,
+                "height": 78
             }
         },
         {
             "word": "0",
             "ideogram": "KA",
             "coords": {
-                "x": 109,
-                "y": 40,
-                "width": 62,
-                "height": 78
+                "x": 97,
+                "y": 34,
+                "width": 53,
+                "height": 59
             }
         }
     ],
@@ -75789,20 +75789,20 @@ const coordinates =
             "word": "0",
             "ideogram": "DA",
             "coords": {
-                "x": 47,
-                "y": 40,
-                "width": 44,
-                "height": 72
+                "x": 39,
+                "y": 20,
+                "width": 43,
+                "height": 81
             }
         },
         {
             "word": "0",
             "ideogram": "KA",
             "coords": {
-                "x": 99,
-                "y": 31,
-                "width": 60,
-                "height": 92
+                "x": 86,
+                "y": 19,
+                "width": 55,
+                "height": 76
             }
         }
     ],
@@ -75833,20 +75833,20 @@ const coordinates =
             "word": "0",
             "ideogram": "DA",
             "coords": {
-                "x": 40,
-                "y": 34,
-                "width": 50,
-                "height": 74
+                "x": 28,
+                "y": 15,
+                "width": 45,
+                "height": 79
             }
         },
         {
             "word": "0",
             "ideogram": "KA",
             "coords": {
-                "x": 98,
-                "y": 34,
-                "width": 48,
-                "height": 76
+                "x": 78,
+                "y": 16,
+                "width": 66,
+                "height": 69
             }
         }
     ],
@@ -75877,20 +75877,20 @@ const coordinates =
             "word": "0",
             "ideogram": "DA",
             "coords": {
-                "x": 36,
-                "y": 27,
-                "width": 45,
-                "height": 78
+                "x": 35,
+                "y": 17,
+                "width": 36,
+                "height": 79
             }
         },
         {
             "word": "0",
             "ideogram": "KA",
             "coords": {
-                "x": 91,
-                "y": 25,
-                "width": 71,
-                "height": 85
+                "x": 71,
+                "y": 18,
+                "width": 64,
+                "height": 70
             }
         }
     ],
@@ -75899,20 +75899,20 @@ const coordinates =
             "word": "0",
             "ideogram": "DA",
             "coords": {
-                "x": 33,
-                "y": 27,
-                "width": 63,
-                "height": 87
+                "x": 66,
+                "y": 24,
+                "width": 34,
+                "height": 72
             }
         },
         {
             "word": "0",
             "ideogram": "KA",
             "coords": {
-                "x": 103,
-                "y": 32,
-                "width": 59,
-                "height": 84
+                "x": 102,
+                "y": 24,
+                "width": 50,
+                "height": 58
             }
         }
     ],
@@ -75921,20 +75921,20 @@ const coordinates =
             "word": "0",
             "ideogram": "DA",
             "coords": {
-                "x": 29,
-                "y": 16,
-                "width": 59,
-                "height": 75
+                "x": 58,
+                "y": 15,
+                "width": 33,
+                "height": 68
             }
         },
         {
             "word": "0",
             "ideogram": "KA",
             "coords": {
-                "x": 89,
-                "y": 11,
-                "width": 60,
-                "height": 67
+                "x": 92,
+                "y": 17,
+                "width": 50,
+                "height": 52
             }
         }
     ],
@@ -130842,7 +130842,7 @@ const coordinates =
             "word": "0",
             "ideogram": "*556",
             "coords": {
-                "x": 33,
+                "x": 113,
                 "y": 6,
                 "width": 70,
                 "height": 75
@@ -130852,7 +130852,7 @@ const coordinates =
             "word": "1",
             "ideogram": "1",
             "coords": {
-                "x": 109,
+                "x": 189,
                 "y": 7,
                 "width": 16,
                 "height": 44
@@ -130862,7 +130862,7 @@ const coordinates =
             "word": "2",
             "ideogram": "TA",
             "coords": {
-                "x": 124,
+                "x": 204,
                 "y": 6,
                 "width": 60,
                 "height": 82
@@ -130872,7 +130872,7 @@ const coordinates =
             "word": "3",
             "ideogram": "*557",
             "coords": {
-                "x": 14,
+                "x": 94,
                 "y": 102,
                 "width": 75,
                 "height": 100
@@ -130882,7 +130882,7 @@ const coordinates =
             "word": "4",
             "ideogram": "1",
             "coords": {
-                "x": 92,
+                "x": 172,
                 "y": 87,
                 "width": 34,
                 "height": 86
@@ -130892,7 +130892,7 @@ const coordinates =
             "word": "5",
             "ideogram": "*563",
             "coords": {
-                "x": 152,
+                "x": 232,
                 "y": 96,
                 "width": 57,
                 "height": 120
@@ -130902,7 +130902,7 @@ const coordinates =
             "word": "6",
             "ideogram": "DD",
             "coords": {
-                "x": 233,
+                "x": 313,
                 "y": 80,
                 "width": 19,
                 "height": 174
@@ -130912,17 +130912,17 @@ const coordinates =
             "word": "7",
             "ideogram": "*558",
             "coords": {
-                "x": 1,
-                "y": 203,
-                "width": 26,
-                "height": 116
+                "x": 31,
+                "y": 199,
+                "width": 77,
+                "height": 126
             }
         },
         {
             "word": "8",
             "ideogram": "DD",
             "coords": {
-                "x": 40,
+                "x": 120,
                 "y": 199,
                 "width": 52,
                 "height": 135
@@ -130932,7 +130932,7 @@ const coordinates =
             "word": "9",
             "ideogram": "PA",
             "coords": {
-                "x": 92,
+                "x": 172,
                 "y": 234,
                 "width": 35,
                 "height": 87
@@ -130942,7 +130942,7 @@ const coordinates =
             "word": "9",
             "ideogram": "RA",
             "coords": {
-                "x": 117,
+                "x": 197,
                 "y": 220,
                 "width": 42,
                 "height": 83
@@ -130952,7 +130952,7 @@ const coordinates =
             "word": "10",
             "ideogram": "DD",
             "coords": {
-                "x": 176,
+                "x": 256,
                 "y": 240,
                 "width": 72,
                 "height": 107
@@ -130962,7 +130962,7 @@ const coordinates =
             "word": "11",
             "ideogram": "PA",
             "coords": {
-                "x": 46,
+                "x": 126,
                 "y": 354,
                 "width": 39,
                 "height": 64
@@ -130972,7 +130972,7 @@ const coordinates =
             "word": "12",
             "ideogram": "1",
             "coords": {
-                "x": 147,
+                "x": 227,
                 "y": 320,
                 "width": 23,
                 "height": 56

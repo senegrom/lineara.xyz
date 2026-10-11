@@ -17723,7 +17723,7 @@ var inscriptions = new Map([
     ],
     "findspot": "Portico 11 and Room 13",
     "imageRights": "© École Française d'Athènes",
-    "imageRightsURL": "papers/GORILA-Vol2.pdf#page=68",
+    "imageRightsURL": "papers/GORILA-Vol2.pdf#page=66",
     "images": [
         "images/HTWa1005-Inscription.jpg"
     ],
