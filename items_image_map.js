@@ -126290,7 +126290,7 @@ const coordinates =
         },
         {
             "word": "5",
-            "ideogram": "50",
+            "ideogram": "60",
             "coords": {
                 "x": 386,
                 "y": 27,
@@ -126412,7 +126412,7 @@ const coordinates =
         },
         {
             "word": "5",
-            "ideogram": "50",
+            "ideogram": "60",
             "coords": {
                 "x": 359,
                 "y": 2,
