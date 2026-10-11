@@ -126514,22 +126514,22 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "20",
+            "ideogram": "30",
             "coords": {
-                "x": 326,
-                "y": 126,
-                "width": 44,
-                "height": 82
+                "x": 336,
+                "y": 143,
+                "width": 22,
+                "height": 66
             }
         },
         {
             "word": "2",
-            "ideogram": "3",
+            "ideogram": "7",
             "coords": {
-                "x": 354,
-                "y": 193,
-                "width": 60,
-                "height": 46
+                "x": 358,
+                "y": 164,
+                "width": 53,
+                "height": 84
             }
         },
         {
@@ -126588,30 +126588,30 @@ const coordinates =
             "word": "2",
             "ideogram": "100",
             "coords": {
-                "x": 335,
-                "y": 73,
-                "width": 42,
-                "height": 65
+                "x": 331,
+                "y": 80,
+                "width": 32,
+                "height": 40
             }
         },
         {
             "word": "2",
-            "ideogram": "20",
+            "ideogram": "30",
             "coords": {
-                "x": 323,
-                "y": 133,
-                "width": 28,
-                "height": 53
+                "x": 326,
+                "y": 124,
+                "width": 20,
+                "height": 62
             }
         },
         {
             "word": "2",
-            "ideogram": "3",
+            "ideogram": "7",
             "coords": {
-                "x": 350,
-                "y": 180,
-                "width": 42,
-                "height": 45
+                "x": 345,
+                "y": 148,
+                "width": 51,
+                "height": 79
             }
         },
         {
@@ -126629,9 +126629,9 @@ const coordinates =
             "ideogram": "60",
             "coords": {
                 "x": 438,
-                "y": 145,
+                "y": 134,
                 "width": 83,
-                "height": 56
+                "height": 67
             }
         }
     ],
@@ -159319,7 +159319,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "A",
             "coords": {
                 "x": 123,
@@ -159329,7 +159329,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "DU",
             "coords": {
                 "x": 38,
@@ -159339,7 +159339,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "KO",
             "coords": {
                 "x": 86,
@@ -159349,7 +159349,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "2",
             "ideogram": "MI",
             "coords": {
                 "x": 122,
@@ -159357,41 +159357,6 @@ const coordinates =
                 "width": 51,
                 "height": 68
             }
-        },
-        {
-            "word": "1",
-            "ideogram": "A",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "TI",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "KA",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "A",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "DU",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "KO",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "MI",
-            "coords": {}
         }
     ],
     "ZAWc2-Facsimile": [
@@ -159426,7 +159391,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "A",
             "coords": {
                 "x": 110,
@@ -159436,7 +159401,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "DU",
             "coords": {
                 "x": 25,
@@ -159446,7 +159411,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "KO",
             "coords": {
                 "x": 71,
@@ -159456,7 +159421,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "2",
             "ideogram": "MI",
             "coords": {
                 "x": 93,
@@ -159464,41 +159429,6 @@ const coordinates =
                 "width": 52,
                 "height": 61
             }
-        },
-        {
-            "word": "1",
-            "ideogram": "A",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "TI",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "KA",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "A",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "DU",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "KO",
-            "coords": {}
-        },
-        {
-            "word": "1",
-            "ideogram": "MI",
-            "coords": {}
         }
     ],
     "ZAZb3-Inscription": [
@@ -162764,9 +162694,9 @@ const coordinates =
             "word": "10",
             "ideogram": "2",
             "coords": {
-                "x": 215,
+                "x": 180,
                 "y": 298,
-                "width": 48,
+                "width": 30,
                 "height": 45
             }
         },
