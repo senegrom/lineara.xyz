@@ -9,14 +9,14 @@ This document accompanies a pull request to [mwenge/lineara.xyz](https://github.
 - Image-map overlays: red boxes are the `items_image_map.js` entries, labelled "index:label (word)"; blue boxes are the explorer areas of `imagemaps.js`, numbered from 0; green marks the entries a change is about.
 - GORILA = L. Godart and J.-P. Olivier, *Recueil des inscriptions en linéaire A* (Études crétoises 21, 1976–1985), cited by volume and printed page, with the page of the PDF in the site's `papers/` folder. Younger = J. G. Younger's Linear A texts, as quoted in the commentary on the item pages.
 
-**Image credits.** GORILA crops are © École française d'Athènes. Renders marked INSCRIBE are made from the 3D models of the INSCRIBE project (ERC, University of Bologna; <https://www.inscribercproject.com/Linear_A.php>), named in each caption with the light direction. The other images are lineara.xyz's own pictures with boxes drawn for this document. All images are reproduced here only to document the corrections.
+**Image credits.** GORILA crops are © École française d'Athènes. Most of the site's own pictures are crops of GORILA plates (© École française d'Athènes) and appear here with boxes drawn for this document. Renders, height fields and depth profiles marked INSCRIBE are made from the 3D models of the INSCRIBE project (ERC, University of Bologna; <https://www.inscribercproject.com/Linear_A.php>), named in each caption with, for renders, the light direction. All images are reproduced here only to document the corrections; none of them goes into the repository.
 
 **Contents**
 
 1. [Erased text shown as live text](#erased-text-shown-as-live-text)
 2. [Readings, sign labels and data entries](#readings-sign-labels-and-data-entries)
-3. [Image maps: boxes on the wrong signs (known items)](#image-maps-boxes-on-the-wrong-signs-known-items)
-4. [Image maps and item pages (found in this review)](#image-maps-and-item-pages-found-in-this-review)
+3. [Image maps: boxes on the wrong signs](#image-maps-boxes-on-the-wrong-signs)
+4. [Image maps and item pages: further corrections](#image-maps-and-item-pages-further-corrections)
 5. [Ruling lines, pictures, MA4a, and a note on PA1](#ruling-lines-pictures-ma4a-and-a-note-on-pa1)
 6. [GORILA page links](#gorila-page-links)
 
@@ -56,11 +56,11 @@ ARKH3a lists \*317 2 twice, and the site shows both pairs as live text. GORILA I
 
 ![ARKH3a drawing, box 11 on master](evidence/ARKH3a-erasure/ARKH3a-Facsimile_before.jpg)
 
-*Master (9c81beb): `ARKH3a-Facsimile` box 11 ('2') frames the erased vestige after the numeral; the erased pair \*317 2 (boxes 10 and 11) is in green.* (lineara.xyz image, a crop of the GORILA III plate; boxes drawn from `items_image_map.js`)
+*Master (9c81beb): `ARKH3a-Facsimile` box 11 ('2') frames the erased vestige after the numeral; the erased pair \*317 2 (boxes 10 and 11) is in green.* (lineara.xyz image, a crop of the GORILA III plate; boxes drawn from `items_image_map.js`; © École française d'Athènes)
 
 ![ARKH3a drawing, box 11 with this PR](evidence/ARKH3a-erasure/ARKH3a-Facsimile_after.jpg)
 
-*This PR: box 11 on the stroke of the 2 after \*317; explorer area 11 moves with it.* (lineara.xyz image, a crop of the GORILA III plate; boxes drawn from the new `items_image_map.js` entries)
+*This PR: box 11 on the stroke of the 2 after \*317; explorer area 11 moves with it.* (lineara.xyz image, a crop of the GORILA III plate; boxes drawn from the new `items_image_map.js` entries; © École française d'Athènes)
 
 ### ZA21b — erased ME shown as live text
 
@@ -96,11 +96,11 @@ ZAWc2 stores its one seven-sign text twice (A-TI-KA-A-DU-KO-MI, a line break, th
 
 ![ZAWc2 photo, image map on master](evidence/ZAWc2-duplicate/ZAWc2-Inscription_before.jpg)
 
-*Master (9c81beb): `ZAWc2-Inscription` has seven boxes, all word 0, and seven entries without boxes for the duplicated text.* (lineara.xyz image, a crop of the GORILA II plate; boxes drawn from `items_image_map.js` and `imagemaps.js`)
+*Master (9c81beb): `ZAWc2-Inscription` has seven boxes, all word 0, and seven entries without boxes for the duplicated text.* (lineara.xyz image, a crop of the GORILA II plate; boxes drawn from `items_image_map.js` and `imagemaps.js`; © École française d'Athènes)
 
 ![ZAWc2 photo, image map with this PR](evidence/ZAWc2-duplicate/ZAWc2-Inscription_after.jpg)
 
-*This PR: seven entries, A-TI-KA (word 0), A-DU-KO (word 1) and MI (word 2, `[[MI]]` in the text); boxes and explorer areas are unchanged.* (lineara.xyz image, a crop of the GORILA II plate; boxes drawn from the new entries)
+*This PR: seven entries, A-TI-KA (word 0), A-DU-KO (word 1) and MI (word 2, `[[MI]]` in the text); boxes and explorer areas are unchanged.* (lineara.xyz image, a crop of the GORILA II plate; boxes drawn from the new entries; © École française d'Athènes)
 
 ### MA4b — whole face erased; first number 137, not 123
 
@@ -120,7 +120,7 @@ The site shows side b of MA 4 as a live entry, `A-JA HIDE+[?] 123 / 160`. GORILA
 
 ![INSCRIBE render, MA 4 side b, tens dots](evidence/MA4b/MA4b_INSCRIBE_tens_dots_az90_az270_el35.jpg)
 
-*INSCRIBE 3D model, MA 4 side b, ready-made renders under light 03 (az 90°, el 35°) and light 07 (az 270°, el 35°), turned 180° to GORILA's orientation: three round dot impressions in the tens column under both lights. The unit strokes lie on the spalled join to the right and cannot be counted on the model.* (INSCRIBE 3D model Clay_tablet_MA_4 (INSCRIBE project, ERC, University of Bologna; https://www.inscribercproject.com/Linear_A.php))
+*INSCRIBE 3D model, MA 4 side b, ready-made renders under light 03 (az 90°, el 35°) and light 07 (az 270°, el 35°), turned 180° to GORILA's orientation: three round dot impressions in the tens column under both lights. The unit strokes lie on the spalled join to the right and cannot be counted on the model.* (INSCRIBE 3D model Clay_tablet_MA_4 (INSCRIBE project, ERC, University of Bologna; https://www.inscribercproject.com/Linear_A.php); © École française d'Athènes)
 
 ![MA4b drawing, boxes before and after](evidence/MA4b/MA4b-Facsimile_before_after.png)
 
@@ -174,11 +174,11 @@ On master (9c81beb) the MA+RU monogram (U+106E2) is labelled `*560` on HT12, PH3
 
 *GORILA's copies of the four MA+RU tablets: HT 12 .3–.5 (A 559; I p. 25, PDF p. 61, tabular copy), HT 24a .1–.5 (A 546, A 561, A 560; I p. 43, PDF p. 79), PH 3a .1–.4 (A 558 in .3; I p. 291, PDF p. 327) and KH 43 (A 562; III p. 71, PDF p. 96, with the note 'Ψ [= RE] peut-être ajouté après coup').* (GORILA I and III (L. Godart and J.-P. Olivier 1976, 1979), © École française d'Athènes)
 
-![MA+RU boxes, labels before and after](evidence/sign-labels/T09_MA+RU_labels_HEAD_vs_fix.jpg)
+![MA+RU boxes, labels before and after](evidence/sign-labels/MA+RU_labels_master_vs_fix.jpg)
 
 *Image-map boxes on the MA+RU sign, master (9c81beb) in red and this PR in green: HT12 #17 `*560` → `*559` (photo and drawing), PH3a #7 `*560` → `*558` (photo), KH43 #0 `*560` → `*562` (photo and drawing; the grey RE box is unchanged). Boxes and word numbers do not change. For HT24a, see the previous item. `PH3a-Facsimile` #7 is not shown: on master that drawing is cut through the sign (see [PH3a](#ph3a--the-drawing-is-cropped-through-a-sign)).* (lineara.xyz images, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js`)
 
-![A319 boxes, labels before and after](evidence/sign-labels/T09_A319_labels_HEAD_vs_fix.jpg)
+![A319 boxes, labels before and after](evidence/sign-labels/A319_labels_master_vs_fix.jpg)
 
 *All 12 image-map boxes labelled `*904` sit on the capital-I sign A319: HT132 #3, HTZd155 #8 (written sideways), HTZd157+156 #6, #8, #11 and #14, each in both images; master (9c81beb) in red, this PR (`*319`) in green. Boxes and word numbers do not change.* (lineara.xyz images, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js`)
 
@@ -188,9 +188,9 @@ On master (9c81beb) the MA+RU monogram (U+106E2) is labelled `*560` on HT12, PH3
 
 ### KNZg57b, KNZg57a, KNZg58 — Face A text in the Face B record; photo credits
 
-On master (9c81beb) the `parsedInscription` and `transcription` of KNZg57b (Face B of the Anetaki ivory ring) are a copy of KNZg57a's Face A text, pasted in when 5facf29 added the record, while its `words` hold a different ten-token reading and `transliteratedWords` and `translatedWords` are empty. The publication of the ring (Kanta, Nakassis, Palaima & Perna, in *KO-RO-NO-WE-SA*, Ariadne Supplement Series 5, Rethymno 2024, pp. 27–43; the site's `papers/KNZg57.pdf`) puts the rhyton A 664 and the vases on Face A (pp. 37–38) and describes Face B as sign groups with "AB 81 (KU), AB 40 (WI) and AB 60 (RA)" followed by three logograms, "GRA, probably FAR and OLIV" (p. 39), which matches `words`. This PR sets both glyph strings to the record's own `words` and fills the two arrays with the site's values for these glyphs (`I, KU, WI, RA, KA, DU, 𐝫, GRA, GRA, OLIV`; GRA "grain", OLIV "olives"); the Face B reading itself could not be checked, as the article prints no transcription, drawing or legible photograph of it, has "probably FAR" where `words` has a second GRA, and counts "six groups of signs" where `words` has six single signs. KNZg57b also gets an entry in `annotations.js`, which had none, so that the explorer's word tip failed on its words; its tags are those the file gives the same signs elsewhere, except for RA, which stands alone in no other record, and the trace, tagged only 'lacuna' (elsewhere 'lacuna', 'lacuna at start' and 'lacuna at end'). The photo credits now follow the article's figure captions: 'Ph Sapirstein' (was 'Ph Saperstein') for KNZg57a and KNZg58, whose photo is Fig. 7, "Photo Ph. Sapirstein" (p. 35), and "Excavator's archive" for KNZg57b, whose photo is a crop of Fig. 6B (p. 33); 'Kanta', the excavator, would be a shorter form. The three item pages are regenerated with the new credits.
+On master (9c81beb) the `parsedInscription` and `transcription` of KNZg57b (Face B of the Anetaki ivory ring) are a copy of KNZg57a's Face A text, pasted in when 5facf29 added the record, while its `words` hold a different ten-token reading and `transliteratedWords` and `translatedWords` are empty. The publication of the ring (Kanta, Nakassis, Palaima & Perna, in *KO-RO-NO-WE-SA*, Ariadne Supplement Series 5, Rethymno 2024, pp. 27–43; the site's `papers/KNZg57.pdf`) puts the rhyton A 664 and the vases on Face A (pp. 37–38) and describes Face B as sign groups with "AB 81 (KU), AB 40 (WI) and AB 60 (RA)" followed by three logograms, "GRA, probably FAR and OLIV" (p. 39); the record's `words` hold these syllabograms, but as single signs (see below). This PR sets both glyph strings to the record's own `words` and fills the two arrays with the site's values for these glyphs (`I, KU, WI, RA, KA, DU, 𐝫, GRA, GRA, OLIV`; GRA "grain", OLIV "olives"); the Face B reading itself could not be checked, as the article prints no transcription, drawing or legible photograph of it, has "probably FAR" where `words` has a second GRA, and counts "six groups of signs" where `words` has six single signs. KNZg57b also gets an entry in `annotations.js`, which had none, so that the explorer's word tip failed on its words; its tags are those the file gives the same signs elsewhere, except for RA, which stands alone in no other record, and the trace, tagged only 'lacuna' (elsewhere 'lacuna', 'lacuna at start' and 'lacuna at end'). The photo credits now follow the article's figure captions: 'Ph Sapirstein' (was 'Ph Saperstein') for KNZg57a and KNZg58, whose photo is Fig. 7, "Photo Ph. Sapirstein" (p. 35), and "Excavator's archive" for KNZg57b, whose photo is a crop of Fig. 6B (p. 33); 'Kanta', the excavator, would be a shorter form. The three item pages are regenerated with the new credits.
 
-![KNZg57b fields on master and with this PR](evidence/KNZg57b/KNZg57b_fields_HEAD_vs_proposed.png)
+![KNZg57b fields on master and with this PR](evidence/KNZg57b/KNZg57b_fields_master_vs_proposed.png)
 
 *KNZg57b on master (9c81beb): `parsedInscription` and `transcription` repeat KNZg57a's Face A string character for character (vases A652/A653/A651, rhyton A664, NI, VAS); `words` holds a different ten-token reading (I KU WI RA KA DU, trace, GRA GRA OLIV); `transliteratedWords` and `translatedWords` are empty. Below, in green: the new fields, built from the record's own `words` with the site's own labels.* (lineara.xyz data, `LinearAInscriptions.js` at 9c81beb; glyphs drawn in lineara.xyz's font, `assets/NotoSansLinearA-LinearB.ttf`)
 
@@ -268,7 +268,7 @@ On master (9c81beb) fragment B of SKO Zc 1 reads QA-KI-TI. The record's linked s
 
 ![SKO Zc 1 third sign compared with the site's ZU and TI](evidence/SKOZc1/SKOZc1_fragmentB_sign3_vs_lineara_ZU_TI.jpg)
 
-*Top: fragment B in the edition's photo and drawing; the third sign is a pointed arch with a dot inside, broken off below. Bottom: box 7 on the site's two SKOZc1 images (labelled TI on master) beside ZU and TI boxes from the site's own image maps: KN Zc 6.3 ZU (the variant the editors cite, rotated on the cup), HT 26b.3 ZU (the usual rayed form), and TI on HT 8a, HT 7a and HT 10b (arches without a central dot).* (Top: Perna, Kanta, Tyree 2005, fig. 10a–b, p. 330, photo and drawing M. Perna; lineara.xyz `papers/SKOZc1.pdf`, PDF p. 12. Bottom: crops of lineara.xyz images at the `items_image_map.js` boxes of 9c81beb; the SKOZc1 images are cropped from the same figure, KNZc6, HT26b, HT8a, HT7a and HT10b from GORILA IV and I)
+*Top: fragment B in the edition's photo and drawing; the third sign is a pointed arch with a dot inside, broken off below. Bottom: box 7 on the site's two SKOZc1 images (labelled TI on master) beside ZU and TI boxes from the site's own image maps: KN Zc 6.3 ZU (the variant the editors cite, rotated on the cup), HT 26b.3 ZU (the usual rayed form), and TI on HT 8a, HT 7a and HT 10b (arches without a central dot).* (Top: Perna, Kanta, Tyree 2005, fig. 10a–b, p. 330, photo and drawing M. Perna; lineara.xyz `papers/SKOZc1.pdf`, PDF p. 12. Bottom: crops of lineara.xyz images at the `items_image_map.js` boxes of 9c81beb; the SKOZc1 images are cropped from the same figure, KNZc6, HT26b, HT8a, HT7a and HT10b from GORILA IV and I; © École française d'Athènes)
 
 ![SKOZc1 image maps, entry 7 before and after](evidence/SKOZc1/SKOZc1_imagemaps_before_after.png)
 
@@ -296,7 +296,7 @@ On master (9c81beb) the word arrays of ZA6a end face a with five line breaks in 
 
 ![ZA6a explorer rows before and after](evidence/ZA6a/ZA6a_explorer_rows_before_after.jpg)
 
-*Schematic of the end of face a as the explorer builds its rows from the word arrays (`populateText` starts a new row at every line-break token). On master (9c81beb) there are four empty rows, then the divider and five entries crowded into one row. With this PR there is one entry per row, as in the record's own `parsedInscription`, Younger's rows and GORILA's tabular copy. Rendered from the arrays, not a browser screenshot; U+1076B shows as a box.* (Rendered from lineara.xyz `LinearAInscriptions.js` at 9c81beb, before, and the new arrays, after)
+*Schematic of the end of face a as the explorer builds its rows from the word arrays (`populateText` starts a new row at every line-break token). On master (9c81beb) there are four empty rows, then the divider and five entries crowded into one row. With this PR there is one entry per row, as in the record's own `parsedInscription`, Younger's rows and GORILA's tabular copy. Rendered from the arrays, not a browser screenshot; U+1076B shows as a box.* (Rendered from lineara.xyz `LinearAInscriptions.js` at 9c81beb, before, and the new arrays, after; © École française d'Athènes)
 
 ### GOWc3 — 20 and 2 stored as one token with a comma
 
@@ -318,7 +318,7 @@ On master (9c81beb) GOWc3 stores its number as one token, `𐄑,𐄈` (20, comma
 
 These three records have no transcription: their `parsedInscription` and `transcription` are empty. On master (9c81beb) their `words`, `transliteratedWords` and `translatedWords` nevertheless hold the string `"None"`, a Python `None` written out as text, and the explorer, which shows every entry of these arrays, displays it as a word. This PR sets the three arrays to `[]`, as the eight other records with no words already have them (e.g. KE6, ZOZa1). `wordsInCorpus` never counted "None". The derived files hold only an older combined entry, HTW231d-f; its arrays in the notebook's copy are `"None"` too and become `[]` (its item page does not change).
 
-## Image maps: boxes on the wrong signs (known items)
+## Image maps: boxes on the wrong signs
 
 In each record below, image-map boxes sit on the wrong signs, or a sign has no box. The changes are to the boxes in `items_image_map.js` (item pages) and the matching areas in `imagemaps.js` (explorer). For SYZa3, HT24b and HT123+124a they also correct the record's tabulation in `items_analysis/supplement.json` and regenerate the item page from it with the committed notebook. No text field in `LinearAInscriptions.js` changes. Entry and area numbers count from 0, as in the files, and boxes are given as (x, y, width, height) in the image's own pixels. "Before" figures show master (9c81beb).
 
@@ -328,11 +328,11 @@ On `HT154n-Facsimile`, entry 1 (label `6`) is boxed on the SI sign at the right 
 
 ![HT154n drawing, boxes on master](evidence/HT154n-map/HT154n-Facsimile_before.jpg)
 
-*Master (9c81beb): the box labelled 6 sits on SI, and the box labelled SI on the six strokes.* (lineara.xyz images/HT154n-Facsimile.jpg, a crop of the GORILA I p. 250 drawing; boxes drawn for this PR)
+*Master (9c81beb): the box labelled 6 sits on SI, and the box labelled SI on the six strokes.* (lineara.xyz images/HT154n-Facsimile.jpg, a crop of the GORILA I p. 250 drawing; boxes drawn for this PR; © École française d'Athènes)
 
 ![HT154n drawing, proposed boxes](evidence/HT154n-map/HT154n-Facsimile_after.jpg)
 
-*Proposed: 6 on the six strokes, SI on the sign.* (lineara.xyz images/HT154n-Facsimile.jpg, a crop of the GORILA I p. 250 drawing; boxes drawn for this PR)
+*Proposed: 6 on the six strokes, SI on the sign.* (lineara.xyz images/HT154n-Facsimile.jpg, a crop of the GORILA I p. 250 drawing; boxes drawn for this PR; © École française d'Athènes)
 
 ![GORILA I p. 251, HT 154 N hand copy](evidence/HT154n-map/HT154n_gorila_I251_transliteration.png)
 
@@ -368,23 +368,23 @@ On `HT24b-Inscription`, a crop of the GORILA I p. 42 (PDF p. 78) photograph, ent
 
 ![HT24b photo, map on master and proposed](evidence/HT24b-map/HT24b-Inscription_map_before_after.jpg)
 
-*HT24b-Inscription with the image-map boxes. Left, master (9c81beb): boxes 2 and 3 split the ³⁄₄ of line .1, and from box 3 on each label names the sign after the one it frames (3 'SI+ME-KI' on the lower stroke of JE, 4 '\*118' on SI+ME-KI, 5 '1' on the \*118 that opens line .2, and so on to 9 '1' on \*118); the final 1 has no box. Right, proposed: one box for the ³⁄₄, every label on its own sign, and a new box 9 on the final 1.* (lineara.xyz images/HT24b-Inscription.jpg (crop of the GORILA I p. 42 photograph); boxes from items_image_map.js at 9c81beb and from this PR)
+*HT24b-Inscription with the image-map boxes. Left, master (9c81beb): boxes 2 and 3 split the ³⁄₄ of line .1, and from box 3 on each label names the sign after the one it frames (3 'SI+ME-KI' on the lower stroke of JE, 4 '\*118' on SI+ME-KI, 5 '1' on the \*118 that opens line .2, and so on to 9 '1' on \*118); the final 1 has no box. Right, proposed: one box for the ³⁄₄, every label on its own sign, and a new box 9 on the final 1.* (lineara.xyz images/HT24b-Inscription.jpg (crop of the GORILA I p. 42 photograph); boxes from items_image_map.js at 9c81beb and from this PR; © École française d'Athènes)
 
 ![HT24b photo, explorer areas on master and proposed](evidence/HT24b-map/HT24b-Inscription_explorer_before_after.jpg)
 
-*The same photo with the explorer's areas, each labelled with the word explorer.js pairs it with (area i goes with letter i). Left, master (9c81beb): 11 areas for 10 letters, so from e3 on each area highlights the next sign's word, and e10 (the final 1) runs past the last letter and falls back to word 0 (\*118). Right, proposed: 10 areas, each on its own sign.* (lineara.xyz images/HT24b-Inscription.jpg (crop of the GORILA I p. 42 photograph); areas from imagemaps.js at 9c81beb and from this PR)
+*The same photo with the explorer's areas, each labelled with the word explorer.js pairs it with (area i goes with letter i). Left, master (9c81beb): 11 areas for 10 letters, so from e3 on each area highlights the next sign's word, and e10 (the final 1) runs past the last letter and falls back to word 0 (\*118). Right, proposed: 10 areas, each on its own sign.* (lineara.xyz images/HT24b-Inscription.jpg (crop of the GORILA I p. 42 photograph); areas from imagemaps.js at 9c81beb and from this PR; © École française d'Athènes)
 
 ![GORILA I p. 42, HT 24b photograph and drawing](evidence/HT24b-map/HT24b_gorila_I42_photo_and_drawing.jpg)
 
-*GORILA I p. 42 (PDF p. 78), HT 24b photograph (top) and drawing (bottom): .1 [lost sign] \*118, 1, JE (³⁄₄: a short stroke over a long hook), \*531 (SI+ME-KI); .2 \*118 (damaged, at the left edge), 1, JE, \*539, \*118, 1. lineara's HT24b-Inscription.jpg is a crop of this photograph.* (GORILA I (L. Godart and J.-P. Olivier 1976), École française d'Athènes; copy served at lineara.xyz/papers/GORILA-Vol1.pdf#page=78)
+*GORILA I p. 42 (PDF p. 78), HT 24b photograph (top) and drawing (bottom): .1 [lost sign] \*118, 1, JE (³⁄₄: a short stroke over a long hook), \*531 (SI+ME-KI); .2 \*118 (damaged, at the left edge), 1, JE, \*539, \*118, 1. lineara's HT24b-Inscription.jpg is a crop of this photograph.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes; copy served at lineara.xyz/papers/GORILA-Vol1.pdf#page=78)
 
 ![GORILA I p. 43, HT 24b hand copy and normalised text](evidence/HT24b-map/HT24b_gorila_I43_transliteration_and_normalised.png)
 
-*GORILA I p. 43 (PDF p. 79), HT 24b: hand copy .1 ]\*118 1 JE \*531 / .2 \*118 1 JE \*539 \*118 1 / .3-5 vacant; apparatus '.1 Un seul signe perdu à gauche'; normalised list .1 ]\*118 1 JE / .1-2 \*531 \*118 1 JE / .2 \*539 \*118 1. Line .1 ends with \*531 (SI+ME-KI), and line .2 opens with \*118.* (GORILA I (L. Godart and J.-P. Olivier 1976), École française d'Athènes; copy served at lineara.xyz/papers/GORILA-Vol1.pdf#page=79)
+*GORILA I p. 43 (PDF p. 79), HT 24b: hand copy .1 ]\*118 1 JE \*531 / .2 \*118 1 JE \*539 \*118 1 / .3-5 vacant; apparatus '.1 Un seul signe perdu à gauche'; normalised list .1 ]\*118 1 JE / .1-2 \*531 \*118 1 JE / .2 \*539 \*118 1. Line .1 ends with \*531 (SI+ME-KI), and line .2 opens with \*118.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes; copy served at lineara.xyz/papers/GORILA-Vol1.pdf#page=79)
 
-![HT24b drawing map on master, already right](evidence/HT24b-map/HT24b-Facsimile_HEAD_map_correct.jpg)
+![HT24b drawing map on master, already right](evidence/HT24b-map/HT24b-Facsimile_master_map_correct.jpg)
 
-*Reference, not changed: the HT24b-Facsimile map (the GORILA I p. 42 drawing) on master (9c81beb) has one box for each ³⁄₄ and every label on its own sign. The proposed photo map uses the same label sequence.* (lineara.xyz images/HT24b-Facsimile.jpg (crop of the GORILA I p. 42 drawing); boxes from items_image_map.js at 9c81beb)
+*Reference, not changed: the HT24b-Facsimile map (the GORILA I p. 42 drawing) on master (9c81beb) has one box for each ³⁄₄ and every label on its own sign. The proposed photo map uses the same label sequence.* (lineara.xyz images/HT24b-Facsimile.jpg (crop of the GORILA I p. 42 drawing); boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ### HT22 — drawing boxes one sign late from the ruling on
 
@@ -392,23 +392,23 @@ On `HT22-Facsimile` the ruling has no box: its entry (entry 3, word 2, labelled 
 
 ![HT22 drawing, boxes on master](evidence/HT22-map/HT22-Facsimile_before.jpg)
 
-*HT22-Facsimile on master (9c81beb), x3.5 (left: the image; right: the image-map entries and explorer areas). The ruling has no box. Entry 3 (word 2, the ruling) sits on \*330+DA, entry 4 (\*330+DA) on the circle (100), entry 5 (100) on the bar (10), entry 6 (10) on the three unit strokes, and entry 7 ('3') has empty coords, so it is listed in the footer. The explorer has 7 areas for 8 letters.* (lineara.xyz images/HT22-Facsimile.jpg (a crop of the GORILA I p. 38 drawing); boxes from items_image_map.js and imagemaps.js at 9c81beb)
+*HT22-Facsimile on master (9c81beb), x3.5 (left: the image; right: the image-map entries and explorer areas). The ruling has no box. Entry 3 (word 2, the ruling) sits on \*330+DA, entry 4 (\*330+DA) on the circle (100), entry 5 (100) on the bar (10), entry 6 (10) on the three unit strokes, and entry 7 ('3') has empty coords, so it is listed in the footer. The explorer has 7 areas for 8 letters.* (lineara.xyz images/HT22-Facsimile.jpg (a crop of the GORILA I p. 38 drawing); boxes from items_image_map.js and imagemaps.js at 9c81beb; © École française d'Athènes)
 
 ![HT22 drawing, proposed boxes](evidence/HT22-map/HT22-Facsimile_after.jpg)
 
-*Proposed, same scale (changed entries in green, the 8 new explorer areas in blue). Entry 3 (the ruling) is a thin box on the ruling, (28, 88, 157, 12). Entries 4–7 (\*330+DA, 100, 10, 3) take the old boxes 3–6 unchanged, each now on its own sign. Explorer areas e0–e7 are the same boxes in letter order. The ruling's label is still '10' here; it becomes '—' with the ruling change.* (lineara.xyz images/HT22-Facsimile.jpg (a crop of the GORILA I p. 38 drawing); proposed boxes)
+*Proposed, same scale (changed entries in green, the 8 new explorer areas in blue). Entry 3 (the ruling) is a thin box on the ruling, (28, 88, 157, 12). Entries 4–7 (\*330+DA, 100, 10, 3) take the old boxes 3–6 unchanged, each now on its own sign. Explorer areas e0–e7 are the same boxes in letter order. The ruling's label is still '10' here; it becomes '—' with the ruling change.* (lineara.xyz images/HT22-Facsimile.jpg (a crop of the GORILA I p. 38 drawing); proposed boxes; © École française d'Athènes)
 
 ![GORILA I p. 38, HT 22 photograph and drawing](evidence/HT22-map/HT22_gorila_I_p38_photo_drawing.jpg)
 
-*GORILA I p. 38 (PDF p. 74): photograph and drawing of HT 22 (HM 45), the sources of lineara's HT22-Inscription and HT22-Facsimile. Line .1: GRA+L2, two circles, three bars; a ruling; line .2: \*330+DA, one circle, one bar, three unit strokes (two above, one below).* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (Paris 1976), p. 38; PDF as served at lineara.xyz/papers/GORILA-Vol1.pdf)
+*GORILA I p. 38 (PDF p. 74): photograph and drawing of HT 22 (HM 45), the sources of lineara's HT22-Inscription and HT22-Facsimile. Line .1: GRA+L2, two circles, three bars; a ruling; line .2: \*330+DA, one circle, one bar, three unit strokes (two above, one below).* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (Paris 1976), p. 38; PDF as served at lineara.xyz/papers/GORILA-Vol1.pdf; © École française d'Athènes)
 
 ![GORILA I p. 39, HT 22 transcription](evidence/HT22-map/HT22_gorila_I_p39_transliteration.png)
 
-*GORILA I p. 39 (PDF p. 75), HT 22: sup. mut.; .1 GRA+L2 230; ruling; .2 \*330+DA 113. This matches the record's text, so only the drawing's boxes change.* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (Paris 1976), p. 39; PDF as served at lineara.xyz/papers/GORILA-Vol1.pdf)
+*GORILA I p. 39 (PDF p. 75), HT 22: sup. mut.; .1 GRA+L2 230; ruling; .2 \*330+DA 113. This matches the record's text, so only the drawing's boxes change.* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (Paris 1976), p. 39; PDF as served at lineara.xyz/papers/GORILA-Vol1.pdf; © École française d'Athènes)
 
 ![HT22 photo map on master, already right](evidence/HT22-map/HT22-Inscription_head_unchanged.jpg)
 
-*Reference, not changed: HT22-Inscription (the photo) on master (9c81beb), x3. Its ruling entry (3, word 2) is a thin box along the ruling, entries 4–7 sit on \*330+DA, 100, 10 and 3, and the explorer has 8 areas for 8 letters. It is the model for the drawing's fix.* (lineara.xyz images/HT22-Inscription.jpg (a crop of the GORILA I p. 38 photograph); boxes from items_image_map.js and imagemaps.js at 9c81beb)
+*Reference, not changed: HT22-Inscription (the photo) on master (9c81beb), x3. Its ruling entry (3, word 2) is a thin box along the ruling, entries 4–7 sit on \*330+DA, 100, 10 and 3, and the explorer has 8 areas for 8 letters. It is the model for the drawing's fix.* (lineara.xyz images/HT22-Inscription.jpg (a crop of the GORILA I p. 38 photograph); boxes from items_image_map.js and imagemaps.js at 9c81beb; © École française d'Athènes)
 
 ### HT31 — three drawing boxes of word 7 rotated
 
@@ -416,23 +416,23 @@ Word 7 of HT31, \*815-QA-PA₃ on line .2, is a conical vessel with QA and PA₃
 
 ![HT31 drawing, line .2, boxes on master](evidence/HT31-map/HT31-Facsimile_before.png)
 
-*HT31-Facsimile on master (9c81beb), line .2, with each entry's explorer area in brackets: entry 9 '\*815' (e6) frames QA, entry 10 'QA' (e7) frames PA₃, and entry 11 'PA₃' (e8) frames the conical vessel. The next word, entries 13–15 (\*415-VS, SU, PU), is boxed correctly: vessel first, then the signs above.* (lineara.xyz images/HT31-Facsimile.jpg (a crop of the GORILA I p. 58 drawing); boxes from items_image_map.js and imagemaps.js at 9c81beb)
+*HT31-Facsimile on master (9c81beb), line .2, with each entry's explorer area in brackets: entry 9 '\*815' (e6) frames QA, entry 10 'QA' (e7) frames PA₃, and entry 11 'PA₃' (e8) frames the conical vessel. The next word, entries 13–15 (\*415-VS, SU, PU), is boxed correctly: vessel first, then the signs above.* (lineara.xyz images/HT31-Facsimile.jpg (a crop of the GORILA I p. 58 drawing); boxes from items_image_map.js and imagemaps.js at 9c81beb; © École française d'Athènes)
 
 ![HT31 drawing, line .2, proposed boxes](evidence/HT31-map/HT31-Facsimile_after.png)
 
-*Proposed: the three existing boxes re-paired in both files. Entry 9 '\*815' (e6) frames the vessel, 10 'QA' (e7) the left sign above it, 11 'PA₃' (e8) the right sign; labels, word numbers and box sizes are unchanged.* (lineara.xyz images/HT31-Facsimile.jpg (a crop of the GORILA I p. 58 drawing); proposed boxes)
+*Proposed: the three existing boxes re-paired in both files. Entry 9 '\*815' (e6) frames the vessel, 10 'QA' (e7) the left sign above it, 11 'PA₃' (e8) the right sign; labels, word numbers and box sizes are unchanged.* (lineara.xyz images/HT31-Facsimile.jpg (a crop of the GORILA I p. 58 drawing); proposed boxes; © École française d'Athènes)
 
 ![GORILA I p. 58, HT 31 drawing, lines .2-.3](evidence/HT31-map/HT31_GORILA-I_p58_drawing_lines2-3.png)
 
-*GORILA I p. 58 (PDF p. 94), the drawing of HT 31, lines .2–.3 (lineara's HT31-Facsimile is a crop of it). In line .2, the crossed sign QA (left) and the ladder sign PA₃ (right) are written above the conical vessel, which is followed by '—' (10).* (L. Godart & J.-P. Olivier, GORILA I (1976), p. 58; crop of the PDF served at lineara.xyz/papers/GORILA-Vol1.pdf)
+*GORILA I p. 58 (PDF p. 94), the drawing of HT 31, lines .2–.3 (lineara's HT31-Facsimile is a crop of it). In line .2, the crossed sign QA (left) and the ladder sign PA₃ (right) are written above the conical vessel, which is followed by '—' (10).* (L. Godart & J.-P. Olivier, GORILA I (1976), p. 58; crop of the PDF served at lineara.xyz/papers/GORILA-Vol1.pdf; © École française d'Athènes)
 
 ![GORILA I p. 59, HT 31 normalised transcription](evidence/HT31-map/HT31_GORILA-I_p59_transcription_lines1-3.png)
 
-*GORILA I p. 59 (PDF p. 95), the normalised transcription of HT 31, lines .1–.3. In line .2, after the numeral 5, QA (left) and PA₃ (right) stand above the conical vessel, followed by '—' (10); next come SU-PU above the jar \*415VS and another '—' (10).* (L. Godart & J.-P. Olivier, GORILA I (1976), p. 59; crop of the PDF served at lineara.xyz/papers/GORILA-Vol1.pdf)
+*GORILA I p. 59 (PDF p. 95), the normalised transcription of HT 31, lines .1–.3. In line .2, after the numeral 5, QA (left) and PA₃ (right) stand above the conical vessel, followed by '—' (10); next come SU-PU above the jar \*415VS and another '—' (10).* (L. Godart & J.-P. Olivier, GORILA I (1976), p. 59; crop of the PDF served at lineara.xyz/papers/GORILA-Vol1.pdf; © École française d'Athènes)
 
 ![HT31 photo map on master, line .2, already right](evidence/HT31-map/HT31-Inscription_photo-map_line2_already-correct.jpg)
 
-*Reference, not changed: HT31-Inscription (photo), line .2, on master (9c81beb). The photo map already puts entry 9 '\*815' (e6) on the vessel, and 10 'QA' (e7) and 11 'PA₃' (e8) on the two signs above it. Top: contrast-stretched crop at 3x; bottom: the same crop with the boxes.* (lineara.xyz images/HT31-Inscription.jpg (a crop of a GORILA I plate), contrast-stretched; boxes from items_image_map.js and imagemaps.js at 9c81beb)
+*Reference, not changed: HT31-Inscription (photo), line .2, on master (9c81beb). The photo map already puts entry 9 '\*815' (e6) on the vessel, and 10 'QA' (e7) and 11 'PA₃' (e8) on the two signs above it. Top: contrast-stretched crop at 3x; bottom: the same crop with the boxes.* (lineara.xyz images/HT31-Inscription.jpg (a crop of a GORILA I plate), contrast-stretched; boxes from items_image_map.js and imagemaps.js at 9c81beb; © École française d'Athènes)
 
 ### PH2 — drawing box for the numeral 1 misses its stroke
 
@@ -440,23 +440,23 @@ On `PH2-Facsimile`, the box of the numeral `1` after A-SE-TU-\*21F, entry 4 and 
 
 ![PH2 drawing, line 1, boxes on master and proposed](evidence/PH2-map/PH2-Facsimile_line1_zoom_before_after.jpg)
 
-*PH2-Facsimile, line 1, x3. Top, master (9c81beb): box 4 ('1', word 1) holds only the tips of \*21F's arms and blank ground, and the slanting stroke sits inside box 5 (RA). Bottom, proposed: box 4 (248, 35, 18, 37) on the stroke; box 5 (263, 22, 49, 81) starts at the stroke's top.* (Drawing from GORILA I p. 288, as cropped by lineara.xyz (images/PH2-Facsimile.jpg); boxes from items_image_map.js at 9c81beb (top) and from this PR (bottom))
+*PH2-Facsimile, line 1, x3. Top, master (9c81beb): box 4 ('1', word 1) holds only the tips of \*21F's arms and blank ground, and the slanting stroke sits inside box 5 (RA). Bottom, proposed: box 4 (248, 35, 18, 37) on the stroke; box 5 (263, 22, 49, 81) starts at the stroke's top.* (Drawing from GORILA I p. 288, as cropped by lineara.xyz (images/PH2-Facsimile.jpg); boxes from items_image_map.js at 9c81beb (top) and from this PR (bottom); © École française d'Athènes)
 
 ![GORILA I p. 288, PH 2 line .1, photo and drawing](evidence/PH2-map/PH2_GORILA_I288_photo_drawing_line1.png)
 
-*GORILA I p. 288 (PDF p. 324), line .1, photo (top) and drawing (bottom): A SE TU \*21F, then the thick slanting stroke whose top touches RA's arch, then RA.* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (1976), p. 288)
+*GORILA I p. 288 (PDF p. 324), line .1, photo (top) and drawing (bottom): A SE TU \*21F, then the thick slanting stroke whose top touches RA's arch, then RA.* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (1976), p. 288; © École française d'Athènes)
 
 ![GORILA I p. 289, PH 2 line .1 transcriptions](evidence/PH2-map/PH2_GORILA_I289_transcriptions_line1.png)
 
-*GORILA I p. 289 (PDF p. 325). Top: copy of line .1 in tablet layout, with a short separate stroke between \*21F and RA. Bottom: normalised transcription .1 A-SE-TU-\*21F 1 and .1-2 RA-O-DI-KI 60.* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (1976), p. 289)
+*GORILA I p. 289 (PDF p. 325). Top: copy of line .1 in tablet layout, with a short separate stroke between \*21F and RA. Bottom: normalised transcription .1 A-SE-TU-\*21F 1 and .1-2 RA-O-DI-KI 60.* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (1976), p. 289; © École française d'Athènes)
 
-![INSCRIBE relief of PH 2, line 1, two lights](evidence/PH2-map/PH2_INSCRIBE_az315_az135_HEAD_vs_final.jpg)
+![INSCRIBE relief of PH 2, line 1, two lights](evidence/PH2-map/PH2_INSCRIBE_az315_az135_master_vs_final.jpg)
 
 *INSCRIBE relief of PH 2, line 1, under raking light from azimuth 315°, elevation 20° (top) and azimuth 135°, elevation 20° (bottom). Facsimile boxes 4 and 5 are projected through the registration fit (score 0.673, about 1 mm accuracy). Left: master (9c81beb), with box 4 on blank surface. Right: proposed, with box 4 on the deep oblique groove.* (INSCRIBE 3D model Clay_tablet_PH_2 (INSCRIBE project, ERC, University of Bologna; https://www.inscribercproject.com/Linear_A.php))
 
-![PH2 photo map on master, already right](evidence/PH2-map/PH2-Inscription_HEAD_photo_map_already_right.jpg)
+![PH2 photo map on master, already right](evidence/PH2-map/PH2-Inscription_master_photo_map_already_right.jpg)
 
-*Reference, not changed: the photo map PH2-Inscription on master (9c81beb), x3. Box 4 ('1') already sits on the slanting groove left of RA's arch, overlapping box 5 by a few pixels.* (Photo from GORILA I p. 288, as cropped by lineara.xyz (images/PH2-Inscription.jpg); boxes from items_image_map.js at 9c81beb)
+*Reference, not changed: the photo map PH2-Inscription on master (9c81beb), x3. Box 4 ('1') already sits on the slanting groove left of RA's arch, overlapping box 5 by a few pixels.* (Photo from GORILA I p. 288, as cropped by lineara.xyz (images/PH2-Inscription.jpg); boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ### KH88 — drawing box for the numeral 8 too narrow
 
@@ -464,19 +464,19 @@ On `KH88-Facsimile`, the numeral 8 on line .3 (entry 11, word 7) is two rows of 
 
 ![KH88 drawing, box for 8 on master](evidence/KH88-map/KH88-Facsimile_before.png)
 
-*KH88-Facsimile on master (9c81beb): the box for the numeral 8 (image-map entry 11, word 7, green; explorer area e9, blue, same box (25, 186, 85, 83)) runs over the tablet's outline on the left, stops at the third stroke column and leaves both strokes of the fourth column outside.* (lineara.xyz images/KH88-Facsimile.jpg (crop of the drawing in GORILA V p. 40); boxes from items_image_map.js and imagemaps.js at 9c81beb, enlarged x2.4)
+*KH88-Facsimile on master (9c81beb): the box for the numeral 8 (image-map entry 11, word 7, green; explorer area e9, blue, same box (25, 186, 85, 83)) runs over the tablet's outline on the left, stops at the third stroke column and leaves both strokes of the fourth column outside.* (lineara.xyz images/KH88-Facsimile.jpg (crop of the drawing in GORILA V p. 40); boxes from items_image_map.js and imagemaps.js at 9c81beb, enlarged x2.4; © École française d'Athènes)
 
 ![KH88 drawing, proposed box for 8](evidence/KH88-map/KH88-Facsimile_after.png)
 
-*Proposed: entry 11 and explorer area e9 = (50, 195, 87, 80). The box holds all eight strokes (two rows of four) with a 5–6 px margin and no other ink, and leaves out the tablet outline and the dotted break line.* (lineara.xyz images/KH88-Facsimile.jpg (crop of the drawing in GORILA V p. 40); proposed boxes, enlarged x2.4)
+*Proposed: entry 11 and explorer area e9 = (50, 195, 87, 80). The box holds all eight strokes (two rows of four) with a 5–6 px margin and no other ink, and leaves out the tablet outline and the dotted break line.* (lineara.xyz images/KH88-Facsimile.jpg (crop of the drawing in GORILA V p. 40); proposed boxes, enlarged x2.4; © École française d'Athènes)
 
 ![GORILA V p. 40, KH 88 photo and drawing, numeral](evidence/KH88-map/KH88_GORILA-V_p40_photo_drawing_numeral.png)
 
-*GORILA V p. 40 (PDF p. 93), KH 88, photo (left) and drawing (right): the numeral on line .3 is two rows of four strokes, all intact. The top stroke of the fourth column sits at the left end of a crack (the dotted break line in the drawing).* (L. Godart and J.-P. Olivier, GORILA V (1985), p. 40 (PDF p. 93), from lineara.xyz/papers/GORILA-Vol5.pdf)
+*GORILA V p. 40 (PDF p. 93), KH 88, photo (left) and drawing (right): the numeral on line .3 is two rows of four strokes, all intact. The top stroke of the fourth column sits at the left end of a crack (the dotted break line in the drawing).* (L. Godart and J.-P. Olivier, GORILA V (1985), p. 40 (PDF p. 93), from lineara.xyz/papers/GORILA-Vol5.pdf; © École française d'Athènes)
 
 ![GORILA V p. 41, KH 88 hand copy and normalised text](evidence/KH88-map/KH88_GORILA-V_p41_handcopy_line3_normalised.png)
 
-*GORILA V p. 41 (PDF p. 94), KH 88: the hand copy's line .3 has 4 + 4 strokes; the normalised transliteration reads '.2-3 PU-DE 8'.* (L. Godart and J.-P. Olivier, GORILA V (1985), p. 41 (PDF p. 94), from lineara.xyz/papers/GORILA-Vol5.pdf)
+*GORILA V p. 41 (PDF p. 94), KH 88: the hand copy's line .3 has 4 + 4 strokes; the normalised transliteration reads '.2-3 PU-DE 8'.* (L. Godart and J.-P. Olivier, GORILA V (1985), p. 41 (PDF p. 94), from lineara.xyz/papers/GORILA-Vol5.pdf; © École française d'Athènes)
 
 ![INSCRIBE relief of KH 88, numeral, two lights](evidence/KH88-map/KH88_INSCRIBE_numeral_az90-el35_az315-el20.jpg)
 
@@ -488,23 +488,23 @@ On `HT23b-Facsimile`, entries 8–11 each sit on the next sign: `QA2+[?]+PU` (wo
 
 ![HT23b drawing, lines .2-.3, boxes on master](evidence/HT23b-map/HT23b-Facsimile_before.jpg)
 
-*HT23b-Facsimile on master (9c81beb), lines .2–.3 (2.5x). Entries 8–11 (green) are one sign off: 8 'QA2+[?]+PU' sits on the QA2+[?]+RE ligature and its unit stroke, 9 'QA2+[?]+RE' on the line-.3 vestiges, 10 '1' on E (cutting off E's left crossbars), 11 'E' on the 7. Entry 12 '7' has empty coords, the explorer has 12 areas for 13 letters, and the QA2+[?]+PU traces in mid line .2 have no box.* (lineara.xyz images/HT23b-Facsimile.jpg (crop of the GORILA I p. 40 drawing); boxes from items_image_map.js and imagemaps.js at 9c81beb)
+*HT23b-Facsimile on master (9c81beb), lines .2–.3 (2.5x). Entries 8–11 (green) are one sign off: 8 'QA2+[?]+PU' sits on the QA2+[?]+RE ligature and its unit stroke, 9 'QA2+[?]+RE' on the line-.3 vestiges, 10 '1' on E (cutting off E's left crossbars), 11 'E' on the 7. Entry 12 '7' has empty coords, the explorer has 12 areas for 13 letters, and the QA2+[?]+PU traces in mid line .2 have no box.* (lineara.xyz images/HT23b-Facsimile.jpg (crop of the GORILA I p. 40 drawing); boxes from items_image_map.js and imagemaps.js at 9c81beb; © École française d'Athènes)
 
 ![HT23b drawing, lines .2-.3, proposed boxes](evidence/HT23b-map/HT23b-Facsimile_after.jpg)
 
-*Proposed: entries 8–12 (green) on QA2+[?]+PU (traces, mid line .2), QA2+[?]+RE (the ligature at the line end), 1 (the unit stroke after it), E and 7 (4 over 3 strokes); the explorer's 13 areas are the same boxes in the same order. The line-.3 vestiges get no box.* (lineara.xyz images/HT23b-Facsimile.jpg (crop of the GORILA I p. 40 drawing); proposed boxes)
+*Proposed: entries 8–12 (green) on QA2+[?]+PU (traces, mid line .2), QA2+[?]+RE (the ligature at the line end), 1 (the unit stroke after it), E and 7 (4 over 3 strokes); the explorer's 13 areas are the same boxes in the same order. The line-.3 vestiges get no box.* (lineara.xyz images/HT23b-Facsimile.jpg (crop of the GORILA I p. 40 drawing); proposed boxes; © École française d'Athènes)
 
 ![GORILA I p. 41, HT 23b hand copy](evidence/HT23b-map/HT23b_gorila_I41_transliteration.png)
 
-*GORILA I p. 41 (PDF p. 77), HT 23b. Line .2: MI+JA+RU[ ]MU[ then two QA2 ligatures, the first dotted and broken on both sides (lineara QA2+[?]+PU), the second followed by a single unit stroke (QA2+[?]+RE 1). Line .3: vest.[ ]E 7[, the 7 written as 4 over 3 strokes. Lines .4-5 desunt.* (L. Godart and J.-P. Olivier, GORILA I (Études crétoises 21.1, Paris 1976); PDF as served by lineara.xyz (papers/GORILA-Vol1.pdf))
+*GORILA I p. 41 (PDF p. 77), HT 23b. Line .2: MI+JA+RU[ ]MU[ then two QA2 ligatures, the first dotted and broken on both sides (lineara QA2+[?]+PU), the second followed by a single unit stroke (QA2+[?]+RE 1). Line .3: vest.[ ]E 7[, the 7 written as 4 over 3 strokes. Lines .4-5 desunt.* (L. Godart and J.-P. Olivier, GORILA I (Études crétoises 21.1, Paris 1976); PDF as served by lineara.xyz (papers/GORILA-Vol1.pdf); © École française d'Athènes)
 
 ![GORILA I p. 40, HT 23b drawing, lines .1-.3](evidence/HT23b-map/HT23b_gorila_I40_drawing_lines1-3.jpg)
 
-*GORILA I p. 40 (PDF p. 76), drawing of HT 23b, lines .1–.3 (300 dpi). Line .2: MI+JA+RU, MU, a few traces in the damaged zone, then the branched ligature and one short stroke. Line .3: vestiges at the far left (a hook and a stroke), then E and 4 + 3 strokes.* (L. Godart and J.-P. Olivier, GORILA I (Études crétoises 21.1, Paris 1976); PDF as served by lineara.xyz (papers/GORILA-Vol1.pdf))
+*GORILA I p. 40 (PDF p. 76), drawing of HT 23b, lines .1–.3 (300 dpi). Line .2: MI+JA+RU, MU, a few traces in the damaged zone, then the branched ligature and one short stroke. Line .3: vestiges at the far left (a hook and a stroke), then E and 4 + 3 strokes.* (L. Godart and J.-P. Olivier, GORILA I (Études crétoises 21.1, Paris 1976); PDF as served by lineara.xyz (papers/GORILA-Vol1.pdf); © École française d'Athènes)
 
 ![GORILA I p. 40, HT 23b, lines .2-.3, registered to the facsimile](evidence/HT23b-map/HT23b_gorila_I40_lines2-3_right_300dpi.jpg)
 
-*GORILA I p. 40 (PDF p. 76), right half of lines .2–.3 at 300 dpi, registered to the lineara facsimile by template matching (scale 2.0); the tick labels are facsimile pixel coordinates. Traces at x 220–255, the ligature at x 276–316 with the unit stroke just to its right (x 314–320), E at x 191–234 and the 4 + 3 strokes of the 7 at x 241–292.* (L. Godart and J.-P. Olivier, GORILA I (Études crétoises 21.1, Paris 1976); PDF as served by lineara.xyz (papers/GORILA-Vol1.pdf))
+*GORILA I p. 40 (PDF p. 76), right half of lines .2–.3 at 300 dpi, registered to the lineara facsimile by template matching (scale 2.0); the tick labels are facsimile pixel coordinates. Traces at x 220–255, the ligature at x 276–316 with the unit stroke just to its right (x 314–320), E at x 191–234 and the 4 + 3 strokes of the 7 at x 241–292.* (L. Godart and J.-P. Olivier, GORILA I (Études crétoises 21.1, Paris 1976); PDF as served by lineara.xyz (papers/GORILA-Vol1.pdf); © École française d'Athènes)
 
 ### HT123+124a — photo boxes one sign late from line .4 on
 
@@ -512,25 +512,25 @@ On `HT123+124a-Inscription`, every image-map label from KI (start of line .4) to
 
 ![HT123+124a photo, map on master and proposed](evidence/HT123+124a-map/HT123+124a-Inscription_9c81beb_vs_patch.jpg)
 
-*HT123+124a-Inscription with its image map, master (9c81beb) left and proposed right; the boxes of word 16 (the first ³⁄₄) and of the final 6 are green. On master the box at the left edge of line .4 is labelled KI, every later label sits one box late, and the final 6 has no box. In the proposed map the ³⁄₄ keeps only its box below the 8, and the rows follow GORILA's lines: .4 starts with KI, .5 with \*308, .6 with DA, .7 with KI, .8 with 90, and .9 ends with 6.* (lineara.xyz image HT123+124a-Inscription.jpg (crop of the GORILA I p. 210 photo, Godart & Olivier 1976); boxes from items_image_map.js at 9c81beb and from this PR)
+*HT123+124a-Inscription with its image map, master (9c81beb) left and proposed right; the boxes of word 16 (the first ³⁄₄) and of the final 6 are green. On master the box at the left edge of line .4 is labelled KI, every later label sits one box late, and the final 6 has no box. In the proposed map the ³⁄₄ keeps only its box below the 8, and the rows follow GORILA's lines: .4 starts with KI, .5 with \*308, .6 with DA, .7 with KI, .8 with 90, and .9 ends with 6.* (lineara.xyz image HT123+124a-Inscription.jpg (crop of the GORILA I p. 210 photo, Godart & Olivier 1976); boxes from items_image_map.js at 9c81beb and from this PR; © École française d'Athènes)
 
-![HT123+124a photo, lines .7-.9, master and proposed](evidence/HT123+124a-map/HT123+124a-Inscription_lines7-9_HEAD_vs_proposed.jpg)
+![HT123+124a photo, lines .7-.9, master and proposed](evidence/HT123+124a-map/HT123+124a-Inscription_lines7-9_master_vs_proposed.jpg)
 
-*Lines .7–.9 of the photo, enlarged. Master (top) labels the nine dots of 90 as '3', the olive sign ending line .7 as '90' and the 5 opening line .9 as '≈¹⁄₆', and the label '6' (green) sits on the box of RO. Proposed (bottom): each label sits on its own sign, and the 6 gets the box (202, 527, 65, 72) that the explorer already has.* (lineara.xyz image HT123+124a-Inscription.jpg (crop of the GORILA I p. 210 photo, Godart & Olivier 1976); boxes from items_image_map.js at 9c81beb and from this PR)
+*Lines .7–.9 of the photo, enlarged. Master (top) labels the nine dots of 90 as '3', the olive sign ending line .7 as '90' and the 5 opening line .9 as '≈¹⁄₆', and the label '6' (green) sits on the box of RO. Proposed (bottom): each label sits on its own sign, and the 6 gets the box (202, 527, 65, 72) that the explorer already has.* (lineara.xyz image HT123+124a-Inscription.jpg (crop of the GORILA I p. 210 photo, Godart & Olivier 1976); boxes from items_image_map.js at 9c81beb and from this PR; © École française d'Athènes)
 
 ![GORILA I p. 211, HT 123a, the first fraction in two parts](evidence/HT123+124a-map/HT123a_gorila_I211_fraction_in_two_parts.png)
 
-*GORILA I p. 211 (PDF p. 247), HT 123a. Hand copy .3–.4: a hooked mark with a dot below (an E with an underdot; it looks like '?') sits below the 8 that ends line .3, and an underdotted J opens line .4 before KI-RO. The summary of HT 123a gives entry 3-4 as PU-VIN OLIV 31 J \*308 8, then J stacked over the same underdotted mark, then KI-RO X: the ³⁄₄ (JE) is written in two parts.* (GORILA I (Godart & Olivier 1976), p. 211; scan as served by lineara.xyz, papers/GORILA-Vol1.pdf#page=247)
+*GORILA I p. 211 (PDF p. 247), HT 123a. Hand copy .3–.4: a hooked mark with a dot below (an E with an underdot; it looks like '?') sits below the 8 that ends line .3, and an underdotted J opens line .4 before KI-RO. The summary of HT 123a gives entry 3-4 as PU-VIN OLIV 31 J \*308 8, then J stacked over the same underdotted mark, then KI-RO X: the ³⁄₄ (JE) is written in two parts.* (GORILA I (Godart & Olivier 1976), p. 211; scan as served by lineara.xyz, papers/GORILA-Vol1.pdf#page=247; © École française d'Athènes)
 
 ![GORILA I p. 210, HT 123a drawing, lines .3-.4](evidence/HT123+124a-map/HT123a_gorila_I210_drawing_lines3-4.jpg)
 
-*GORILA I p. 210 (PDF p. 246), drawing of HT 123a, lines .3–.4. Below the 8 at the right end of line .3 is the 7-shaped mark on the join's dashed line; line .4 begins at the left edge with stippled traces before KI.* (GORILA I (Godart & Olivier 1976), p. 210; scan as served by lineara.xyz, papers/GORILA-Vol1.pdf#page=246)
+*GORILA I p. 210 (PDF p. 246), drawing of HT 123a, lines .3–.4. Below the 8 at the right end of line .3 is the 7-shaped mark on the join's dashed line; line .4 begins at the left edge with stippled traces before KI.* (GORILA I (Godart & Olivier 1976), p. 210; scan as served by lineara.xyz, papers/GORILA-Vol1.pdf#page=246; © École française d'Athènes)
 
 ![The two parts of the first fraction, photo and drawing](evidence/HT123+124a-map/HT123+124a_fraction_two_parts_photo_and_facsimile.jpg)
 
 *The two parts of the first ³⁄₄ on master (9c81beb), enlarged. Top, lineara's photo: box 22 below the 8 ending line .3 (incised strokes) and box 23 at the broken left edge of line .4 (red; blue is box 24, which holds KI). Bottom, lineara's facsimile: the 7-shaped mark below the 8 (the drawing map's box for this ³⁄₄) and, just left of the red KI box, an L-shaped trace (a vertical stroke and a foot), the J. The proposed photo map keeps box 22 for the ³⁄₄ and drops box 23, as the drawing map has it.* (lineara.xyz images HT123+124a-Inscription.jpg and HT123+124a-Facsimile.jpg; boxes from items_image_map.js at 9c81beb)
 
-## Image maps and item pages (found in this review)
+## Image maps and item pages: further corrections
 
 These records came to light while this PR was being prepared. Most changes are to the boxes in `items_image_map.js` (item pages) and the matching areas in `imagemaps.js` (explorer). For the ten records split by #13 (bcfb77a) and by 9c81beb, and for HT119, they also bring the item-page generator's inputs in `items_analysis/` and the word tags in `annotations.js` up to date, and those pages and the HT42+59 page are regenerated with the committed notebook. No record in `LinearAInscriptions.js` changes; only its word counts (`wordsInCorpus`) follow the splits of bcfb77a. Entry and area numbers count from 0, as in the files, and boxes are given as (x, y, width, height) in the image's own pixels. "Before" figures show master (9c81beb).
 
@@ -546,7 +546,7 @@ On the drawing `KH79+89-Facsimile`, cropped from GORILA V p. 38 (PDF p. 91), the
 
 *Proposed: one box on each sign, MI NA / PA TA A RA / PA DA NI, and 9 explorer areas e0–e8 in the explorer's letter order. The divider keeps empty coords (the site's convention), and the broken traces at the line ends stay unboxed, as in the photo's map.* (lineara.xyz images/KH79+89-Facsimile.jpg (GORILA V p. 38, © École française d'Athènes); proposed boxes)
 
-![KH79+89 photo map on master, already right](evidence/KH79+89-map/KH79+89-Inscription_HEAD_reference.jpg)
+![KH79+89 photo map on master, already right](evidence/KH79+89-map/KH79+89-Inscription_master_reference.jpg)
 
 *Reference, not changed: the photo KH79+89-Inscription with its map and explorer areas on master (9c81beb): 9 boxes in the same sign order, with the divider left empty. The drawing's fix follows them.* (lineara.xyz images/KH79+89-Inscription.jpg, a crop of the photograph in GORILA V p. 38 (© École française d'Athènes); boxes from items_image_map.js and imagemaps.js at 9c81beb)
 
@@ -558,25 +558,25 @@ On the drawing `KH79+89-Facsimile`, cropped from GORILA V p. 38 (PDF p. 91), the
 
 On the drawing `MA6a-Facsimile`, a crop of GORILA I p. 274 (PDF p. 310), only entries 0 (HIDE+[?]) and 1 (900) of `items_image_map.js` have coordinates, entries 2–6 (40, 1, HIDE+B, 30, 5) have none, and `imagemaps.js` has 2 areas for the record's 7 letters. Both existing boxes are misplaced: box 0 stops at y 123 and leaves out the lower part of HIDE+[?], and box 1, (42, 63, 408, 54), is a thin strip that holds only the two top-row circles of the 900 but runs on over the unit stroke and HIDE+B on the right-hand fragment. GORILA I p. 275 (PDF p. 311) reads `.1 ]HIDE+[?] 941` and `.1 HIDE+B 35`, and its typeset copy gives the layout: HIDE+[?] at the broken left edge, the circles, `[ ]1` and four dots, then HIDE+B, three dots and `||| / ||`. This PR gives each of the seven entries a box on its sign, in the order of the site's own `MA6a-Inscription` map, and gives the explorer the same seven areas; each box holds all of its sign's ink with up to 3 px of margin and none of a neighbour's, and word numbers, labels and the text are unchanged.
 
-![MA6a drawing, boxes on master](evidence/MA6a-map/MA6a-Facsimile_before_HEAD.jpg)
+![MA6a drawing, boxes on master](evidence/MA6a-map/MA6a-Facsimile_before_master.jpg)
 
-*MA6a-Facsimile on master (9c81beb), 1.5x: boxes for only 2 of the 7 entries, and 2 explorer areas for 7 letters. Box 0 (HIDE+[?], (8, 30, 92, 93)) stops at y 123 and misses the lower part of the sign; box 1 (900, (42, 63, 408, 54)) holds only the two top-row circles but runs on over the unit stroke and HIDE+B. Entries 2–6 (40, 1, HIDE+B, 30, 5) have empty coords.* (Drawing: GORILA I (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A, vol. 1, Paris 1976), p. 274, as cropped in lineara.xyz images/MA6a-Facsimile.jpg; boxes from items_image_map.js and imagemaps.js at 9c81beb)
+*MA6a-Facsimile on master (9c81beb), 1.5x: boxes for only 2 of the 7 entries, and 2 explorer areas for 7 letters. Box 0 (HIDE+[?], (8, 30, 92, 93)) stops at y 123 and misses the lower part of the sign; box 1 (900, (42, 63, 408, 54)) holds only the two top-row circles but runs on over the unit stroke and HIDE+B. Entries 2–6 (40, 1, HIDE+B, 30, 5) have empty coords.* (Drawing: GORILA I (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A, vol. 1, Paris 1976), p. 274, as cropped in lineara.xyz images/MA6a-Facsimile.jpg; boxes from items_image_map.js and imagemaps.js at 9c81beb; © École française d'Athènes)
 
 ![MA6a drawing, proposed boxes](evidence/MA6a-map/MA6a-Facsimile_after.jpg)
 
-*Proposed: 0 HIDE+[?], 1 900 (eight drawn circles), 2 40 (four dots), 3 1 (unit stroke), 4 HIDE+B, 5 30 (three dots), 6 5 (strokes ||| over ||), and the same 7 explorer areas. Each box holds all of its sign's ink with up to 3 px margin and none of a neighbour's.* (Drawing: GORILA I p. 274, as cropped in lineara.xyz images/MA6a-Facsimile.jpg; proposed boxes)
+*Proposed: 0 HIDE+[?], 1 900 (eight drawn circles), 2 40 (four dots), 3 1 (unit stroke), 4 HIDE+B, 5 30 (three dots), 6 5 (strokes ||| over ||), and the same 7 explorer areas. Each box holds all of its sign's ink with up to 3 px margin and none of a neighbour's.* (Drawing: GORILA I p. 274, as cropped in lineara.xyz images/MA6a-Facsimile.jpg; proposed boxes; © École française d'Athènes)
 
 ![GORILA I p. 274, MA 6a drawing](evidence/MA6a-map/MA6a_gorila_I274_drawing.jpg)
 
-*GORILA I p. 274 (PDF p. 310), drawing of MA 6 face a, which lineara's MA6a-Facsimile crops: HIDE+[?] with two ticks at the broken left edge, eight circles in rows of 2/3/3, four dots; on the right-hand fragment a short unit stroke, HIDE+B (upright, top bar, wavy side, cross at the foot), three dots and ||| over ||.* (GORILA I (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A, vol. 1, Paris 1976), p. 274 (PDF p. 310))
+*GORILA I p. 274 (PDF p. 310), drawing of MA 6 face a, which lineara's MA6a-Facsimile crops: HIDE+[?] with two ticks at the broken left edge, eight circles in rows of 2/3/3, four dots; on the right-hand fragment a short unit stroke, HIDE+B (upright, top bar, wavy side, cross at the foot), three dots and ||| over ||.* (GORILA I (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A, vol. 1, Paris 1976), p. 274 (PDF p. 310); © École française d'Athènes)
 
 ![GORILA I p. 275, MA 6a typeset copy and transliteration](evidence/MA6a-map/MA6a_gorila_I275_transliteration.png)
 
-*GORILA I p. 275 (PDF p. 311), MA 6a: typeset 'HIDE+[?] O O[O] [ ]1 / O O O :: / O O O HIDE+B : ||| / : ||' and transliteration '.1 ]HIDE+[?] 941', '.1 HIDE+B 35': the seven signs and their order, as in the record's words and the image map's seven entries.* (GORILA I (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A, vol. 1, Paris 1976), p. 275 (PDF p. 311))
+*GORILA I p. 275 (PDF p. 311), MA 6a: typeset 'HIDE+[?] O O[O] [ ]1 / O O O :: / O O O HIDE+B : ||| / : ||' and transliteration '.1 ]HIDE+[?] 941', '.1 HIDE+B 35': the seven signs and their order, as in the record's words and the image map's seven entries.* (GORILA I (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A, vol. 1, Paris 1976), p. 275 (PDF p. 311); © École française d'Athènes)
 
-![MA6a photo map on master, for comparison](evidence/MA6a-map/MA6a-Inscription_HEAD_reference.jpg)
+![MA6a photo map on master, for comparison](evidence/MA6a-map/MA6a-Inscription_master_reference.jpg)
 
-*Reference, not changed: the site's photo map of the same face on master (9c81beb) (MA6a-Inscription, cropped, 1.4x): seven boxes in the same order and layout (HIDE+[?], 900, 40, 1, HIDE+B, 30, 5) and seven explorer areas equal to them. The proposed drawing map follows it.* (Photo: GORILA I p. 274, as cropped in lineara.xyz images/MA6a-Inscription.jpg; boxes from items_image_map.js (red) and imagemaps.js (blue) at 9c81beb)
+*Reference, not changed: the site's photo map of the same face on master (9c81beb) (MA6a-Inscription, cropped, 1.4x): seven boxes in the same order and layout (HIDE+[?], 900, 40, 1, HIDE+B, 30, 5) and seven explorer areas equal to them. The proposed drawing map follows it.* (Photo: GORILA I p. 274, as cropped in lineara.xyz images/MA6a-Inscription.jpg; boxes from items_image_map.js (red) and imagemaps.js (blue) at 9c81beb; © École française d'Athènes)
 
 ### HT34, HT36 and eight more split records; HT42+59 — item pages and word tags out of date
 
@@ -602,17 +602,17 @@ The erasure splits of #13 (bcfb77a) and 9c81beb's split of \*304+PA changed only
 
 PR #8 (b74138b) corrected HT119 line .1 from VIR+[?] 67 to 68 in `LinearAInscriptions.js` only. Entry 5 of both image maps (`HT119-Inscription`, `HT119-Facsimile`; word 3, the box to the right of the six ten-marks) is still labelled `7`, although it holds eight unit strokes, four over four, in the photo and in the drawing, and `items/HT119.html` still shows word 3 as 60 7 in all four reading blocks, while Younger's table on the same page says 68. GORILA I p. 203 (PDF p. 239) reads `.1 VIR+? 68`, and its apparatus calls 60 with 5 over 4 units (69) 'fort peu vraisemblable'. The map labels and the page come from the notebook's inputs, HT119's tabulation in `items_analysis/supplement.json` and the notebook's own copy of the record, `items_analysis/inscriptions.json`, which supplies the page's line breaks; both still have 67, as do HT119's entry in `annotations.js` and `wordsInCorpus`. This PR relabels entry 5 as `8` in both maps (boxes and word numbers unchanged), changes 67 to 68 (𐄍, U+1010D, to 𐄎, U+1010E, in the glyph fields) in the tabulation (`tabulatedWords` and the first `tabulation` row), in the five text fields of the notebook's copy and in the `annotations.js` entry, counts 68 instead of 67 in `wordsInCorpus`, and regenerates `items/HT119.html`, in which five lines change: one in the page's hidden list of signs and one in each of the four reading blocks.
 
-![HT119 photo, line 1, label on master and proposed](evidence/HT119-label/HT119-Inscription_line1_image_HEAD_proposed.jpg)
+![HT119 photo, line 1, label on master and proposed](evidence/HT119-label/HT119-Inscription_line1_image_master_proposed.jpg)
 
-*HT 119, photo, line 1 at the upper right, enlarged 2.5x. Top: the image without boxes. Middle: the image map on master (9c81beb); entry 5 (green, word 3) is labelled 7. Bottom: the proposed label 8. The box holds two rows of four unit strokes, to the right of the six ten-marks of entry 4 (60).* (lineara.xyz images/HT119-Inscription.jpg, from GORILA I p. 202; boxes from items_image_map.js at 9c81beb and from this PR)
+*HT 119, photo, line 1 at the upper right, enlarged 2.5x. Top: the image without boxes. Middle: the image map on master (9c81beb); entry 5 (green, word 3) is labelled 7. Bottom: the proposed label 8. The box holds two rows of four unit strokes, to the right of the six ten-marks of entry 4 (60).* (lineara.xyz images/HT119-Inscription.jpg, from GORILA I p. 202; boxes from items_image_map.js at 9c81beb and from this PR; © École française d'Athènes)
 
-![HT119 drawing, line 1, label on master and proposed](evidence/HT119-label/HT119-Facsimile_line1_image_HEAD_proposed.jpg)
+![HT119 drawing, line 1, label on master and proposed](evidence/HT119-label/HT119-Facsimile_line1_image_master_proposed.jpg)
 
-*HT 119, drawing, line 1, enlarged 2.5x: image, map on master (9c81beb) with entry 5 labelled 7, proposed map with entry 5 labelled 8. After VIR+[?] come six ten-dashes (60) and then four unit strokes over four (8).* (lineara.xyz images/HT119-Facsimile.jpg, from GORILA I p. 202; boxes from items_image_map.js at 9c81beb and from this PR)
+*HT 119, drawing, line 1, enlarged 2.5x: image, map on master (9c81beb) with entry 5 labelled 7, proposed map with entry 5 labelled 8. After VIR+[?] come six ten-dashes (60) and then four unit strokes over four (8).* (lineara.xyz images/HT119-Facsimile.jpg, from GORILA I p. 202; boxes from items_image_map.js at 9c81beb and from this PR; © École française d'Athènes)
 
 ![GORILA I p. 203, HT 119 line .1, apparatus and word list](evidence/HT119-label/HT119_gorila_I203_line1_apparatus_wordlist.png)
 
-*GORILA I p. 203 (PDF p. 239), HT 119: line .1 of the transcription (\*327 34, VIR+? with six ten-marks and four over four units), the apparatus '.1 [60 and 5 over 4 units] fort peu vraisemblable' (69 is very unlikely), and the word list '.1 VIR 68'.* (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (Études crétoises 21, Paris 1976), p. 203; scan as served at lineara.xyz/papers/GORILA-Vol1.pdf, page 239)
+*GORILA I p. 203 (PDF p. 239), HT 119: line .1 of the transcription (\*327 34, VIR+? with six ten-marks and four over four units), the apparatus '.1 [60 and 5 over 4 units] fort peu vraisemblable' (69 is very unlikely), and the word list '.1 VIR 68'.* (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (Études crétoises 21, Paris 1976), p. 203; scan as served at lineara.xyz/papers/GORILA-Vol1.pdf, page 239; © École française d'Athènes)
 
 ### MA6c — no box for the 3 of 233 on the photo
 
@@ -638,7 +638,7 @@ On the photo `MA6c-Inscription`, the last entry of `items_image_map.js` (`3`, th
 
 *INSCRIBE relief of MA 6, face c, under two raking lights (azimuth 315°, elevation 20° and azimuth 135°, elevation 20° in the render frame), turned 180° to the drawing's orientation; same area as the photo detail. The grooves of the 7 (top) and two grooves of the 3 (bottom) lie one above the other, as in the drawing.* (INSCRIBE 3D model Clay_tablet_MA_6 (INSCRIBE project, ERC, University of Bologna; https://www.inscribercproject.com/Linear_A.php); render made for this PR (labels added))
 
-![MA6c drawing map on master, already right](evidence/MA6c-map/MA6c-Facsimile_HEAD_reference.jpg)
+![MA6c drawing map on master, already right](evidence/MA6c-map/MA6c-Facsimile_master_reference.jpg)
 
 *Reference, not changed: the site's own facsimile map on master (9c81beb) (MA6c-Facsimile) has separate boxes for the 7 (507, 67, 75, 134) and the 3 (517, 195, 81, 77), one above the other, and 9 explorer areas.* (lineara.xyz images/MA6c-Facsimile.jpg (crop of the GORILA I p. 276 drawing, © École française d'Athènes); boxes from items_image_map.js and imagemaps.js at 9c81beb)
 
@@ -648,27 +648,27 @@ The total on the last line of HT9a, KU-RO 31 J/E, is written `= - |`: two stacke
 
 ![HT9a drawing, total, boxes on master](evidence/HT9a-map/HT9a-Facsimile_before.png)
 
-*HT9a-Facsimile, last line, with the image-map boxes on master (9c81beb), 4x. The '30' box (entry 38, green, x 138–173) holds only the two stacked tens; the third ten, which runs into the unit stroke, sits in the '1' box (entry 39, x 188–206). Explorer areas 34 and 35 are the same two boxes.* (lineara.xyz images/HT9a-Facsimile.jpg, a crop of the drawing in GORILA I (Godart & Olivier 1976) p. 18; boxes from items_image_map.js at 9c81beb)
+*HT9a-Facsimile, last line, with the image-map boxes on master (9c81beb), 4x. The '30' box (entry 38, green, x 138–173) holds only the two stacked tens; the third ten, which runs into the unit stroke, sits in the '1' box (entry 39, x 188–206). Explorer areas 34 and 35 are the same two boxes.* (lineara.xyz images/HT9a-Facsimile.jpg, a crop of the drawing in GORILA I (Godart & Olivier 1976) p. 18; boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ![HT9a drawing, total, proposed boxes](evidence/HT9a-map/HT9a-Facsimile_after.png)
 
-*Proposed: '30' (entry 38) at x 138–197 covers all three tens, and '1' (entry 39) at x 192–206 holds the unit stroke; the two boxes overlap a little because the third ten touches the unit. The y values, labels and word numbers are unchanged.* (lineara.xyz images/HT9a-Facsimile.jpg (crop of GORILA I p. 18); proposed boxes)
+*Proposed: '30' (entry 38) at x 138–197 covers all three tens, and '1' (entry 39) at x 192–206 holds the unit stroke; the two boxes overlap a little because the third ten touches the unit. The y values, labels and word numbers are unchanged.* (lineara.xyz images/HT9a-Facsimile.jpg (crop of GORILA I p. 18); proposed boxes; © École française d'Athènes)
 
 ![HT9a photo, total, boxes on master](evidence/HT9a-map/HT9a-Inscription_before.jpg)
 
-*HT9a-Inscription (photo), last line, with the boxes on master (9c81beb), 4x. The '30' box (entry 38, x 225–265) ends before the third ten; the '1' box (entry 39, x 268–290) takes in the third ten's junction with the unit stem.* (lineara.xyz images/HT9a-Inscription.jpg, a crop of the photograph in GORILA I p. 18; boxes from items_image_map.js at 9c81beb)
+*HT9a-Inscription (photo), last line, with the boxes on master (9c81beb), 4x. The '30' box (entry 38, x 225–265) ends before the third ten; the '1' box (entry 39, x 268–290) takes in the third ten's junction with the unit stem.* (lineara.xyz images/HT9a-Inscription.jpg, a crop of the photograph in GORILA I p. 18; boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ![HT9a photo, total, proposed boxes](evidence/HT9a-map/HT9a-Inscription_after.jpg)
 
-*Proposed: '30' (entry 38) at x 225–281 and '1' (entry 39) at x 276–290 on the unit stem; explorer areas 34 and 35 change in the same way.* (lineara.xyz images/HT9a-Inscription.jpg (crop of the GORILA I p. 18 photograph); proposed boxes)
+*Proposed: '30' (entry 38) at x 225–281 and '1' (entry 39) at x 276–290 on the unit stem; explorer areas 34 and 35 change in the same way.* (lineara.xyz images/HT9a-Inscription.jpg (crop of the GORILA I p. 18 photograph); proposed boxes; © École française d'Athènes)
 
 ![HT9a total, photo and drawing at 8x](evidence/HT9a-map/HT9a-Inscription_vs_Facsimile_total_8x.jpg)
 
-*The total at 8x. Left, the photo (x 222–298, y 436–484, contrast stretched); right, the drawing (x 140–216, y 370–418). In the drawing the third ten runs into the unit stroke at about x 199–203. In the photo the third ten is faint, but a short stroke joins the unit stem from the left at about x 276–282, y 448–455: the Y-shaped mark that the '1' box on master encloses.* (lineara.xyz images/HT9a-Inscription.jpg and images/HT9a-Facsimile.jpg (crops of GORILA I p. 18))
+*The total at 8x. Left, the photo (x 222–298, y 436–484, contrast stretched); right, the drawing (x 140–216, y 370–418). In the drawing the third ten runs into the unit stroke at about x 199–203. In the photo the third ten is faint, but a short stroke joins the unit stem from the left at about x 276–282, y 448–455: the Y-shaped mark that the '1' box on master encloses.* (lineara.xyz images/HT9a-Inscription.jpg and images/HT9a-Facsimile.jpg (crops of GORILA I p. 18); © École française d'Athènes)
 
 ![GORILA I pp. 18-19, HT 9a line .6](evidence/HT9a-map/HT9a_gorila_I18-19_line6.jpg)
 
-*GORILA I p. 18 (PDF p. 54), drawing, line .6: KU-RO, two stacked tens, a third ten joined to the unit, then J/E. GORILA I p. 19 (PDF p. 55): transcription '.6 ... KU-RO = - | J/E'; apparatus '.6 =-| : | ajouté après J/E' (the unit stroke was added after the fraction); normalised text '.6 KU-RO 31 J/E'.* (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (Paris 1976), pp. 18–19, from the PDF that lineara.xyz serves (papers/GORILA-Vol1.pdf))
+*GORILA I p. 18 (PDF p. 54), drawing, line .6: KU-RO, two stacked tens, a third ten joined to the unit, then J/E. GORILA I p. 19 (PDF p. 55): transcription '.6 ... KU-RO = - | J/E'; apparatus '.6 =-| : | ajouté après J/E' (the unit stroke was added after the fraction); normalised text '.6 KU-RO 31 J/E'.* (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (Paris 1976), pp. 18–19, from the PDF that lineara.xyz serves (papers/GORILA-Vol1.pdf); © École française d'Athènes)
 
 ### HT94a — boxes take in erased strokes
 
@@ -676,15 +676,15 @@ GORILA I p. 151 (PDF p. 187) ends line .1 of HT94a with `*86`, an erased, underd
 
 ![GORILA I pp. 150-151, HT 94a drawing and transcription](evidence/HT94a-map/HT94a_gorila_I150-151.png)
 
-*GORILA I p. 150 (PDF p. 186), drawing, top right: three dashes in the '20' column (the top one is GORILA's erased, underdotted ten) and three pairs of strokes at the right edge, the top pair level with line .1 and two pairs beside TA. GORILA I p. 151 (PDF p. 187), transcription: line .1 ends '\*86 [[10?]] over =' then '[[II]]'; line .2 ends 'TA ::' (2 over 2 = 4). Normalised text: '\*86 20', 'TA 4'.* (GORILA I (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A, vol. 1, 1976), pp. 150–151, from the copy served at lineara.xyz/papers/GORILA-Vol1.pdf)
+*GORILA I p. 150 (PDF p. 186), drawing, top right: three dashes in the '20' column (the top one is GORILA's erased, underdotted ten) and three pairs of strokes at the right edge, the top pair level with line .1 and two pairs beside TA. GORILA I p. 151 (PDF p. 187), transcription: line .1 ends '\*86 [[10?]] over =' then '[[II]]'; line .2 ends 'TA ::' (2 over 2 = 4). Normalised text: '\*86 20', 'TA 4'.* (GORILA I (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A, vol. 1, 1976), pp. 150–151, from the copy served at lineara.xyz/papers/GORILA-Vol1.pdf; © École française d'Athènes)
 
 ![HT94a drawing, boxes on master and proposed](evidence/HT94a-map/HT94a-Facsimile_before_after.png)
 
-*images/HT94a-Facsimile.jpg, end of lines .1–.2, magnified x4. Left, master (9c81beb): box 13 '4' (word 10) runs from y 45 and holds three pairs of strokes (six strokes); box 6 '20' (word 4) runs from y 22 and holds three dashes, the top one the erased ten. Right, proposed: box 13 from y 66 (the two pairs beside TA), box 6 from y 40 (the two live dashes); x, width and bottom edges unchanged.* (lineara.xyz images/HT94a-Facsimile.jpg (crop of the GORILA I p. 150 drawing); boxes from items_image_map.js at 9c81beb and from this PR)
+*images/HT94a-Facsimile.jpg, end of lines .1–.2, magnified x4. Left, master (9c81beb): box 13 '4' (word 10) runs from y 45 and holds three pairs of strokes (six strokes); box 6 '20' (word 4) runs from y 22 and holds three dashes, the top one the erased ten. Right, proposed: box 13 from y 66 (the two pairs beside TA), box 6 from y 40 (the two live dashes); x, width and bottom edges unchanged.* (lineara.xyz images/HT94a-Facsimile.jpg (crop of the GORILA I p. 150 drawing); boxes from items_image_map.js at 9c81beb and from this PR; © École française d'Athènes)
 
 ![HT94a photo, boxes on master and proposed](evidence/HT94a-map/HT94a-Inscription_before_after.jpg)
 
-*images/HT94a-Inscription.jpg, end of lines .1–.2, magnified x4. Left, master (9c81beb): box 13 '4' (word 10) runs from y 33 and includes the top pair of strokes (y about 35–52, level with the 20 of line .1). Right, proposed: box 13 from y 56, holding the two pairs beside TA (y about 59–80 and 83–103); x, width and bottom edge unchanged. Box 12 'TA' is shown in blue for orientation.* (lineara.xyz images/HT94a-Inscription.jpg (crop of the GORILA I p. 150 photograph); boxes from items_image_map.js at 9c81beb and from this PR)
+*images/HT94a-Inscription.jpg, end of lines .1–.2, magnified x4. Left, master (9c81beb): box 13 '4' (word 10) runs from y 33 and includes the top pair of strokes (y about 35–52, level with the 20 of line .1). Right, proposed: box 13 from y 56, holding the two pairs beside TA (y about 59–80 and 83–103); x, width and bottom edge unchanged. Box 12 'TA' is shown in blue for orientation.* (lineara.xyz images/HT94a-Inscription.jpg (crop of the GORILA I p. 150 photograph); boxes from items_image_map.js at 9c81beb and from this PR; © École française d'Athènes)
 
 ### TY3b — OLE+NE 2 and the ruling boxed on the wrong line
 
@@ -692,23 +692,23 @@ On the photo `TY3b-Inscription`, entries 14 (OLE+NE, word 9) and 15 (2, word 10)
 
 ![TY3b photo, boxes on master](evidence/TY3b-map/TY3b-Inscription_before.jpg)
 
-*TY3b photo with the image map on master (9c81beb) (green: entry 14 OLE+NE, 15 '2', 16 the ruling under .3). OLE+NE and 2 sit at the right end of line .2, after OLE+MI 11, and the ruling box lies between lines .2 and .3, on top of line .3.* (Photograph: GORILA I p. 328 (Godart & Olivier 1976), as cropped by lineara.xyz (images/TY3b-Inscription.jpg); boxes from items_image_map.js at 9c81beb)
+*TY3b photo with the image map on master (9c81beb) (green: entry 14 OLE+NE, 15 '2', 16 the ruling under .3). OLE+NE and 2 sit at the right end of line .2, after OLE+MI 11, and the ruling box lies between lines .2 and .3, on top of line .3.* (Photograph: GORILA I p. 328 (Godart & Olivier 1976), as cropped by lineara.xyz (images/TY3b-Inscription.jpg); boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ![TY3b photo, proposed boxes](evidence/TY3b-map/TY3b-Inscription_after.jpg)
 
-*Proposed: OLE+NE (22, 169, 61, 98) and 2 (78, 186, 44, 56) at the start of line .3 under PI, and the ruling (27, 236, 531, 26) just below them. Only entries 14–16 and explorer areas 14–16 move; labels and word numbers stay the same (the ruling's label '10' becomes '—' with the ruling change).* (Photograph: GORILA I p. 328 (Godart & Olivier 1976), as cropped by lineara.xyz (images/TY3b-Inscription.jpg); proposed boxes)
+*Proposed: OLE+NE (22, 169, 61, 98) and 2 (78, 186, 44, 56) at the start of line .3 under PI, and the ruling (27, 236, 531, 26) just below them. Only entries 14–16 and explorer areas 14–16 move; labels and word numbers stay the same (the ruling's label '10' becomes '—' with the ruling change).* (Photograph: GORILA I p. 328 (Godart & Olivier 1976), as cropped by lineara.xyz (images/TY3b-Inscription.jpg); proposed boxes; © École française d'Athènes)
 
-![TY3b drawing map on master, already right](evidence/TY3b-map/TY3b-Facsimile_HEAD_map.jpg)
+![TY3b drawing map on master, already right](evidence/TY3b-map/TY3b-Facsimile_master_map.jpg)
 
-*Reference, not changed: the site's drawing map on master (9c81beb) (TY3b-Facsimile). Entries 14–16 already sit at the start of line .3 under PI, with the ruling below them, and the traces at the right end of line .2 have no box. The proposed photo boxes are these drawing boxes transferred to the photo.* (Drawing: GORILA I p. 328 (Godart & Olivier 1976), as cropped by lineara.xyz (images/TY3b-Facsimile.jpg); boxes from items_image_map.js at 9c81beb)
+*Reference, not changed: the site's drawing map on master (9c81beb) (TY3b-Facsimile). Entries 14–16 already sit at the start of line .3 under PI, with the ruling below them, and the traces at the right end of line .2 have no box. The proposed photo boxes are these drawing boxes transferred to the photo.* (Drawing: GORILA I p. 328 (Godart & Olivier 1976), as cropped by lineara.xyz (images/TY3b-Facsimile.jpg); boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ![GORILA I p. 329, TY 3b transcription and apparatus](evidence/TY3b-map/TY3b_gorila_I329_transcription_apparatus.jpg)
 
-*GORILA I p. 329 (PDF p. 365), TY 3b: .2 PI KU ZU OLE+KI 4 OLE+MI 11[ ; .3 OLE+NE 2[ ] vacat, with the second ruling under .3. The apparatus says '.2 Traces à droite, non incompatibles avec [ideogram] suivi de chiffres', so the traces at the right end of .2 are left unread. Below, the normalised column on the same page: .3 OLE+NE 2[ ] above the ruling.* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (1976), p. 329; the copy at lineara.xyz/papers/GORILA-Vol1.pdf)
+*GORILA I p. 329 (PDF p. 365), TY 3b: .2 PI KU ZU OLE+KI 4 OLE+MI 11[ ; .3 OLE+NE 2[ ] vacat, with the second ruling under .3. The apparatus says '.2 Traces à droite, non incompatibles avec [ideogram] suivi de chiffres', so the traces at the right end of .2 are left unread. Below, the normalised column on the same page: .3 OLE+NE 2[ ] above the ruling.* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) I (1976), p. 329; the copy at lineara.xyz/papers/GORILA-Vol1.pdf; © École française d'Athènes)
 
-![TY3b, right end of line .2, drawing and photo](evidence/TY3b-map/TY3b_line2_end_drawing_vs_photo_HEAD.jpg)
+![TY3b, right end of line .2, drawing and photo](evidence/TY3b-map/TY3b_line2_end_drawing_vs_photo_master.jpg)
 
-*Right end of line .2 at the same scale. Left: the drawing, which shows the unread traces after OLE+MI 11 and has no box on them. Right: the contrast-stretched photo, where entries 14 (OLE+NE) and 15 (2) on master (green) sit on those traces, with the ruling box 16 below them. Blue ticks give pixel coordinates in each image.* (GORILA I p. 328 (Godart & Olivier 1976) via lineara.xyz images/TY3b-Facsimile.jpg and images/TY3b-Inscription.jpg; boxes from items_image_map.js at 9c81beb)
+*Right end of line .2 at the same scale. Left: the drawing, which shows the unread traces after OLE+MI 11 and has no box on them. Right: the contrast-stretched photo, where entries 14 (OLE+NE) and 15 (2) on master (green) sit on those traces, with the ruling box 16 below them. Blue ticks give pixel coordinates in each image.* (GORILA I p. 328 (Godart & Olivier 1976) via lineara.xyz images/TY3b-Facsimile.jpg and images/TY3b-Inscription.jpg; boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ### PKZa11 — I and NA boxes one sign too far left
 
@@ -716,23 +716,23 @@ On the photo `PKZa11-Inscription`, line 4 (GORILA's side d), entry 47 `I` of `it
 
 ![PKZa11 photo, line 4, boxes on master](evidence/PKZa11-map/PKZa11-Inscription_line4_before.jpg)
 
-*Master (9c81beb): PKZa11-Inscription.jpg, line 4 (side d), x 300–903, y 1240–1445, scaled 1.5x. Entries 47 I and 48 NA (green) are one sign too far left: 47 I covers the damaged traces between SI-RU and I-NA-JA-PA-QA, and 48 NA covers the I sign (the trident); the NA sign is not boxed. Explorer areas 37 and 38 carry the same coordinates.* (Photograph from GORILA IV p. 33 (PK Za 11 d), as cropped by lineara.xyz (images/PKZa11-Inscription.jpg); boxes from items_image_map.js at 9c81beb)
+*Master (9c81beb): PKZa11-Inscription.jpg, line 4 (side d), x 300–903, y 1240–1445, scaled 1.5x. Entries 47 I and 48 NA (green) are one sign too far left: 47 I covers the damaged traces between SI-RU and I-NA-JA-PA-QA, and 48 NA covers the I sign (the trident); the NA sign is not boxed. Explorer areas 37 and 38 carry the same coordinates.* (Photograph from GORILA IV p. 33 (PK Za 11 d), as cropped by lineara.xyz (images/PKZa11-Inscription.jpg); boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ![PKZa11 photo, line 4, proposed boxes](evidence/PKZa11-map/PKZa11-Inscription_line4_after.jpg)
 
-*Proposed, same crop: entry 47 I = (562, 1281, 64, 128) on the trident and entry 48 NA = (628, 1281, 50, 128) on the NA sign. The traces before the word stay unboxed, as on the drawing map; explorer areas 37 and 38 get the same coordinates.* (Photograph from GORILA IV p. 33 (PK Za 11 d), as cropped by lineara.xyz (images/PKZa11-Inscription.jpg); proposed boxes)
+*Proposed, same crop: entry 47 I = (562, 1281, 64, 128) on the trident and entry 48 NA = (628, 1281, 50, 128) on the NA sign. The traces before the word stay unboxed, as on the drawing map; explorer areas 37 and 38 get the same coordinates.* (Photograph from GORILA IV p. 33 (PK Za 11 d), as cropped by lineara.xyz (images/PKZa11-Inscription.jpg); proposed boxes; © École française d'Athènes)
 
-![PKZa11 line 4, photo raw and boxed, and the drawing](evidence/PKZa11-map/PKZa11_line4_photo_raw_HEAD_and_drawing.jpg)
+![PKZa11 line 4, photo raw and boxed, and the drawing](evidence/PKZa11-map/PKZa11_line4_photo_raw_master_and_drawing.jpg)
 
-*Line 4 of PK Za 11, top to bottom: the photo without boxes (x ticks in image pixels), the photo with its boxes on master (9c81beb), and the drawing PKZa11-Facsimile.jpg with its boxes on master, which are right. The drawing reads SI, RU, traces, I (trident), NA, JA, PA, QA; on the photo, the I and NA boxes start one sign early.* (Photograph and drawing from GORILA IV pp. 32–33 (PK Za 11), as cropped by lineara.xyz (images/PKZa11-Inscription.jpg, images/PKZa11-Facsimile.jpg); boxes from items_image_map.js at 9c81beb)
+*Line 4 of PK Za 11, top to bottom: the photo without boxes (x ticks in image pixels), the photo with its boxes on master (9c81beb), and the drawing PKZa11-Facsimile.jpg with its boxes on master, which are right. The drawing reads SI, RU, traces, I (trident), NA, JA, PA, QA; on the photo, the I and NA boxes start one sign early.* (Photograph and drawing from GORILA IV pp. 32–33 (PK Za 11), as cropped by lineara.xyz (images/PKZa11-Inscription.jpg, images/PKZa11-Facsimile.jpg); boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
-![PKZa11 photo, zoom on I and NA](evidence/PKZa11-map/PKZa11-Inscription_I_NA_zoom_raw_HEAD.jpg)
+![PKZa11 photo, zoom on I and NA](evidence/PKZa11-map/PKZa11-Inscription_I_NA_zoom_raw_master.jpg)
 
-*Zoom on the photo, x 470–700, y 1275–1425, scaled 2.5x. Top: no boxes; the trident-shaped I is at x 583–611 and the faint NA stroke at x 645–665, and the strokes at x 490–550 are the damaged traces. Bottom: on master (9c81beb), 47 I (x 482–570) sits on the traces and 48 NA (x 554–644) on the I.* (Photograph from GORILA IV p. 33 (PK Za 11 d), as cropped by lineara.xyz (images/PKZa11-Inscription.jpg); boxes from items_image_map.js at 9c81beb)
+*Zoom on the photo, x 470–700, y 1275–1425, scaled 2.5x. Top: no boxes; the trident-shaped I is at x 583–611 and the faint NA stroke at x 645–665, and the strokes at x 490–550 are the damaged traces. Bottom: on master (9c81beb), 47 I (x 482–570) sits on the traces and 48 NA (x 554–644) on the I.* (Photograph from GORILA IV p. 33 (PK Za 11 d), as cropped by lineara.xyz (images/PKZa11-Inscription.jpg); boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ![GORILA IV p. 33, PK Za 11 d, photo and drawing](evidence/PKZa11-map/PKZa11d_gorila_IV_p33_photo_drawing.jpg)
 
-*GORILA IV p. 33 (PDF p. 76), PK Za 11 side d, right part of the photograph and of the drawing, from the 150 dpi page scan, scaled 1.5x. Both show the order SI, RU, traces, I, NA, JA, PA, QA. This is line 4 on the site.* (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) IV, Études crétoises XXI.4, Paris 1982, p. 33 (scan served at lineara.xyz/papers/GORILA-Vol4.pdf, PDF p. 76))
+*GORILA IV p. 33 (PDF p. 76), PK Za 11 side d, right part of the photograph and of the drawing, from the 150 dpi page scan, scaled 1.5x. Both show the order SI, RU, traces, I, NA, JA, PA, QA. This is line 4 on the site.* (L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) IV, Études crétoises XXI.4, Paris 1982, p. 33 (scan served at lineara.xyz/papers/GORILA-Vol4.pdf, PDF p. 76); © École française d'Athènes)
 
 ### TY2 — KI and PU swapped, RI and JU misplaced on the photo
 
@@ -740,23 +740,23 @@ On the photo `TY2-Inscription`, three groups written around the vessel sign \*30
 
 ![TY2, the three vessel groups: drawing, master, proposed](evidence/TY2-map/TY2_groups_drawing_before_after.jpg)
 
-*TY 2, the three \*309 groups (lines .2, .5, .6), 3x. Left: GORILA's drawing with the site's TY2-Facsimile boxes, which are right. Middle: the photo with the TY2-Inscription boxes on master (9c81beb), in red: in .2, KI and PU are swapped; in .5 and .6, the box labelled RI covers the hatched crescent JU, and the JU box sits on the corner of WA or on damage. Right: the proposed boxes (green): KI above PU, JU on the crescent, RI on the hook above the vessel as in the drawing.* (GORILA I p. 324 (PDF p. 360; L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A I, 1976), as cropped by lineara.xyz (images/TY2-Facsimile.jpg, images/TY2-Inscription.jpg); boxes from items_image_map.js at 9c81beb and from this PR)
+*TY 2, the three \*309 groups (lines .2, .5, .6), 3x. Left: GORILA's drawing with the site's TY2-Facsimile boxes, which are right. Middle: the photo with the TY2-Inscription boxes on master (9c81beb), in red: in .2, KI and PU are swapped; in .5 and .6, the box labelled RI covers the hatched crescent JU, and the JU box sits on the corner of WA or on damage. Right: the proposed boxes (green): KI above PU, JU on the crescent, RI on the hook above the vessel as in the drawing.* (GORILA I p. 324 (PDF p. 360; L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A I, 1976), as cropped by lineara.xyz (images/TY2-Facsimile.jpg, images/TY2-Inscription.jpg); boxes from items_image_map.js at 9c81beb and from this PR; © École française d'Athènes)
 
 ![GORILA's TY 2 drawing registered onto the photo](evidence/TY2-map/TY2_photo_with_GORILA_drawing_ink_registered.jpg)
 
-*GORILA's drawing warped onto the photo and shown as red ink, using an affine fit on the centres of 43 undisputed box pairs (rms 7.5 px). Line .2: the Pi-shaped PU lies on the arch at the lower right, with the fan-shaped KI above it. Lines .5 and .6: the JU ink lies on the hatched crescent, below WA and to the right of \*309B; the RI hook lies on top of the vessel, where the photo is barely legible.* (GORILA I p. 324 (PDF p. 360; L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A I, 1976), as cropped by lineara.xyz; registration and overlay made for this PR)
+*GORILA's drawing warped onto the photo and shown as red ink, using an affine fit on the centres of 43 undisputed box pairs (rms 7.5 px). Line .2: the Pi-shaped PU lies on the arch at the lower right, with the fan-shaped KI above it. Lines .5 and .6: the JU ink lies on the hatched crescent, below WA and to the right of \*309B; the RI hook lies on top of the vessel, where the photo is barely legible.* (GORILA I p. 324 (PDF p. 360; L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A I, 1976), as cropped by lineara.xyz; registration and overlay made for this PR; © École française d'Athènes)
 
 ![GORILA I p. 325, TY 2 hand copy, lines .2-.6](evidence/TY2-map/TY2_gorila_I325_handcopy_lines2-6.jpg)
 
-*GORILA I p. 325 (PDF p. 361), the editors' hand copy of TY 2, lines .2–.6. Line .2: KI (fan) above PU, beside \*309b. Line .5: a hook on top of \*309, WA to its right and JU (hook plus hatched crescent) below WA. Line .6: JU to the right of \*309b.* (GORILA I p. 325 (L. Godart and J.-P. Olivier 1976), from the copy served at https://lineara.xyz/papers/GORILA-Vol1.pdf (page 361))
+*GORILA I p. 325 (PDF p. 361), the editors' hand copy of TY 2, lines .2–.6. Line .2: KI (fan) above PU, beside \*309b. Line .5: a hook on top of \*309, WA to its right and JU (hook plus hatched crescent) below WA. Line .6: JU to the right of \*309b.* (GORILA I p. 325 (L. Godart and J.-P. Olivier 1976), from the copy served at https://lineara.xyz/papers/GORILA-Vol1.pdf (page 361); © École française d'Athènes)
 
 ![TY2 reference signs, drawing and photo](evidence/TY2-map/TY2_reference_signs_drawing_photo.jpg)
 
-*Undisputed instances of the same signs on TY 2, each as a drawing crop with the site's facsimile box beside a photo crop: PU #2 (Pi shape), KI #21 (fan), RI #24 (hook on the vessel), JU #20, #25 and #33 (hook plus hatched crescent).* (GORILA I p. 324 (PDF p. 360; L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A I, 1976), as cropped by lineara.xyz; boxes from items_image_map.js at 9c81beb)
+*Undisputed instances of the same signs on TY 2, each as a drawing crop with the site's facsimile box beside a photo crop: PU #2 (Pi shape), KI #21 (fan), RI #24 (hook on the vessel), JU #20, #25 and #33 (hook plus hatched crescent).* (GORILA I p. 324 (PDF p. 360; L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A I, 1976), as cropped by lineara.xyz; boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ![TY2 photo, lines .2-.6, all boxes on master and proposed](evidence/TY2-map/TY2-Inscription_before_after_overlay.jpg)
 
-*TY2-Inscription, lines .2–.6, with all boxes: master (9c81beb) on the left and proposed on the right. The six changed entries (9, 10, 41, 43, 47, 48) are in green.* (GORILA I p. 324 (PDF p. 360; L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A I, 1976), as cropped by lineara.xyz (images/TY2-Inscription.jpg); boxes from items_image_map.js at 9c81beb and from this PR)
+*TY2-Inscription, lines .2–.6, with all boxes: master (9c81beb) on the left and proposed on the right. The six changed entries (9, 10, 41, 43, 47, 48) are in green.* (GORILA I p. 324 (PDF p. 360; L. Godart and J.-P. Olivier, Recueil des inscriptions en linéaire A I, 1976), as cropped by lineara.xyz (images/TY2-Inscription.jpg); boxes from items_image_map.js at 9c81beb and from this PR; © École française d'Athènes)
 
 ### HT70 — last drawing boxes one sign off
 
@@ -798,25 +798,25 @@ On the drawing `KH7a-Facsimile`, `items_image_map.js` gives the stacked J-over-E
 
 *GORILA III p. 29 (PDF p. 54), KH 7a lines .4–.6: line .5 ends '1 JE L2[' with J written over E in one sign position; line .6 reads ']B L6'.* (L. Godart & J.-P. Olivier, Recueil des inscriptions en linéaire A (GORILA) III (1976), p. 29, © École française d'Athènes; PDF as served by lineara.xyz (papers/GORILA-Vol3.pdf))
 
-![KH7a photo map on master, already right](evidence/KH7a-map/KH7a-Inscription_HEAD_photo_map_correct.jpg)
+![KH7a photo map on master, already right](evidence/KH7a-map/KH7a-Inscription_master_photo_map_correct.jpg)
 
 *Reference, not changed: the photo map on master (9c81beb) (KH7a-Inscription) has one box per sign in the right order: 45 '³⁄₄' on J/E and 46 'L2' at the end of line .5, then 47 '¹⁄₃' and 48 'cum𐙕' on line .6.* (Photo: GORILA III p. 28 (Godart & Olivier 1976, © École française d'Athènes), as served by lineara.xyz (images/KH7a-Inscription.jpg); boxes from items_image_map.js at 9c81beb)
 
 ### TLZa1 — side-c boxes one sign out of step
 
-In `TLZa1-Facsimile` the entries labelled NA, MA, SI and RU (23–26) sit on a trace, NA, MA and SI, and the RU trace has no box; in `TLZa1-Inscription` the box on the side-c NA is the entry of the side-b NA (21, word 6), the boxes on MA, SI and RU are labelled SI, NA and MA, entries 25 (SI) and 26 (RU) have no box, and the explorer has 22 areas for 26 letters. GORILA IV p. 59 (PDF p. 102) reads side b as `...U-NA-KA-NA-SI[` and side c as `]-NA-MA-SI-RU[`, and its drawing on p. 58 (PDF p. 101) shows, up the left rim from the damaged tip, a trace, NA, MA, SI and a curved trace of RU. This PR moves the four entries onto their own signs in both maps, keeping labels and word numbers (entry 25, SI, stays word 7, as on the item page, so on the item page this SI lights up with word 7, while the explorer, which pairs areas with the letters of `words`, lights it with SI-RU-TE): on the drawing, RU takes the box of explorer area e24 and the box on the trace is dropped; on the photo, the side-b NA and the SI at the tip, not clearly visible there, get no box. The photo explorer gets the facsimile explorer's areas for the end of side b, the restored I and PI at the tip and the restored TE, shifted by (+52, +44) px, so that its 26 areas pair with the 26 letters. Left to the maintainer: word 6 reads U-NA-KA-NA, while GORILA, Younger (`[SI`) and the record's parsedInscription end it in SI; adding it would need a 27th explorer area in the lacuna.
+In `TLZa1-Facsimile` the entries labelled NA, MA, SI and RU (23–26) sit on a trace, NA, MA and SI, and the RU trace has no box; in `TLZa1-Inscription` the box on the side-c NA is the entry of the side-b NA (21, word 6), the boxes on MA, SI and RU are labelled SI, NA and MA, entries 25 (SI) and 26 (RU) have no box, and the explorer has 22 areas for 26 letters. GORILA IV p. 59 (PDF p. 102) reads side b as `...U-NA-KA-NA-SI[` and side c as `]-NA-MA-SI-RU[`, and its drawing on p. 58 (PDF p. 101) shows, up the left rim from the damaged tip, a trace, NA, MA, SI and a curved trace of RU. This PR moves the four entries onto their own signs in both maps, keeping labels and word numbers (entry 25, SI, stays word 7, as on the item page, so on the item page this SI lights up with word 7, while the explorer, which pairs areas with the letters of `words`, lights it with SI-RU-TE): on the drawing, RU takes the box of explorer area e24 and the box on the trace is dropped; on the photo, the side-b NA and the SI at the tip, not clearly visible there, get no box. On the photo the end of side b, the restored I and PI at the tip and the restored TE are not visible, so the photo explorer gets zero-size placeholder areas at their places (the facsimile explorer's areas moved by (+52, +44) px), so that its 26 areas pair with the 26 letters without boxing blank clay. Left to the maintainer: word 6 reads U-NA-KA-NA, while GORILA, Younger (`[SI`) and the record's parsedInscription end it in SI; adding it would need a 27th explorer area in the lacuna.
 
 ![GORILA IV p. 59, TL Za 1 sides b and c](evidence/TLZa1-map/TLZa1_gorila_IV59_lines_b-c.jpg)
 
-*GORILA IV p. 59 (PDF p. 102), sides b–c: side b ends U-NA-KA-NA-SI[ with the last NA and SI underdotted; side c reads ]-NA-MA-SI-RU[ with RU underdotted.* (L. Godart and J.-P. Olivier, GORILA IV (1982), p. 59; scan as served by lineara.xyz (papers/GORILA-Vol4.pdf), rendered at 200 dpi)
+*GORILA IV p. 59 (PDF p. 102), sides b–c: side b ends U-NA-KA-NA-SI[ with the last NA and SI underdotted; side c reads ]-NA-MA-SI-RU[ with RU underdotted.* (L. Godart and J.-P. Olivier, GORILA IV (1982), p. 59; scan as served by lineara.xyz (papers/GORILA-Vol4.pdf), rendered at 200 dpi; © École française d'Athènes)
 
 ![GORILA IV p. 58, TL Za 1 drawing, lower rim](evidence/TLZa1-map/TLZa1_gorila_IV58_drawing_lower_rim.png)
 
-*GORILA IV p. 58 (PDF p. 101), drawing of the lower rim at 400 dpi. Side b runs down the right rim (KA, then strokes at the edge of the damaged, stippled tip). Side c runs up the left rim: a trace, NA, MA (the cat's-head sign), SI, and a small curved trace of RU where the lacuna begins.* (L. Godart and J.-P. Olivier, GORILA IV (1982), p. 58; scan as served by lineara.xyz (papers/GORILA-Vol4.pdf))
+*GORILA IV p. 58 (PDF p. 101), drawing of the lower rim at 400 dpi. Side b runs down the right rim (KA, then strokes at the edge of the damaged, stippled tip). Side c runs up the left rim: a trace, NA, MA (the cat's-head sign), SI, and a small curved trace of RU where the lacuna begins.* (L. Godart and J.-P. Olivier, GORILA IV (1982), p. 58; scan as served by lineara.xyz (papers/GORILA-Vol4.pdf); © École française d'Athènes)
 
 ![TLZa1 drawing, lower rim, boxes on master](evidence/TLZa1-map/TLZa1-Facsimile_before.jpg)
 
-*Master (9c81beb), TLZa1-Facsimile, lower rim (2.5x): box 23 'NA' sits on the trace, 24 'MA' on NA, 25 'SI' on MA and 26 'RU' on SI; the RU trace has no box.* (lineara.xyz images/TLZa1-Facsimile.jpg (crop of the GORILA IV p. 58 drawing); boxes from items_image_map.js at 9c81beb)
+*Master (9c81beb), TLZa1-Facsimile, lower rim (2.5x): box 23 'NA' sits on the trace, 24 'MA' on NA, 25 'SI' on MA and 26 'RU' on SI; the RU trace has no box.* (lineara.xyz images/TLZa1-Facsimile.jpg (crop of the GORILA IV p. 58 drawing); boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ![TLZa1 drawing, lower rim, proposed boxes](evidence/TLZa1-map/TLZa1-Facsimile_after.jpg)
 
@@ -824,11 +824,11 @@ In `TLZa1-Facsimile` the entries labelled NA, MA, SI and RU (23–26) sit on a t
 
 ![TLZa1 photo, lower rim, boxes on master](evidence/TLZa1-map/TLZa1-Inscription_before.jpg)
 
-*Master (9c81beb), TLZa1-Inscription (photo), lower rim (2.5x); blue = explorer areas with the letter and word each one pairs with. The side-c NA carries the entry of the side-b NA (21, word 6); MA is labelled SI, SI is labelled NA and RU is labelled MA (word 7). Entries 25 (SI) and 26 (RU) have no box, and explorer e19–e21 pair MA, SI and RU with I, PI and NA.* (lineara.xyz images/TLZa1-Inscription.jpg (crop of the GORILA IV p. 58 photograph); boxes from items_image_map.js and imagemaps.js at 9c81beb)
+*Master (9c81beb), TLZa1-Inscription (photo), lower rim (2.5x); blue = explorer areas with the letter and word each one pairs with. The side-c NA carries the entry of the side-b NA (21, word 6); MA is labelled SI, SI is labelled NA and RU is labelled MA (word 7). Entries 25 (SI) and 26 (RU) have no box, and explorer e19–e21 pair MA, SI and RU with I, PI and NA.* (lineara.xyz images/TLZa1-Inscription.jpg (crop of the GORILA IV p. 58 photograph); boxes from items_image_map.js and imagemaps.js at 9c81beb; © École française d'Athènes)
 
 ![TLZa1 photo, lower rim, proposed boxes and areas](evidence/TLZa1-map/TLZa1-Inscription_after.jpg)
 
-*Proposed TLZa1-Inscription map and explorer: map boxes NA, MA, SI and RU each on their own sign; entries 21 and 22 at the tip have no box. The explorer gets 26 areas for 26 letters: e18–e20 (end of side b; the restored I and PI at the tip) and e25 (the restored TE) are copied from the facsimile explorer and shifted by the drawing-to-photo offset (+52, +44).* (lineara.xyz images/TLZa1-Inscription.jpg; proposed boxes and areas)
+*This PR, TLZa1-Inscription map and explorer: the map boxes NA, MA, SI and RU each sit on their own sign; entries 21 and 22 at the tip have no box. The explorer has 26 areas for the 26 letters: e18–e20 (end of side b; the restored I and PI at the tip) and e25 (the restored TE) are zero-size placeholders, as these signs are not visible on the photo.* (lineara.xyz picture from GORILA IV; boxes and areas drawn for this document; © École française d'Athènes)
 
 ### KH9 — no box for the final 1 on the drawing
 
@@ -836,23 +836,23 @@ On the drawing `KH9-Facsimile`, entry 27 of `items_image_map.js` (word 19, the n
 
 ![KH9 drawing, line .6, boxes on master](evidence/KH9-map/KH9-Facsimile_before.png)
 
-*KH9-Facsimile on master (9c81beb), line .6: \*304 is boxed (entry 26), but the short stroke to its right, the numeral 1 (entry 27, word 19), has coords {} and no box. The explorer has 25 areas for the drawing's 26 letters.* (Drawing from GORILA III p. 34 (Godart & Olivier), as served by lineara.xyz (images/KH9-Facsimile.jpg); boxes from items_image_map.js at 9c81beb)
+*KH9-Facsimile on master (9c81beb), line .6: \*304 is boxed (entry 26), but the short stroke to its right, the numeral 1 (entry 27, word 19), has coords {} and no box. The explorer has 25 areas for the drawing's 26 letters.* (Drawing from GORILA III p. 34 (Godart & Olivier), as served by lineara.xyz (images/KH9-Facsimile.jpg); boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ![KH9 drawing, line .6, proposed box](evidence/KH9-map/KH9-Facsimile_after.png)
 
-*Proposed: entry 27 (word 19, '1') gets (240, 548, 15, 25) (green), on the stroke; the same box is appended to imagemaps.js as area 25, so the explorer has 26 areas for 26 letters.* (Drawing from GORILA III p. 34 (Godart & Olivier), as served by lineara.xyz (images/KH9-Facsimile.jpg); proposed boxes)
+*Proposed: entry 27 (word 19, '1') gets (240, 548, 15, 25) (green), on the stroke; the same box is appended to imagemaps.js as area 25, so the explorer has 26 areas for 26 letters.* (Drawing from GORILA III p. 34 (Godart & Olivier), as served by lineara.xyz (images/KH9-Facsimile.jpg); proposed boxes; © École française d'Athènes)
 
-![KH9 photo map on master, line .6, already right](evidence/KH9-map/KH9-Inscription_HEAD_line6.jpg)
+![KH9 photo map on master, line .6, already right](evidence/KH9-map/KH9-Inscription_master_line6.jpg)
 
-*Reference, not changed: KH9-Inscription (photo) on master (9c81beb). The site's photo map already has a box for the 1 (entry 27, green, (289, 581, 32, 42)) at the broken edge right of \*304, and its explorer has 26 areas for 26 letters; only the drawing lacks the box.* (Photo from GORILA III p. 34 (Godart & Olivier), as served by lineara.xyz (images/KH9-Inscription.jpg); boxes from items_image_map.js at 9c81beb)
+*Reference, not changed: KH9-Inscription (photo) on master (9c81beb). The site's photo map already has a box for the 1 (entry 27, green, (289, 581, 32, 42)) at the broken edge right of \*304, and its explorer has 26 areas for 26 letters; only the drawing lacks the box.* (Photo from GORILA III p. 34 (Godart & Olivier), as served by lineara.xyz (images/KH9-Inscription.jpg); boxes from items_image_map.js at 9c81beb; © École française d'Athènes)
 
 ![GORILA III p. 34, KH 9 drawing, line .6](evidence/KH9-map/KH9_GORILA-III_p34_drawing_line6.png)
 
-*GORILA III p. 34 (PDF p. 59), drawing of KH 9, lower right (line .6): SI+TA2, \*304 and, right of \*304, a short vertical stroke hanging from the dotted break line, the stroke that the site's facsimile crop shows without a box.* (L. Godart & J.-P. Olivier, GORILA III, p. 34 (lineara.xyz papers/GORILA-Vol3.pdf, PDF p. 59), rendered at 400 dpi)
+*GORILA III p. 34 (PDF p. 59), drawing of KH 9, lower right (line .6): SI+TA2, \*304 and, right of \*304, a short vertical stroke hanging from the dotted break line, the stroke that the site's facsimile crop shows without a box.* (L. Godart & J.-P. Olivier, GORILA III, p. 34 (lineara.xyz papers/GORILA-Vol3.pdf, PDF p. 59), rendered at 400 dpi; © École française d'Athènes)
 
 ![GORILA III p. 35, KH 9 line .6](evidence/KH9-map/KH9_GORILA-III_p35_line6.png)
 
-*GORILA III p. 35 (PDF p. 60), transcription of KH 9, line .6, normalised (top) and in layout (bottom): the line ends '\*304 1[' with a dot under the 1, a damaged but read unit numeral before the break.* (L. Godart & J.-P. Olivier, GORILA III, p. 35 (lineara.xyz papers/GORILA-Vol3.pdf, PDF p. 60), rendered at 220 dpi)
+*GORILA III p. 35 (PDF p. 60), transcription of KH 9, line .6, normalised (top) and in layout (bottom): the line ends '\*304 1[' with a dot under the 1, a damaged but read unit numeral before the break.* (L. Godart & J.-P. Olivier, GORILA III, p. 35 (lineara.xyz papers/GORILA-Vol3.pdf, PDF p. 60), rendered at 220 dpi; © École française d'Athènes)
 
 ![INSCRIBE relief of KH 9, line .6, four lights](evidence/KH9-map/KH9_INSCRIBE_KH_009_line6_lights3-7-1-9.jpg)
 
@@ -864,7 +864,7 @@ This part covers one correction that touches 38 inscriptions (the ruled lines), 
 
 ### 38 inscriptions — rulings stored as the numeral 10
 
-`LinearAInscriptions.js` has the 56 rulings of 38 records as `—`, but `items_analysis/supplement.json` stores all 56 as U+10110 AEGEAN NUMBER TEN (`𐄐`). As a result, the 94 ruling boxes in `items_image_map.js` are labelled `10`, the 38 item pages show `𐄐` or `10` at every ruling (on HT9b, a 10 that is not one of the amounts in KU-RO 24), and on 31 pages the Tabulation views run every line after the first ruling together (HT9b: 3 lines instead of 12). GORILA draws rulings as long lines, not as numerals (HT 56 b, GORILA I p. 108, PDF p. 144; the double ruling after KH 50 .2, GORILA III p. 75, PDF p. 100), and so does Younger's commentary (twice after KH 50 .2; after HT 56 b.1; after MI 2 .1 and .3). This PR stores the rulings as `—` in `supplement.json` (`tabulation` and `tabulatedWords`), adds a `—` row to `items_analysis/syllables.txt` and to `ideograms.js` (the item pages' reading editor maps labels through `ideograms.js` and would otherwise show the ruling as an empty number), relabels the 94 boxes, redraws six of them on their line, with their `imagemaps.js` areas (figures below), and regenerates the 38 pages with the committed notebook, which reproduces the current pages byte for byte from master's inputs. The Tabulation views of these 31 pages now break their lines as `parsedInscription` does; on ARKH1b, HT49a and HT130 the notebook already stops at an empty, trace-only line before the ruling, so their Tabulation line breaks stay as on master.
+`LinearAInscriptions.js` has the 56 rulings of 38 records as `—`, but `items_analysis/supplement.json` stores all 56 as U+10110 AEGEAN NUMBER TEN (`𐄐`). As a result, the 94 ruling entries in `items_image_map.js` (in the maps of 36 of the records; PEZg6 and PK1 have no maps) are labelled `10`, the 38 item pages show `𐄐` or `10` at every ruling (on HT9b, a 10 that is not one of the amounts in KU-RO 24), and on 31 pages the Tabulation views run every line after the first ruling together (HT9b: 3 lines instead of 12). GORILA draws rulings as long lines, not as numerals (HT 56 b, GORILA I p. 108, PDF p. 144; the double ruling after KH 50 .2, GORILA III p. 75, PDF p. 100), and so does Younger's commentary (twice after KH 50 .2; after HT 56 b.1; after MI 2 .1 and .3). This PR stores the rulings as `—` in `supplement.json` (`tabulation` and `tabulatedWords`), adds a `—` row to `items_analysis/syllables.txt` and to `ideograms.js` (the item pages' reading editor maps labels through `ideograms.js` and would otherwise show the ruling as an empty number), relabels the 94 entries, draws three ruling boxes that were missing (KH50-F #8 and TY3a-I #60 had none, HT96a-F #45 a zero-size point) and moves three onto their line (HT56b-F, KH50-F #7, MI2-F), with their `imagemaps.js` areas (figures below), and regenerates the 38 pages with the committed notebook, which reproduces the current pages byte for byte from master's inputs. The Tabulation views of these 31 pages now break their lines as `parsedInscription` does; on ARKH1b, HT49a and HT130 the notebook already stops at an empty, trace-only line before the ruling, so their Tabulation line breaks stay as on master.
 
 ![GORILA: the rulings of HT 56 b and KH 50 drawn as lines](evidence/rulings/GORILA_HT56b_I108_KH50_III75_rulings.jpg)
 
@@ -946,17 +946,17 @@ The three records read DA-KA, and their photos show the right nodules, but `imag
 
 *This PR: the Wa 1004 drawing with its label HM 445.3 (x 1006–1174, y 820–956), until now on no lineara image, with the new boxes, 3×.* (GORILA II p. 4, © École française d'Athènes; boxes drawn for this document)
 
-![HTWa1001-Facsimile on master with its boxes](evidence/HTWa1002-1004-drawings/optional_HTWa1001-Facsimile_before.png)
+![HTWa1001-Facsimile on master with its boxes](evidence/HTWa1002-1004-drawings/HTWa1001-Facsimile_before.png)
 
 *Master: images/HTWa1001-Facsimile.jpg is the right drawing (Wa 1001, HM 442.60), but both boxes sit about 10 px right of the signs: the KA box leaves out the left of the KA circle and the DA box takes in KA's left edge.* (lineara.xyz picture from GORILA II p. 4, © École française d'Athènes; boxes drawn for this document)
 
-![HTWa1001-Facsimile with the fitted boxes](evidence/HTWa1002-1004-drawings/optional_HTWa1001-Facsimile_after.png)
+![HTWa1001-Facsimile with the fitted boxes](evidence/HTWa1002-1004-drawings/HTWa1001-Facsimile_after.png)
 
 *This PR: the same image with DA (54, 32, 43, 78) and KA (97, 34, 53, 59) fitted to the signs; the explorer areas equal the boxes.* (lineara.xyz picture from GORILA II p. 4, © École française d'Athènes; boxes drawn for this document)
 
 ### KHWa1017, KHWa1018, KHWa1020 — the photos and drawings show other nodules
 
-All six pictures come from earlier entries of GORILA III. `images/KHWa1017-Inscription.jpg` and `KHWa1017-Facsimile.jpg` show KH Wa 1015 (p. 109, PDF p. 134; the photo is its face γ, the drawing its face α), KHWa1018's pictures show both faces of KH Wa 1016 (p. 110, PDF p. 135), and KHWa1020's show KH Wa 1017 (p. 110, PDF p. 135), the nodule that KHWa1017 describes; template matching finds each file in those entries (normalised cross-correlation 0.979–1.000). So KHWa1017's `*301` boxes frame KH Wa 1015's signs and KHWa1018's `*371` boxes frame face α of KH Wa 1016. The records' own entries are KH Wa 1017 (the lower entry on p. 110, PDF p. 135) and KH Wa 1018 and 1020 (the top and bottom entries on p. 111, PDF p. 136), the pages the records link after commit 6. This PR replaces the six files with 1:1 crops of the records' own photos and drawings from the 150-dpi scans in `papers/GORILA-Vol3.pdf`, in the file format of KHWa1015 and KHWa1019, whose pictures show their own nodules (KHWa1017's crops take the areas of master's KHWa1020 files, which already show KH Wa 1017; KHWa1018's and KHWa1020's take KHWa1019's margins), redraws the boxes of KHWa1017 and KHWa1018 in `items_image_map.js` and `imagemaps.js`, and removes KHWa1020-Facsimile's one explorer area: the record's text, a trace and a divider, has no letters for the explorer. The readings do not change: KHWa1018's `*371` agrees with GORILA V p. 310; GORILA prints no reading for KH Wa 1017 and 1020, so KHWa1017's `*301` and KHWa1020's trace cannot be checked against it.
+All six pictures come from earlier entries of GORILA III. `images/KHWa1017-Inscription.jpg` and `KHWa1017-Facsimile.jpg` show KH Wa 1015 (p. 109, PDF p. 134; the photo is its face γ, the drawing its face α), KHWa1018's pictures show both faces of KH Wa 1016 (p. 110, PDF p. 135), and KHWa1020's show KH Wa 1017 (p. 110, PDF p. 135), the nodule that KHWa1017 describes; template matching finds each file in those entries (normalised cross-correlation 0.979–1.000). So KHWa1017's `*301` boxes frame KH Wa 1015's signs and KHWa1018's `*371` boxes frame face α of KH Wa 1016. The records' own entries are KH Wa 1017 (the lower entry on p. 110, PDF p. 135) and KH Wa 1018 and 1020 (the top and bottom entries on p. 111, PDF p. 136), the pages the records' links now open (they opened the pages before; this commit changes them together with the pictures). The records also credit the École française d'Athènes, like the other GORILA crops this PR adds (their neighbours KHWa1015 and KHWa1019 credit nobody, as on master). This PR replaces the six files with 1:1 crops of the records' own photos and drawings from the 150-dpi scans in `papers/GORILA-Vol3.pdf`, in the file format of KHWa1015 and KHWa1019, whose pictures show their own nodules (KHWa1017's crops take the areas of master's KHWa1020 files, which already show KH Wa 1017; KHWa1018's and KHWa1020's take KHWa1019's margins), redraws the boxes of KHWa1017 and KHWa1018 in `items_image_map.js` and `imagemaps.js`, and removes KHWa1020-Facsimile's one explorer area: the record's text, a trace and a divider, has no letters for the explorer. The readings do not change: KHWa1018's `*371` agrees with GORILA V p. 310; GORILA prints no reading for KH Wa 1017 and 1020, so KHWa1017's `*301` and KHWa1020's trace cannot be checked against it.
 
 ![KHWa1017, 1018, 1020 pictures beside GORILA III pp. 109-111](evidence/KHWa1017-1020-pictures/KHWa1017_1018_1020_pictures_are_KHWa1015-1017_GORILA_III_pp109-111.jpg)
 
@@ -1036,7 +1036,7 @@ All six pictures come from earlier entries of GORILA III. `images/KHWa1017-Inscr
 
 ### MA4a — HIDE+SA+L 63, not 53: a sixth ten-dot
 
-The site reads HIDE+SA+L 53, as GORILA I p. 273 (PDF p. 309) and Younger do; GORILA prints no apparatus note on this numeral. GORILA's drawing (I p. 272, PDF p. 308; the site's `MA4a-Facsimile.jpg`) has five ten-dots, 2+1+1+1: it leaves out a round pit at the right of the second row, which GORILA's own photo (`MA4a-Inscription.jpg`) and the INSCRIBE 3D model Clay_tablet_MA_4 (six light directions, e.g. az 315° and az 135° at el 20°) both show clearly, and it draws its lowest dot on the edge of a break below the third row. There the relief keeps a dot-sized wall, steep and 1.7 mm deep, on the intact side, while the other half and the floor run into the break, so a rounded notch in the edge of the break would leave the same relief. This PR counts both the pit the drawing omits and the dot the draftsman drew at the break: six ten-dots, so the number is 63. 63 is therefore a new reading, against GORILA's and Younger's 53; since the spot is damaged, only an examination of the tablet (HM 1377) could settle it. The 50 becomes 60 in `words`, `parsedInscription` and `transcription`, 53 becomes 63 in `transliteratedWords` and `translatedWords`, the dot box is labelled `60` instead of `50` in both image maps (it already covers every dot position), and `wordsInCorpus`, `annotations.js`, the notebook's copy `items_analysis/inscriptions.json`, `items_analysis/supplement.json` and the regenerated `items/MA4a.html` follow (Younger's commentary on that page keeps his 53).
+The site reads HIDE+SA+L 53, as GORILA I p. 273 (PDF p. 309) and Younger do; GORILA prints no apparatus note on this numeral. GORILA's drawing (I p. 272, PDF p. 308; the site's `MA4a-Facsimile.jpg`) has five ten-dots, 2+1+1+1: it leaves out a round pit at the right of the second row, which GORILA's own photo (`MA4a-Inscription.jpg`) and the INSCRIBE 3D model Clay_tablet_MA_4 (six light directions, e.g. az 315° and az 135° at el 20°) both show clearly, and it draws its lowest dot on the edge of a break below the third row. There the relief keeps a dot-sized wall, steep and 1.7 mm deep, on the intact side, while the other half and the floor run into the break, so a rounded notch in the edge of the break would leave the same relief. This PR counts both the pit the drawing omits and the dot the draftsman drew at the break: six ten-dots, so the number is 63. 63 is therefore a new reading, against GORILA's and Younger's 53; since the spot is damaged, only an examination of the tablet (HM 1377) could settle it. The 50 becomes 60 in `words`, `parsedInscription` and `transcription`, 53 becomes 63 in `transliteratedWords` and `translatedWords`, the dot box is labelled `60` instead of `50` in both image maps (it already covers every dot position), and `wordsInCorpus`, `annotations.js`, the notebook's copy `items_analysis/inscriptions.json`, `items_analysis/supplement.json` and the regenerated `items/MA4a.html` follow. The change is its own commit (the eighth), which can be left out without affecting the others (Younger's commentary on that page keeps his 53).
 
 ![MA 4a dot group in GORILA's photo and drawing](evidence/MA4a/MA4a_gorila_I272_photo_drawing_dot_group.jpg)
 
@@ -1048,7 +1048,7 @@ The site reads HIDE+SA+L 53, as GORILA I p. 273 (PDF p. 309) and Younger do; GOR
 
 ![INSCRIBE relief of the MA 4a dot group under six lights](evidence/MA4a/MA4a_INSCRIBE_dot_group_6lights.jpg)
 
-*The same dot group on the INSCRIBE 3D model Clay_tablet_MA_4 under six light directions (az 315° and 135° at el 20°; az 0°, 180°, 90° and 270° at el 35°), 0.1 mm/px, 2×. Five clear round pits in rows of 2+2+1. Blue dashed: the pit at row 2 right that GORILA's drawing omits. Red dashed: GORILA's lowest drawn dot (r4L), at the corner of the break; its intact side keeps a dot-like wall, but with its other half broken away it never shows as a whole round pit.* (INSCRIBE project, ERC, University of Bologna, <https://www.inscribercproject.com/Linear_A.php>)
+*The same dot group on the INSCRIBE 3D model Clay_tablet_MA_4 under six light directions (az 315° and 135° at el 20°; az 0°, 180°, 90° and 270° at el 35°), 0.1 mm/px, 2×. Five clear round pits in rows of 2+2+1. Blue dashed: the pit at row 2 right that GORILA's drawing omits. Red dashed: GORILA's lowest drawn dot (r4L), at the corner of the break; its intact side keeps a dot-like wall, but with its other half broken away it never shows as a whole round pit.* (INSCRIBE project, ERC, University of Bologna, <https://www.inscribercproject.com/Linear_A.php>; © École française d'Athènes)
 
 ![INSCRIBE depth contours of the dot group with GORILA's drawing ink](evidence/MA4a/MA4a_INSCRIBE_depth_contours_drawing_ink.png)
 
@@ -1056,7 +1056,7 @@ The site reads HIDE+SA+L 53, as GORILA I p. 273 (PDF p. 309) and Younger do; GOR
 
 ![INSCRIBE depth profiles from the centres of the dots](evidence/MA4a/MA4a_INSCRIBE_wall_profiles.png)
 
-*Depth profiles from each pit centre along the three directions in which the r4L spot is still intact (up, up-right, right). Grey: the five clear pits. Red: GORILA's drawn row-4 dot, from its drawn centre; orange: the same, from the centre of a circle fitted to its preserved arc. On this side the spot's wall is as steep and as deep as the dots', but a rounded notch in the edge of a break would give the same profile. In the other directions it opens into the 1.6–2.0 mm deep break.* (INSCRIBE project, ERC, University of Bologna, <https://www.inscribercproject.com/Linear_A.php>)
+*Depth profiles on the INSCRIBE 3D model Clay_tablet_MA_4, from each pit centre along the three directions in which the r4L spot is still intact (up, up-right, right). Grey: the five clear pits. Red: GORILA's drawn row-4 dot, from its drawn centre; orange: the same, from the centre of a circle fitted to its preserved arc. On this side the spot's wall is as steep and as deep as the dots', but a rounded notch in the edge of a break would give the same profile. In the other directions it opens into the 1.6–2.0 mm deep break.* (INSCRIBE project, ERC, University of Bologna, <https://www.inscribercproject.com/Linear_A.php>; © École française d'Athènes)
 
 ### PA1 — the doubtful JU: checked, not changed
 
@@ -1070,21 +1070,21 @@ GORILA I p. 284 (PDF p. 320) prints a dot under the third sign of A-KU-JU-PA-\*1
 
 *GORILA I p. XXXIV (PDF p. 34), sections C–D: in the copies normalisées 'les signes mutilés, dûment pointés, ont été complétés', under the editorial rules used for Linear B (footnote: the Wingspread Convention). PA 1 is one of four documents whose four presentations share a single left-hand page, and the copie normalisée is told apart from the copie tabulaire by its prefix and number drawn 'au normographe et non en cursive'.* (GORILA I, © École française d'Athènes)
 
-![PA1 Status of Reading on master: JU doubtful](evidence/PA1-note/PA1_lineara_HEAD_status_of_reading_JU_doubtful.png)
+![PA1 Status of Reading on master: JU doubtful](evidence/PA1-note/PA1_lineara_master_status_of_reading_JU_doubtful.png)
 
 *Master (9c81beb) already flags the sign: the Status of Reading in items/PA1.html ('1 1 0 JU doubtful') and the PA1 tabulation in items_analysis/supplement.json (U+10636, AB065 = JU, 'doubtful'; the other six 'certain'), quoted verbatim, with glyphs shown as code points.* (text from lineara.xyz items/PA1.html and items_analysis/supplement.json at master (9c81beb); card made for this document)
 
-![PA1 image maps and explorer areas on master](evidence/PA1-note/PA1_HEAD_imagemaps_unchanged.jpg)
+![PA1 image maps and explorer areas on master](evidence/PA1-note/PA1_master_imagemaps_unchanged.jpg)
 
 *Master (9c81beb): the image maps (red, 'index:label (word)'; box 2, 'JU', in green) and explorer areas (blue, e0–e6) on PA1-Inscription.jpg (left) and PA1-Facsimile.jpg (right). Every box sits on the right sign, and the 7 areas pair with the 7 letters, so no map change is needed.* (lineara.xyz pictures from GORILA I p. 284, © École française d'Athènes; boxes drawn for this document)
 
 ## GORILA page links
 
-### 322 records — the GORILA link opens the wrong page
+### 319 records — the GORILA link opens a page outside the record's entry
 
-For 1,468 of the 1,721 records the reference link (`imageRightsURL`, the 🔗 tag in the explorer and the source link of the item page) points into one of the GORILA PDFs in `papers/`. It should open the page that holds the record's photo and drawing, the page the site's pictures were cut from. For 322 records it opens another page: in GORILA III almost every link opens the page before the pictures, often the transcription page of the previous tablet (KH50's link opens printed p. 73, the transcriptions of KH 46, 47 and 49, while KH 50's photo and drawing are on p. 74, PDF p. 99). In GORILA IV, 63 of the 74 links are wrong, most of them one page early (some open a section title page). In GORILA I and V the wrong links are single slips: the b face of a tablet (for MA 6, the c and d faces) linking the page of the a face, the HT 154 fragments all linking p. 242, and PYR 2 linking the blank page after its pictures (V p. 60). Two Khania joins published only in GORILA V (KH 79+89 on p. 38, KH Wc 2044 + fr. on p. 46) link GORILA III pages. Apart from these 322 and SYZa2's (below), the 1,145 remaining links, all of GORILA II's among them, open a page of the record's own entry and are left as they are.
+For 1,468 of the 1,721 records the reference link (`imageRightsURL`, the 🔗 tag in the explorer and the source link of the item page) points into one of the GORILA PDFs in `papers/`. It should open a page of the record's own entry, best the page with the record's photo and drawing, from which the site's pictures were cut. For 319 records it opens a page outside the record's entry: in GORILA III almost every link opens the page before the pictures, often the transcription page of the previous tablet (KH50's link opens printed p. 73, the transcriptions of KH 46, 47 and 49, while KH 50's photo and drawing are on p. 74, PDF p. 99). In GORILA IV, 63 of the 74 links are wrong, most of them one page early (some open a section title page). In GORILA I and V the wrong links are single slips: the b face of a tablet (for MA 6, the c and d faces) linking the page of the a face, the HT 154 fragments all linking p. 242, and PYR 2 linking the blank page after its pictures (V p. 60). Two Khania joins published only in GORILA V (KH 79+89 on p. 38, KH Wc 2044 + fr. on p. 46) linked GORILA III pages and now link GORILA V; the counts go by the volume of the old link.
 
-The new links were found by matching the site's own photo and drawing on the GORILA pages (the median match is 0.99); the few low matches are composite pictures, an entry spread over several pages, or a picture not taken from GORILA (THE Zb 5), and each was checked on the page. Three links open the record's own entry rather than the page its pictures come from: the site's pictures of KHWa1017, KHWa1018 and KHWa1020 show KH Wa 1015, 1016 and 1017 (GORILA III pp. 109–110, PDF pp. 134–135), while the records' own entries are on pp. 110–111; this PR does not change those pictures. The full list, with the page each link opened and what is printed there, is in [GORILA-links/links.md](evidence/GORILA-links/links.md). This PR changes `imageRightsURL` in `LinearAInscriptions.js` and in the generator's copy `items_analysis/inscriptions.json`, and regenerates the 322 item pages (each changes only in its links to GORILA, usually three: the photo, the drawing and the source). SYZa2's link is corrected in the second commit with its other fixes.
+These links now open the page with the record's photo and drawing, found by matching the site's own pictures on the GORILA pages (the median match is 0.99); the few low matches are composite pictures, an entry spread over several pages, or a picture not taken from GORILA (THE Zb 5), and each was checked on the page. Links that already open a page of the record's own entry are left as they are, also where the pictures are on a neighbouring page of that entry (KNZc6, KNZc7, MA10b–d, PKZa8, PKZa10, PRZa1); ARZf2's link now opens its entry (IV PDF p. 186), although the site's photos come from the plate on PDF p. 205. Five more links change with other commits: SYZa2's in the second, with its other fixes, HTWa1005's in the fifth, and those of KHWa1017, KHWa1018 and KHWa1020 in the seventh, together with their pictures, which showed KH Wa 1015–1017; so this commit can be left out on its own. The other 1,144 links are right. The full list, with the page each link opened and what is printed there, is in [GORILA-links/links.md](evidence/GORILA-links/links.md). This commit changes `imageRightsURL` in `LinearAInscriptions.js` and in the generator's copy `items_analysis/inscriptions.json`, and regenerates the 319 item pages (each changes only in its links to GORILA, usually three: the photo, the drawing and the source).
 
 ![KH50: linked page, correct page, and the site's pictures](evidence/GORILA-links/KH50_link_p98_vs_photo_p99.jpg)
 

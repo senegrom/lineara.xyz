@@ -1,6 +1,6 @@
-# GORILA page links corrected in this pull request
+# GORILA page links corrected in this pull request (sixth commit)
 
-Each record's `imageRightsURL` should open the GORILA page that holds its photo and drawing (the page the site's pictures were cut from). The table lists every link this pull request changes except SYZa2's (V PDF 115 → 117, changed in the second commit with its other fixes): the page the link opened on master (9c81beb), what is printed there, the page with the record's pictures, and how well the site's own pictures match that page (normalised cross-correlation at 60 dpi; 1.0 = identical). Where the match is low or the site's pictures match another page, the note gives the reason (composite pictures, pictures not taken from GORILA or showing another nodule, an entry spread over several pages).
+Each record's `imageRightsURL` should open a page of the record's own GORILA entry, best the page with its photo and drawing, from which the site's pictures were cut. The table lists the 319 links the sixth commit changes: the page the link opened on master (9c81beb), what is printed there, the page with the record's pictures, and how well the site's own pictures match that page (normalised cross-correlation at 60 dpi; 1.0 = identical). Where the match is low or the site's pictures match another page, the note gives the reason (composite pictures, pictures not taken from GORILA, an entry spread over several pages). Counts and volumes go by the old link.
 
 | Record | master link | opens | this PR | record's pictures | match | note |
 |---|---|---|---|---|---|---|
@@ -129,11 +129,8 @@ Each record's `imageRightsURL` should open the GORILA page that holds its photo 
 | KHWa1013 | III PDF 132 | the page of KHWa1009, KHWa1010, KHWa1011 | III PDF 133 | III p. 108 | 0.99 |  |
 | KHWa1014 | III PDF 133 | the page of KHWa1012, KHWa1013 | III PDF 134 | III p. 109 | 1.00 |  |
 | KHWa1015 | III PDF 133 | the page of KHWa1012, KHWa1013 | III PDF 134 | III p. 109 | 0.99 |  |
-| KHWa1017 | III PDF 133 | the page of KHWa1012, KHWa1013 | III PDF 135 | III p. 110 | – | the site's pictures show KH Wa 1015 (III p. 109, PDF 134; match 0.99); this page has KH Wa 1017's entry (lower) |
 | KHWa1016 | III PDF 134 | the page of KHWa1014, KHWa1015 | III PDF 135 | III p. 110 | 0.99 |  |
-| KHWa1018 | III PDF 134 | the page of KHWa1014, KHWa1015 | III PDF 136 | III p. 111 | – | the site's pictures show KH Wa 1016 (III p. 110, PDF 135; match 0.99); this page has KH Wa 1018's entry (top) |
 | KHWa1019 | III PDF 134 | the page of KHWa1014, KHWa1015 | III PDF 136 | III p. 111 | 0.99 |  |
-| KHWa1020 | III PDF 134 | the page of KHWa1014, KHWa1015 | III PDF 136 | III p. 111 | – | the site's pictures show KH Wa 1017 (III p. 110, PDF 135; match 1.00); this page has KH Wa 1020's entry (bottom) |
 | KHWc2001 | III PDF 138 | section title '2. KHANIA - III. RONDELLES' | III PDF 139 | III p. 114 | 0.99 |  |
 | KHWc2002 | III PDF 138 | section title '2. KHANIA - III. RONDELLES' | III PDF 139 | III p. 114 | 0.97 |  |
 | KHWc2003 | III PDF 138 | section title '2. KHANIA - III. RONDELLES' | III PDF 139 | III p. 114 | 0.98 |  |
@@ -326,3 +323,24 @@ Each record's `imageRightsURL` should open the GORILA page that holds its photo 
 | SIZg1 | IV PDF 210 | section title '3. SITIA' | IV PDF 211 | IV p. 168 | 1.00 |  |
 | TYZg1 | IV PDF 212 | section title '4. TYLISSOS' | IV PDF 213 | IV p. 170 | 0.98 |  |
 | PYR2 | V PDF 113 | a blank page | V PDF 112 | V p. 59 | 0.95 |  |
+
+## Links changed with other commits
+
+| Record | master link | this PR | commit |
+|---|---|---|---|
+| SYZa2 | V PDF 115 | V PDF 117 | second, with its other fixes |
+| HTWa1005 | II PDF 68 | II PDF 66 | fifth, with its new pictures |
+| KHWa1017 | III PDF 133 | III PDF 135 | seventh, with its new pictures (the old ones showed KH Wa 1015) |
+| KHWa1018 | III PDF 134 | III PDF 136 | seventh, with its new pictures (the old ones showed KH Wa 1016) |
+| KHWa1020 | III PDF 134 | III PDF 136 | seventh, with its new pictures (the old ones showed KH Wa 1017) |
+
+## Links left as they are, although the pictures are on a neighbouring page of the entry
+
+| Record | link | why it stays |
+|---|---|---|
+| KNZc6 | IV PDF 162 | KN Zc 6 spans PDF 161–163; the link opens its enlarged photos (the site's pictures are from 161) |
+| KNZc7 | IV PDF 166 | KN Zc 7 spans PDF 165–167; the linked page holds two of the site's pictures |
+| MA10b, MA10c, MA10d | V PDF 104 | MA 10 spans PDF 103–106; the linked page holds the drawings (photos on 103) |
+| PKZa8 | IV PDF 69 | PK Za 8 spans PDF 67–70; the linked page is its transcription |
+| PKZa10 | IV PDF 73 | PK Za 10 spans PDF 73–74; the linked page is its first page (drawing) |
+| PRZa1 | IV PDF 90 | PR Za 1 spans PDF 89–92; the linked page is inside the entry |
