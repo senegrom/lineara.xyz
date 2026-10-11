@@ -52486,8 +52486,8 @@ var inscriptions = new Map([
         "images/KHWa1017-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
-    "imageRightsURL": "papers/GORILA-Vol3.pdf#page=133",
+    "imageRights": "© École Française d'Athènes",
+    "imageRightsURL": "papers/GORILA-Vol3.pdf#page=135",
     "images": [
         "images/KHWa1017-Inscription.jpg"
     ],
@@ -52516,8 +52516,8 @@ var inscriptions = new Map([
         "images/KHWa1018-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
-    "imageRightsURL": "papers/GORILA-Vol3.pdf#page=134",
+    "imageRights": "© École Française d'Athènes",
+    "imageRightsURL": "papers/GORILA-Vol3.pdf#page=136",
     "images": [
         "images/KHWa1018-Inscription.jpg"
     ],
@@ -52576,8 +52576,8 @@ var inscriptions = new Map([
         "images/KHWa1020-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
-    "imageRightsURL": "papers/GORILA-Vol3.pdf#page=134",
+    "imageRights": "© École Française d'Athènes",
+    "imageRightsURL": "papers/GORILA-Vol3.pdf#page=136",
     "images": [
         "images/KHWa1020-Inscription.jpg"
     ],

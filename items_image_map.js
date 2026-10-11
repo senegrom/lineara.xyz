@@ -117168,10 +117168,10 @@ const coordinates =
             "word": "0",
             "ideogram": "*301",
             "coords": {
-                "x": 65,
-                "y": 72,
-                "width": 98,
-                "height": 105
+                "x": 101,
+                "y": 83,
+                "width": 56,
+                "height": 49
             }
         }
     ],
@@ -117180,10 +117180,10 @@ const coordinates =
             "word": "0",
             "ideogram": "*301",
             "coords": {
-                "x": 21,
-                "y": 21,
-                "width": 126,
-                "height": 74
+                "x": 51,
+                "y": 27,
+                "width": 63,
+                "height": 49
             }
         }
     ],
@@ -117192,10 +117192,10 @@ const coordinates =
             "word": "0",
             "ideogram": "*371",
             "coords": {
-                "x": 45,
-                "y": 49,
-                "width": 132,
-                "height": 103
+                "x": 89,
+                "y": 88,
+                "width": 126,
+                "height": 102
             }
         }
     ],
@@ -117204,10 +117204,10 @@ const coordinates =
             "word": "0",
             "ideogram": "*371",
             "coords": {
-                "x": 40,
-                "y": 22,
-                "width": 138,
-                "height": 81
+                "x": 76,
+                "y": 88,
+                "width": 118,
+                "height": 97
             }
         }
     ],
