@@ -9184,7 +9184,7 @@ const coordinates =
         },
         {
             "word": "12",
-            "ideogram": "*560",
+            "ideogram": "*559",
             "coords": {
                 "x": 217,
                 "y": 343,
@@ -9471,7 +9471,7 @@ const coordinates =
         },
         {
             "word": "12",
-            "ideogram": "*560",
+            "ideogram": "*559",
             "coords": {
                 "x": 187,
                 "y": 329,
@@ -14786,22 +14786,12 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "MA",
+            "ideogram": "*546",
             "coords": {
                 "x": 260,
-                "y": 82,
-                "width": 49,
-                "height": 54
-            }
-        },
-        {
-            "word": "1",
-            "ideogram": "RU",
-            "coords": {
-                "x": 264,
                 "y": 57,
-                "width": 39,
-                "height": 35
+                "width": 49,
+                "height": 79
             }
         },
         {
@@ -14816,22 +14806,12 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "MA",
+            "ideogram": "*561",
             "coords": {
                 "x": 125,
-                "y": 185,
-                "width": 58,
-                "height": 46
-            }
-        },
-        {
-            "word": "3",
-            "ideogram": "RU",
-            "coords": {
-                "x": 126,
                 "y": 151,
-                "width": 59,
-                "height": 37
+                "width": 60,
+                "height": 80
             }
         },
         {
@@ -14876,22 +14856,12 @@ const coordinates =
         },
         {
             "word": "7",
-            "ideogram": "MA",
+            "ideogram": "*561",
             "coords": {
                 "x": 172,
-                "y": 263,
-                "width": 54,
-                "height": 51
-            }
-        },
-        {
-            "word": "7",
-            "ideogram": "RU",
-            "coords": {
-                "x": 178,
                 "y": 239,
-                "width": 41,
-                "height": 34
+                "width": 54,
+                "height": 75
             }
         },
         {
@@ -14956,22 +14926,12 @@ const coordinates =
         },
         {
             "word": "10",
-            "ideogram": "MA",
-            "coords": {
-                "x": 216,
-                "y": 353,
-                "width": 63,
-                "height": 50
-            }
-        },
-        {
-            "word": "10",
-            "ideogram": "RU",
+            "ideogram": "*561",
             "coords": {
                 "x": 215,
                 "y": 313,
-                "width": 56,
-                "height": 40
+                "width": 64,
+                "height": 90
             }
         },
         {
@@ -15078,22 +15038,12 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "MA",
+            "ideogram": "*546",
             "coords": {
                 "x": 244,
-                "y": 28,
-                "width": 32,
-                "height": 48
-            }
-        },
-        {
-            "word": "1",
-            "ideogram": "RU",
-            "coords": {
-                "x": 245,
                 "y": 7,
-                "width": 49,
-                "height": 54
+                "width": 50,
+                "height": 69
             }
         },
         {
@@ -15108,22 +15058,12 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "MA",
-            "coords": {
-                "x": 109,
-                "y": 121,
-                "width": 60,
-                "height": 55
-            }
-        },
-        {
-            "word": "3",
-            "ideogram": "RU",
+            "ideogram": "*561",
             "coords": {
                 "x": 96,
                 "y": 89,
-                "width": 68,
-                "height": 55
+                "width": 73,
+                "height": 87
             }
         },
         {
@@ -15168,22 +15108,12 @@ const coordinates =
         },
         {
             "word": "7",
-            "ideogram": "MA",
-            "coords": {
-                "x": 146,
-                "y": 202,
-                "width": 53,
-                "height": 54
-            }
-        },
-        {
-            "word": "7",
-            "ideogram": "RU",
+            "ideogram": "*561",
             "coords": {
                 "x": 146,
                 "y": 167,
-                "width": 47,
-                "height": 52
+                "width": 53,
+                "height": 89
             }
         },
         {
@@ -15248,32 +15178,22 @@ const coordinates =
         },
         {
             "word": "10",
-            "ideogram": "MA",
-            "coords": {
-                "x": 204,
-                "y": 297,
-                "width": 50,
-                "height": 52
-            }
-        },
-        {
-            "word": "10",
-            "ideogram": "RU",
+            "ideogram": "*561",
             "coords": {
                 "x": 198,
                 "y": 260,
-                "width": 52,
-                "height": 46
+                "width": 56,
+                "height": 89
             }
         },
         {
             "word": "10",
             "ideogram": "ME",
             "coords": {
-                "x": 198,
-                "y": 260,
-                "width": 52,
-                "height": 46
+                "x": 254,
+                "y": 268,
+                "width": 44,
+                "height": 70
             }
         },
         {
@@ -72653,7 +72573,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 167,
                 "y": 64,
@@ -72800,7 +72720,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 153,
                 "y": 27,
@@ -98004,7 +97924,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 327,
                 "y": 223,
@@ -98091,7 +98011,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 52,
                 "y": 63,
@@ -98163,7 +98083,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 1041,
                 "y": 467,
@@ -98183,7 +98103,7 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 256,
                 "y": 1336,
@@ -98213,7 +98133,7 @@ const coordinates =
         },
         {
             "word": "6",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 501,
                 "y": 1365,
@@ -98243,7 +98163,7 @@ const coordinates =
         },
         {
             "word": "9",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 692,
                 "y": 1377,
@@ -98375,7 +98295,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 1006,
                 "y": 63,
@@ -98395,7 +98315,7 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 138,
                 "y": 242,
@@ -98425,7 +98345,7 @@ const coordinates =
         },
         {
             "word": "6",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 375,
                 "y": 276,
@@ -98455,7 +98375,7 @@ const coordinates =
         },
         {
             "word": "9",
-            "ideogram": "*904",
+            "ideogram": "*319",
             "coords": {
                 "x": 552,
                 "y": 309,
@@ -111213,7 +111133,7 @@ const coordinates =
     "KH43-Inscription": [
         {
             "word": "0",
-            "ideogram": "*560",
+            "ideogram": "*562",
             "coords": {
                 "x": 78,
                 "y": 54,
@@ -111255,7 +111175,7 @@ const coordinates =
     "KH43-Facsimile": [
         {
             "word": "0",
-            "ideogram": "*560",
+            "ideogram": "*562",
             "coords": {
                 "x": 56,
                 "y": 68,
@@ -128389,7 +128309,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "A",
             "coords": {
                 "x": 173,
@@ -128399,7 +128319,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "SE",
             "coords": {
                 "x": 221,
@@ -128409,7 +128329,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "SI",
             "coords": {
                 "x": 265,
@@ -128419,7 +128339,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "NA",
             "coords": {
                 "x": 13,
@@ -128429,7 +128349,7 @@ const coordinates =
             }
         },
         {
-            "word": "1",
+            "word": "2",
             "ideogram": "KU",
             "coords": {
                 "x": 73,
@@ -128439,7 +128359,7 @@ const coordinates =
             }
         },
         {
-            "word": "1",
+            "word": "2",
             "ideogram": "PA",
             "coords": {
                 "x": 131,
@@ -128449,7 +128369,7 @@ const coordinates =
             }
         },
         {
-            "word": "1",
+            "word": "2",
             "ideogram": "RI",
             "coords": {
                 "x": 176,
@@ -128459,7 +128379,7 @@ const coordinates =
             }
         },
         {
-            "word": "2",
+            "word": "3",
             "ideogram": "VIR+[?]",
             "coords": {
                 "x": 210,
@@ -128469,7 +128389,7 @@ const coordinates =
             }
         },
         {
-            "word": "3",
+            "word": "4",
             "ideogram": "50",
             "coords": {
                 "x": 252,
@@ -128479,7 +128399,7 @@ const coordinates =
             }
         },
         {
-            "word": "4",
+            "word": "5",
             "ideogram": "GRA+PA",
             "coords": {
                 "x": 7,
@@ -128489,7 +128409,7 @@ const coordinates =
             }
         },
         {
-            "word": "5",
+            "word": "6",
             "ideogram": "20",
             "coords": {
                 "x": 56,
@@ -128499,7 +128419,7 @@ const coordinates =
             }
         },
         {
-            "word": "5",
+            "word": "6",
             "ideogram": "6",
             "coords": {
                 "x": 90,
@@ -128509,7 +128429,7 @@ const coordinates =
             }
         },
         {
-            "word": "6",
+            "word": "7",
             "ideogram": "¹⁄₂",
             "coords": {
                 "x": 139,
@@ -128519,7 +128439,7 @@ const coordinates =
             }
         },
         {
-            "word": "7",
+            "word": "8",
             "ideogram": "E",
             "coords": {
                 "x": 166,
@@ -128529,7 +128449,7 @@ const coordinates =
             }
         },
         {
-            "word": "7",
+            "word": "8",
             "ideogram": "KA",
             "coords": {
                 "x": 235,
@@ -128539,7 +128459,7 @@ const coordinates =
             }
         },
         {
-            "word": "8",
+            "word": "9",
             "ideogram": "VIR+[?]",
             "coords": {
                 "x": 6,
@@ -128549,7 +128469,7 @@ const coordinates =
             }
         },
         {
-            "word": "9",
+            "word": "10",
             "ideogram": "70",
             "coords": {
                 "x": 65,
@@ -128559,7 +128479,7 @@ const coordinates =
             }
         },
         {
-            "word": "9",
+            "word": "10",
             "ideogram": "2",
             "coords": {
                 "x": 180,
@@ -128569,7 +128489,7 @@ const coordinates =
             }
         },
         {
-            "word": "10",
+            "word": "11",
             "ideogram": "GRA+PA",
             "coords": {
                 "x": 217,
@@ -128579,7 +128499,7 @@ const coordinates =
             }
         },
         {
-            "word": "11",
+            "word": "12",
             "ideogram": "30",
             "coords": {
                 "x": 262,
@@ -128589,7 +128509,7 @@ const coordinates =
             }
         },
         {
-            "word": "11",
+            "word": "12",
             "ideogram": "6",
             "coords": {
                 "x": 11,
@@ -128631,7 +128551,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "A",
             "coords": {
                 "x": 183,
@@ -128641,7 +128561,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "SE",
             "coords": {
                 "x": 240,
@@ -128651,7 +128571,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "SI",
             "coords": {
                 "x": 277,
@@ -128661,7 +128581,7 @@ const coordinates =
             }
         },
         {
-            "word": "0",
+            "word": "1",
             "ideogram": "NA",
             "coords": {
                 "x": 23,
@@ -128671,7 +128591,7 @@ const coordinates =
             }
         },
         {
-            "word": "1",
+            "word": "2",
             "ideogram": "KU",
             "coords": {
                 "x": 81,
@@ -128681,7 +128601,7 @@ const coordinates =
             }
         },
         {
-            "word": "1",
+            "word": "2",
             "ideogram": "PA",
             "coords": {
                 "x": 144,
@@ -128691,7 +128611,7 @@ const coordinates =
             }
         },
         {
-            "word": "1",
+            "word": "2",
             "ideogram": "RI",
             "coords": {
                 "x": 180,
@@ -128701,7 +128621,7 @@ const coordinates =
             }
         },
         {
-            "word": "2",
+            "word": "3",
             "ideogram": "VIR+[?]",
             "coords": {
                 "x": 220,
@@ -128711,7 +128631,7 @@ const coordinates =
             }
         },
         {
-            "word": "3",
+            "word": "4",
             "ideogram": "50",
             "coords": {
                 "x": 260,
@@ -128721,7 +128641,7 @@ const coordinates =
             }
         },
         {
-            "word": "4",
+            "word": "5",
             "ideogram": "GRA+PA",
             "coords": {
                 "x": 10,
@@ -128731,7 +128651,7 @@ const coordinates =
             }
         },
         {
-            "word": "5",
+            "word": "6",
             "ideogram": "20",
             "coords": {
                 "x": 65,
@@ -128741,7 +128661,7 @@ const coordinates =
             }
         },
         {
-            "word": "5",
+            "word": "6",
             "ideogram": "6",
             "coords": {
                 "x": 95,
@@ -128751,7 +128671,7 @@ const coordinates =
             }
         },
         {
-            "word": "6",
+            "word": "7",
             "ideogram": "¹⁄₂",
             "coords": {
                 "x": 145,
@@ -128761,7 +128681,7 @@ const coordinates =
             }
         },
         {
-            "word": "7",
+            "word": "8",
             "ideogram": "E",
             "coords": {
                 "x": 178,
@@ -128771,7 +128691,7 @@ const coordinates =
             }
         },
         {
-            "word": "7",
+            "word": "8",
             "ideogram": "KA",
             "coords": {
                 "x": 242,
@@ -128781,7 +128701,7 @@ const coordinates =
             }
         },
         {
-            "word": "8",
+            "word": "9",
             "ideogram": "VIR+[?]",
             "coords": {
                 "x": 9,
@@ -128791,7 +128711,7 @@ const coordinates =
             }
         },
         {
-            "word": "9",
+            "word": "10",
             "ideogram": "70",
             "coords": {
                 "x": 73,
@@ -128801,7 +128721,7 @@ const coordinates =
             }
         },
         {
-            "word": "9",
+            "word": "10",
             "ideogram": "2",
             "coords": {
                 "x": 189,
@@ -128811,7 +128731,7 @@ const coordinates =
             }
         },
         {
-            "word": "10",
+            "word": "11",
             "ideogram": "GRA+PA",
             "coords": {
                 "x": 215,
@@ -128821,7 +128741,7 @@ const coordinates =
             }
         },
         {
-            "word": "11",
+            "word": "12",
             "ideogram": "30",
             "coords": {
                 "x": 270,
@@ -128831,7 +128751,7 @@ const coordinates =
             }
         },
         {
-            "word": "11",
+            "word": "12",
             "ideogram": "6",
             "coords": {
                 "x": 14,
@@ -130758,7 +130678,7 @@ const coordinates =
         },
         {
             "word": "7",
-            "ideogram": "*560",
+            "ideogram": "*558",
             "coords": {
                 "x": 44,
                 "y": 263,
@@ -130900,7 +130820,7 @@ const coordinates =
         },
         {
             "word": "7",
-            "ideogram": "*560",
+            "ideogram": "*558",
             "coords": {
                 "x": 1,
                 "y": 203,
@@ -140724,7 +140644,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "TI",
+            "ideogram": "ZU",
             "coords": {
                 "x": 616,
                 "y": 77,
@@ -140801,7 +140721,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "TI",
+            "ideogram": "ZU",
             "coords": {
                 "x": 607,
                 "y": 71,
@@ -141141,7 +141061,7 @@ const coordinates =
             }
         },
         {
-            "word": "2",
+            "word": "3",
             "ideogram": "OLIV",
             "coords": {
                 "x": 895,
@@ -141151,17 +141071,12 @@ const coordinates =
             }
         },
         {
-            "word": "3",
-            "ideogram": "1",
-            "coords": {
-                "x": 967,
-                "y": 135,
-                "width": 58,
-                "height": 74
-            }
+            "word": "4",
+            "ideogram": "*900",
+            "coords": {}
         },
         {
-            "word": "4",
+            "word": "5",
             "ideogram": "U",
             "coords": {
                 "x": 1145,
@@ -141171,7 +141086,7 @@ const coordinates =
             }
         },
         {
-            "word": "4",
+            "word": "5",
             "ideogram": "NA",
             "coords": {
                 "x": 1155,
@@ -141181,7 +141096,7 @@ const coordinates =
             }
         },
         {
-            "word": "4",
+            "word": "5",
             "ideogram": "KA",
             "coords": {
                 "x": 1167,
@@ -141191,7 +141106,7 @@ const coordinates =
             }
         },
         {
-            "word": "4",
+            "word": "5",
             "ideogram": "NA",
             "coords": {
                 "x": 1155,
@@ -141201,7 +141116,7 @@ const coordinates =
             }
         },
         {
-            "word": "4",
+            "word": "5",
             "ideogram": "SI",
             "coords": {
                 "x": 1163,
@@ -141211,7 +141126,7 @@ const coordinates =
             }
         },
         {
-            "word": "4",
+            "word": "6",
             "ideogram": "OLE",
             "coords": {
                 "x": 1161,
@@ -141221,7 +141136,7 @@ const coordinates =
             }
         },
         {
-            "word": "5",
+            "word": "7",
             "ideogram": "A",
             "coords": {
                 "x": 47,
@@ -141231,7 +141146,7 @@ const coordinates =
             }
         },
         {
-            "word": "5",
+            "word": "7",
             "ideogram": "JA",
             "coords": {
                 "x": 23,
@@ -148819,7 +148734,7 @@ const coordinates =
             }
         },
         {
-            "word": "17",
+            "word": "16",
             "ideogram": "5",
             "coords": {
                 "x": 378,
@@ -148859,7 +148774,7 @@ const coordinates =
             }
         },
         {
-            "word": "20",
+            "word": "19",
             "ideogram": "SE",
             "coords": {
                 "x": 465,
@@ -148867,11 +148782,6 @@ const coordinates =
                 "width": 51,
                 "height": 121
             }
-        },
-        {
-            "word": "20",
-            "ideogram": "*900",
-            "coords": {}
         }
     ],
     "ZA6a-Facsimile": [
@@ -149146,7 +149056,7 @@ const coordinates =
             }
         },
         {
-            "word": "17",
+            "word": "16",
             "ideogram": "5",
             "coords": {
                 "x": 404,
@@ -149186,7 +149096,7 @@ const coordinates =
             }
         },
         {
-            "word": "20",
+            "word": "19",
             "ideogram": "SE",
             "coords": {
                 "x": 456,
@@ -149194,11 +149104,6 @@ const coordinates =
                 "width": 55,
                 "height": 97
             }
-        },
-        {
-            "word": "20",
-            "ideogram": "*900",
-            "coords": {}
         }
     ],
     "ZA6b-Inscription": [
@@ -165715,17 +165620,7 @@ const coordinates =
             }
         },
         {
-            "word": "1",
-            "ideogram": "*",
-            "coords": {
-                "x": 108,
-                "y": 209,
-                "width": 18,
-                "height": 25
-            }
-        },
-        {
-            "word": "1",
+            "word": "2",
             "ideogram": "2",
             "coords": {
                 "x": 233,
@@ -165757,19 +165652,14 @@ const coordinates =
             }
         },
         {
-            "word": "1",
-            "ideogram": "*",
-            "coords": {
-                "x": 161,
-                "y": 84,
-                "width": 43,
-                "height": 81
-            }
-        },
-        {
-            "word": "1",
+            "word": "2",
             "ideogram": "2",
-            "coords": {}
+            "coords": {
+                "x": 172,
+                "y": 100,
+                "width": 26,
+                "height": 37
+            }
         }
     ],
     "HSZg1-Inscription": [

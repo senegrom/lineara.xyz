@@ -1659,7 +1659,7 @@
         "E",
         "30",
         "\n",
-        "*560",
+        "*559",
         "𐄁",
         "talent",
         "5",
@@ -1693,7 +1693,7 @@
         "E",
         "30",
         "\n",
-        "*560",
+        "*559",
         "𐄁",
         "*118",
         "5",
@@ -2843,71 +2843,71 @@
     "names": [
         "HT24a"
     ],
-    "parsedInscription": "𐙂𐘰𐘭𐘱𐘸𐙁𐘘𐝫\n𐝫𐄌\n𐙁𐘘𐘋𐄐\n𐝫𐄏𐝆\n𐙁𐘘𐘋𐄌\n𐘂𐘞𐘭𐘱𐙁𐘘𐘋\n𐘘𐘚𐘺𐛢𐝫",
+    "parsedInscription": "𐙂𐘰𐘭𐘱𐘸𐛢𐝫\n𐝫𐄌\n𐛢𐘋𐄐\n𐝫𐄏𐝆\n𐛢𐘋𐄌\n𐘂𐘞𐘭𐘱𐛢𐘋𐝫\n𐘘𐘚𐘺𐛢𐝫",
     "scribe": "",
     "site": "Haghia Triada",
     "support": "Tablet",
-    "transcription": "𐙂𐘰𐘭𐘱𐘸𐙁𐘘𐝫\n𐝫𐄌𐙁𐘘𐘋𐄐\n𐝫𐄏𐝆𐙁𐘘𐘋𐄌\n𐘂𐘞𐘭𐘱𐛢𐝫\n𐘘𐘚𐘺𐛢𐝫",
+    "transcription": "𐙂𐘰𐘭𐘱𐘸𐛢𐝫\n𐝫𐄌𐛢𐘋𐄐\n𐝫𐄏𐝆𐛢𐘋𐄌\n𐘂𐘞𐘭𐘱𐛢𐘋𐝫\n𐘘𐘚𐘺𐛢𐝫",
     "translatedWords": [
         "KU-PA₃-RI-JA",
-        "KI-MA-RU",
+        "*546",
         "\n",
         "6",
         "\n",
-        "MA-RU-ME",
+        "*561",
         "10",
         "\n",
         "9",
         "¹⁄₂",
         "\n",
-        "MA-RU-ME",
+        "*561",
         "6",
         "\n",
         "from PA-SA-RI",
+        "*561",
         "\n",
-        "MA-RU-ME",
         "RU-I-KO",
         "*560"
     ],
     "transliteratedWords": [
         "KU-PA₃-RI-JA",
-        "KI-MA-RU",
+        "*546",
         "\n",
         "6",
         "\n",
-        "MA-RU-ME",
+        "*561",
         "10",
         "\n",
         "9",
         "¹⁄₂",
         "\n",
-        "MA-RU-ME",
+        "*561",
         "6",
         "\n",
         "PA-SA-RI-JA",
+        "*561",
         "\n",
-        "MA-RU-ME",
         "RU-I-KO",
         "*560"
     ],
     "words": [
         "𐙂𐘰𐘭𐘱",
-        "𐘸𐙁𐘘𐝫",
+        "𐘸𐛢𐝫",
         "\n",
         "𐝫𐄌",
         "\n",
-        "𐙁𐘘𐘋",
+        "𐛢𐘋",
         "𐄐",
         "\n",
         "𐝫𐄏",
         "𐝆",
         "\n",
-        "𐙁𐘘𐘋",
+        "𐛢𐘋",
         "𐄌",
         "\n",
         "𐘂𐘞𐘭𐘱",
+        "𐛢𐘋𐝫",
         "\n",
-        "𐙁𐘘𐘋𐝫",
         "𐘘𐘚𐘺",
         "𐛢𐝫"
     ]
@@ -15970,7 +15970,7 @@
     "translatedWords": [
         "A-SE",
         "𐄁",
-        "*904",
+        "*319",
         "5",
         "\n",
         "QA-RE-TO",
@@ -15990,7 +15990,7 @@
     "transliteratedWords": [
         "A-SE",
         "𐄁",
-        "*904",
+        "*319",
         "5",
         "\n",
         "QA-RE-TO",
@@ -17532,9 +17532,9 @@
     "site": "Haghia Triada",
     "support": "Tablet",
     "transcription": "",
-    "translatedWords": ["None"],
-    "transliteratedWords": ["None"],
-    "words": ["None"]
+    "translatedWords": [],
+    "transliteratedWords": [],
+    "words": []
 }],
 ["HTWa1001",{
     "context": "LMIB",
@@ -44483,12 +44483,12 @@
     "translatedWords": [
         "A-JU",
         "𐄁",
-        "NA-MA-MA-TI-TI-*904"
+        "NA-MA-MA-TI-TI-*319"
     ],
     "transliteratedWords": [
         "A-JU",
         "𐄁",
-        "NA-MA-MA-TI-TI-*904"
+        "NA-MA-MA-TI-TI-*319"
     ],
     "words": [
         "𐘇𐘶",
@@ -44518,18 +44518,18 @@
     "transcription": "𐝫𐘗𐄇𐘗𐄇𐝆𐙫𐄈𐝃𐙫𐄉𐝃𐝄𐘳𐘱𐝇𐝫",
     "translatedWords": [
         "WI-JA-SU-MA-TI-TI",
-        "*904",
+        "*319",
         "1",
         "\n",
-        "*904",
+        "*319",
         "1",
         "¹⁄₂",
         "\n",
-        "*904",
+        "*319",
         "2",
         "¹⁄₄",
         "\n",
-        "*904",
+        "*319",
         "3",
         "³⁄₈",
         "\n",
@@ -44538,18 +44538,18 @@
     ],
     "transliteratedWords": [
         "WI-JA-SU-MA-TI-TI",
-        "*904",
+        "*319",
         "1",
         "\n",
-        "*904",
+        "*319",
         "1",
         "¹⁄₂",
         "\n",
-        "*904",
+        "*319",
         "2",
         "¹⁄₄",
         "\n",
-        "*904",
+        "*319",
         "3",
         "³⁄₈",
         "\n",
@@ -48882,9 +48882,9 @@
     "scribe": "",
     "site": "Khania",
     "support": "Tablet",
-    "transcription": "𐝫𐙁𐘘𐘙𐄈𐛇𐝫\n𐝫",
+    "transcription": "𐝫𐛢𐘙𐄈𐛇𐝫\n𐝫",
     "translatedWords": [
-        "*560-RE",
+        "*562",
         "2",
         "\n",
         "WI+ZE[",
@@ -48892,7 +48892,7 @@
         "𐝫"
     ],
     "transliteratedWords": [
-        "*560-RE",
+        "*562",
         "2",
         "\n",
         "WI+ZE[",
@@ -51914,30 +51914,6 @@
         "\n",
         "𐝫"
     ]
-}],
-["KH101",{
-    "context": "",
-    "facsimileImages": [
-        "images/KH101-Facsimile.jpg"
-    ],
-    "findspot": "",
-    "imageRights": "",
-    "imageRightsURL": "",
-    "images": [
-        "images/KH101-Inscription.jpg"
-    ],
-    "name": "KH101",
-    "names": [
-        "KH101"
-    ],
-    "parsedInscription": "",
-    "scribe": "",
-    "site": "Khania",
-    "support": "Tablet",
-    "transcription": "",
-    "translatedWords": [],
-    "transliteratedWords": [],
-    "words": []
 }],
 ["KHWa1001",{
     "context": "LMIB",
@@ -59173,7 +59149,8 @@
     "support": "Tablet",
     "transcription": "𐘉𐘾𐘙𐘇𐘈𐘤\n𐘅𐙂𐘂𐘭𐙇𐄔𐝫\n𐛭𐄑𐄌𐝆𐘡𐘾𐝫\n𐙇𐄖𐄈𐛭𐄒\n𐄌",
     "translatedWords": [
-        "U-KA-RE-A-SE-SI-NA",
+        "U-KA-RE",
+        "A-SE-SI-NA",
         "\n",
         "KU-PA-RI",
         "VIR+[?]",
@@ -59191,7 +59168,8 @@
         "36"
     ],
     "transliteratedWords": [
-        "U-KA-RE-A-SE-SI-NA",
+        "U-KA-RE",
+        "A-SE-SI-NA",
         "\n",
         "KU-PA-RI",
         "VIR+[?]",
@@ -59209,7 +59187,8 @@
         "36"
     ],
     "words": [
-        "𐘉𐘾𐘙𐘇𐘈𐘤𐘅",
+        "𐘉𐘾𐘙",
+        "𐘇𐘈𐘤𐘅",
         "\n",
         "𐙂𐘂𐘭",
         "𐙇",
@@ -59892,7 +59871,7 @@
         "*563",
         "𐝓",
         "\n",
-        "*560",
+        "*558",
         "𐝓",
         "\n",
         "PA-RA",
@@ -59916,7 +59895,7 @@
         "*563",
         "𐝓",
         "\n",
-        "*560",
+        "*558",
         "𐝓",
         "\n",
         "PA-RA",
@@ -64072,28 +64051,28 @@
     "names": [
         "SKOZc1"
     ],
-    "parsedInscription": "𐝫𐄁𐘅𐘹𐙕𐘗𐝫\n𐝫𐘌𐘸𐘠𐝫",
+    "parsedInscription": "𐝫𐄁𐘅𐘹𐙕𐘗𐝫\n𐝫𐘌𐘸𐙀𐝫",
     "scribe": "",
     "site": "Skoteino Cave",
     "support": "Inked inscription",
-    "transcription": "𐝫𐄁𐘅𐘹𐙕𐘗𐝫\n𐝫𐘌𐘸𐘠𐝫",
+    "transcription": "𐝫𐄁𐘅𐘹𐙕𐘗𐝫\n𐝫𐘌𐘸𐙀𐝫",
     "translatedWords": [
         "𐄁",
         "NA-TU-*301-NE",
         "\n",
-        "QA-KI-TI"
+        "QA-KI-ZU"
     ],
     "transliteratedWords": [
         "𐄁",
         "NA-TU-*301-NE",
         "\n",
-        "QA-KI-TI"
+        "QA-KI-ZU"
     ],
     "words": [
         "𐄁",
         "𐘅𐘹𐙕𐘗𐝫",
         "\n",
-        "𐝫𐘌𐘸𐘠𐝫"
+        "𐝫𐘌𐘸𐙀𐝫"
     ]
 }],
 ["SYZa1",{
@@ -64145,44 +64124,50 @@
     ],
     "findspot": "",
     "imageRights": "© École Française d'Athènes",
-    "imageRightsURL": "papers/GORILA-Vol5.pdf#page=115",
+    "imageRightsURL": "papers/GORILA-Vol5.pdf#page=117",
     "images": [],
     "name": "SYZa2",
     "names": [
         "SYZa2"
     ],
-    "parsedInscription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘲𐙁𐘹𐙋𐄇\n𐘉𐘅𐘾𐘅𐘤𐙖\n𐘇𐘱",
+    "parsedInscription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘲𐙁𐘹𐙋𐄁\n𐘉𐘅𐘾𐘅𐘤𐙖\n𐘇𐘱",
     "scribe": "",
     "site": "Syme",
     "support": "Stone vessel",
-    "transcription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘲𐙁𐘹𐙋𐄇\n𐘉𐘅𐘾𐘅𐘤𐙖\n𐘇𐘱",
+    "transcription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘲𐙁𐘹𐙋𐄁\n𐘉𐘅𐘾𐘅𐘤𐙖\n𐘇𐘱",
     "translatedWords": [
         "gives",
         "𐄁",
-        "JA-SU-MA-TU-OLIV",
-        "1",
+        "JA-SU-MA-TU",
+        "olives",
+        "𐄁",
         "\n",
-        "U-NA-KA-NA-SI-OLE",
+        "requesting",
+        "olive oil",
         "\n",
         "A-JA"
     ],
     "transliteratedWords": [
         "A-TA-I-*301-WA-JA",
         "𐄁",
-        "JA-SU-MA-TU-OLIV",
-        "1",
+        "JA-SU-MA-TU",
+        "OLIV",
+        "𐄁",
         "\n",
-        "U-NA-KA-NA-SI-OLE",
+        "U-NA-KA-NA-SI",
+        "OLE",
         "\n",
         "A-JA"
     ],
     "words": [
         "𐘇𐘳𐘚𐙕𐘮𐘱",
         "𐄁",
-        "𐘱𐘲𐙁𐘹𐙋",
-        "𐄇",
+        "𐘱𐘲𐙁𐘹",
+        "𐙋",
+        "𐄁",
         "\n",
-        "𐘉𐘅𐘾𐘅𐘤𐙖",
+        "𐘉𐘅𐘾𐘅𐘤",
+        "𐙖",
         "\n",
         "𐘇𐘱"
     ]
@@ -66285,11 +66270,11 @@
     "names": [
         "ZA6a"
     ],
-    "parsedInscription": "𐙙𐘮𐘅𐙑𐄐𐄏\n𐘟𐘶𐘃𐘻𐝫\n𐝫𐄙𐄗\n𐘚𐘈𐝫\n𐝫𐙋𐄐𐄋\n𐝫𐙋𐄐\n𐘚𐝫\n𐝫𐄈\n𐝫𐘜𐘽𐛭𐝫\n𐝫𐄑𐝫\n𐝫𐙋𐝫\n𐝫𐄑𐄋\n𐙘𐝫\n𐝫𐄑\n𐘚𐘈𐝫𐄁",
+    "parsedInscription": "𐙙𐘮𐘅𐙑𐄐𐄏\n𐘟𐘶𐘃𐘻𐝫\n𐝫𐄙𐄗\n𐘚𐘈𐝫\n𐝫𐙋𐄐𐄋\n𐝫𐙋𐄐\n𐘚𐝫\n𐝫𐄈\n𐝫𐘜𐘽𐛭𐝫\n𐝫𐄑𐝫\n𐝫𐙋𐝫\n𐝫𐄑𐄋\n𐙘𐝫\n𐝫𐄑\n𐘚𐘈𐝫",
     "scribe": "ZA Scribe 1",
     "site": "Zakros",
     "support": "Stone vessel",
-    "transcription": "𐙙𐘮𐘅𐙑𐄐𐄏𐘟𐘶\n𐘃𐘻𐝫𐄙𐄗\n𐘚𐘈𐝫𐙋\n𐄐𐄋𐝫𐙋𐄐\n𐘚𐝫𐄈\n𐝫𐘜𐘽𐛭𐝫\n𐝫𐄑𐝫𐙋𐝫\n𐝫𐄑𐄋𐙘𐝫\n𐝫𐄑𐘚𐘈\n𐝫𐄁",
+    "transcription": "𐙙𐘮𐘅𐙑𐄐𐄏𐘟𐘶\n𐘃𐘻𐝫𐄙𐄗\n𐘚𐘈𐝫𐙋\n𐄐𐄋𐝫𐙋𐄐\n𐘚𐝫𐄈\n𐝫𐘜𐘽𐛭𐝫\n𐝫𐄑𐝫𐙋𐝫\n𐝫𐄑𐄋𐙘𐝫\n𐝫𐄑𐘚𐘈\n𐝫",
     "translatedWords": [
         "*305-WA-NA",
         "fodder?",
@@ -66316,15 +66301,14 @@
         "\n",
         "20",
         "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "𐄁",
         "olives",
+        "\n",
         "25",
+        "\n",
         "olive oil",
+        "\n",
         "20",
+        "\n",
         "I-SE"
     ],
     "transliteratedWords": [
@@ -66353,15 +66337,14 @@
         "\n",
         "20",
         "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "𐄁",
         "OLIV",
+        "\n",
         "25",
+        "\n",
         "*304",
+        "\n",
         "20",
+        "\n",
         "I-SE"
     ],
     "words": [
@@ -66390,15 +66373,14 @@
         "\n",
         "𐝫𐄑𐝫",
         "\n",
+        "𐝫𐙋𐝫",
         "\n",
-        "\n",
-        "\n",
-        "\n",
-        "𐄁",
-        "𐙋𐝫",
         "𐝫𐄑𐄋",
+        "\n",
         "𐙘𐝫",
+        "\n",
         "𐝫𐄑",
+        "\n",
         "𐘚𐘈𐝫"
     ]
 }],
@@ -70863,22 +70845,25 @@
     "names": [
         "GOWc3"
     ],
-    "parsedInscription": "𐝬𐄑,𐄈",
+    "parsedInscription": "𐝬𐄑𐄈",
     "scribe": "",
     "site": "Gournia",
     "support": "Roundel",
-    "transcription": "𐝬𐄑,𐄈",
+    "transcription": "𐝬𐄑𐄈",
     "translatedWords": [
         "*809",
-        "𐄑,𐄈"
+        "20",
+        "2"
     ],
     "transliteratedWords": [
         "*809",
-        "𐄑,𐄈"
+        "20",
+        "2"
     ],
     "words": [
         "𐝬",
-        "𐄑,𐄈"
+        "𐄑",
+        "𐄈"
     ]
 }],
 ["HSZg1",{
@@ -71904,7 +71889,7 @@
         "images/noimage.jpg"
     ],
     "findspot": "",
-    "imageRights": "Ph Saperstein",
+    "imageRights": "Ph Sapirstein",
     "imageRightsURL": "papers/KNZg57.pdf",
     "images": [
         "images/KNZg57a-Inscription.jpg"
@@ -71982,7 +71967,7 @@
         "images/noimage.jpg"
     ],
     "findspot": "",
-    "imageRights": "Ph Saperstein",
+    "imageRights": "Excavator's archive",
     "imageRightsURL": "https://ejournals.lib.uoc.gr/Ariadne/article/view/1841/1751",
     "images": [
         "images/KNZg57b-Inscription.jpg"
@@ -71991,14 +71976,34 @@
     "names": [
         "KNZg57b"
     ],
-    "parsedInscription":"𐜪𐜪𐜫𐜩𐜶𐝫𐝫𐝫𐝫𐘝𐝫𐝫𐝫𐝫𐚪𐝫𐝫",
+    "parsedInscription":"𐘚𐙂𐘣𐘴𐘾𐘬𐝫𐙉𐙉𐙋",
     "scribe": "",
     "site": "Knossos",
     "support": "ivory object",
-    "transcription":"𐜪𐜪𐜫𐜩𐜶𐝫𐝫𐝫𐝫𐘝𐝫𐝫𐝫𐝫𐚪𐝫𐝫",
+    "transcription":"𐘚𐙂𐘣𐘴𐘾𐘬𐝫𐙉𐙉𐙋",
     "translatedWords": [
+        "I",
+        "KU",
+        "WI",
+        "RA",
+        "KA",
+        "DU",
+        "𐝫",
+        "grain",
+        "grain",
+        "olives"
     ],
     "transliteratedWords": [
+        "I",
+        "KU",
+        "WI",
+        "RA",
+        "KA",
+        "DU",
+        "𐝫",
+        "GRA",
+        "GRA",
+        "OLIV"
     ],
     "words": [
         "𐘚",
@@ -72007,7 +72012,7 @@
         "𐘴",
         "𐘾",
         "𐘬",
-        "\u1076b",
+        "𐝫",
         "𐙉",
         "𐙉",
         "𐙋"
@@ -72019,7 +72024,7 @@
         "images/noimage.jpg"
     ],
     "findspot": "",
-    "imageRights": "Ph Saperstein",
+    "imageRights": "Ph Sapirstein",
     "imageRightsURL": "https://ejournals.lib.uoc.gr/Ariadne/article/view/1841/1751",
     "images": [
         "images/KNZg58-Inscription.jpg"

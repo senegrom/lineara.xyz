@@ -1667,7 +1667,7 @@ var inscriptions = new Map([
         "E",
         "30",
         "\n",
-        "*560",
+        "*559",
         "𐄁",
         "talent",
         "5",
@@ -1701,7 +1701,7 @@ var inscriptions = new Map([
         "E",
         "30",
         "\n",
-        "*560",
+        "*559",
         "𐄁",
         "*118",
         "5",
@@ -2851,71 +2851,71 @@ var inscriptions = new Map([
     "names": [
         "HT24a"
     ],
-    "parsedInscription": "𐙂𐘰𐘭𐘱𐘸𐙁𐘘𐝫\n𐝫𐄌\n𐙁𐘘𐘋𐄐\n𐝫𐄏𐝆\n𐙁𐘘𐘋𐄌\n𐘂𐘞𐘭𐘱𐙁𐘘𐘋\n𐘘𐘚𐘺𐛢𐝫",
+    "parsedInscription": "𐙂𐘰𐘭𐘱𐘸𐛢𐝫\n𐝫𐄌\n𐛢𐘋𐄐\n𐝫𐄏𐝆\n𐛢𐘋𐄌\n𐘂𐘞𐘭𐘱𐛢𐘋𐝫\n𐘘𐘚𐘺𐛢𐝫",
     "scribe": "",
     "site": "Haghia Triada",
     "support": "Tablet",
-    "transcription": "𐙂𐘰𐘭𐘱𐘸𐙁𐘘𐝫\n𐝫𐄌𐙁𐘘𐘋𐄐\n𐝫𐄏𐝆𐙁𐘘𐘋𐄌\n𐘂𐘞𐘭𐘱𐛢𐝫\n𐘘𐘚𐘺𐛢𐝫",
+    "transcription": "𐙂𐘰𐘭𐘱𐘸𐛢𐝫\n𐝫𐄌𐛢𐘋𐄐\n𐝫𐄏𐝆𐛢𐘋𐄌\n𐘂𐘞𐘭𐘱𐛢𐘋𐝫\n𐘘𐘚𐘺𐛢𐝫",
     "translatedWords": [
         "KU-PA₃-RI-JA",
-        "KI-MA-RU",
+        "*546",
         "\n",
         "6",
         "\n",
-        "MA-RU-ME",
+        "*561",
         "10",
         "\n",
         "9",
         "¹⁄₂",
         "\n",
-        "MA-RU-ME",
+        "*561",
         "6",
         "\n",
         "from PA-SA-RI",
+        "*561",
         "\n",
-        "MA-RU-ME",
         "RU-I-KO",
         "*560"
     ],
     "transliteratedWords": [
         "KU-PA₃-RI-JA",
-        "KI-MA-RU",
+        "*546",
         "\n",
         "6",
         "\n",
-        "MA-RU-ME",
+        "*561",
         "10",
         "\n",
         "9",
         "¹⁄₂",
         "\n",
-        "MA-RU-ME",
+        "*561",
         "6",
         "\n",
         "PA-SA-RI-JA",
+        "*561",
         "\n",
-        "MA-RU-ME",
         "RU-I-KO",
         "*560"
     ],
     "words": [
         "𐙂𐘰𐘭𐘱",
-        "𐘸𐙁𐘘𐝫",
+        "𐘸𐛢𐝫",
         "\n",
         "𐝫𐄌",
         "\n",
-        "𐙁𐘘𐘋",
+        "𐛢𐘋",
         "𐄐",
         "\n",
         "𐝫𐄏",
         "𐝆",
         "\n",
-        "𐙁𐘘𐘋",
+        "𐛢𐘋",
         "𐄌",
         "\n",
         "𐘂𐘞𐘭𐘱",
+        "𐛢𐘋𐝫",
         "\n",
-        "𐙁𐘘𐘋𐝫",
         "𐘘𐘚𐘺",
         "𐛢𐝫"
     ]
@@ -15990,7 +15990,7 @@ var inscriptions = new Map([
     "translatedWords": [
         "A-SE",
         "𐄁",
-        "*904",
+        "*319",
         "5",
         "\n",
         "QA-RE-TO",
@@ -16010,7 +16010,7 @@ var inscriptions = new Map([
     "transliteratedWords": [
         "A-SE",
         "𐄁",
-        "*904",
+        "*319",
         "5",
         "\n",
         "QA-RE-TO",
@@ -17552,9 +17552,9 @@ var inscriptions = new Map([
     "site": "Haghia Triada",
     "support": "Tablet",
     "transcription": "",
-    "translatedWords": ["None"],
-    "transliteratedWords": ["None"],
-    "words": ["None"]
+    "translatedWords": [],
+    "transliteratedWords": [],
+    "words": []
 }],
 ["HTW231e",{
     "context": "LMIB",
@@ -17572,9 +17572,9 @@ var inscriptions = new Map([
     "site": "Haghia Triada",
     "support": "Tablet",
     "transcription": "",
-    "translatedWords": ["None"],
-    "transliteratedWords": ["None"],
-    "words": ["None"]
+    "translatedWords": [],
+    "transliteratedWords": [],
+    "words": []
 }],
 ["HTW231f",{
     "context": "LMIB",
@@ -17592,9 +17592,9 @@ var inscriptions = new Map([
     "site": "Haghia Triada",
     "support": "Tablet",
     "transcription": "",
-    "translatedWords": ["None"],
-    "transliteratedWords": ["None"],
-    "words": ["None"]
+    "translatedWords": [],
+    "transliteratedWords": [],
+    "words": []
 }],
 ["HTWa1001",{
     "context": "LMIB",
@@ -44558,12 +44558,12 @@ var inscriptions = new Map([
     "translatedWords": [
         "A-JU",
         "𐄁",
-        "NA-MA-MA-TI-TI-*904"
+        "NA-MA-MA-TI-TI-*319"
     ],
     "transliteratedWords": [
         "A-JU",
         "𐄁",
-        "NA-MA-MA-TI-TI-*904"
+        "NA-MA-MA-TI-TI-*319"
     ],
     "words": [
         "𐘇𐘶",
@@ -44593,18 +44593,18 @@ var inscriptions = new Map([
     "transcription": "𐝫𐘗𐄇𐘗𐄇𐝆𐙫𐄈𐝃𐙫𐄉𐝃𐝄𐘳𐘱𐝇𐝫",
     "translatedWords": [
         "WI-JA-SU-MA-TI-TI",
-        "*904",
+        "*319",
         "1",
         "\n",
-        "*904",
+        "*319",
         "1",
         "¹⁄₂",
         "\n",
-        "*904",
+        "*319",
         "2",
         "¹⁄₄",
         "\n",
-        "*904",
+        "*319",
         "3",
         "³⁄₈",
         "\n",
@@ -44613,18 +44613,18 @@ var inscriptions = new Map([
     ],
     "transliteratedWords": [
         "WI-JA-SU-MA-TI-TI",
-        "*904",
+        "*319",
         "1",
         "\n",
-        "*904",
+        "*319",
         "1",
         "¹⁄₂",
         "\n",
-        "*904",
+        "*319",
         "2",
         "¹⁄₄",
         "\n",
-        "*904",
+        "*319",
         "3",
         "³⁄₈",
         "\n",
@@ -48957,9 +48957,9 @@ var inscriptions = new Map([
     "scribe": "",
     "site": "Khania",
     "support": "Tablet",
-    "transcription": "𐝫𐙁𐘘𐘙𐄈𐛇𐝫\n𐝫",
+    "transcription": "𐝫𐛢𐘙𐄈𐛇𐝫\n𐝫",
     "translatedWords": [
-        "*560-RE",
+        "*562",
         "2",
         "\n",
         "WI+ZE[",
@@ -48967,7 +48967,7 @@ var inscriptions = new Map([
         "𐝫"
     ],
     "transliteratedWords": [
-        "*560-RE",
+        "*562",
         "2",
         "\n",
         "WI+ZE[",
@@ -51989,30 +51989,6 @@ var inscriptions = new Map([
         "\n",
         "𐝫"
     ]
-}],
-["KH101",{
-    "context": "",
-    "facsimileImages": [
-        "images/KH101-Facsimile.jpg"
-    ],
-    "findspot": "",
-    "imageRights": "",
-    "imageRightsURL": "",
-    "images": [
-        "images/KH101-Inscription.jpg"
-    ],
-    "name": "KH101",
-    "names": [
-        "KH101"
-    ],
-    "parsedInscription": "",
-    "scribe": "",
-    "site": "Khania",
-    "support": "Tablet",
-    "transcription": "",
-    "translatedWords": [],
-    "transliteratedWords": [],
-    "words": []
 }],
 ["KHWa1001",{
     "context": "LMIB",
@@ -59248,7 +59224,8 @@ var inscriptions = new Map([
     "support": "Tablet",
     "transcription": "𐘉𐘾𐘙𐘇𐘈𐘤\n𐘅𐙂𐘂𐘭𐙇𐄔𐝫\n𐛭𐄑𐄌𐝆𐘡𐘾𐝫\n𐙇𐄖𐄈𐛭𐄒\n𐄌",
     "translatedWords": [
-        "U-KA-RE-A-SE-SI-NA",
+        "U-KA-RE",
+        "A-SE-SI-NA",
         "\n",
         "KU-PA-RI",
         "VIR+[?]",
@@ -59266,7 +59243,8 @@ var inscriptions = new Map([
         "36"
     ],
     "transliteratedWords": [
-        "U-KA-RE-A-SE-SI-NA",
+        "U-KA-RE",
+        "A-SE-SI-NA",
         "\n",
         "KU-PA-RI",
         "VIR+[?]",
@@ -59284,7 +59262,8 @@ var inscriptions = new Map([
         "36"
     ],
     "words": [
-        "𐘉𐘾𐘙𐘇𐘈𐘤𐘅",
+        "𐘉𐘾𐘙",
+        "𐘇𐘈𐘤𐘅",
         "\n",
         "𐙂𐘂𐘭",
         "𐙇",
@@ -59967,7 +59946,7 @@ var inscriptions = new Map([
         "*563",
         "𐝓",
         "\n",
-        "*560",
+        "*558",
         "𐝓",
         "\n",
         "PA-RA",
@@ -59991,7 +59970,7 @@ var inscriptions = new Map([
         "*563",
         "𐝓",
         "\n",
-        "*560",
+        "*558",
         "𐝓",
         "\n",
         "PA-RA",
@@ -64150,28 +64129,28 @@ var inscriptions = new Map([
     "names": [
         "SKOZc1"
     ],
-    "parsedInscription": "𐝫𐄁𐘅𐘹𐙕𐘗𐝫\n𐝫𐘌𐘸𐘠𐝫",
+    "parsedInscription": "𐝫𐄁𐘅𐘹𐙕𐘗𐝫\n𐝫𐘌𐘸𐙀𐝫",
     "scribe": "",
     "site": "Skoteino Cave",
     "support": "Inked inscription",
-    "transcription": "𐝫𐄁𐘅𐘹𐙕𐘗𐝫\n𐝫𐘌𐘸𐘠𐝫",
+    "transcription": "𐝫𐄁𐘅𐘹𐙕𐘗𐝫\n𐝫𐘌𐘸𐙀𐝫",
     "translatedWords": [
         "𐄁",
         "NA-TU-*301-NE",
         "\n",
-        "QA-KI-TI"
+        "QA-KI-ZU"
     ],
     "transliteratedWords": [
         "𐄁",
         "NA-TU-*301-NE",
         "\n",
-        "QA-KI-TI"
+        "QA-KI-ZU"
     ],
     "words": [
         "𐄁",
         "𐘅𐘹𐙕𐘗𐝫",
         "\n",
-        "𐝫𐘌𐘸𐘠𐝫"
+        "𐝫𐘌𐘸𐙀𐝫"
     ]
 }],
 ["SYZa1",{
@@ -64223,44 +64202,50 @@ var inscriptions = new Map([
     ],
     "findspot": "",
     "imageRights": "© École Française d'Athènes",
-    "imageRightsURL": "papers/GORILA-Vol5.pdf#page=115",
+    "imageRightsURL": "papers/GORILA-Vol5.pdf#page=117",
     "images": [],
     "name": "SYZa2",
     "names": [
         "SYZa2"
     ],
-    "parsedInscription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘲𐙁𐘹𐙋𐄇\n𐘉𐘅𐘾𐘅𐘤𐙖\n𐘇𐘱",
+    "parsedInscription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘲𐙁𐘹𐙋𐄁\n𐘉𐘅𐘾𐘅𐘤𐙖\n𐘇𐘱",
     "scribe": "",
     "site": "Syme",
     "support": "Stone vessel",
-    "transcription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘲𐙁𐘹𐙋𐄇\n𐘉𐘅𐘾𐘅𐘤𐙖\n𐘇𐘱",
+    "transcription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘲𐙁𐘹𐙋𐄁\n𐘉𐘅𐘾𐘅𐘤𐙖\n𐘇𐘱",
     "translatedWords": [
         "gives",
         "𐄁",
-        "JA-SU-MA-TU-OLIV",
-        "1",
+        "JA-SU-MA-TU",
+        "olives",
+        "𐄁",
         "\n",
-        "U-NA-KA-NA-SI-OLE",
+        "requesting",
+        "olive oil",
         "\n",
         "A-JA"
     ],
     "transliteratedWords": [
         "A-TA-I-*301-WA-JA",
         "𐄁",
-        "JA-SU-MA-TU-OLIV",
-        "1",
+        "JA-SU-MA-TU",
+        "OLIV",
+        "𐄁",
         "\n",
-        "U-NA-KA-NA-SI-OLE",
+        "U-NA-KA-NA-SI",
+        "OLE",
         "\n",
         "A-JA"
     ],
     "words": [
         "𐘇𐘳𐘚𐙕𐘮𐘱",
         "𐄁",
-        "𐘱𐘲𐙁𐘹𐙋",
-        "𐄇",
+        "𐘱𐘲𐙁𐘹",
+        "𐙋",
+        "𐄁",
         "\n",
-        "𐘉𐘅𐘾𐘅𐘤𐙖",
+        "𐘉𐘅𐘾𐘅𐘤",
+        "𐙖",
         "\n",
         "𐘇𐘱"
     ]
@@ -66363,11 +66348,11 @@ var inscriptions = new Map([
     "names": [
         "ZA6a"
     ],
-    "parsedInscription": "𐙙𐘮𐘅𐙑𐄐𐄏\n𐘟𐘶𐘃𐘻𐝫\n𐝫𐄙𐄗\n𐘚𐘈𐝫\n𐝫𐙋𐄐𐄋\n𐝫𐙋𐄐\n𐘚𐝫\n𐝫𐄈\n𐝫𐘜𐘽𐛭𐝫\n𐝫𐄑𐝫\n𐝫𐙋𐝫\n𐝫𐄑𐄋\n𐙘𐝫\n𐝫𐄑\n𐘚𐘈𐝫𐄁",
+    "parsedInscription": "𐙙𐘮𐘅𐙑𐄐𐄏\n𐘟𐘶𐘃𐘻𐝫\n𐝫𐄙𐄗\n𐘚𐘈𐝫\n𐝫𐙋𐄐𐄋\n𐝫𐙋𐄐\n𐘚𐝫\n𐝫𐄈\n𐝫𐘜𐘽𐛭𐝫\n𐝫𐄑𐝫\n𐝫𐙋𐝫\n𐝫𐄑𐄋\n𐙘𐝫\n𐝫𐄑\n𐘚𐘈𐝫",
     "scribe": "ZA Scribe 1",
     "site": "Zakros",
     "support": "Tablet",
-    "transcription": "𐙙𐘮𐘅𐙑𐄐𐄏𐘟𐘶\n𐘃𐘻𐝫𐄙𐄗\n𐘚𐘈𐝫𐙋\n𐄐𐄋𐝫𐙋𐄐\n𐘚𐝫𐄈\n𐝫𐘜𐘽𐛭𐝫\n𐝫𐄑𐝫𐙋𐝫\n𐝫𐄑𐄋𐙘𐝫\n𐝫𐄑𐘚𐘈\n𐝫𐄁",
+    "transcription": "𐙙𐘮𐘅𐙑𐄐𐄏𐘟𐘶\n𐘃𐘻𐝫𐄙𐄗\n𐘚𐘈𐝫𐙋\n𐄐𐄋𐝫𐙋𐄐\n𐘚𐝫𐄈\n𐝫𐘜𐘽𐛭𐝫\n𐝫𐄑𐝫𐙋𐝫\n𐝫𐄑𐄋𐙘𐝫\n𐝫𐄑𐘚𐘈\n𐝫",
     "translatedWords": [
         "*305-WA-NA",
         "fodder?",
@@ -66394,15 +66379,14 @@ var inscriptions = new Map([
         "\n",
         "20",
         "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "𐄁",
         "olives",
+        "\n",
         "25",
+        "\n",
         "olive oil",
+        "\n",
         "20",
+        "\n",
         "I-SE"
     ],
     "transliteratedWords": [
@@ -66431,15 +66415,14 @@ var inscriptions = new Map([
         "\n",
         "20",
         "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "𐄁",
         "OLIV",
+        "\n",
         "25",
+        "\n",
         "*304",
+        "\n",
         "20",
+        "\n",
         "I-SE"
     ],
     "words": [
@@ -66468,15 +66451,14 @@ var inscriptions = new Map([
         "\n",
         "𐝫𐄑𐝫",
         "\n",
+        "𐝫𐙋𐝫",
         "\n",
-        "\n",
-        "\n",
-        "\n",
-        "𐄁",
-        "𐙋𐝫",
         "𐝫𐄑𐄋",
+        "\n",
         "𐙘𐝫",
+        "\n",
         "𐝫𐄑",
+        "\n",
         "𐘚𐘈𐝫"
     ]
 }],
@@ -70941,22 +70923,25 @@ var inscriptions = new Map([
     "names": [
         "GOWc3"
     ],
-    "parsedInscription": "𐝬𐄑,𐄈",
+    "parsedInscription": "𐝬𐄑𐄈",
     "scribe": "",
     "site": "Gournia",
     "support": "Roundel",
-    "transcription": "𐝬𐄑,𐄈",
+    "transcription": "𐝬𐄑𐄈",
     "translatedWords": [
         "*809",
-        "𐄑,𐄈"
+        "20",
+        "2"
     ],
     "transliteratedWords": [
         "*809",
-        "𐄑,𐄈"
+        "20",
+        "2"
     ],
     "words": [
         "𐝬",
-        "𐄑,𐄈"
+        "𐄑",
+        "𐄈"
     ]
 }],
 ["HSZg1",{
@@ -71991,7 +71976,7 @@ var inscriptions = new Map([
         "images/noimage.jpg"
     ],
     "findspot": "",
-    "imageRights": "Ph Saperstein",
+    "imageRights": "Ph Sapirstein",
     "imageRightsURL": "papers/KNZg57.pdf",
     "images": [
         "images/KNZg57a-Inscription.jpg"
@@ -72069,7 +72054,7 @@ var inscriptions = new Map([
         "images/noimage.jpg"
     ],
     "findspot": "",
-    "imageRights": "Ph Saperstein",
+    "imageRights": "Excavator's archive",
     "imageRightsURL": "https://ejournals.lib.uoc.gr/Ariadne/article/view/1841/1751",
     "images": [
         "images/KNZg57b-Inscription.jpg"
@@ -72078,14 +72063,34 @@ var inscriptions = new Map([
     "names": [
         "KNZg57b"
     ],
-    "parsedInscription":"𐜪𐜪𐜫𐜩𐜶𐝫𐝫𐝫𐝫𐘝𐝫𐝫𐝫𐝫𐚪𐝫𐝫",
+    "parsedInscription":"𐘚𐙂𐘣𐘴𐘾𐘬𐝫𐙉𐙉𐙋",
     "scribe": "",
     "site": "Knossos",
     "support": "ivory object",
-    "transcription":"𐜪𐜪𐜫𐜩𐜶𐝫𐝫𐝫𐝫𐘝𐝫𐝫𐝫𐝫𐚪𐝫𐝫",
+    "transcription":"𐘚𐙂𐘣𐘴𐘾𐘬𐝫𐙉𐙉𐙋",
     "translatedWords": [
+        "I",
+        "KU",
+        "WI",
+        "RA",
+        "KA",
+        "DU",
+        "𐝫",
+        "grain",
+        "grain",
+        "olives"
     ],
     "transliteratedWords": [
+        "I",
+        "KU",
+        "WI",
+        "RA",
+        "KA",
+        "DU",
+        "𐝫",
+        "GRA",
+        "GRA",
+        "OLIV"
     ],
     "words": [
         "𐘚",
@@ -72106,7 +72111,7 @@ var inscriptions = new Map([
         "images/noimage.jpg"
     ],
     "findspot": "",
-    "imageRights": "Ph Saperstein",
+    "imageRights": "Ph Sapirstein",
     "imageRightsURL": "https://ejournals.lib.uoc.gr/Ariadne/article/view/1841/1751",
     "images": [
         "images/KNZg58-Inscription.jpg"
@@ -76342,11 +76347,11 @@ var wordsInCorpus = new Map([
 ["𐘄𐘰𐘆",1],
 ["", 2735],
 ["𐄁", 468],
-["𐄇", 310],
+["𐄇", 309],
 ["𐙕", 238],
 ["𐙂", 170],
 ["𐘾", 169],
-["𐄈", 158],
+["𐄈", 159],
 ["𐝆", 120],
 ["𐘤", 118],
 ["𐄉", 101],
@@ -76363,7 +76368,7 @@ var wordsInCorpus = new Map([
 ["𐙍", 54],
 ["𐙗", 52],
 ["𐘼", 47],
-["𐄑", 40],
+["𐄑", 41],
 ["𐘚", 39],
 ["𐙂𐘁", 37],
 ["𐙇", 31],
@@ -76374,11 +76379,11 @@ var wordsInCorpus = new Map([
 ["𐘇", 26],
 ["𐄎", 25],
 ["𐙘", 25],
-["𐙋", 24],
+["𐙋", 25],
 ["𐝁", 24],
 ["𐜙", 23],
+["𐙖", 23],
 ["𐜋", 22],
-["𐙖", 22],
 ["𐝂", 22],
 ["𐄒", 20],
 ["𐜓", 20],
@@ -76483,6 +76488,7 @@ var wordsInCorpus = new Map([
 ["𐚩", 5],
 ["𐘚𐘀", 5],
 ["𐙂𐘂", 5],
+["𐘉𐘅𐘾𐘅𐘤", 5],
 ["𐜎", 4],
 ["𐘸𐘙𐘳𐘅", 4],
 ["𐘞𐙁", 4],
@@ -76517,7 +76523,6 @@ var wordsInCorpus = new Map([
 ["𐄒𐄉", 4],
 ["𐘐", 4],
 ["𐝆𐝁", 4],
-["𐘉𐘅𐘾𐘅𐘤", 4],
 ["𐘱𐘞", 4],
 ["𐝁𐝁", 4],
 ["𐘍", 4],
@@ -76548,7 +76553,6 @@ var wordsInCorpus = new Map([
 ["𐘾𐙂𐘂", 3],
 ["𐜖", 3],
 ["𐘕", 3],
-["𐙁𐘘𐘋", 3],
 ["𐄑𐄎", 3],
 ["𐛖", 3],
 ["𐝃𐝉", 3],
@@ -76596,6 +76600,7 @@ var wordsInCorpus = new Map([
 ["𐛿", 3],
 ["𐚽", 3],
 ["𐘬𐘙𐘍𐘈", 3],
+["𐛢𐘋", 3],
 ["𐄔𐄈", 2],
 ["𐄙𐄋", 2],
 ["𐜊", 2],
@@ -76831,7 +76836,6 @@ var wordsInCorpus = new Map([
 ["𐘺𐘘", 1],
 ["𐘝𐘴", 1],
 ["𐙂𐘰𐘭𐘱", 1],
-["𐘸𐙁𐘘", 1],
 ["𐘂𐘞𐘭𐘱", 1],
 ["𐘘𐘚𐘺", 1],
 ["𐛋𐙈", 1],
@@ -77401,7 +77405,6 @@ var wordsInCorpus = new Map([
 ["𐙹𐘞𐘕", 1],
 ["𐁁", 1],
 ["𐘇𐙂𐘶𐘂𐙈", 1],
-["𐘉𐘾𐘙𐘇𐘈𐘤𐘅", 1],
 ["𐙂𐘂𐘭", 1],
 ["𐘡𐘾", 1],
 ["𐄒𐄌", 1],
@@ -77547,10 +77550,7 @@ var wordsInCorpus = new Map([
 ["𐘀𐙈", 1],
 ["𐘇𐙁𐘴𐘗", 1],
 ["𐘅𐘹𐙕𐘗", 1],
-["𐘌𐘸𐘠", 1],
 ["𐘚𐘀𐘻", 1],
-["𐘱𐘲𐙁𐘹𐙋", 1],
-["𐘉𐘅𐘾𐘅𐘤𐙖", 1],
 ["𐘈𐘾𐘅𐘤", 1],
 ["𐘱𐘚𐘩𐘍", 1],
 ["𐘰𐘝𐘣", 1],
@@ -77745,7 +77745,6 @@ var wordsInCorpus = new Map([
 ["𐘈𐘤", 1],
 ["𐘇𐘞𐘲𐙁𐘚𐘈", 1],
 ["𐝬", 1],
-["𐄑,𐄈", 1],
 ["𐘰𐘜", 1],
 ["𐘙𐙅", 1],
 ["𐘙𐘞", 1],
@@ -77761,9 +77760,14 @@ var wordsInCorpus = new Map([
 ["𐘜𐘙", 1],
 ["𐘀𐘨𐙂", 1],
 ["𐄙𐄒𐄍", 1],
+["𐘉𐘾𐘙", 1],
+["𐘇𐘈𐘤𐘅", 1],
+["𐘌𐘸𐙀", 1],
+["𐘱𐘲𐙁𐘹", 1],
 ["𐘇𐘠𐘾", 1],
 ["𐘇𐘬𐘺", 1],
 ["𐄙𐄑𐄉", 1],
+["𐘸𐛢", 1],
 ]);
 var ligatures = new Map([
 ["𐚳", ['𐘀', '𐘁']],
