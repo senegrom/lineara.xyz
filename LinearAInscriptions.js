@@ -58148,11 +58148,11 @@ var inscriptions = new Map([
     "names": [
         "MA4a"
     ],
-    "parsedInscription": "𐘳𐜅𐄐𐄋\n𐜆𐄙𐄑\n𐜄𐄔𐄉\n𐜃𐄒",
+    "parsedInscription": "𐘳𐜅𐄐𐄋\n𐜆𐄙𐄑\n𐜄𐄕𐄉\n𐜃𐄒",
     "scribe": "",
     "site": "Malia",
     "support": "Tablet",
-    "transcription": "𐘳𐜅𐄐𐄋𐜆𐄙𐄑𐜄𐄔𐄉𐜃𐄒",
+    "transcription": "𐘳𐜅𐄐𐄋𐜆𐄙𐄑𐜄𐄕𐄉𐜃𐄒",
     "translatedWords": [
         "TA-HIDE+B",
         "15",
@@ -58161,7 +58161,7 @@ var inscriptions = new Map([
         "120",
         "\n",
         "HIDE+SA+L",
-        "53",
+        "63",
         "\n",
         "HIDE+SA+B",
         "30"
@@ -58174,7 +58174,7 @@ var inscriptions = new Map([
         "120",
         "\n",
         "HIDE+SA+L",
-        "53",
+        "63",
         "\n",
         "HIDE+SA+B",
         "30"
@@ -58187,7 +58187,7 @@ var inscriptions = new Map([
         "𐄙𐄑",
         "\n",
         "𐜄",
-        "𐄔𐄉",
+        "𐄕𐄉",
         "\n",
         "𐜃",
         "𐄒"
@@ -76638,7 +76638,6 @@ var wordsInCorpus = new Map([
 ["𐘘𐙁𐘳", 2],
 ["𐄕𐄋", 2],
 ["𐄙𐄊", 2],
-["𐄔𐄉", 2],
 ["𐜫", 2],
 ["𐛆", 2],
 ["𐛜", 2],
@@ -77756,6 +77755,7 @@ var wordsInCorpus = new Map([
 ["𐘀𐘨𐙂", 1],
 ["𐄓𐄊", 1],
 ["𐄕𐄎", 1],
+["𐄕𐄉", 1],
 ["𐄙𐄒𐄍", 1],
 ["𐘉𐘾𐘙", 1],
 ["𐘇𐘈𐘤𐘅", 1],
@@ -77764,6 +77764,7 @@ var wordsInCorpus = new Map([
 ["𐘇𐘠𐘾", 1],
 ["𐘇𐘬𐘺", 1],
 ["𐄒𐄍", 1],
+["𐄔𐄉", 1],
 ["𐄙𐄑𐄉", 1],
 ["𐘸𐛢", 1],
 ]);

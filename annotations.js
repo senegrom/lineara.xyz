@@ -62688,8 +62688,8 @@ var wordAnnotations =
                 "tags": [
                     "number"
                 ],
-                "transliteratedWord": "53",
-                "word": "𐄔𐄉"
+                "transliteratedWord": "63",
+                "word": "𐄕𐄉"
             },
             {
                 "tags": [],
