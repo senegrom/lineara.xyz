@@ -4831,7 +4831,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 23,
                 "y": 161,
@@ -5093,7 +5093,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 15,
                 "y": 115,
@@ -6144,7 +6144,7 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 68,
                 "y": 135,
@@ -6506,7 +6506,7 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 1,
                 "y": 1,
@@ -13594,7 +13594,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 72,
                 "y": 152,
@@ -13676,7 +13676,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 28,
                 "y": 88,
@@ -27388,7 +27388,7 @@ const coordinates =
     "HT41b-Inscription": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 105,
                 "y": 89,
@@ -27400,7 +27400,7 @@ const coordinates =
     "HT41b-Facsimile": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 19,
                 "y": 10,
@@ -28892,7 +28892,7 @@ const coordinates =
     "HT45b-Inscription": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 272,
                 "y": 48,
@@ -28972,7 +28972,7 @@ const coordinates =
         },
         {
             "word": "7",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 71,
                 "y": 165,
@@ -29129,7 +29129,7 @@ const coordinates =
     "HT45b-Facsimile": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 228,
                 "y": 29,
@@ -29209,7 +29209,7 @@ const coordinates =
         },
         {
             "word": "7",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 29,
                 "y": 144,
@@ -30452,7 +30452,7 @@ const coordinates =
         },
         {
             "word": "25",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 73,
                 "y": 364,
@@ -30869,7 +30869,7 @@ const coordinates =
         },
         {
             "word": "25",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 171,
                 "y": 402,
@@ -30966,7 +30966,7 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 13,
                 "y": 298,
@@ -31028,7 +31028,7 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 21,
                 "y": 340,
@@ -31050,7 +31050,7 @@ const coordinates =
     "HT50a-Inscription": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 190,
                 "y": 63,
@@ -31222,7 +31222,7 @@ const coordinates =
     "HT50a-Facsimile": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 202,
                 "y": 16,
@@ -33112,7 +33112,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 36,
                 "y": 111,
@@ -33144,12 +33144,12 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
-                "x": 104,
-                "y": 42,
-                "width": 52,
-                "height": 71
+                "x": 14,
+                "y": 118,
+                "width": 162,
+                "height": 14
             }
         }
     ],
@@ -36270,7 +36270,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 92,
                 "y": 146,
@@ -36302,14 +36302,14 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {}
         }
     ],
     "HT78-Inscription": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 45,
                 "y": 16,
@@ -36339,7 +36339,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 53,
                 "y": 77,
@@ -36351,7 +36351,7 @@ const coordinates =
     "HT78-Facsimile": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 94,
                 "y": 42,
@@ -36381,7 +36381,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {}
         }
     ],
@@ -38931,7 +38931,7 @@ const coordinates =
         },
         {
             "word": "11",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 8,
                 "y": 279,
@@ -39243,7 +39243,7 @@ const coordinates =
         },
         {
             "word": "11",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 1,
                 "y": 245,
@@ -47522,7 +47522,7 @@ const coordinates =
         },
         {
             "word": "18",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 83,
                 "y": 300,
@@ -47622,7 +47622,7 @@ const coordinates =
         },
         {
             "word": "26",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 255,
                 "y": 438,
@@ -47954,7 +47954,7 @@ const coordinates =
         },
         {
             "word": "18",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 60,
                 "y": 247,
@@ -48054,12 +48054,12 @@ const coordinates =
         },
         {
             "word": "26",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
-                "x": 202,
-                "y": 383,
-                "width": 0,
-                "height": 0
+                "x": 211,
+                "y": 389,
+                "width": 137,
+                "height": 14
             }
         }
     ],
@@ -51498,7 +51498,7 @@ const coordinates =
         },
         {
             "word": "19",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 4,
                 "y": 287,
@@ -51860,7 +51860,7 @@ const coordinates =
         },
         {
             "word": "19",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 126,
                 "y": 235,
@@ -54098,7 +54098,7 @@ const coordinates =
         },
         {
             "word": "8",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 74,
                 "y": 228,
@@ -54255,7 +54255,7 @@ const coordinates =
         },
         {
             "word": "8",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 52,
                 "y": 207,
@@ -54516,7 +54516,7 @@ const coordinates =
         },
         {
             "word": "5",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 23,
                 "y": 126,
@@ -54733,7 +54733,7 @@ const coordinates =
         },
         {
             "word": "5",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 16,
                 "y": 58,
@@ -60545,7 +60545,7 @@ const coordinates =
         },
         {
             "word": "28",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 20,
                 "y": 437,
@@ -61342,7 +61342,7 @@ const coordinates =
         },
         {
             "word": "28",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 4,
                 "y": 442,
@@ -71611,7 +71611,7 @@ const coordinates =
         },
         {
             "word": "6",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 46,
                 "y": 411,
@@ -71773,7 +71773,7 @@ const coordinates =
         },
         {
             "word": "6",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 19,
                 "y": 354,
@@ -72329,7 +72329,7 @@ const coordinates =
         },
         {
             "word": "5",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 71,
                 "y": 170,
@@ -72471,7 +72471,7 @@ const coordinates =
         },
         {
             "word": "5",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 167,
                 "y": 171,
@@ -101829,7 +101829,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 35,
                 "y": 63,
@@ -101861,7 +101861,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 72,
                 "y": 65,
@@ -104549,7 +104549,7 @@ const coordinates =
     "KH7b-Inscription": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 185,
                 "y": 88,
@@ -104741,7 +104741,7 @@ const coordinates =
     "KH7b-Facsimile": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 172,
                 "y": 27,
@@ -110385,7 +110385,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 55,
                 "y": 75,
@@ -110437,7 +110437,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 114,
                 "y": 71,
@@ -111572,7 +111572,7 @@ const coordinates =
         },
         {
             "word": "7",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 32,
                 "y": 272,
@@ -111582,7 +111582,7 @@ const coordinates =
         },
         {
             "word": "8",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {}
         }
     ],
@@ -111654,18 +111654,23 @@ const coordinates =
         },
         {
             "word": "7",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
-                "x": 39,
-                "y": 285,
-                "width": 339,
-                "height": 47
+                "x": 44,
+                "y": 293,
+                "width": 326,
+                "height": 15
             }
         },
         {
             "word": "8",
-            "ideogram": "10",
-            "coords": {}
+            "ideogram": "—",
+            "coords": {
+                "x": 262,
+                "y": 316,
+                "width": 82,
+                "height": 16
+            }
         }
     ],
     "KH51-Inscription": [
@@ -121690,7 +121695,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 70,
                 "y": 100,
@@ -121767,7 +121772,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 87,
                 "y": 131,
@@ -127925,7 +127930,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 10,
                 "y": 82,
@@ -127970,7 +127975,7 @@ const coordinates =
         },
         {
             "word": "5",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 63,
                 "y": 213,
@@ -128002,7 +128007,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 0,
                 "y": 80,
@@ -128047,12 +128052,12 @@ const coordinates =
         },
         {
             "word": "5",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
-                "x": 76,
-                "y": 210,
-                "width": 23,
-                "height": 23
+                "x": 94,
+                "y": 216,
+                "width": 63,
+                "height": 17
             }
         },
         {
@@ -132003,7 +132008,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 74,
                 "y": 128,
@@ -132063,7 +132068,7 @@ const coordinates =
         },
         {
             "word": "7",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 65,
                 "y": 217,
@@ -132113,7 +132118,7 @@ const coordinates =
         },
         {
             "word": "11",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 128,
                 "y": 291,
@@ -132145,7 +132150,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 81,
                 "y": 72,
@@ -132205,7 +132210,7 @@ const coordinates =
         },
         {
             "word": "7",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 42,
                 "y": 153,
@@ -132255,7 +132260,7 @@ const coordinates =
         },
         {
             "word": "11",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 118,
                 "y": 238,
@@ -132643,7 +132648,7 @@ const coordinates =
     "PH11-Facsimile": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 51,
                 "y": 137,
@@ -132723,7 +132728,7 @@ const coordinates =
         },
         {
             "word": "2",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {}
         }
     ],
@@ -133376,7 +133381,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 84,
                 "y": 176,
@@ -133428,7 +133433,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 36,
                 "y": 91,
@@ -133480,7 +133485,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 121,
                 "y": 85,
@@ -133522,7 +133527,7 @@ const coordinates =
         },
         {
             "word": "1",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 91,
                 "y": 81,
@@ -144839,7 +144844,7 @@ const coordinates =
         },
         {
             "word": "15",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 33,
                 "y": 190,
@@ -145004,7 +145009,7 @@ const coordinates =
         },
         {
             "word": "30",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 22,
                 "y": 370,
@@ -145154,7 +145159,7 @@ const coordinates =
         },
         {
             "word": "40",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 31,
                 "y": 557,
@@ -145244,8 +145249,13 @@ const coordinates =
         },
         {
             "word": "46",
-            "ideogram": "10",
-            "coords": {}
+            "ideogram": "—",
+            "coords": {
+                "x": 25,
+                "y": 655,
+                "width": 515,
+                "height": 20
+            }
         }
     ],
     "TY3a-Facsimile": [
@@ -145441,7 +145451,7 @@ const coordinates =
         },
         {
             "word": "15",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 20,
                 "y": 192,
@@ -145606,7 +145616,7 @@ const coordinates =
         },
         {
             "word": "30",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 43,
                 "y": 368,
@@ -145756,7 +145766,7 @@ const coordinates =
         },
         {
             "word": "40",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 6,
                 "y": 549,
@@ -145846,7 +145856,7 @@ const coordinates =
         },
         {
             "word": "46",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 41,
                 "y": 656,
@@ -145908,7 +145918,7 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 40,
                 "y": 88,
@@ -146018,7 +146028,7 @@ const coordinates =
         },
         {
             "word": "11",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 27,
                 "y": 236,
@@ -146120,7 +146130,7 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 31,
                 "y": 92,
@@ -146230,7 +146240,7 @@ const coordinates =
         },
         {
             "word": "11",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 34,
                 "y": 237,
@@ -149359,7 +149369,7 @@ const coordinates =
         },
         {
             "word": "12",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 25,
                 "y": 408,
@@ -149581,7 +149591,7 @@ const coordinates =
         },
         {
             "word": "12",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 36,
                 "y": 396,
@@ -156335,7 +156345,7 @@ const coordinates =
         },
         {
             "word": "4",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 76,
                 "y": 176,
@@ -156477,7 +156487,7 @@ const coordinates =
         },
         {
             "word": "4",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 25,
                 "y": 114,
@@ -158429,7 +158439,7 @@ const coordinates =
     "ZA23-Inscription": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 75,
                 "y": 67,
@@ -158481,7 +158491,7 @@ const coordinates =
     "ZA23-Facsimile": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 45,
                 "y": 58,
@@ -161637,7 +161647,7 @@ const coordinates =
         },
         {
             "word": "4",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 233,
                 "y": 270,
@@ -161719,7 +161729,7 @@ const coordinates =
         },
         {
             "word": "4",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 192,
                 "y": 220,
@@ -164279,7 +164289,7 @@ const coordinates =
     "ARKH7-Inscription": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 105,
                 "y": 151,
@@ -164311,7 +164321,7 @@ const coordinates =
     "ARKH7-Facsimile": [
         {
             "word": "0",
-            "ideogram": "10",
+            "ideogram": "—",
             "coords": {
                 "x": 63,
                 "y": 106,

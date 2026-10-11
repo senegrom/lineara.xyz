@@ -590,6 +590,7 @@ const ideogram_to_ascii = new Map([
 ["𐝐","cum𐚥≈¹⁄₂"],
 ["𐝆𐝉","13/20"],
 ["𐝁𐝁","?"],
+["—","—"],
 ]);
 
 var ascii_to_ideogram = new Map();
