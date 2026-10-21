@@ -19,6 +19,8 @@ This document accompanies a pull request to [mwenge/lineara.xyz](https://github.
 4. [Image maps and item pages: further corrections](#image-maps-and-item-pages-further-corrections)
 5. [Ruling lines, pictures, MA4a, and a note on PA1](#ruling-lines-pictures-ma4a-and-a-note-on-pa1)
 6. [GORILA page links](#gorila-page-links)
+7. [Dividers, glyphs, sign labels and word divisions](#dividers-glyphs-sign-labels-and-word-divisions)
+8. [Optional readings](#optional-readings)
 
 ## Erased text shown as live text
 
@@ -1097,3 +1099,511 @@ These links now open the page with the record's photo and drawing, found by matc
 ![KH79+89 and KHWc2044: pictures from GORILA V](evidence/GORILA-links/KH79+89_KHWc2044_volV_source.jpg)
 
 *KH79+89 and KHWc2044 link GORILA III pages without these pictures; the site's pictures are of the joins published in GORILA V p. 38 (PDF p. 91) and p. 46 (PDF p. 99)* (GORILA © École française d'Athènes; lineara.xyz images)
+
+## Dividers, glyphs, sign labels and word divisions
+
+Thirty-eight corrections make up the ninth commit: nine records whose word dividers are missing, misplaced or doubled (IO Za 2 instead repeats a sign in its transcription), two records with wrong glyphs, thirteen sign labels that do not name their glyph (from eight rows of the site's sign table), and fourteen records in which a complex sign, logogram or transaction sign is joined to the sign after it, or a word written round the corner of a stone vessel is cut in two. Each was checked in GORILA and in Younger's transliteration, the site's own source, which agree unless noted. Dividers are `𐄁` tokens with a box-less `*900` entry in both image maps, as in 422 of the 423 image maps of records with dividers after the earlier commits of this PR (the exception, PKZa12-Facsimile, is corrected below), and a break is the trace mark `𐝫`. Splits and joins change no glyph, so `parsedInscription` moves at most a line break and `transcription` stays as it is, as for PE1 and SYZa2 in the second commit (9c81beb put a space between the parts of the words it split). The derived files follow the records: the tabulations of `items_analysis/supplement.json` are rebuilt from the new words (rows and statuses kept), the notebook's copy `items_analysis/inscriptions.json` takes the new fields (except HT36's copy, which predates bcfb77a; the notebook does not read its word arrays), `annotations.js` gets tag entries for split, joined and moved words, `wordsInCorpus` is updated, the rows of the relabelled glyphs in `items_analysis/syllables.txt`, `ideograms.js` and `tags.js` and their entries in the `ligatures` table of `LinearAInscriptions.js` (the components that the explorer shows in its word tooltips) change with them, and 37 item pages are regenerated with the committed notebook. "Before" figures show the state before this commit, which is master (9c81beb) with the earlier commits of this PR; red boxes are image-map entries, green the entries that change.
+
+### HT23b — divider after NI-RA missing
+
+On master (9c81beb) line b.1 of HT23b runs from NI-RA straight into CYP in every text field (`words` 0–1; `parsedInscription` and `transcription` `𐘝𐘴𐙗`). GORILA I p. 40 (PDF p. 76) draws a dot between RA and CYP, which `HT23b-Facsimile.jpg`, a crop of that drawing, shows between the RA and CYP boxes; the normalised copy on GORILA I p. 41 (PDF p. 77) reads `NI RA · CYP`, and GORILA V p. 71 (PDF p. 124), the corrigenda to volume I, adds the tick that the tabular copy left out in row HT 23b.1. Younger has `b.1 NI-RA •`. This PR inserts `𐄁` after NI-RA in the three word arrays (22 → 23 tokens) and in both glyph strings, and gives both image maps a box-less `*900` entry for it (13 → 14 entries), so the later word numbers move up by one. No box moves; the explorer still pairs 13 areas with 13 letters.
+
+![GORILA I p. 40, HT 23b line .1 drawing](evidence/dividers/HT23b_gorila_I40_drawing_line1.png)
+
+*GORILA I p. 40 (PDF p. 76), drawing of HT 23b, line .1: NI RA, a dot, CYP. `HT23b-Facsimile.jpg` is a crop of this drawing.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA I p. 41, HT 23b normalised copy](evidence/dividers/HT23b_gorila_I41_normalised_line1.png)
+
+*GORILA I p. 41 (PDF p. 77), HT 23b, normalised copy: line .1 begins NI RA · CYP.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA I p. 41 tabular row and GORILA V p. 71 corrigenda](evidence/dividers/HT23b_gorila_V71_corrigenda_tabular_tick.jpg)
+
+*Top: GORILA I p. 41, tabular copy, row .1: NI RA without a tick. Bottom: GORILA V p. 71 (PDF p. 124), corrigenda to volume I (columns Fac-similé, Normalisée, Tabulaire; the headings are those of p. 70): the row HT 23b.1 adds a divider tick in the Tabulaire column.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+### HT128a — divider after PA-RA missing
+
+On master HT128a keeps the divider after \*326 on line a.1 but has none after PA-RA (`words` 3 is followed by the line break). The normalised copy on GORILA I p. 221 (PDF p. 257) reads `.1 *326 · PA RA · TU RU NU SE ME`, and the tabular copy on the same page has `.1 PA RA !`, a divider tick underdotted as uncertain (this copy writes numerals as digits, so the mark is not a 1). GORILA's tabular copy thus marks the divider as uncertain, and its drawing (I p. 220, PDF p. 256) shows the surface damaged at that spot, with no dot drawn; the page notes that the tablet has been damaged since the first edition. Younger has `a.1 PA-RA •`. This PR inserts `𐄁` after PA-RA, before the line break (28 → 29 tokens), adds it to both glyph strings and gives both image maps a box-less `*900` entry (29 → 30 entries); the later word numbers move up by one and the explorer is unchanged.
+
+![GORILA I p. 221, HT 128a normalised](evidence/dividers/HT128a_gorila_I221_normalised_line1.jpg)
+
+*GORILA I p. 221 (PDF p. 257), HT 128a, normalised copy: .1 \*326 · PA RA · TU RU NU SE ME.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA I p. 221, HT 128a tabular copy](evidence/dividers/HT128a_gorila_I221_tabular_rows1.jpg)
+
+*Same page, tabular copy: '.1 \*326 '' and '.1 PA RA !', the second an underdotted (uncertain) divider tick; this copy writes numerals as digits (10), so the mark is not a 1.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA I p. 220, HT 128a drawing](evidence/dividers/HT128a_gorila_I220_drawing_line1.png)
+
+*GORILA I p. 220 (PDF p. 256), drawing of HT 128a, line .1: \*326 · PA RA, then damaged (stippled) surface before TU; the page notes 'Abîmée depuis la 1re édition'.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+### HT123+124b — divider before KA-NA missing
+
+On master line b.4 of HT123+124b runs from the fraction J L2 straight into KA-NA. GORILA I p. 212 (PDF p. 248) draws a low dot after L2, before KA, which `HT123+124b-Facsimile.jpg`, a crop of that drawing, also shows; the normalised copy on GORILA I p. 213 (PDF p. 249) reads `.4 J L2 · KA NA[ ]SI DU`, and the tabular copy leaves an empty row .4 between `.3-4 … J L2` and `.4 KA NA[`, where GORILA V p. 74 (PDF p. 127), the corrigenda, puts a divider tick. Younger's second arrangement of side b has the row `b.4 •`; his main table, which the record follows row by row, leaves it out. This PR adds the divider on a line of its own between the fraction and KA-NA, as GORILA's tabular row and Younger's row have it (the site has such lines in HT140, KNWb51 and MI2): the line break after the fraction becomes line break, `𐄁`, line break in the three word arrays (36 → 38 tokens) and in `parsedInscription`, and the transcription's physical line .4 becomes `𐝆𐝉𐄁𐘾𐘅`. Both image maps get a box-less `*900` entry (43 → 44 entries), the later word numbers move up by one, and no box moves. A second divider, on line b.3, is an optional change in the tenth commit (see [HT123+124b — divider after \*188-DU in the transcription](#ht123124b--divider-after-188-du-in-the-transcription)).
+
+![GORILA I pp. 212-213, HT 123b line .4](evidence/dividers/HT123b_gorila_I212_I213_b4_divider.jpg)
+
+*Top: GORILA I p. 213 (PDF p. 249), HT 123b, normalised copy, lines .2–.4; line .4 reads J L2 · KA NA[ ]SI DU, a low dot after the fraction. Bottom: GORILA I p. 212 (PDF p. 248), the drawing (`HT123+124b-Facsimile.jpg` is a crop of it), with the same dot after L2, before KA.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA I p. 213 tabular copy and GORILA V p. 74 corrigenda](evidence/dividers/HT123b_gorila_I213_tabular_V74_corrigenda.jpg)
+
+*Top: GORILA I p. 213, tabular copy, rows .2–.4: '.3 \*188 DU 10' without a tick, and an empty row .4 between '.3-4 TU PA DI DA J L2' and '.4 KA NA['. Bottom: GORILA V p. 74 (PDF p. 127), corrigenda to volume I: the rows HT 123 b.3 and b.4 each add a divider tick in the Tabulaire column.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+### HT33 — trace and divider before SA-RA₂ missing
+
+On master every text field of HT33 begins with SA-RA₂. At the broken left edge of line .1, GORILA I p. 62 (PDF p. 98) draws a trace stroke and a dot before SA, which the site's `HT33-Facsimile.jpg` shows without boxes; GORILA I p. 63 (PDF p. 99) reads `.1 ] · SA RA2 · *401VAS+*304`, its apparatus notes 'Trace à gauche', and its tabular copy has a row `.1 ]vest. '` before `.1 SA RA2 ' …`. Younger has the rows `.1 ]vest. •` and `.1 SA-RA2 • *401VAS+*304`. This PR puts a trace-only token `𐝫`, a `𐄁` and a line break before SA-RA₂ in the three word arrays (27 → 30 tokens), as the site writes KH83's `] •` row, and `𐝫𐄁` before both glyph strings (with a line break in `parsedInscription`). Both image maps get a box-less `*900` entry as word 0 and every other word moves up by one; the trace-only token has no word number, and the explorer is unchanged. In `annotations.js` SA-RA₂ is no longer tagged as the record's head word, under the site's own rule (the head word is token 0, never a trace or a divider).
+
+![GORILA I p. 62, HT 33 line .1 drawing](evidence/dividers/HT33_gorila_I62_drawing_line1.png)
+
+*GORILA I p. 62 (PDF p. 98), drawing of HT 33, line .1, enlarged (`HT33-Facsimile.jpg` is a crop of this drawing): the broken left edge, a trace stroke and a dot, then SA RA₂, a dot, \*401VAS+\*304.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA I p. 63, HT 33 normalised copy](evidence/dividers/HT33_gorila_I63_normalised_line1.jpg)
+
+*GORILA I p. 63 (PDF p. 99), HT 33, normalised copy of line .1, '] · SA RA2 · \*401VAS+\*304', and the apparatus: '.1 Trace à gauche; SA RA2 probablement sur [[ ]]'.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA I p. 63, HT 33 tabular copy](evidence/dividers/HT33_gorila_I63_tabular_rows1.jpg)
+
+*Same page, tabular copy: a row '.1 ]vest. '' (traces and a divider) before '.1 SA RA2 ' \*401VAS+\*304['.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+### MA1a — divider after X I-DU-WI missing
+
+On master MA1a's word arrays and `parsedInscription` run I-DU-WI straight into \*47, while the record's own transcription has the divider (`𐄂𐘚𐘬𐘣𐄁𐘨…`). GORILA I p. 268 (PDF p. 304) shows a short stroke between WI and \*47 in the photograph and in the drawing; GORILA I p. 269 (PDF p. 305) reads `X I DU WI · *47 · QE DE MI NU ·` in the normalised copy and `.1 X I DU WI · *47 ·` in the tabular copy, and Younger has `a.1 X I-DU-WI • *47`. In the site's `MA1a-Facsimile.jpg` the stroke lies just inside the right edge of WI's box. This PR inserts `𐄁` after WI in the three word arrays (5 → 6 tokens) and in `parsedInscription`; both image maps get a box-less `*900` entry (10 → 11 entries) and the later word numbers move up by one. The second divider, after \*47, which GORILA has and Younger does not, is an optional change in the tenth commit (see [MA1a — divider after \*47](#ma1a--divider-after-47)).
+
+![GORILA I p. 268, MA 1a photograph and drawing](evidence/dividers/MA1a_gorila_I268_photo_drawing.jpg)
+
+*GORILA I p. 268 (PDF p. 304), MA 1a, photograph and drawing: X I DU WI, a short stroke, \*47, a thick stroke on the dotted crack line, QE DE MI NU, a dot.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA I p. 269, MA 1a copies](evidence/dividers/MA1a_gorila_I269_both_copies.jpg)
+
+*GORILA I p. 269 (PDF p. 305), MA 1a: normalised copy (left) 'X I DU WI · \*47 · QE DE MI NU ·' and tabular copy (right) '.1 X I DU WI · \*47 ·' / '.1 QE DE MI NU ·'.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![MA1a drawing with its boxes](evidence/dividers/MA1a-Facsimile_divider_after_WI.jpg)
+
+*`MA1a-Facsimile.jpg` with its boxes before this commit: the stroke between WI (word 0) and \*47 (word 1) lies just inside the right edge of WI's box (entry 3).* (lineara.xyz image `MA1a-Facsimile.jpg`, a crop of the GORILA I p. 268 drawing, © École française d'Athènes; boxes from `items_image_map.js`)
+
+### ZAZb3 — dividers after DI-DI-KA-SE and A-SA-MU-NE missing
+
+On master the word arrays and `parsedInscription` of ZAZb3's line .1 run DI-DI-KA-SE, A-SA-MU-NE and A-SE together without dividers, while the record's own transcription has both (`𐘆𐘆𐘾𐘈𐄁𐘇𐘞𐘕𐘗𐄁𐘇𐘈`). GORILA IV p. 113 (PDF p. 156) reads `VIN 32 DI DI KA SE · A SA MU NE · A SE` in both copies, and Younger has `.1: VINa 32 DI-DI-KA-SE • A-SA-MU-NE • A-SE`. This PR inserts the two dividers in the three word arrays (12 → 14 tokens) and in `parsedInscription`, which then equals the transcription; both image maps get two box-less `*900` entries (29 → 31 entries) and the later word numbers follow. No box moves.
+
+![GORILA IV p. 113, ZA Zb 3 copies](evidence/dividers/ZAZb3_gorila_IV113_both_copies.jpg)
+
+*GORILA IV p. 113 (PDF p. 156, printed sideways and turned here), ZA Zb 3, normalised copy (top) and tabular copy (bottom): line .1 'VIN 32 DI DI KA SE · A SA MU NE · A SE' in both.* (GORILA IV (L. Godart and J.-P. Olivier 1982), © École française d'Athènes)
+
+### PKZa12 — RA-ME and two dividers on the wrong lines
+
+On master PKZa12's word arrays put both dividers of face c on a line of their own and RA-ME on face c's line: `… SI, line break, 𐄁, 𐄁, line break, RA-ME, A-NE, U-NA-RU-KA-JA-SI …`. GORILA IV p. 38 (PDF p. 81) has RA-ME on face b (`]SI-[ ]RA ME[`) and face c as `A[ ]-NE ! U NA RU KA[ ]JA SI`, with a divider after JA-SI in the continuous copy (the `!` is an underdotted divider); Younger reads `b: … ]RA-ME[` and `c: ]A-[ 2? ]-NE • U-NA-RU-KA[ 1? ]JA-SI •` (the small numbers are his estimates of lost signs), and the record's own `parsedInscription` has the same lines. This PR reorders the seven tokens to `RA-ME, line break, A-NE, 𐄁, U-NA-RU-KA-JA-SI, 𐄁, line break` in the three word arrays; no token is added or removed. The transcription does not change, and `parsedInscription` loses only a stray `𐄇` (1) between the two trace marks of U-NA-RU-KA … JA-SI, Younger's estimate `1?` taken for a numeral; GORILA has a lacuna there, and neither the words nor the transcription have the 1. In `PKZa12-Facsimile` only word numbers change, since its divider entries already stood after NE and after SI (`PKZa12-Inscription` has no entries). The tabulation in `supplement.json`, rebuilt from the new words, now numbers the words as the record does, and the item page keeps its four lines (with the 1 left in, the notebook's line tracking would stop after face c).
+
+![GORILA IV p. 38, PK Za 12 face copy](evidence/dividers/PKZa12_gorila_IV38_face_copy.jpg)
+
+*GORILA IV p. 38 (PDF p. 81), PK Za 12, copy by face: b ']SI-[ ]RA ME[', c 'A[ ]-NE ! U NA RU KA[ ]JA SI' ('!' is an underdotted divider), d beginning with a divider tick.* (GORILA IV (L. Godart and J.-P. Olivier 1982), © École française d'Athènes)
+
+![GORILA IV p. 38, PK Za 12 continuous](evidence/dividers/PKZa12_gorila_IV38_continuous_copy.jpg)
+
+*Same page, continuous copy: line c ends ']JA SI '' with the divider.* (GORILA IV (L. Godart and J.-P. Olivier 1982), © École française d'Athènes)
+
+![PKZa12 drawing, word numbers](evidence/dividers/PKZa12-Facsimile_word_numbers_before_after.jpg)
+
+*`PKZa12-Facsimile`, faces b and c, before (left) and with this commit (right); the box-less divider entries are listed under each panel. Only word numbers change (green): RA and ME 6 → 4, A and NE 7 → 5, U to SI 8 → 7, and the two divider entries 7 → 6 and 9 → 8, now right after A-NE and U-NA-RU-KA-JA-SI. No box moves.* (lineara.xyz images `PKZa12-Facsimile.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT37 — one divider written twice
+
+On master every text field of HT37 has two dividers in a row between KA-KI and SU on line .1 (`words` 4 and 5). GORILA I p. 70 (PDF p. 106) draws one dot between KI and SU, as `HT37-Facsimile.jpg` shows; GORILA I p. 71 (PDF p. 107) reads `.1 MI+JA+I · KA KI · SU[` and `.1 KA KI ' SU[` with one divider, and Younger has `.1 KA-KI • SU[`. This PR removes the second `𐄁` from the three word arrays (31 → 30 tokens) and from both glyph strings, and drops the second of the two box-less `*900` entries from both image maps (28 → 27 entries); the later word numbers move down by one.
+
+![GORILA I p. 70, HT 37 line .1 drawing](evidence/dividers/HT37_gorila_I70_drawing_line1.jpg)
+
+*GORILA I p. 70 (PDF p. 106), drawing of HT 37, line .1, enlarged (`HT37-Facsimile.jpg` is a crop of this drawing): MI+JA+I · KA KI · SU, one dot between KI and SU.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA I p. 71, HT 37 copies](evidence/dividers/HT37_gorila_I71_line1_both_copies.jpg)
+
+*GORILA I p. 71 (PDF p. 107), HT 37 line .1: normalised copy 'MI+JA+I · KA KI · SU[' and tabular copy '.1 KA KI ' SU[', one divider each.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+### IOZa2 — TU written twice in the transcription
+
+On master the transcription of IOZa2 writes JA-DI-KI-TU with two TU (`𐘱𐘆𐘸𐘹𐘹𐄁`), while its `words`, its `parsedInscription`, GORILA V pp. 18–19 (PDF pp. 71–72) and Younger (`• JA-DI-KI-TU •`) have one. This PR removes the second TU from the transcription, which then equals `parsedInscription`. No other field, map or explorer area changes.
+
+![GORILA V pp. 18-19, IO Za 2 face b](evidence/dividers/IOZa2_gorila_V18_V19_face_b.jpg)
+
+*Top: GORILA V p. 19 (PDF p. 72), IO Za 2, copy of face b: b.1 'JA DI KI TU · JA SA', one TU. Bottom: GORILA V p. 18 (PDF p. 71), drawing of face b, one sign per facet: JA, divider, JA DI KI TU, divider, JA SA.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+### HT23a — the wrong cup signs on line .3
+
+On master line .3 of HT23a stores the cup with RE (A508, `QA2+[?]+RE`) and then the cup with RE and PU (A509, `QA2+[?]+RE+PU`), each followed by 10. GORILA I p. 41 (PDF p. 77) shows, in both copies, the cup with PU first and the cup with RE second; GORILA V p. XXIV (PDF p. 25) defines A 508 = 16+[?]+27, A 509 = 16+[?]+27+50 and A 510 = 16+[?]+50, and its index (V p. 173, PDF p. 226) gives HT 23a.3 A 508 and A 510, while A 509 occurs only at HT 45b.1. The corrigenda (V p. 71, PDF p. 124) change only the E of this line. Younger reads the same two cups (`QA+[?]+PU`, `QA+[?]+RE`) but numbers them `*508` and `*509`. HT23b already stores this pair as `𐚻` `QA2+[?]+PU` and `𐚹` `QA2+[?]+RE`. This PR stores A510 and A508 at the two places (`words` 23 and 26, and the same two characters of both glyph strings), labels them `QA2+[?]+PU` and `QA2+[?]+RE` in `transliteratedWords` and in both image maps (entries 17 and 19); `translatedWords` stays 'liquid?'.
+
+![GORILA I p. 41 and GORILA V pp. XXIV, 173, HT 23a cups](evidence/glyphs-and-labels/HT23a_gorila_I41_line3_and_V_pXXIV_p173_cups.jpg)
+
+*GORILA I p. 41 (PDF p. 77), HT 23a line .3, normalised and tabular copies: the cup with PU (loop, hook and two legs) 10, then the cup with RE's prongs 10, then E 17. GORILA V p. XXIV (PDF p. 25): A 508 = 16+[?]+27 (with RE), A 509 = 16+[?]+27+50 (with RE and PU), A 510 = 16+[?]+50 (with PU). GORILA V p. 173 (PDF p. 226): HT 23a.3 has A 508 and A 510; A 509 occurs only at HT 45b.1.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+![GORILA V p. 71, corrigenda, row HT 23a.3](evidence/glyphs-and-labels/HT23a_gorila_V71_corrigenda_row_HT23a3.jpg)
+
+*GORILA V p. 71 (PDF p. 124), corrigenda to volume I: the row HT 23a.3 corrects only the E (the sign below it belongs to the row HT 24a.1); neither cup is changed.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![HT23a boxes 17 and 19, labels](evidence/glyphs-and-labels/HT23a_cups_maps_before_after.jpg)
+
+*Entries 17 and 19 of both HT23a maps, before (left) and with this commit (right): the legged cup becomes QA2+[?]+PU and the pronged cup QA2+[?]+RE. Boxes and word numbers do not change.* (lineara.xyz images `HT23a-Facsimile.jpg`, `HT23a-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT82 — the vase with 304 stored as another sign
+
+On master line .2 of HT82 stores A628 (`*304+[ ]`, the arrow 304 over a damaged sign). GORILA I p. 129 (PDF p. 165) prints the line as `] 304 E[` in both copies, but GORILA V p. 73 (PDF p. 126), the corrigenda, corrects both copies to the vase with 304, underdotted; GORILA V p. XXVI (PDF p. 27) defines A 653 = 401VAS+304, and its index (V p. 287, PDF p. 340) lists A 653 at HT 33.1, HT 82.2 and KH 12.3, and A 628 only at KH 37. Younger has `b. *400VAS+*304 {*653} E[`. The site already writes A653 as `𐜫` `*401+*304` on HT33 and KH12. This PR stores `𐝫𐜫` at that place, with the site's break mark for the break that GORILA prints before the sign (A628's own formula `]304+[·]` held that break), labels it `*401+*304` in both text arrays and in the label of entry 2 of both image maps, and changes `𐜜` to `𐝫𐜫` in both glyph strings. GORILA underdots the reading; the tabulation keeps its 'doubtful' status. Word numbers and explorer letters do not change.
+
+![GORILA I p. 129 and GORILA V pp. 73, XXVI, 287, HT 82](evidence/glyphs-and-labels/HT82_gorila_I129_V73_V_pXXVI_p287_vase_with_304.jpg)
+
+*GORILA I p. 129 (PDF p. 165): HT 82 line .2 printed as '] 304 E[' in both copies. GORILA V p. 73 (PDF p. 126), corrigenda, row HT 82.2: both copies corrected to the vase with 304, underdotted. GORILA V p. XXVI (PDF p. 27): A 628 = ]304+[·], the glyph the site stores, and A 653 = 401VAS+304. GORILA V p. 287 (PDF p. 340): A 628 only at KH 37.1.2; A 653 at HT 33.1, HT 82.2 and KH 12.3.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+![HT82 entry 2, label](evidence/glyphs-and-labels/HT82_vase_maps_before_after.jpg)
+
+*Entry 2 of both HT82 maps, before and with this commit: '\*304+[]' → '\*401+\*304'. The box does not move.* (lineara.xyz images `HT82-Facsimile.jpg`, `HT82-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### KH31, KH91, MI2 — sign label `*401+RO` for 401VAS+RA
+
+On master the vase sign A652 is labelled `*401+RO` on KH31, KH91 and MI2, and in the site's sign table (`items_analysis/syllables.txt`, `ideograms.js`, `tags.js`). GORILA V p. XXVI (PDF p. 27) defines A 652 = 401VAS+60, and sign 60 is RA in the site's own tables (RO is sign 02); GORILA V p. 241 (PDF p. 294) and p. 311 (PDF p. 364) list A 652 at KH 31.2, KH 91.4 and MI 2.3, and Younger reads `*401VAS+RA {*652}` on all three. The site labels the neighbouring A651 (401VAS+26) correctly as `*401+RU`. This PR labels the glyph `*401+RA` in both text arrays of the three records, in their image maps (KH31 entry 3, KH91 entry 15, MI2 entry 5) and in the three sign-table rows; its entry in the `ligatures` table of `LinearAInscriptions.js` names RA instead of RO, and `annotations.js` takes the new transliteration.
+
+![GORILA V pp. XXVI, 241, 311, A 652](evidence/glyphs-and-labels/A652_gorila_V_pXXVI_p241_p311_401VAS+RA.jpg)
+
+*GORILA V p. XXVI (PDF p. 27): A 651 = 401VAS+26 (RU), A 652 = 401VAS+60, A 653 = 401VAS+304. GORILA V p. 241 (PDF p. 294), index of sign 60 (the site's RA), and p. 311 (PDF p. 364), index of 401VAS: A 652 at KH 31.2, KH 91.4 and MI 2.3.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![KH 31, KH 91, MI 2 in GORILA](evidence/glyphs-and-labels/A652_KH31_KH91_MI2_gorila_lines.jpg)
+
+*The vase with RA in its three records: GORILA III p. 63 (PDF p. 88), KH 31, both copies; GORILA V p. 45 (PDF p. 98), KH 91 line .4, after the vase with RU (A 651) and K; GORILA V p. 57 (PDF p. 110), MI 2 line .3.* (GORILA III and V (L. Godart and J.-P. Olivier 1979, 1985), © École française d'Athènes)
+
+![A652 boxes, labels](evidence/glyphs-and-labels/A652_KH31_KH91_MI2_labels_before_after.jpg)
+
+*The A652 box of each drawing, before and with this commit: '\*401+RO' → '\*401+RA' (KH31 entry 3, KH91 entry 15, MI2 entry 5; the photo maps change the same way). Boxes and word numbers do not change.* (lineara.xyz images `KH31-Facsimile.jpg`, `KH91-Facsimile.jpg`, `MI2-Facsimile.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### MA10b, HT39, PH8a — vase labels that name the wrong vessel
+
+On master three vase signs carry labels that name another vessel, in the records and in the site's sign table: A654 on MA10b is `*402+A`, A657 on HT39 `*414+A` and A663 on PH8a `*416+L2`. GORILA V p. XXIII (PDF p. 24) draws 402VAS as a plain beaker and 404VAS as a cup with a handle, 414VAS as a jug and 407VAS as a basin with two ring handles, 416VAS as a lidded jar and 417VAS as a hatched basket; GORILA V pp. XXVI–XXVII (PDF pp. 27–28) define A 654 = 404VAS+08, A 657 = 407VAS+08 and A 663 = 417VAS'L2', and the copies show the handled cup with A (MA 10b.2, V p. 52, PDF p. 105), the ring-handled basin with A (HT 39.5, I p. 75, PDF p. 111) and the hatched basket with L2 (PH 8a.1, I p. 297, PDF p. 333); 416VAS occurs only at HT 31.3 (V p. 315, PDF p. 368). Younger reads `*404VAS+A`, `*407VAS+A` and `*417VAS+L2`. This PR labels the glyphs `*404+A`, `*407+A` and `*417+L2` (the site's own notation, as its correct rows `*401+RU` and `*418+L2`) in both text arrays, the image maps (MA10b entry 10, HT39 entry 17, PH8a entry 0) and the three sign-table rows of each glyph, and their entries in the `ligatures` table name the vases 404VAS, 407VAS and 417VAS instead of 402VAS, 414VAS and 416VAS.
+
+![GORILA V pp. XXIII, XXVI, XXVII, 312, 315, vase signs](evidence/glyphs-and-labels/MA10b_HT39_PH8a_gorila_V_vase_signs.jpg)
+
+*GORILA V p. XXIII (PDF p. 24): the plain vases each wrong label names next to the vase each edition reads (402VAS | 404VAS, 414VAS | 407VAS, 416VAS | 417VAS). GORILA V pp. XXVI–XXVII (PDF pp. 27–28): A 654 = 404VAS+08 (A), A 657 = 407VAS+08, A 663 = 417VAS'L2'. GORILA V pp. 312 and 315 (PDF pp. 365, 368): A 654 at MA 10b.2, A 657 at HT 39.5, A 663 at PH 8a.1; 416VAS only at HT 31.3.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![MA 10b, HT 39, PH 8a in GORILA](evidence/glyphs-and-labels/MA10b_HT39_PH8a_gorila_lines.jpg)
+
+*GORILA V p. 52 (PDF p. 105), MA 10 face b line .2: the handled cup 404 with A inside, 2. GORILA I p. 75 (PDF p. 111), HT 39 line .5: KU-RO, the basin 407 with A, 100. GORILA I p. 297 (PDF p. 333), PH 8a line .1: the hatched basket 417 with L2, 7.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+![MA10b, HT39, PH8a boxes, labels](evidence/glyphs-and-labels/A654_A657_A663_MA10b_HT39_PH8a_labels_before_after.jpg)
+
+*The vase boxes of the three drawings, before and with this commit: MA10b entry 10 '\*402+A' → '\*404+A', HT39 entry 17 '\*414+A' → '\*407+A', PH8a entry 0 '\*416+L2' → '\*417+L2' (the photo maps change the same way). Boxes and word numbers do not change.* (lineara.xyz images `MA10b-Facsimile.jpg`, `HT39-Facsimile.jpg`, `PH8a-Facsimile.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT85a, HT97a — sign label `*307+*387` for 307+307
+
+On master the doubled sign A638 is labelled `*307+*387` on HT85a and HT97a (and in HT36's fused token, next item) and in the site's sign table. There is no sign 387: GORILA's 300-series of simple signs ends at A 371, and its table then goes on with the vases 400VAS–418VAS (V p. XXIII, PDF p. 24). GORILA V p. XXVI (PDF p. 27) defines A 638 = 307+307, two signs 307 side by side as the copies of HT 85a.1 (I p. 131, PDF p. 167) and HT 97a.1 (I p. 159, PDF p. 195) show, and its index (V p. 290, PDF p. 343) lists A 638 at HT 36.1, 85a.1 and 97a.1. Younger reads `*307+*307 {*638}`. This PR labels the glyph `*307+*307` in both text arrays, both image maps (entry 3) and the three sign-table rows, and its entry in the `ligatures` table, which joined 307 to '\*387', now joins 307 to 307.
+
+![GORILA V pp. XXIII, XXVI, 290, 274, A 638 and A 578](evidence/glyphs-and-labels/A638_gorila_V_pXXIII_pXXVI_p290_p274.jpg)
+
+*GORILA V p. XXIII (PDF p. 24): A 307; the 300-series of simple signs ends at A 371, and the table goes on with the vases 400VAS–418VAS, so there is no sign 387. GORILA V p. XXVI (PDF p. 27): A 638 = 307+307. GORILA V p. 290 (PDF p. 343): A 638 at HT 36.1, 85a.1 and 97a.1. GORILA V p. 274 (PDF p. 327): A 578 = 120'78' (GRA+QE) at HT 18.1, 28a.1, 36.1, 99a.2 and 101.1.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![HT 85a, HT 97a, HT 36 in GORILA I](evidence/glyphs-and-labels/HT85a_HT97a_HT36_gorila_I_line1_307+307.jpg)
+
+*GORILA I p. 131 (PDF p. 167), HT 85a.1, normalised and tabular copies: A-DU · 307+307 · VIR+[?] ·. GORILA I p. 159 (PDF p. 195), HT 97a.1: KA-RU · 307+307 · VIR+KA 82. GORILA I p. 69 (PDF p. 105), HT 36.1: JE-DI, 307+307 (the second 307 underdotted), GRA+QE [[20]] 44 J; in the tabular copy 307+307 and GRA+QE stand in two columns.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![HT85a, HT97a boxes, labels](evidence/glyphs-and-labels/A638_HT85a_HT97a_labels_before_after.png)
+
+*Entry 3 of the HT85a and HT97a drawings, before and with this commit: '\*307+\*387' → '\*307+\*307' (the photo maps change the same way). Boxes and word numbers do not change.* (lineara.xyz images `HT85a-Facsimile.jpg`, `HT97a-Facsimile.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT36 — two signs fused into one word
+
+On master token 1 of HT36 fuses the complex sign 307+307 (A638) and the grain sign GRA+QE (A578) into one word, `𐜠𐛱` `*307+*387-GRA+QE`, which `annotations.js` tags as a unique word and a place name. GORILA I p. 69 (PDF p. 105) reads `JE DI 307+307 GRA+QE [[20]]` and sets 307+307 and GRA+QE in two columns of its tabular copy; GORILA V numbers them apart (A 638, V p. 290; A 578, V p. 274), and Younger reads `*307+*307 {*638} GRA+QE {*578} [[20]] 44 J`, two signs with two numbers. Elsewhere the site writes A638 alone (HT85a, HT97a) and GRA+QE alone, glossed 'grain' (HT18, HT28a, HT99a, HT101). This PR splits the token into `𐜠` `*307+*307` and `𐛱` `GRA+QE` ('grain'), 13 → 14 tokens, in the direction of 9c81beb's splits of \*304+PA; both image maps relabel entry 2 and renumber the later entries, and no box moves. HT36 is issue #4; bcfb77a corrected its erasures.
+
+![HT36 maps, word numbers](evidence/glyphs-and-labels/HT36_maps_before_after.jpg)
+
+*Both HT36 maps, before and with this commit: entry 2 is relabelled '\*307+\*307', and GRA+QE (entry 3) and every later entry move up one word (green). No box moves.* (lineara.xyz images `HT36-Facsimile.jpg`, `HT36-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT120, HT86a, HT86b — sign label `GRA+K+L` for A584
+
+On master the grain ligature A584 is labelled `GRA+K+L` on HT120, HT86a and the erased face HT86b (there `[[GRA+K+L]]`), and in the site's sign table. GORILA V p. XXV (PDF p. 26) gives A 584 = 120'KL²', GRA with K and an L-mark with two strokes, and its index (V p. 275, PDF p. 328) lists it at HT 86a.2, 86b ⟦.2⟧ and 120.2; the copies of GORILA I p. 205 (PDF p. 241) and p. 135 (PDF p. 171) draw the two strokes, and Younger reads `GRA+K+L2 {*584}`. The site writes the two-stroke mark L2 in its label of A585, `GRA+L2`. This PR labels the glyph `GRA+K+L2` in `transliteratedWords` of the three records (HT86b keeps the erasure brackets), in their image maps (HT120 entry 6, HT86a and HT86b entry 7) and in the three sign-table rows, and its entry in the `ligatures` table takes L2 instead of L; `translatedWords` stays 'grain'.
+
+![A584 in GORILA V and GORILA I](evidence/complex-signs/HT120_HT86a_HT86b_A584_is_GRA+K+L2.jpg)
+
+*GORILA V p. XXV (PDF p. 26), table cell A 584 = 120'KL²', and p. 275 (PDF p. 328), index of sign 120: A 584 at HT 86a.2, 86b ⟦.2⟧ and 120.2 (and A 585 = 120'L²', which the site labels GRA+L2). GORILA I p. 205 (PDF p. 241), HT 120 .2 and .1-2, and GORILA I p. 135 (PDF p. 171), HT 86a .2 and the erased HT 86b .2: GRA with K at the foot and an L-mark with two strokes. Bottom: the sign under the boxes labelled GRA+K+L on the site's drawings.* (GORILA I (L. Godart and J.-P. Olivier 1976) and GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes; lineara.xyz images `HT120-Facsimile.jpg`, `HT86a-Facsimile.jpg`, `HT86b-Facsimile.jpg`, crops of GORILA's drawings)
+
+### HT15 — sign label `GRA+L4+L4` for A586
+
+On master the grain ligature A586 on HT15 is labelled `GRA+L4+L4`, two marks of four strokes. GORILA V p. XXV (PDF p. 26) gives A 586 = 120'L³L³', and its index (V p. 275, PDF p. 328) lists it at HT 15.2; GORILA I p. 31 (PDF p. 67) draws three strokes on each mark in its normalised copy, and Younger reads `GRA+L3L3 {*586}`. The site's drawing is too faint to count the strokes. This PR labels the glyph `GRA+L3+L3` in both text arrays, in both image maps (entry 10) and in the three sign-table rows, and its entry in the `ligatures` table takes L3 L3 instead of L4 L4.
+
+![A586 in GORILA V and GORILA I](evidence/complex-signs/HT15_A586_is_GRA+L3+L3.jpg)
+
+*GORILA V p. 275 (PDF p. 328): A 586 = 120'L³L³' at HT 15.2; GORILA V p. XXV (PDF p. 26), table cell A 586 with three strokes on each L-mark; GORILA I p. 31 (PDF p. 67), HT 15, tabular copy '.2-3 GRA+L³L³ 570' and normalised copy of line .2. Right: the box labelled GRA+L4+L4 on the site's drawing, whose strokes are too faint to count.* (GORILA I (L. Godart and J.-P. Olivier 1976) and GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes; lineara.xyz image `HT15-Facsimile.jpg`, a crop of GORILA's drawing)
+
+### HT115a — sign label `GRA+BOSm` for A576
+
+On master the grain ligature A576 on HT115a is labelled `GRA+BOSm`, grain with a bull. GORILA V p. XXV (PDF p. 26) gives A 576 = 120'22ᵐ', grain with the male-goat sign 22ᵐ (the 22 underdotted), and files it under 22ᵐ next to A 513 = 22ᵐ'81', which the site labels `CAPm+KU` (V pp. 178, 274, PDF pp. 231, 327); GORILA I p. 189 (PDF p. 225) draws a hooked top with two crossbars, not an ox head, and Younger reads `GRA+*22m {*576}`. GORILA's underdot leaves the 22 uncertain, but neither edition reads a bull. This PR labels the glyph `GRA+CAPm`, the site's own name for 22ᵐ, in `transliteratedWords` (the erasure brackets that the first commit puts on other words of the record stay), in both image maps (entry 7) and in the three sign-table rows, and its entry in the `ligatures` table takes CAPm instead of BOSm.
+
+![A576 in GORILA V and GORILA I](evidence/complex-signs/HT115a_A576_is_GRA+22m.jpg)
+
+*GORILA V p. XXV (PDF p. 26), table cell A 576 = 120'22ᵐ' (the 22 underdotted); GORILA I p. 189 (PDF p. 225), HT 115a .1, normalised and tabular copies: GRA with 22ᵐ, a hooked top with two crossbars, not an ox head; GORILA V p. 274 (PDF p. 327), under sign 120, and p. 178 (PDF p. 231), under sign 22ᵐ: A 576 at HT 115a.1, next to A 513 = 22ᵐ'81' (the site's CAPm+KU). Top right: the box labelled GRA+BOSm on the site's drawing.* (GORILA I (L. Godart and J.-P. Olivier 1976) and GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes; lineara.xyz image `HT115a-Facsimile.jpg`, a crop of GORILA's drawing)
+
+![Grain-ligature boxes, labels](evidence/complex-signs/A584_A586_A576_labels_before_after.jpg)
+
+*The relabelled box of each drawing, before and with this commit: HT120 entry 6, HT86a and HT86b entry 7 'GRA+K+L' → 'GRA+K+L2'; HT15 entry 10 'GRA+L4+L4' → 'GRA+L3+L3'; HT115a entry 7 'GRA+BOSm' → 'GRA+CAPm' (the photo maps change the same way). Boxes and word numbers do not change.* (lineara.xyz images `HT120-Facsimile.jpg`, `HT86a-Facsimile.jpg`, `HT86b-Facsimile.jpg`, `HT15-Facsimile.jpg`, `HT115a-Facsimile.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT24b — two complex signs joined to \*118
+
+On master HT24b joins two complex signs to the logogram \*118 that follows each: token 4 `SI+ME-KI-*118` and token 8 `*539-*118`. GORILA V p. XX (PDF p. 21) defines the complex signs A 501–A 664 as signs that do not form sign groups worth words. GORILA I p. 43 (PDF p. 79) sets SI+ME KI and JA+KA in a column of their own and each \*118 with its number in the next, and GORILA V indexes A 531 (SI+ME KI) and A 539 (JA+KA) as complex signs and all three \*118 of the tablet as isolated logograms (V pp. 210, 259, 273). Younger writes each pair in one table cell separated by a space, not a hyphen: `SI+ME KI {*531} *118` and `JA+KA {*539} *118`. This PR splits both tokens, keeping the site's labels `SI+ME-KI` and `*539` and glossing the new \*118 tokens 'talent', as the site's other \*118; both image maps renumber the entries after each split, and no box moves.
+
+![GORILA V pp. XX, 138-139, complex signs and index classes](evidence/word-divisions/gorila_V_pXX_pp138-139_complex_signs_and_index_classes.jpg)
+
+*GORILA V p. XX (PDF p. 21): A 501–A 664 are complex signs, true ligatures or juxtapositions of signs that do not form what GORILA calls 'groupes de signes' worth 'mots'. GORILA V pp. 138–139 (PDF pp. 191–192), the classes of the sign index: A isolated sign ([3] transaction sign, [4] logogram), D first sign of a group, F ]X, G last sign of a group, H complex signs.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![GORILA I p. 43, HT 24b copies](evidence/word-divisions/HT24b_gorila_I43_continuous_and_tabular_copies.jpg)
+
+*GORILA I p. 43 (PDF p. 79), HT 24b: continuous copy (.1 ]\*118 1 JE SI+ME KI, .2 \*118 1 JE JA+KA \*118 1) and tabular copy, where the complex signs stand in their own column and each \*118 with its number in the next.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA V index, HT 24b](evidence/word-divisions/HT24b_gorila_V210_V259_V273_index.jpg)
+
+*GORILA V p. 210 (PDF p. 263): A 531 = 41+13'67' (SI+ME KI) at HT 24b.1; p. 259 (PDF p. 312): A 539 = 57+77 (JA+KA) at HT 24b.2, both class H; p. 273 (PDF p. 326): sign 118 in class A [4], isolated logogram, at HT 24b.1, .2, .2, all three \*118 of the tablet.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![HT24b maps, word numbers](evidence/word-divisions/HT24b_maps_before_after.jpg)
+
+*Both HT24b maps, before and with this commit (the photo map includes commit 3's boxes): the entries after each split move up (green). No box moves.* (lineara.xyz images `HT24b-Facsimile.jpg`, `HT24b-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT38 — complex sign KA+A joined to \*118
+
+On master token 14 of HT38 joins the complex sign KA+A (A554) at the end of line .2 to the \*118 at the start of line .3, `*554-*118`. GORILA I p. 73 (PDF p. 109) sets KA+A in its own column and \*118 3 in the logogram column, GORILA V indexes A 554 as a complex sign (V p. 259) and this \*118 as an isolated logogram (V p. 273), and Younger writes `KA+A {*554} *118` in one cell, separated by a space. The record's transcription already breaks the line between the two. This PR splits the token, glossing \*118 'talent'; the later image-map entries move up by one.
+
+![GORILA I p. 73, HT 38 copies](evidence/word-divisions/HT38_gorila_I73_continuous_and_tabular_copies.jpg)
+
+*GORILA I p. 73 (PDF p. 109), HT 38: the continuous copy ends line .2 with KA+A and begins line .3 with \*118 and its 3; the tabular copy's row .2-3 sets KA+A in its own column and \*118 3 in the logogram column.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA V index, HT 38](evidence/word-divisions/HT38_gorila_V259_V273_index.jpg)
+
+*GORILA V p. 259 (PDF p. 312): A 554 = 77+08 (KA+A) at HT 38.2, class H; p. 273 (PDF p. 326): \*118 in class A [4] at HT 38.3.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![HT38 maps, word numbers](evidence/word-divisions/HT38_maps_before_after.jpg)
+
+*Both HT38 maps, before and with this commit: \*118 becomes word 8 and every later entry moves up one (green). No box moves.* (lineara.xyz images `HT38-Facsimile.jpg`, `HT38-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### KH9 — complex sign SI+TA2 joined to \*304
+
+On master token 28 of KH9 joins the complex sign SI+TA2 to the logogram \*304, `SI+TA2-*304`. GORILA III p. 35 (PDF p. 60) reads line .6 `]X SI+TA2 *304 1[` with spaces and sets the three in separate columns of its tabular copy; GORILA V indexes A 532 (SI+TA2) as a complex sign (V p. 210) and this \*304 as an isolated logogram (V p. 287), and Younger writes `SI+TA 2 {*532} *304`. This PR splits the token, glossing \*304 'olive oil' as at its other 25 occurrences; the last two image-map entries move up by one.
+
+![GORILA III p. 35, KH 9 copies](evidence/word-divisions/KH9_gorila_III35_continuous_and_tabular_line6.jpg)
+
+*GORILA III p. 35 (PDF p. 60), KH 9: the continuous copy reads line .6 ]X SI+TA2 \*304 1[ with spaces between the signs; the tabular copy's row .6 sets SI+TA2, \*304 and 1[ in three columns.* (GORILA III (L. Godart and J.-P. Olivier 1979), © École française d'Athènes)
+
+![GORILA V index, KH 9](evidence/word-divisions/KH9_gorila_V210_V287_index.jpg)
+
+*GORILA V p. 210 (PDF p. 263): A 532 = 41+66 (SI+TA2) at KH 9.6, class H; p. 287 (PDF p. 340): sign 304 in class A [4] at KH 8.3 and 9.6.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![KH9 maps, word numbers](evidence/word-divisions/KH9_maps_before_after.jpg)
+
+*Both KH9 maps, before and with this commit (the drawing's map includes commit 3's boxes): \*304 and the 1 after it move up one word (green). No box moves.* (lineara.xyz images `KH9-Facsimile.jpg`, `KH9-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT99b — complex sign SI+SE joined to the fig sign
+
+On master token 0 of HT99b joins the complex sign SI+SE to the fig logogram (the site's NI), `SI+SE-NI`. GORILA I p. 163 (PDF p. 199) reads `SI+SE FIC 6` and sets SI+SE and FIC in separate columns; GORILA V indexes A 529 (SI+SE) as a complex sign and this fig sign as an isolated logogram (V pp. 210, 194), and Younger writes `SI+SE {*529} FIC | 6`. On HT116a the site already writes SI+SE apart. This PR splits the token, glossing NI 'figs' as at 74 of its 75 other occurrences; every later image-map entry moves up by one.
+
+![GORILA I p. 163, HT 99b copies](evidence/word-divisions/HT99b_gorila_I163_continuous_and_tabular_copies.jpg)
+
+*GORILA I p. 163 (PDF p. 199), HT 99b: continuous copy .1 SI+SE FIC 6 DA-SI-\*118 2; in the tabular copy SI+SE stands in its own column and the fig sign (the site's NI) with 6 in the logogram column.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA V index, HT 99b](evidence/word-divisions/HT99b_gorila_V210_V194_index.jpg)
+
+*GORILA V p. 210 (PDF p. 263): A 529 = 41+09 (SI+SE) at HT 99b.1 (and at HT 116a.3, where the site writes SI+SE apart from GRA); p. 194 (PDF p. 247): sign 30 (FIC, the site's NI) in class A [4] at HT 99a.2 and b.1.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![HT99b maps, word numbers](evidence/word-divisions/HT99b_maps_before_after.jpg)
+
+*Both HT99b maps, before and with this commit: NI becomes word 1 and every later entry moves up one (green). No box moves.* (lineara.xyz images `HT99b-Facsimile.jpg`, `HT99b-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT28a — complex sign VIR+KA joined to VIN
+
+On master token 30 of HT28a joins the complex sign VIR+KA to the second wine sign of line .4, `VIR+KA-VIN`. GORILA I p. 53 (PDF p. 89) reads `VIN 3 VIR+KA VIN 6` and sets VIR+KA in its own column, GORILA V indexes A 568 (VIR+KA) as a complex sign and both wine signs of the line as isolated logograms (V pp. 259, 277), and Younger writes `VIR+KA {*568} VINa | 6` in one cell, separated by a space. On HT88, HT97a and HT100 the site writes VIR+KA as a word of its own. This PR splits the token, glossing VIN 'wine'; every later image-map entry moves up by one.
+
+![GORILA I p. 53, HT 28a copies](evidence/word-divisions/HT28a_gorila_I53_continuous_and_tabular_copies.jpg)
+
+*GORILA I p. 53 (PDF p. 89), HT 28a: continuous copy, line .4 VIN 3 VIR+KA VIN 6; the tabular copy's second row .4 sets VIR+KA in its own column and VIN 6 in the logogram column.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA V index, HT 28a](evidence/word-divisions/HT28a_gorila_V259_V277_index.jpg)
+
+*GORILA V p. 259 (PDF p. 312): A 568 = 100/102+77 (VIR+KA) at HT 28a.4 (and at HT 88.1, 97a.1, 100.1, where the site writes VIR+KA as a word of its own); p. 277 (PDF p. 330): sign 131a (VIN) in class A [4] at HT 28a.4.4, both wine signs of the line.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![HT28a maps, word numbers](evidence/word-divisions/HT28a_maps_before_after.jpg)
+
+*Both HT28a maps, before and with this commit: the second VIN and every later entry move up one word (green). No box moves.* (lineara.xyz images `HT28a-Facsimile.jpg`, `HT28a-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT44b — transaction sign TE joined to GRA+F
+
+On master token 2 of HT44b joins the transaction sign TE and the grain ligature GRA+F, `TE-GRA+F`. GORILA I p. 85 (PDF p. 121) reads `]JA · TE GRA+F` with a gap and sets TE and GRA+F in separate columns; GORILA V lists this TE as an isolated transaction sign (V p. 149) and A 582 = GRA+F alone (V p. 275), and Younger's number `{*582}` in `• TE GRA+F {*582} [` covers GRA+F alone. The site writes the same cell of HT133, `• TE GRA+DA {*573}`, as TE | GRA+DA, and TE as a token of its own at 18 of the 21 places where GORILA V lists it as an isolated sign. This PR splits the token into `TE` and `GRA+F` ('grain', as on HT125b, KH1 and KH28), keeping the break mark with GRA+F; every later image-map entry moves up by one.
+
+![GORILA I p. 85 and GORILA V, HT 44b](evidence/complex-signs/HT44b_TE_apart_from_GRA+F.jpg)
+
+*GORILA I p. 85 (PDF p. 121), HT 44b .1: normalised copy ]JA · TE GRA+F, and the tabular copy with TE in its own column and GRA+F[ in the logogram column. GORILA V p. 149 (PDF p. 202): sign 04 (TE) as an isolated sign, class A [3] (transaction sign), at HT 44b.1; p. 275 (PDF p. 328): A 582 = 120'F', GRA+F alone, at HT 44b.1.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+![HT44b maps, word numbers](evidence/complex-signs/HT44b_maps_before_after.jpg)
+
+*Both HT44b maps, before and with this commit: GRA+F becomes word 3 and every later entry moves up one (green). No box moves.* (lineara.xyz images `HT44b-Facsimile.jpg`, `HT44b-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HTWa1021 — two complex signs written as one word
+
+On master token 5 of HTWa1021 joins two complex signs into one word, `SI+SE-RA+KA`. GORILA II p. 7 (PDF p. 69) draws and copies SI+SE and RA+KA apart on face γ, GORILA V numbers them A 529 and A 541 (V pp. 210, 259), and Younger has `g: SI+SE {*529} RA+KA {*541}`, two numbers. The maintainer's 9c81beb split the matching token of HTWa1021bis. This PR splits the token into `SI+SE` and `RA+KA`; entry 5 (RA+KA) of both image maps becomes word 4.
+
+![GORILA II p. 7 and GORILA V, HT Wa 1021](evidence/complex-signs/HTWa1021_SI+SE_and_RA+KA_apart.jpg)
+
+*GORILA II p. 7 (PDF p. 69), HT Wa 1021 face γ (HM 1347): photograph, drawing and normalised signs, SI+SE and RA+KA apart. GORILA V p. 210 (PDF p. 263): A 529 = 41+09 (SI+SE), and p. 259 (PDF p. 312): A 541 = 60+77 (RA+KA), each at HT Wa 1021γ.* (GORILA II and V (L. Godart and J.-P. Olivier 1979, 1985), © École française d'Athènes)
+
+![HTWa1021 maps, word numbers](evidence/complex-signs/HTWa1021_maps_before_after.jpg)
+
+*Both HTWa1021 maps, before and with this commit: RA+KA (entry 5) becomes word 4. No box moves.* (lineara.xyz images `HTWa1021-Facsimile.jpg`, `HTWa1021-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### KNZa10 — JA-SA-SA-RA-MA-NA cut at the corner
+
+On master KNZa10 cuts JA-SA-SA-RA-MA-NA at the corner between faces a and b into `JA-SA-SA-RA-MA` and a one-sign word `NA` that the stone does not have. GORILA IV p. 9 (PDF p. 52) has no divider after MA on face a and continues `JA SA SA RA MA NA · DA …` in its continuous copy; GORILA V p. 156 (PDF p. 209) indexes NA as the last sign of JA-SA-SA-RA-MA-NA at KN Za 10a-b, and Younger writes `JA-SA-SA-RA-MA- .b: -NA •` and `JA-SA-SA-RA-MA-NA •`. This PR joins the word, as the site writes the words round the corners of KO Za 1: one token, on the line of the face that holds most of its signs, with the line break moved after it in the word arrays and in `parsedInscription`; the transcription keeps the physical break, and the gloss 'this dedication' stays. The later image-map entries move down by one.
+
+![GORILA IV p. 9 and GORILA V p. 156, KN Za 10](evidence/word-divisions/KNZa10_gorila_IV9_face_copies_and_continuous_copy.jpg)
+
+*GORILA IV p. 9 (PDF p. 52), KN Za 10: face a ends ]-TA NU MU TI · JA SA SA RA MA with no divider after MA, face b begins NA ·; the continuous copy runs JA SA SA RA MA NA · DA … GORILA V p. 156 (PDF p. 209): NA as the last sign (class G) of 57-31-31-60-80-06, JA-SA-SA-RA-MA-NA, at KN Za 10a-b.* (GORILA IV and V (L. Godart and J.-P. Olivier 1982, 1985), © École française d'Athènes)
+
+![KNZa10 maps, word numbers](evidence/word-divisions/KNZa10_maps_before_after.jpg)
+
+*Both KNZa10 maps, before (upper of each pair) and with this commit: NA joins word 2 and every later entry moves down one (green). No box moves.* (lineara.xyz images `KNZa10-Facsimile.jpg`, `KNZa10-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### PKZa11 — A-SA-SA-RA-ME cut at the corner
+
+On master PKZa11 cuts A-SA-SA-RA-ME at the corner between faces b and c into a one-sign word `A` and `SA-SA-RA-ME`. GORILA IV p. 34 (PDF p. 77) ends face b with `· A` and begins face c with `SA SA RA ME ·`, and its continuous copy begins a line with `A SA SA RA ME ·`; GORILA V p. 161 (PDF p. 214) indexes A as the first sign of A-SA-SA-RA-ME at PK Za 11b-c, and Younger writes `• A-` and `c: SA-SA-RA-ME •`. This PR joins the word on face c's line, where four of its five signs are (unglossed, as on IOZb10); the later image-map entries move down by one. The corner between faces a and b is not touched.
+
+![GORILA IV p. 34 and GORILA V p. 161, PK Za 11](evidence/word-divisions/PKZa11_gorila_IV34_faces_b-c_and_continuous_copy.jpg)
+
+*GORILA IV p. 34 (PDF p. 77), PK Za 11: face b ends · A (A underdotted), face c begins SA SA RA ME ·; the continuous copy begins its line with A SA SA RA ME ·. GORILA V p. 161 (PDF p. 214): A as the first sign (class D) of 08-31-31-60-13, A-SA-SA-RA-ME, at PK Za 11b-c.* (GORILA IV and V (L. Godart and J.-P. Olivier 1982, 1985), © École française d'Athènes)
+
+![PKZa11 maps, word numbers](evidence/word-divisions/PKZa11_maps_before_after.jpg)
+
+*Both PKZa11 maps, before and with this commit (the photo map includes commit 3's boxes): A at the end of face b and SA SA RA ME on face c become one word 11, and every later entry moves down one (green). No box moves.* (lineara.xyz images `PKZa11-Facsimile.jpg`, `PKZa11-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### PKZa14 — TU-ME-I cut at the corner
+
+On master PKZa14 cuts ]TU-ME-I at the corner into `TU-ME` and a one-sign word `I`. GORILA IV p. 40 (PDF p. 83) reads `]TU ME I · JA SA SA[` with no divider between ME and I, GORILA V p. 249 (PDF p. 302) indexes TU-ME-I at PK Za 8a and 14a-b, and Younger writes `a: ]-TU-ME- b: -I •` and `]TU-ME-I`. This PR joins the word (unglossed, as on PK Za 8); the later image-map entries move down by one.
+
+![GORILA IV p. 40 and GORILA V p. 249, PK Za 14](evidence/word-divisions/PKZa14_gorila_IV40_face_copies_and_continuous_copy.jpg)
+
+*GORILA IV p. 40 (PDF p. 83), PK Za 14: face a ]TU ME, face b I · JA SA SA[; the continuous copy ]TU ME I · JA SA SA[ has no divider between ME and I. GORILA V p. 249 (PDF p. 302): TU as the first sign (class D) of 69-13-28, TU-ME-I, at PK Za 8a and 14a-b.* (GORILA IV and V (L. Godart and J.-P. Olivier 1982, 1985), © École française d'Athènes)
+
+![PKZa14 maps, word numbers](evidence/word-divisions/PKZa14_maps_before_after.jpg)
+
+*Both PKZa14 maps, before and with this commit: I joins word 0 (TU-ME-I) and every later entry moves down one (green). No box moves.* (lineara.xyz images `PKZa14-Facsimile.jpg`, `PKZa14-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### PKZa16 — PU₂-RE-JA cut at the corner
+
+On master PKZa16 cuts ]PU₂-RE-JA[ at the corner into a one-sign word `PU₂` and `RE-JA`. Both copies of GORILA IV p. 42 (PDF p. 85) read `]TO SA · PU2 RE JA[` with no divider between PU₂ and RE, GORILA V p. 193 (PDF p. 246) indexes PU₂-RE-JA at PK Za 16 (and ]PU₂-RE-JA at ZA Zb 34), and Younger writes `.a: ]-TO-SA • PU2- .b: -RE-JA [` and notes that the two lines probably run together as PU₂-RE-JA. This PR joins the word on the second line, where two of its three signs are (unglossed, as on ZA Zb 34); its two later image-map entries move down by one.
+
+![GORILA IV p. 42 and GORILA V p. 193, PK Za 16](evidence/word-divisions/PKZa16_gorila_IV42_copies_rotated.jpg)
+
+*GORILA IV p. 42 (PDF p. 85, printed sideways and turned here), PK Za 16, both copies: ]TO SA · PU2 RE JA[ ]vest.[ (PU2 and JA underdotted), with no divider between PU2 and RE and no face letters. GORILA V p. 193 (PDF p. 246): PU2 as the first sign (class D) of 29-27-57[, PU2-RE-JA, at PK Za 16 (and ]29-27-57 at ZA Zb 34).* (GORILA IV and V (L. Godart and J.-P. Olivier 1982, 1985), © École française d'Athènes)
+
+![PKZa16 maps, word numbers](evidence/word-divisions/PKZa16_maps_before_after.jpg)
+
+*Both PKZa16 maps, before and with this commit: PU₂ and RE-JA become one word 2 (green). No box moves.* (lineara.xyz images `PKZa16-Facsimile.jpg`, `PKZa16-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### IOZa16 — JA-SA-SA-RA-ME cut at the corner
+
+On master IOZa16 cuts JA-SA-SA-RA-ME at the corner into `JA-SA-SA-RA` and a one-sign word `ME`. The vessel is not in GORILA, and its first edition (Karetsou, Godart and Olivier 2002–2003, 443–44) was not consulted; Younger, the site's source, writes `.a: ] *123 • JA-SA-SA-RA- .b: -ME • U-NA-RU-KA[-NA-SI` and `.a-.b: ] AROM • JA-SA-SA-RA-ME • …`, and the record's own pictures have JA SA SA RA on one face and ME · U NA RU KA on the next. This PR joins the word and glosses it 'this dedication', the site's gloss of JA-SA-SA-RA-ME in its seven other records, where the cut word had the hand gloss '"to" A-SA-SA-RA'; the later image-map entries move down by one. The explorer's 10 areas for 12 letters (the restored NA and SI have no boxes) are as before.
+
+![IOZa16 maps, word numbers](evidence/word-divisions/IOZa16_maps_before_after.jpg)
+
+*Both IOZa16 maps, before and with this commit: JA SA SA RA on one face and ME on the next become one word 2, and every later entry moves down one (green), including the box-less entries of the restored NA and SI. No box moves.* (lineara.xyz images `IOZa16-Facsimile.jpg`, `IOZa16-Inscription.jpg`; boxes from `items_image_map.js` before and with this commit)
+
+### IOZa12 — JA-SA-SA-RA-ME cut at the corner
+
+On master IOZa12 writes JA-SA-SA-RA-ME, divided between two faces, as `JA-SA` and `SA-RA-ME`. The vessel is not in GORILA, and its first edition (Karetsou, Godart and Olivier 1985, 143) was not consulted; Younger writes `.a: ][• •] • JA-SA- .b: -SA-RA-ME • I-TI-[` and notes that 'the two sides break up the word JA-SA- | -SA-RA-ME', and the record's drawing has JA SA on face a and SA RA ME · I TI on face b. This PR joins the word on face b's line, glossed 'this dedication' as elsewhere; the later entries of the drawing's image map move down by one.
+
+![IOZa12 drawing, word numbers](evidence/word-divisions/IOZa12_maps_before_after.jpg)
+
+*`IOZa12-Facsimile`, before (upper) and with this commit (lower): JA SA on face a and SA RA ME on face b become one word 2, and the later entries move down one (green). No box moves.* (lineara.xyz images `IOZa12-Facsimile.jpg`; boxes from `items_image_map.js` before and with this commit)
+
+## Optional readings
+
+The tenth commit holds ten readings that are editorial choices rather than errata; it can be left out as a whole, and each record can be taken or left on its own. In six records it follows GORILA V's reading of a complex sign: KH Wa 1001 and 1002, TY 3a, KH 74, MA 4a and HT 130. In four records the sources disagree about a divider or a break. In MA 1a and HT 127a GORILA and Younger disagree: GORILA has a divider after \*47 (MA 1a) and a break after the numeral of line .3 (HT 127a), and the site's word arrays, like Younger, do not. In HT 123+124b and HT Zd 157+156 GORILA's own copies disagree: Younger has the divider, while the site's transcription of HT 123+124b b.3 and its text of HT Zd 157 follow the GORILA copies that lack it. In each case the site's present reading can be defended. MA4a's split is written on the 63 of commit 8; without commit 8 the same split applies to 53. The derived files follow as for the ninth commit (HT127a's copy in `items_analysis/inscriptions.json`, which predates 9c81beb, stays as it was; the notebook drops the break mark it gains), and seven item pages are regenerated. "Before" figures show the state after the ninth commit.
+
+### KHWa1001, KHWa1002 — A640 read as 317+KI
+
+On master the first sign of KHWa1001 and KHWa1002, A640, is labelled `*316+KI`, in both text arrays and in the site's sign table. GORILA V contradicts itself here: its table prints the formula 316'67' but draws the boxed sign 317 (p. XXVI, PDF p. 27), and its index lists A 640 = 317'67' under 317 and under KI (pp. 296, 248, PDF pp. 349, 301); Younger reads `*317+KI`, while GORILA III p. 104 (PDF p. 129) reads the signs as A-KI-DA-RO. This optional change labels the glyph `*317+KI` in both records, in the three sign-table rows and in its entry in the `ligatures` table of `LinearAInscriptions.js` (317 with KI, not 316 with KI); the records have no image-map entries for it.
+
+![GORILA V and GORILA III, A 640](evidence/complex-signs/KHWa1001_KHWa1002_A640_is_317+KI.jpg)
+
+*GORILA V p. XXVI (PDF p. 27): table cell A 640 with the formula 316'67', but drawn with the boxed sign 317, as A 641 '317''67''334' below it. GORILA III p. 104 (PDF p. 129), KH Wa 1001 faces α and γ, and the normalised copy A-KI-DA-RO. GORILA V p. 296 (PDF p. 349): the rubric of sign 316 lists only A 639 and A 631, and A 640 = 317'67' at KH Wa 1001α and 1002α stands under 317; p. 248 (PDF p. 301), under sign 67: A 640 = 317'67'.* (GORILA III and V (L. Godart and J.-P. Olivier 1979, 1985), © École française d'Athènes)
+
+### TY3a — KI with a lost element
+
+On master TY3a has a plain KI in `NE-KI` (line .1-2) and `KI` (line .7). GORILA I p. 327 (PDF p. 363) draws both as KI with a lost element at the upper right (`KI+[ ]`), GORILA V catalogues them as the complex signs A 514 and A 544 (V pp. XXIV, 248), and Younger reads `NE KI+[ ] 5` and `]KI+[ ] 5`. Neither complex sign is in Unicode, so the glyph stays KI. This optional change writes `NE-KI+[?]` and `KI+[?]` in both text arrays, the site's own notation for an unknown component (as in `VIR+[?]`); glyphs, token positions and map labels do not change. Whether NE belongs to the compound (GORILA V) or stands apart (GORILA I's tabular copy) is left as the site has it.
+
+![GORILA I p. 327 and GORILA V, TY 3a](evidence/complex-signs/TY3a_KI_with_lost_element.jpg)
+
+*GORILA I p. 327 (PDF p. 363), TY 3a, tabular copy: .1-2 NE, then KI with a lost element [ ] at its upper right, 5; .7 ]KI+[ ] 5. GORILA V p. XXIV (PDF p. 25): A 514 = '24''[ ]67' and A 544 = ]67+[ ]; p. 248 (PDF p. 301): A 514 at TY 3a.1-2, A 544 at TY 3a.7.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+### KH74 — SI set apart from the complex sign \*805-MI
+
+On master KH74 writes `SI-*805-MI` as one word on line .2, as Younger's table does (`] SI -*301-MI {*605}`). GORILA III p. 93 (PDF p. 118) sets ]SI apart from 301 and MI written together, GORILA V indexes this SI as a single sign after a break and A 605 = '301''73' as a complex sign at KH 74.2 and on the roundels KH Wc 2054 and 2055 (V pp. 209, 283), and Younger's note says that \*605 'is probably an independent signgroup also here: ]SI \*605'. This optional change splits the token into `SI` and `*805-MI` (the site's label of A605, as on KH Wc 2054 and 2055); the last two image-map entries move up by one.
+
+![GORILA III p. 93, KH 74 copies](evidence/word-divisions/KH74_gorila_III93_copies.jpg)
+
+*GORILA III p. 93 (PDF p. 118), KH 74, both copies: line .2 ]SI (underdotted), then 301 and MI written together, GORILA V's complex sign A 605; in the left copy a clear space separates ]SI from it.* (GORILA III (L. Godart and J.-P. Olivier 1979), © École française d'Athènes)
+
+![GORILA V index, KH 74](evidence/word-divisions/KH74_gorila_V209_V283_index.jpg)
+
+*GORILA V p. 209 (PDF p. 262): SI in class F (]X, a single sign after a break) at KH 74.2; p. 283 (PDF p. 336): A 605 = '301''73' at KH 74.2 and on the roundels KH Wc 2054 and 2055.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![KH74 maps, word numbers](evidence/word-divisions/KH74_maps_before_after.jpg)
+
+*Both KH74 maps, before and with this commit: \*805 and MI (entries 6 and 7) become word 4, apart from SI (word 3). No box moves.* (lineara.xyz images `KH74-Facsimile.jpg`, `KH74-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### MA4a — TA set apart from HIDE+B
+
+On master MA4a begins with one word `TA-HIDE+B`. GORILA I p. 273 (PDF p. 309) sets TA in its own column before HIDE+B 15, and GORILA V indexes TA as an isolated sign at MA 4a and A 602 = 180'B' as a complex sign at MA 4a and 6a, c (V pp. 235, 280); no complex sign joins 59 (TA) with 180 (A 599–A 603 have no 59). Younger writes `TA *180B` in one logogram cell without a hyphen or a complex-sign number, so he leaves the question open. This optional change splits the token into `TA` and `HIDE+B`; every later image-map entry moves up by one. The split is written on commit 8's 63; without commit 8 the same split applies to 53.
+
+![GORILA I p. 273 and GORILA V, MA 4a](evidence/complex-signs/MA4a_TA_apart_from_HIDE+B.jpg)
+
+*GORILA I p. 273 (PDF p. 309), MA 4a: normalised copy and tabular copy, TA in its own column, then HIDE+B 15. GORILA V p. 235 (PDF p. 288): sign 59 (TA) as an isolated sign (class A [2]) at MA 4a; p. 280 (PDF p. 333): A 602 = 180'B' at MA 4a and 6a, c.1.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+![MA4a maps, word numbers](evidence/complex-signs/MA4a_maps_before_after.jpg)
+
+*Both MA4a maps, before and with this commit (after commit 8's 63): HIDE+B becomes word 1 and every later entry moves up one (green). No box moves.* (lineara.xyz images `MA4a-Facsimile.jpg`, `MA4a-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT130 — SI set apart from CYP
+
+On master HT130 writes `SI-CYP` as one word on line .5. GORILA I p. 225 (PDF p. 261) sets SI in its own column before CYP 8, and GORILA V indexes this SI and this CYP as isolated signs, recording the complex sign A 533 (SI with CYP) only at KH 11.6 (V pp. 207, 286). Younger writes `SI *303` without a number here and at KH 11.6 alike, so his notation cannot tell the two apart. This optional change splits the token into `SI` and `CYP` ('cyperus'); every later image-map entry moves up by one.
+
+![GORILA I p. 225 and GORILA V, HT 130](evidence/complex-signs/HT130_SI_apart_from_CYP.jpg)
+
+*GORILA I p. 225 (PDF p. 261), HT 130 .5: normalised copy SI CYP 8 FIC, and the tabular copy with SI in its own column, then CYP 8. GORILA V p. 207 (PDF p. 260): SI as an isolated sign (class A [2]) at HT 130.5; p. 286 (PDF p. 339): CYP isolated at HT 130.2 and .5, and the complex sign A 533 = '41''303' (SI CYP) only at KH 11.6.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+![HT130 maps, word numbers](evidence/complex-signs/HT130_maps_before_after.jpg)
+
+*Both HT130 maps, before and with this commit: CYP (entry 10) becomes word 8 and every later entry moves up one (green). No box moves.* (lineara.xyz images `HT130-Facsimile.jpg`, `HT130-Inscription.jpg`, crops of GORILA plates, © École française d'Athènes; boxes from `items_image_map.js` before and with this commit)
+
+### HT123+124b — divider after \*188-DU in the transcription
+
+On master line b.3 of HT123+124b disagrees with itself: the word arrays and `parsedInscription` have \*188-DU, a divider and 10 (`𐙓𐘬𐄁𐄐`), the transcription has no divider (`𐙓𐘬𐄐`). Younger, in both of his arrangements, and GORILA V p. 74 (PDF p. 127), the corrigenda, have the divider. But GORILA I's drawing and normalised copy (pp. 212–213, PDF pp. 248–249) show a single mark between DU and TU, a small circle drawn like the two that write 20 on line .6, and the site's map of the drawing boxes that mark as the 10. This optional change follows the word arrays, Younger and GORILA's corrigenda and adds the divider to the transcription; the other way would be to remove the divider from the word arrays.
+
+![GORILA I pp. 212-213, HT 123b line .3](evidence/dividers/HT123b_b3_one_mark_between_DU_and_TU.jpg)
+
+*GORILA I p. 213 (PDF p. 249), HT 123b, normalised copy, lines .1–.6: on line .3, 1 \*188 DU, one small circle, TU PA DI DA; on line .6 KU RO is followed by two such circles, which the tabular copy reads as 20. Below: GORILA I p. 212 (PDF p. 248), the drawing of line .3, enlarged: one round mark between DU and TU.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![HT123+124b drawing, line .3](evidence/dividers/HT123+124b-Facsimile_b3_mark_boxed_as_10.jpg)
+
+*`HT123+124b-Facsimile`, line .3, with its boxes (not changed by commit 10): the box of the 10 (entry for word 13) is on the one mark between DU and TU; the divider entry (word 12) has no box.* (lineara.xyz image `HT123+124b-Facsimile.jpg`, a crop of the GORILA I p. 212 drawing, © École française d'Athènes; boxes from `items_image_map.js`)
+
+### MA1a — divider after \*47
+
+After the ninth commit, MA1a's word arrays still run \*47 into QE-DE-MI-NU. GORILA has a divider there: a thick stroke on the crack between \*47 and QE in the drawing (I p. 268, PDF p. 304), and `*47 ·` in both copies (I p. 269, PDF p. 305); the record's own transcription has it too (`…𐘨𐄁𐘿…`). Younger, whom the word arrays follow, has none (`a.1 X I-DU-WI • *47`, `a.1 QE-DE-MI-NU •`). This optional change adds the divider after \*47 in the three word arrays and in `parsedInscription`, which then equals the transcription; both image maps get a box-less `*900` entry. MA1b has the same pattern and is not changed. Figures: [MA1a — divider after X I-DU-WI missing](#ma1a--divider-after-x-i-du-wi-missing).
+
+### HT127a — break mark after the numeral of line .3
+
+On master HT127a marks the break at the start of line .3 (`𐝫` before \*304+PA) but none at its right end, although it writes line .2's `1[` as `𐄇𐝫`. GORILA I p. 219 (PDF p. 255) reads `.3 *304+PA DA *47 KU 1 [`, the break after the numeral, past a space, and its drawing (I p. 218, PDF p. 254) shows a stroke, a short clear stretch and then the lost surface. Younger puts the break after KU, before the numeral (`a.3 ]*304+PA-DA-*47-KU[` with 1 in his number column). This optional change follows GORILA and writes the numeral as `𐄇𐝫`, adding `𐝫` to both glyph strings; the transliteration stays `1`, as for line .2, and no map entry changes.
+
+![GORILA I p. 218, HT 127a drawing](evidence/dividers/HT127a_gorila_I218_drawing.jpg)
+
+*GORILA I p. 218 (PDF p. 254), drawing of HT 127a: line .3 \*304+PA DA \*47 KU, a stroke, a short clear stretch, then lost (stippled) surface.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+![GORILA I p. 219, HT 127a copies](evidence/dividers/HT127a_gorila_I219_lines2-3.png)
+
+*GORILA I p. 219 (PDF p. 255), HT 127a: normalised copy '.2 DU NE MI 1[' and '.3 \*304+PA DA \*47 KU 1 [' (both numerals underdotted; on .3 the break comes after the numeral, past a space), and the tabular copy with '1[' and '1 [' in the number column.* (GORILA I (L. Godart and J.-P. Olivier 1976), © École française d'Athènes)
+
+### HTZd157+156 — divider before WI-JA-SU-MA-TI-TI
+
+On master the text of HT Zd 157 begins with WI-JA-SU-MA-TI-TI. GORILA IV p. 135 (PDF p. 178) is divided: its normalised copy begins with a full-height stroke and a dot before WI, but its facsimile and its tabular copy draw the stroke and no dot, on undamaged surface, and so does the site's `HTZd157+156-Facsimile.jpg`. Younger begins `• WI-JA-SU-MA-TI-TI-*319 [ ] NE 1 …`. This optional change adds the divider at the start of the word arrays and of `parsedInscription` (the transcription holds only HT Zd 156's text), and gives both image maps a box-less `*900` entry as word 0. The stroke stays unread, as in the record and in Younger.
+
+![GORILA IV p. 135, HT Zd 157 copies](evidence/dividers/HTZd157_gorila_IV135_copies.jpg)
+
+*GORILA IV p. 135 (PDF p. 178, printed sideways and turned here), HT Zd 157: the normalised copy (top) begins with a full-height stroke, then a dot, then WI JA SU MA TI TI and the I-shaped sign; the tabular copy (bottom) has the stroke but no dot.* (GORILA IV (L. Godart and J.-P. Olivier 1982), © École française d'Athènes)
+
+![GORILA IV p. 135, HT Zd 157 facsimile](evidence/dividers/HTZd157_gorila_IV135_facsimile.jpg)
+
+*Same page, the facsimile: the stroke before WI, and no dot (`HTZd157+156-Facsimile.jpg` is a crop of this drawing).* (GORILA IV (L. Godart and J.-P. Olivier 1982), © École française d'Athènes)
