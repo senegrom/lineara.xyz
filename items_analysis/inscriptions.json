@@ -14799,7 +14799,7 @@
     "scribe": "HT Scribe 6",
     "site": "Haghia Triada",
     "support": "Tablet",
-    "transcription": "𐙓𐙜𐄐𐄇𐙢𐄇𐝕\n𐘠𐘀𐘳𐄁𐘢𐘞𐄊𐙓\n𐄇𐙓𐘬𐄐𐘹𐘂𐘆𐘀\n𐝆𐝉𐄁𐘾𐘅𐝫𐘤𐘬\n𐝀𐘬𐙁𐘚𐘅𐝃𐝄\n𐙂𐘁𐄑𐘸𐘁𐄋",
+    "transcription": "𐙓𐙜𐄐𐄇𐙢𐄇𐝕\n𐘠𐘀𐘳𐄁𐘢𐘞𐄊𐙓\n𐄇𐙓𐘬𐄁𐄐𐘹𐘂𐘆𐘀\n𐝆𐝉𐄁𐘾𐘅𐝫𐘤𐘬\n𐝀𐘬𐙁𐘚𐘅𐝃𐝄\n𐙂𐘁𐄑𐘸𐘁𐄋",
     "translatedWords": [
         "*188-*308",
         "11",
@@ -15762,7 +15762,8 @@
         "\n",
         "—",
         "\n",
-        "SI-CYP",
+        "SI",
+        "cyperus",
         "8",
         "\n",
         "figs",
@@ -15788,7 +15789,8 @@
         "\n",
         "—",
         "\n",
-        "SI-CYP",
+        "SI",
+        "CYP",
         "8",
         "\n",
         "NI",
@@ -15814,7 +15816,8 @@
         "\n",
         "—",
         "\n",
-        "𐘤𐙗",
+        "𐘤",
+        "𐙗",
         "𐄎",
         "\n",
         "𐘝",
@@ -44550,12 +44553,13 @@
     "names": [
         "HTZd157+156"
     ],
-    "parsedInscription": "𐘣𐘱𐘲𐙁𐘠𐘠𐙫𐄇\n𐙫𐄇𐝆\n𐙫𐄈𐝃\n𐙫𐄉𐝃𐝄\n𐘳𐘱𐝇𐝫",
+    "parsedInscription": "𐄁𐘣𐘱𐘲𐙁𐘠𐘠𐙫𐄇\n𐙫𐄇𐝆\n𐙫𐄈𐝃\n𐙫𐄉𐝃𐝄\n𐘳𐘱𐝇𐝫",
     "scribe": "",
     "site": "Haghia Triada",
     "support": "Graffito",
     "transcription": "𐝫𐘗𐄇𐘗𐄇𐝆𐙫𐄈𐝃𐙫𐄉𐝃𐝄𐘳𐘱𐝇𐝫",
     "translatedWords": [
+        "𐄁",
         "WI-JA-SU-MA-TI-TI",
         "*319",
         "1",
@@ -44576,6 +44580,7 @@
         "¹⁄₁₆"
     ],
     "transliteratedWords": [
+        "𐄁",
         "WI-JA-SU-MA-TI-TI",
         "*319",
         "1",
@@ -44596,6 +44601,7 @@
         "¹⁄₁₆"
     ],
     "words": [
+        "𐄁",
         "𐘣𐘱𐘲𐙁𐘠𐘠",
         "𐙫",
         "𐄇",
@@ -50490,7 +50496,8 @@
         "𐄁",
         "JA-DA-SU",
         "\n",
-        "SI-*805-MI",
+        "SI",
+        "*805-MI",
         "\n",
         "𐝫"
     ],
@@ -50499,7 +50506,8 @@
         "𐄁",
         "JA-DA-SU",
         "\n",
-        "SI-*805-MI",
+        "SI",
+        "*805-MI",
         "\n",
         "𐝫"
     ],
@@ -50508,7 +50516,8 @@
         "𐄁",
         "𐘱𐘀𐘲𐝫",
         "\n",
-        "𐝫𐘤𐝥𐘻",
+        "𐝫𐘤",
+        "𐝥𐘻",
         "\n",
         "𐝫"
     ]
@@ -51972,11 +51981,11 @@
     "support": "Nodule",
     "transcription": "𐜡𐚳 𐜡𐚳¹⁰⁰²",
     "translatedWords": [
-        "*316+KI",
+        "*317+KI",
         "DA+RO"
     ],
     "transliteratedWords": [
-        "*316+KI",
+        "*317+KI",
         "DA+RO"
     ],
     "words": [
@@ -52005,11 +52014,11 @@
     "support": "Nodule",
     "transcription": "",
     "translatedWords": [
-        "*316+KI",
+        "*317+KI",
         "DA+RO"
     ],
     "transliteratedWords": [
-        "*316+KI",
+        "*317+KI",
         "DA+RO"
     ],
     "words": [
@@ -57860,7 +57869,7 @@
     "names": [
         "MA1a"
     ],
-    "parsedInscription": "𐄂𐘚𐘬𐘣𐄁𐘨\n𐘿𐘦𐘻𐘯𐄁",
+    "parsedInscription": "𐄂𐘚𐘬𐘣𐄁𐘨𐄁\n𐘿𐘦𐘻𐘯𐄁",
     "scribe": "",
     "site": "Malia",
     "support": "3-sided bar",
@@ -57869,6 +57878,7 @@
         "*903-I-DU-WI",
         "𐄁",
         "*47",
+        "𐄁",
         "\n",
         "QE-DE-MI-NU",
         "𐄁"
@@ -57877,6 +57887,7 @@
         "*903-I-DU-WI",
         "𐄁",
         "*47",
+        "𐄁",
         "\n",
         "QE-DE-MI-NU",
         "𐄁"
@@ -57885,6 +57896,7 @@
         "𐄂𐘚𐘬𐘣",
         "𐄁",
         "𐘨",
+        "𐄁",
         "\n",
         "𐘿𐘦𐘻𐘯",
         "𐄁"
@@ -58115,7 +58127,8 @@
     "support": "Tablet",
     "transcription": "𐘳𐜅𐄐𐄋𐜆𐄙𐄑𐜄𐄕𐄉𐜃𐄒",
     "translatedWords": [
-        "TA-HIDE+B",
+        "TA",
+        "HIDE+B",
         "15",
         "\n",
         "HIDE+L",
@@ -58128,7 +58141,8 @@
         "30"
     ],
     "transliteratedWords": [
-        "TA-HIDE+B",
+        "TA",
+        "HIDE+B",
         "15",
         "\n",
         "HIDE+L",
@@ -58141,7 +58155,8 @@
         "30"
     ],
     "words": [
-        "𐘳𐜅",
+        "𐘳",
+        "𐜅",
         "𐄐𐄋",
         "\n",
         "𐜆",
@@ -65431,7 +65446,7 @@
         "olive oil",
         "22",
         "\n",
-        "NE-KI",
+        "NE-KI+[?]",
         "5",
         "\n",
         "olive oil",
@@ -65484,7 +65499,7 @@
         "\n",
         "A-KU-TU-*361",
         "\n",
-        "KI",
+        "KI+[?]",
         "5",
         "\n",
         "olive oil",
@@ -65501,7 +65516,7 @@
         "OLE+U",
         "22",
         "\n",
-        "NE-KI",
+        "NE-KI+[?]",
         "5",
         "\n",
         "OLE+QIf",
@@ -65554,7 +65569,7 @@
         "\n",
         "A-KU-TU-*361",
         "\n",
-        "KI",
+        "KI+[?]",
         "5",
         "\n",
         "OLE+TU",
