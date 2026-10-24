@@ -4514,11 +4514,11 @@
     "names": [
         "HT33"
     ],
-    "parsedInscription": "𐝫𐄁\n𐘞𐘽𐄁𐜫\n𐚺𐄇𐝃\n𐚹𐝉𐝋𐝫\n𐝫𐄉\n𐛆𐝃𐝉\n𐛜𐝂\n𐙙𐄘\n𐜦𐄙\n𐛐𐄙",
+    "parsedInscription": "𐝫𐄁\n𐘞𐘽𐄁𐜫\n𐚻𐄇𐝃\n𐚹𐝉𐝋𐝫\n𐝫𐄉\n𐛆𐝃𐝉\n𐛜𐝂\n𐙙𐄘\n𐜦𐄙\n𐛐𐄙",
     "scribe": "HT Scribe 1",
     "site": "Haghia Triada",
     "support": "Tablet",
-    "transcription": "𐝫𐄁𐘞𐘽𐄁𐜫\n𐚺𐄇𐝃𐚹𐝉𐝋𐝫\n𐝫𐄉𐛆𐝃𐝉𐛜𐝂\n𐙙𐄘𐜦𐄙𐛐𐄙",
+    "transcription": "𐝫𐄁𐘞𐘽𐄁𐜫\n𐚻𐄇𐝃𐚹𐝉𐝋𐝫\n𐝫𐄉𐛆𐝃𐝉𐛜𐝂\n𐙙𐄘𐜦𐄙𐛐𐄙",
     "translatedWords": [
         "𐝫",
         "𐄁",
@@ -4559,7 +4559,7 @@
         "𐄁",
         "*401+*304",
         "\n",
-        "QA2+[?]+RE+PU",
+        "QA2+[?]+PU",
         "1",
         "¹⁄₄",
         "\n",
@@ -4591,7 +4591,7 @@
         "𐄁",
         "𐜫",
         "\n",
-        "𐚺",
+        "𐚻",
         "𐄇",
         "𐝃",
         "\n",
@@ -44479,13 +44479,19 @@
     "support": "Clay vessel",
     "transcription": "𐘆𐄉𐘠𐘬",
     "translatedWords": [
-        "DI-𐄉-TI-DU"
+        "DI",
+        "3",
+        "TI-DU"
     ],
     "transliteratedWords": [
-        "DI-𐄉-TI-DU"
+        "DI",
+        "3",
+        "TI-DU"
     ],
     "words": [
-        "𐘆𐄉𐘠𐘬"
+        "𐘆",
+        "𐄉",
+        "𐘠𐘬"
     ]
 }],
 ["HTZb162bis",{
@@ -44565,71 +44571,59 @@
     "names": [
         "HTZd157+156"
     ],
-    "parsedInscription": "𐄁𐘣𐘱𐘲𐙁𐘠𐘠𐙫𐄇\n𐙫𐄇𐝆\n𐙫𐄈𐝃\n𐙫𐄉𐝃𐝄\n𐘳𐘱𐝇𐝫",
+    "parsedInscription": "𐄁𐘣𐘱𐘲𐙁𐘠𐘠𐙫𐝫𐘗𐄇𐘗𐄇𐝆𐙫𐄈𐝃𐙫𐄉𐝃𐝄𐘳𐘱𐝇𐝫",
     "scribe": "",
     "site": "Haghia Triada",
     "support": "Graffito",
     "transcription": "𐝫𐘗𐄇𐘗𐄇𐝆𐙫𐄈𐝃𐙫𐄉𐝃𐝄𐘳𐘱𐝇𐝫",
     "translatedWords": [
         "𐄁",
-        "WI-JA-SU-MA-TI-TI",
-        "*319",
+        "WI-JA-SU-MA-TI-TI-*319",
+        "NE",
         "1",
-        "\n",
-        "*319",
+        "NE",
         "1",
         "¹⁄₂",
-        "\n",
         "*319",
         "2",
         "¹⁄₄",
-        "\n",
         "*319",
         "3",
         "³⁄₈",
-        "\n",
         "TA-JA",
         "¹⁄₁₆"
     ],
     "transliteratedWords": [
         "𐄁",
-        "WI-JA-SU-MA-TI-TI",
-        "*319",
+        "WI-JA-SU-MA-TI-TI-*319",
+        "NE",
         "1",
-        "\n",
-        "*319",
+        "NE",
         "1",
         "¹⁄₂",
-        "\n",
         "*319",
         "2",
         "¹⁄₄",
-        "\n",
         "*319",
         "3",
         "³⁄₈",
-        "\n",
         "TA-JA",
         "¹⁄₁₆"
     ],
     "words": [
         "𐄁",
-        "𐘣𐘱𐘲𐙁𐘠𐘠",
-        "𐙫",
+        "𐘣𐘱𐘲𐙁𐘠𐘠𐙫",
+        "𐝫𐘗",
         "𐄇",
-        "\n",
-        "𐙫",
+        "𐘗",
         "𐄇",
         "𐝆",
-        "\n",
         "𐙫",
         "𐄈",
         "𐝃",
-        "\n",
         "𐙫",
         "𐄉",
         "𐝃𐝄",
-        "\n",
         "𐘳𐘱",
         "𐝇𐝫"
     ]
@@ -57896,7 +57890,8 @@
     "support": "3-sided bar",
     "transcription": "𐄂𐘚𐘬𐘣𐄁𐘨𐄁𐘿𐘦𐘻𐘯𐄁",
     "translatedWords": [
-        "*903-I-DU-WI",
+        "*903",
+        "I-DU-WI",
         "𐄁",
         "*47",
         "𐄁",
@@ -57905,7 +57900,8 @@
         "𐄁"
     ],
     "transliteratedWords": [
-        "*903-I-DU-WI",
+        "*903",
+        "I-DU-WI",
         "𐄁",
         "*47",
         "𐄁",
@@ -57914,7 +57910,8 @@
         "𐄁"
     ],
     "words": [
-        "𐄂𐘚𐘬𐘣",
+        "𐄂",
+        "𐘚𐘬𐘣",
         "𐄁",
         "𐘨",
         "𐄁",
@@ -57938,7 +57935,7 @@
     "names": [
         "MA1b"
     ],
-    "parsedInscription": "𐘇𐙁𐄁𐘨\n𐘿𐘦𐘻𐘯",
+    "parsedInscription": "𐘇𐙁𐄁𐘨𐄁\n𐘿𐘦𐘻𐘯",
     "scribe": "",
     "site": "Malia",
     "support": "3-sided bar",
@@ -57947,6 +57944,7 @@
         "A-MA",
         "𐄁",
         "*47",
+        "𐄁",
         "\n",
         "QE-DE-MI-NU"
     ],
@@ -57954,6 +57952,7 @@
         "A-MA",
         "𐄁",
         "*47",
+        "𐄁",
         "\n",
         "QE-DE-MI-NU"
     ],
@@ -57961,6 +57960,7 @@
         "𐘇𐙁",
         "𐄁",
         "𐘨",
+        "𐄁",
         "\n",
         "𐘿𐘦𐘻𐘯"
     ]
@@ -63820,17 +63820,20 @@
     "transcription": "𐘠𐙁𐘘𐘣𐘃\n𐝦𐙍𐄘",
     "translatedWords": [
         "TI-MA-RU-WI-TE",
-        "*806-VIN",
+        "*806",
+        "wine",
         "90"
     ],
     "transliteratedWords": [
         "TI-MA-RU-WI-TE",
-        "*806-VIN",
+        "*806",
+        "VIN",
         "90"
     ],
     "words": [
         "𐘠𐙁𐘘𐘣𐘃",
-        "𐝦𐙍",
+        "𐝦",
+        "𐙍",
         "𐄘"
     ]
 }],
@@ -64710,27 +64713,27 @@
         "THEtab.4",
         "THE7"
     ],
-    "parsedInscription": "𐝫𐘒𐄍𐝫\n𐝫𐘐𐄓𐄌𐝫",
+    "parsedInscription": "𐝫𐘑𐄍𐝫\n𐝫𐘐𐄓𐄌𐝫",
     "scribe": "",
     "site": "Thera",
     "support": "Tablet",
-    "transcription": "𐝫𐘒𐄍𐝫\n𐝫𐘐𐄓𐄌𐝫",
+    "transcription": "𐝫𐘑𐄍𐝫\n𐝫𐘐𐄓𐄌𐝫",
     "translatedWords": [
-        "goat",
+        "ram",
         "7",
         "\n",
         "ewe",
         "46"
     ],
     "transliteratedWords": [
-        "CAP",
+        "*21M",
         "7",
         "\n",
         "*21F",
         "46"
     ],
     "words": [
-        "𐝫𐘒",
+        "𐝫𐘑",
         "𐄍𐝫",
         "\n",
         "𐝫𐘐",
@@ -68365,11 +68368,11 @@
     "names": [
         "ZA22"
     ],
-    "parsedInscription": "𐝫\n𐝫𐘐𐝫\n𐘑𐄇𐝫\n𐝫𐄇\n𐘴𐝫𐄁𐝫𐘐𐄇𐝫\n𐝫𐄌\n𐘬𐘶𐝫\n𐘐𐄙𐝫",
+    "parsedInscription": "𐝫\n𐝫𐘐𐝫\n𐘑𐄇𐝫\n𐝫𐄇\n𐘴𐝫𐄁𐝫𐘐𐄇𐝫\n𐝫𐄍\n𐘬𐘶𐝫\n𐘐𐄙𐝫",
     "scribe": "",
     "site": "Zakros",
     "support": "Stone vessel",
-    "transcription": "𐝫\n𐝫𐘐𐝫\n𐘑𐄇𐝫\n𐝫𐄇𐘴𐝫𐄁𐝫𐘐𐄇𐝫\n𐝫𐄌𐘬𐘶𐝫\n𐘐𐄙𐝫",
+    "transcription": "𐝫\n𐝫𐘐𐝫\n𐘑𐄇𐝫\n𐝫𐄇𐘴𐝫𐄁𐝫𐘐𐄇𐝫\n𐝫𐄍𐘬𐘶𐝫\n𐘐𐄙𐝫",
     "translatedWords": [
         "𐝫",
         "\n",
@@ -68386,7 +68389,7 @@
         "ewe",
         "1",
         "\n",
-        "6",
+        "7",
         "\n",
         "DU-JU",
         "\n",
@@ -68409,7 +68412,7 @@
         "*21F",
         "1",
         "\n",
-        "6",
+        "7",
         "\n",
         "DU-JU",
         "\n",
@@ -68432,7 +68435,7 @@
         "𐘐",
         "𐄇𐝫",
         "\n",
-        "𐝫𐄌",
+        "𐝫𐄍",
         "\n",
         "𐘬𐘶𐝫",
         "\n",
