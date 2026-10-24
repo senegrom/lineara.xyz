@@ -44354,8 +44354,8 @@ var inscriptions = new Map([
         "images/HTWeWc3020b-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
-    "imageRightsURL": "",
+    "imageRights": "© École Française d'Athènes",
+    "imageRightsURL": "papers/GORILA-Vol2.pdf#page=138",
     "images": [
         "images/HTWeWc3020a-Inscription.jpg",
         "images/HTWeWc3020b-Inscription.jpg"
@@ -52245,7 +52245,7 @@ var inscriptions = new Map([
         "images/KHWa1007-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
+    "imageRights": "© École Française d'Athènes",
     "imageRightsURL": "papers/GORILA-Vol3.pdf#page=131",
     "images": [
         "images/KHWa1007-Inscription.jpg"
@@ -53032,7 +53032,7 @@ var inscriptions = new Map([
         "images/KHWc2013-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
+    "imageRights": "© École Française d'Athènes",
     "imageRightsURL": "papers/GORILA-Vol3.pdf#page=143",
     "images": [
         "images/KHWc2013-Inscription.jpg"
@@ -53542,7 +53542,7 @@ var inscriptions = new Map([
         "images/KHWc2030-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
+    "imageRights": "© École Française d'Athènes",
     "imageRightsURL": "papers/GORILA-Vol3.pdf#page=150",
     "images": [
         "images/KHWc2030-Inscription.jpg"
@@ -53662,7 +53662,7 @@ var inscriptions = new Map([
         "images/KHWc2034-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
+    "imageRights": "© École Française d'Athènes",
     "imageRightsURL": "papers/GORILA-Vol3.pdf#page=152",
     "images": [
         "images/KHWc2034-Inscription.jpg"
@@ -53872,7 +53872,7 @@ var inscriptions = new Map([
         "images/KHWc2041-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
+    "imageRights": "© École Française d'Athènes",
     "imageRightsURL": "papers/GORILA-Vol3.pdf#page=154",
     "images": [
         "images/KHWc2041-Inscription.jpg"
@@ -53992,7 +53992,7 @@ var inscriptions = new Map([
         "images/KHWc2045-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
+    "imageRights": "© École Française d'Athènes",
     "imageRightsURL": "papers/GORILA-Vol3.pdf#page=155",
     "images": [
         "images/KHWc2045-Inscription.jpg"
@@ -54532,7 +54532,7 @@ var inscriptions = new Map([
         "images/KHWc2061-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
+    "imageRights": "© École Française d'Athènes",
     "imageRightsURL": "papers/GORILA-Vol3.pdf#page=162",
     "images": [
         "images/KHWc2061-Inscription.jpg"
@@ -54803,7 +54803,7 @@ var inscriptions = new Map([
         "images/KHWc2070b-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
+    "imageRights": "© École Française d'Athènes",
     "imageRightsURL": "papers/GORILA-Vol3.pdf#page=165",
     "images": [
         "images/KHWc2070a-Inscription.jpg",
@@ -54994,7 +54994,7 @@ var inscriptions = new Map([
         "images/KHWc2097-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
+    "imageRights": "© École Française d'Athènes",
     "imageRightsURL": "papers/GORILA-Vol3.pdf#page=166",
     "images": [
         "images/KHWc2097-Inscription.jpg"
@@ -55324,7 +55324,7 @@ var inscriptions = new Map([
         "images/KHWc2109-Facsimile.jpg"
     ],
     "findspot": "",
-    "imageRights": "",
+    "imageRights": "© École Française d'Athènes",
     "imageRightsURL": "papers/GORILA-Vol3.pdf#page=170",
     "images": [
         "images/KHWc2109-Inscription.jpg"
