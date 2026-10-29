@@ -9,6 +9,7 @@ This document accompanies a pull request to [mwenge/lineara.xyz](https://github.
 - Image-map overlays: red boxes are the `items_image_map.js` entries, labelled "index:label (word)"; blue boxes are the explorer areas of `imagemaps.js`, numbered from 0; green marks the entries a change is about.
 - GORILA = L. Godart and J.-P. Olivier, *Recueil des inscriptions en linéaire A* (Études crétoises 21, 1976–1985), cited by volume and printed page, with the page of the PDF in the site's `papers/` folder. Younger = J. G. Younger's Linear A texts, as quoted in the commentary on the item pages.
 - In the figures of sections 9–11, "PR head (c0f074c)", "before (c0f074c)" and "now (PR #14 build)" mean the pull request as it stood with its first ten commits; for the records shown that is the state before the commit in question. c0f074c is the tenth commit as first pushed; because the messages of the sixth, eighth and tenth commits changed, the sixth to thirteenth commits now have other hashes, but the same files.
+- In the figures of section 12, "before (PR head, b91dffd)" is the pull request with its first thirteen commits, as now pushed.
 
 **Image credits.** GORILA crops are © École française d'Athènes. Most of the site's own pictures are crops of GORILA plates (© École française d'Athènes) and appear here with boxes drawn for this document. Renders, height fields and depth profiles marked INSCRIBE are made from the 3D models of the INSCRIBE project (ERC, University of Bologna; <https://www.inscribercproject.com/Linear_A.php>), named in each caption with, for renders, the light direction. All images are reproduced here only to document the corrections; none of them goes into the repository.
 
@@ -25,6 +26,7 @@ This document accompanies a pull request to [mwenge/lineara.xyz](https://github.
 9. [Readings, logograms, glyph strings and word divisions](#readings-logograms-glyph-strings-and-word-divisions)
 10. [Misfiled pictures](#misfiled-pictures)
 11. [More optional readings, and errata that depend on the tenth commit](#more-optional-readings-and-errata-that-depend-on-the-tenth-commit)
+12. [Two readings from GORILA V's corrigenda, and a transliteration](#two-readings-from-gorila-vs-corrigenda-and-a-transliteration)
 
 ## Erased text shown as live text
 
@@ -2545,3 +2547,49 @@ Two more sign-table rows do not name their glyphs (see [the eleventh commit's ro
 - **A 641**: the row's key is A317, KI, A334 (U+10669 U+10638 U+1067A), but its label is `*317+KU+*334` and its ligature components give KU (U+10642). GORILA V p. XXVI reads A 641 = '317'67''334' (67 = KI; p. 296: at KH 7a.1). This PR writes `*317+KI+*334` and the component KI.
 
 These are plain errata; they are in this commit because both rows stand directly next to A 640's row, which the tenth commit relabels, in all four tables. The figures are those of [the eleventh commit's rows](#sign-tables--a-562-a-607-a-632-and-a-633).
+
+## Two readings from GORILA V's corrigenda, and a transliteration
+
+The fourteenth commit corrects three records. Two are rows of GORILA V's corrigenda (pp. 70–80, PDF pp. 123–133), which correct the copies of volumes I–IV: Younger reads as the corrigenda do, and every field of the record has the reading of the first copy. They are MA6a's numeral and an entry missing from HT128a. The third writes out MYZf2's transliteration, which held a glyph, as the eleventh commit does for KH79. The commit is written on the thirteenth: its count of the numeral 1 in `wordsInCorpus` is the line after the count of the divider, which the tenth and thirteenth commits change, so without either of them that one line needs a rebase. No other line it changes is one that the sixth, eighth, tenth, twelfth or thirteenth commit changes, or a line next to one. The derived files follow as for the eleventh commit: `wordsInCorpus` (MA6a's numeral, HT128a's two new words), `annotations.js`, the notebook's inputs `items_analysis/supplement.json` and `items_analysis/inscriptions.json`, and the item pages of MA6a and HT128a (MYZf2's page shows the sign table's label `*` and does not change). In the figures, "before (PR head, b91dffd)" is the pull request with its first thirteen commits.
+
+### MA6a — the 45 of line .1 stored as 35
+
+On the PR head MA6a's HIDE+B (`𐜅`, `words` 3) is followed by `𐄒𐄋` / 35 in every field, as GORILA I p. 275 (PDF p. 311) prints the line (tabular copy `.1 *180+B 35`; the normalised copy has three ten-dots and five units). GORILA V p. 75 (PDF p. 128), the corrigenda to volume I, corrects the row: its facsimile draws four ten-dots, the lower ones on a stippled (worn) patch, its normalised copy has four ten-dots and five units, and its tabular copy reads 45. Younger has `a.1 *180+B {*602} 45`. This PR writes `𐄓𐄋` / 45 in the five text fields and labels the tens box (entry 5, word 3) `40` in both maps. The box keeps its place around the dots that the site's drawing, GORILA I's (p. 274), shows; no word number or explorer area changes.
+
+![GORILA I p. 275 and GORILA V p. 75, MA 6a](evidence/readings/MA6a_gorila_I275_V75_corrigenda.jpg)
+
+*Top: GORILA I p. 275 (PDF p. 311), MA 6a, normalised copy and tabular copy (`.1 *180+B 35`). Bottom: GORILA V p. 75 (PDF p. 128), corrigenda to volume I (columns Fac-similé, Normalisée, Tabulaire; the headings are those of p. 70): the first MA 6a row draws four ten-dots (the lower ones among stippling), writes four ten-dots and five units, and reads 45. The second MA 6a row concerns another sign and is not part of this change.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+![MA6a drawing, label before and after](evidence/readings/MA6a-Facsimile_before_after.jpg)
+
+*`MA6a-Facsimile`: entry 5 (green), the tens box of word 3, is labelled `30` before and `40` after; no box or word number changes.* (lineara.xyz image, a crop of the GORILA I plate, © École française d'Athènes; boxes from `items_image_map.js` and `imagemaps.js` before and with this commit)
+
+![MA6a photo, label before and after](evidence/readings/MA6a-Inscription_before_after.jpg)
+
+*`MA6a-Inscription`: the same label on the photo.* (lineara.xyz image, a crop of the GORILA I plate, © École française d'Athènes; boxes from `items_image_map.js` and `imagemaps.js` before and with this commit)
+
+### HT128a — the entry ]GRA 1 of line .4 missing
+
+On the PR head HT128a's line .4 begins with GRA+KU 4 (`words` 23–24; the transcription's line 4 is `𐝫𐛲𐄊𐙁𐘭`), as GORILA I p. 221 (PDF p. 257) prints it in both copies (`.4 ]GRA+KU 4`, then `.4 MA RI[`). GORILA V p. 74 (PDF p. 127), the corrigenda to volume I, adds a first row HT 128a.4, `]GRA 1` in both copies (the normalised copy draws the unit as `!`), with GRA between half brackets and GRA and the unit underdotted as uncertain; its second row is `MA RI[`. Younger has `a.4 GRA [+ • ] 1`, GRA and 1 underlined as uncertain, before `a.4 GRA+KU {*579} 4`. GORILA V's index (p. 274, PDF p. 327) lists the damaged GRA (`]120[`) at HT 128a.2 and .4, and GRA+KU (A 579) at HT 128a.2, .3 and .4, so ]GRA 1 is a new entry, not a reading of GRA+KU 4.
+
+This PR adds the entry before GRA+KU 4, on a line of its own, as each of the record's entries is: `𐝫𐙉𐝫` / GRA / 'grain' and `𐄇` / 1 / 1, then a line break (29 → 32 tokens), and the same in both glyph strings (`parsedInscription` gains the line `𐝫𐙉𐝫𐄇`; the transcription's line 4 becomes `𐝫𐙉𐝫𐄇𐛲𐄊𐙁𐘭`). GRA carries the damage mark on both sides, for the break before it and for the damage both editions mark, as the record writes its damaged GRA on line .2 (`𐙉𐝫`); the label is GORILA V's simple GRA, as on line .2, where Younger also writes `GRA[+ • ]`. Neither of the site's pictures shows a sign that can be boxed at the left of line 4: the photo shows worn surface, and the drawing (GORILA I p. 220) only one short stroke, level with the top of GRA+KU, which GORILA I does not transliterate; it may be what is left of the damaged GRA, but it is too little to box. So both image maps get box-less entries for the new words 16 and 17, like the `*900` divider entries, and words 16–18 become 18–20. The explorer, which pairs its areas with the letters in order, gets two zero-size areas (24 and 25) for GRA and 1, left of GRA+KU on line 4, as TLZa1 has for its restored signs. In `annotations.js` the new GRA takes the tags of the record's other GRA plus 'lacuna at start', both GRA take 'logogram repeated in Inscription', and the 1 takes 'number'.
+
+![GORILA I p. 221 and GORILA V p. 74, HT 128a](evidence/readings/HT128a_gorila_I221_V74_corrigenda.jpg)
+
+*Top: GORILA I p. 221 (PDF p. 257), HT 128a, normalised copy (left) and tabular copy (right): line .4 begins with ]GRA+KU 4. Bottom: GORILA V p. 74 (PDF p. 127), corrigenda to volume I (columns as on p. 70): the first HT 128a.4 row writes ]GRA ! (normalised) and ]GRA 1 (tabular), in both with GRA between half brackets and GRA and the unit underdotted; the second reads MA RI[.* (GORILA I and V (L. Godart and J.-P. Olivier 1976, 1985), © École française d'Athènes)
+
+![GORILA V p. 274, index of sign 120](evidence/readings/HT128a_gorila_V274_index_120_A579.jpg)
+
+*GORILA V p. 274 (PDF p. 327), index of sign 120 (GRA): the damaged GRA (class B, ]120[) at HT 128a.2 and .4; GRA+KU (A 579, 120 '81') at HT 128a.2, .3 and .4.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+
+![HT128a drawing, word numbers before and after](evidence/readings/HT128a-Facsimile_before_after.jpg)
+
+*`HT128a-Facsimile`, lines .3–.4: entries 26–29 (green; GRA+KU, 4, MA, RI) are words 16–18 before and, as entries 28–31, words 18–20 after; the new entries 26 and 27 (words 16 and 17, GRA and 1) have no box. The explorer's new areas 24 and 25 have zero size (blue crosses), and its areas for GRA+KU, 4, MA and RI become 26–29. No box moves.* (lineara.xyz image, a crop of the GORILA I plate, © École française d'Athènes; boxes from `items_image_map.js` and `imagemaps.js` before and with this commit)
+
+![HT128a photo, word numbers before and after](evidence/readings/HT128a-Inscription_before_after.jpg)
+
+*`HT128a-Inscription`: the same on the photo.* (lineara.xyz image, a crop of the GORILA I plate, © École française d'Athènes; boxes from `items_image_map.js` and `imagemaps.js` before and with this commit)
+
+### MYZf2 — a glyph in the transliteration
+
+On the PR head MYZf2's only word holds the glyph `𐁁` (U+10041, Linear B's sign 43, for which Unicode's Linear A block has no character) in `words`, `transliteratedWords` and `translatedWords`. Younger reads the sign on the cauldron (MY Zf 2, NMA 576) as AI, "the only appearance of AB 43", and Palaima 2003, which discusses it (`papers/MYZf1.pdf`, p. 194, PDF p. 8), writes that "the closest parallel, I believe, is Linear B sign \*43 = ai"; G. Owens identified it as A 529 (Palaima's n. 18). The glyph field follows Palaima and Younger. This PR writes AI in `transliteratedWords` and `translatedWords` and keeps the glyph. The image map keeps its label `*`, which the notebook takes from `syllables.txt`, where U+10041 has no row. MYZf1 holds the same object; see the notes in the pull request.
