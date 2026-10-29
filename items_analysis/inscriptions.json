@@ -15467,11 +15467,11 @@
     "names": [
         "HT128a"
     ],
-    "parsedInscription": "𐙲𐄁\n𐘂𐘴𐄁\n𐘹𐘘𐘯𐘈𐘋𐙉𐝫𐄐\n𐘮𐘹𐙁𐘙𐛲𐄐𐄈𐝫\n𐝫𐘻𐘳𐛭𐝆𐝫\n𐛲𐄌\n𐘆𐝫\n𐛲𐄊\n𐙁𐘭𐝫\n𐝫",
+    "parsedInscription": "𐙲𐄁\n𐘂𐘴𐄁\n𐘹𐘘𐘯𐘈𐘋𐙉𐝫𐄐\n𐘮𐘹𐙁𐘙𐛲𐄐𐄈𐝫\n𐝫𐘻𐘳𐛭𐝆𐝫\n𐛲𐄌\n𐘆𐝫\n𐝫𐙉𐝫𐄇\n𐛲𐄊\n𐙁𐘭𐝫\n𐝫",
     "scribe": "HT Scribe 9",
     "site": "Haghia Triada",
     "support": "Tablet",
-    "transcription": "𐙲𐄁𐘂𐘴𐄁𐘹𐘘𐘯𐘈𐘋\n𐙉𐝫𐄐𐘮𐘹𐙁𐘙𐛲𐄐𐄈\n𐝫𐘻𐘳𐛭𐝆𐝫𐛲𐄌𐘆\n𐝫𐛲𐄊𐙁𐘭\n𐝫",
+    "transcription": "𐙲𐄁𐘂𐘴𐄁𐘹𐘘𐘯𐘈𐘋\n𐙉𐝫𐄐𐘮𐘹𐙁𐘙𐛲𐄐𐄈\n𐝫𐘻𐘳𐛭𐝆𐝫𐛲𐄌𐘆\n𐝫𐙉𐝫𐄇𐛲𐄊𐙁𐘭\n𐝫",
     "translatedWords": [
         "*326",
         "𐄁",
@@ -15495,6 +15495,9 @@
         "6",
         "\n",
         "DI",
+        "\n",
+        "grain",
+        "1",
         "\n",
         "grain",
         "4",
@@ -15527,6 +15530,9 @@
         "\n",
         "DI",
         "\n",
+        "GRA",
+        "1",
+        "\n",
         "GRA+KU",
         "4",
         "\n",
@@ -15557,6 +15563,9 @@
         "𐄌",
         "\n",
         "𐘆𐝫",
+        "\n",
+        "𐝫𐙉𐝫",
+        "𐄇",
         "\n",
         "𐛲",
         "𐄊",
@@ -58247,31 +58256,31 @@
     "names": [
         "MA6a"
     ],
-    "parsedInscription": "𐝫𐙒𐝫𐄡𐄓𐄇\n𐜅𐄒𐄋",
+    "parsedInscription": "𐝫𐙒𐝫𐄡𐄓𐄇\n𐜅𐄓𐄋",
     "scribe": "",
     "site": "Malia",
     "support": "Tablet",
-    "transcription": "𐝫𐙒𐝫𐄡𐄓𐄇𐜅𐄒𐄋",
+    "transcription": "𐝫𐙒𐝫𐄡𐄓𐄇𐜅𐄓𐄋",
     "translatedWords": [
         "hide?",
         "941",
         "\n",
         "HIDE+B",
-        "35"
+        "45"
     ],
     "transliteratedWords": [
         "HIDE+[?]",
         "941",
         "\n",
         "HIDE+B",
-        "35"
+        "45"
     ],
     "words": [
         "𐝫𐙒𐝫",
         "𐄡𐄓𐄇",
         "\n",
         "𐜅",
-        "𐄒𐄋"
+        "𐄓𐄋"
     ]
 }],
 ["MA6b",{
@@ -59099,10 +59108,10 @@
     "support": "Metal object",
     "transcription": "𐁁",
     "translatedWords": [
-        "𐁁"
+        "AI"
     ],
     "transliteratedWords": [
-        "𐁁"
+        "AI"
     ],
     "words": [
         "𐁁"

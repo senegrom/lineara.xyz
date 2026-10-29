@@ -15490,11 +15490,11 @@ var inscriptions = new Map([
     "names": [
         "HT128a"
     ],
-    "parsedInscription": "𐙲𐄁\n𐘂𐘴𐄁\n𐘹𐘘𐘯𐘈𐘋𐙉𐝫𐄐\n𐘮𐘹𐙁𐘙𐛲𐄐𐄈𐝫\n𐝫𐘻𐘳𐛭𐝆𐝫\n𐛲𐄌\n𐘆𐝫\n𐛲𐄊\n𐙁𐘭𐝫\n𐝫",
+    "parsedInscription": "𐙲𐄁\n𐘂𐘴𐄁\n𐘹𐘘𐘯𐘈𐘋𐙉𐝫𐄐\n𐘮𐘹𐙁𐘙𐛲𐄐𐄈𐝫\n𐝫𐘻𐘳𐛭𐝆𐝫\n𐛲𐄌\n𐘆𐝫\n𐝫𐙉𐝫𐄇\n𐛲𐄊\n𐙁𐘭𐝫\n𐝫",
     "scribe": "HT Scribe 9",
     "site": "Haghia Triada",
     "support": "Tablet",
-    "transcription": "𐙲𐄁𐘂𐘴𐄁𐘹𐘘𐘯𐘈𐘋\n𐙉𐝫𐄐𐘮𐘹𐙁𐘙𐛲𐄐𐄈\n𐝫𐘻𐘳𐛭𐝆𐝫𐛲𐄌𐘆\n𐝫𐛲𐄊𐙁𐘭\n𐝫",
+    "transcription": "𐙲𐄁𐘂𐘴𐄁𐘹𐘘𐘯𐘈𐘋\n𐙉𐝫𐄐𐘮𐘹𐙁𐘙𐛲𐄐𐄈\n𐝫𐘻𐘳𐛭𐝆𐝫𐛲𐄌𐘆\n𐝫𐙉𐝫𐄇𐛲𐄊𐙁𐘭\n𐝫",
     "translatedWords": [
         "*326",
         "𐄁",
@@ -15518,6 +15518,9 @@ var inscriptions = new Map([
         "6",
         "\n",
         "DI",
+        "\n",
+        "grain",
+        "1",
         "\n",
         "grain",
         "4",
@@ -15550,6 +15553,9 @@ var inscriptions = new Map([
         "\n",
         "DI",
         "\n",
+        "GRA",
+        "1",
+        "\n",
         "GRA+KU",
         "4",
         "\n",
@@ -15580,6 +15586,9 @@ var inscriptions = new Map([
         "𐄌",
         "\n",
         "𐘆𐝫",
+        "\n",
+        "𐝫𐙉𐝫",
+        "𐄇",
         "\n",
         "𐛲",
         "𐄊",
@@ -58325,31 +58334,31 @@ var inscriptions = new Map([
     "names": [
         "MA6a"
     ],
-    "parsedInscription": "𐝫𐙒𐝫𐄡𐄓𐄇\n𐜅𐄒𐄋",
+    "parsedInscription": "𐝫𐙒𐝫𐄡𐄓𐄇\n𐜅𐄓𐄋",
     "scribe": "",
     "site": "Malia",
     "support": "Tablet",
-    "transcription": "𐝫𐙒𐝫𐄡𐄓𐄇𐜅𐄒𐄋",
+    "transcription": "𐝫𐙒𐝫𐄡𐄓𐄇𐜅𐄓𐄋",
     "translatedWords": [
         "hide?",
         "941",
         "\n",
         "HIDE+B",
-        "35"
+        "45"
     ],
     "transliteratedWords": [
         "HIDE+[?]",
         "941",
         "\n",
         "HIDE+B",
-        "35"
+        "45"
     ],
     "words": [
         "𐝫𐙒𐝫",
         "𐄡𐄓𐄇",
         "\n",
         "𐜅",
-        "𐄒𐄋"
+        "𐄓𐄋"
     ]
 }],
 ["MA6b",{
@@ -59177,10 +59186,10 @@ var inscriptions = new Map([
     "support": "Metal object",
     "transcription": "𐁁",
     "translatedWords": [
-        "𐁁"
+        "AI"
     ],
     "transliteratedWords": [
-        "𐁁"
+        "AI"
     ],
     "words": [
         "𐁁"
@@ -76425,7 +76434,7 @@ var wordsInCorpus = new Map([
 ["𐘄𐘰𐘆",1],
 ["", 2736],
 ["𐄁", 477],
-["𐄇", 309],
+["𐄇", 310],
 ["𐙕", 238],
 ["𐙂", 170],
 ["𐘾", 169],
@@ -76438,7 +76447,7 @@ var wordsInCorpus = new Map([
 ["𐄊", 80],
 ["𐘝", 77],
 ["𐄐", 71],
-["𐙉", 60],
+["𐙉", 61],
 ["𐘃", 60],
 ["𐙍", 58],
 ["𐄌", 57],
@@ -76609,10 +76618,10 @@ var wordsInCorpus = new Map([
 ["𐙎", 4],
 ["𐛵", 4],
 ["𐘇𐘱", 4],
+["𐄓𐄋", 4],
 ["𐘿𐘽𐘉", 3],
 ["𐘇𐘾𐘘", 3],
 ["𐘀𐘿𐘴", 3],
-["𐄒𐄋", 3],
 ["𐘰𐘝𐘅", 3],
 ["𐘃𐘹", 3],
 ["𐘐𐘹𐘗", 3],
@@ -76625,7 +76634,6 @@ var wordsInCorpus = new Map([
 ["𐛢", 3],
 ["𐘙𐘍", 3],
 ["𐄐𐄏", 3],
-["𐄓𐄋", 3],
 ["𐘉𐘟𐘤", 3],
 ["𐄜", 3],
 ["𐘾𐙂𐘂", 3],
@@ -76832,6 +76840,7 @@ var wordsInCorpus = new Map([
 ["𐘜𐘙𐘱", 2],
 ["𐘴𐙐𐘠", 2],
 ["𐛻", 2],
+["𐄒𐄋", 2],
 ["𐄙𐄘𐄍", 1],
 ["𐙀𐘲", 1],
 ["𐘆𐘆𐘍𐘥", 1],

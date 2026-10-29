@@ -70529,6 +70529,16 @@ const coordinates =
         },
         {
             "word": "16",
+            "ideogram": "GRA",
+            "coords": {}
+        },
+        {
+            "word": "17",
+            "ideogram": "1",
+            "coords": {}
+        },
+        {
+            "word": "18",
             "ideogram": "GRA+KU",
             "coords": {
                 "x": 229,
@@ -70538,7 +70548,7 @@ const coordinates =
             }
         },
         {
-            "word": "17",
+            "word": "19",
             "ideogram": "4",
             "coords": {
                 "x": 277,
@@ -70548,7 +70558,7 @@ const coordinates =
             }
         },
         {
-            "word": "18",
+            "word": "20",
             "ideogram": "MA",
             "coords": {
                 "x": 316,
@@ -70558,7 +70568,7 @@ const coordinates =
             }
         },
         {
-            "word": "18",
+            "word": "20",
             "ideogram": "RI",
             "coords": {
                 "x": 357,
@@ -70821,6 +70831,16 @@ const coordinates =
         },
         {
             "word": "16",
+            "ideogram": "GRA",
+            "coords": {}
+        },
+        {
+            "word": "17",
+            "ideogram": "1",
+            "coords": {}
+        },
+        {
+            "word": "18",
             "ideogram": "GRA+KU",
             "coords": {
                 "x": 233,
@@ -70830,7 +70850,7 @@ const coordinates =
             }
         },
         {
-            "word": "17",
+            "word": "19",
             "ideogram": "4",
             "coords": {
                 "x": 283,
@@ -70840,7 +70860,7 @@ const coordinates =
             }
         },
         {
-            "word": "18",
+            "word": "20",
             "ideogram": "MA",
             "coords": {
                 "x": 324,
@@ -70850,7 +70870,7 @@ const coordinates =
             }
         },
         {
-            "word": "18",
+            "word": "20",
             "ideogram": "RI",
             "coords": {
                 "x": 354,
@@ -126753,7 +126773,7 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "30",
+            "ideogram": "40",
             "coords": {
                 "x": 455,
                 "y": 83,
@@ -126825,7 +126845,7 @@ const coordinates =
         },
         {
             "word": "3",
-            "ideogram": "30",
+            "ideogram": "40",
             "coords": {
                 "x": 440,
                 "y": 81,

@@ -30509,6 +30509,7 @@ var wordAnnotations =
                     "logogram",
                     "commodity",
                     "Appears at 5 find sites",
+                    "logogram repeated in Inscription",
                     "word or logoram",
                     "head word elsewhere"
                 ],
@@ -30632,6 +30633,32 @@ var wordAnnotations =
                 ],
                 "transliteratedWord": "DI",
                 "word": "𐘆𐝫"
+            },
+            {
+                "tags": [],
+                "transliteratedWord": "\n",
+                "word": "\n"
+            },
+            {
+                "tags": [
+                    "lacuna at start",
+                    "lacuna at end",
+                    "logogram",
+                    "commodity",
+                    "Appears at 5 find sites",
+                    "logogram repeated in Inscription",
+                    "word or logoram",
+                    "head word elsewhere"
+                ],
+                "transliteratedWord": "GRA",
+                "word": "𐝫𐙉𐝫"
+            },
+            {
+                "tags": [
+                    "number"
+                ],
+                "transliteratedWord": "1",
+                "word": "𐄇"
             },
             {
                 "tags": [],
@@ -63069,8 +63096,8 @@ var wordAnnotations =
                 "tags": [
                     "number"
                 ],
-                "transliteratedWord": "35",
-                "word": "𐄒𐄋"
+                "transliteratedWord": "45",
+                "word": "𐄓𐄋"
             }
         ]
     },
@@ -63835,7 +63862,7 @@ var wordAnnotations =
                 "tags": [
                     "Only instance of word"
                 ],
-                "transliteratedWord": "𐁁",
+                "transliteratedWord": "AI",
                 "word": "𐁁"
             }
         ]
