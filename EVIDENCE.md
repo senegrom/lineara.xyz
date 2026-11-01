@@ -10,6 +10,7 @@ This document accompanies a pull request to [mwenge/lineara.xyz](https://github.
 - GORILA = L. Godart and J.-P. Olivier, *Recueil des inscriptions en linéaire A* (Études crétoises 21, 1976–1985), cited by volume and printed page, with the page of the PDF in the site's `papers/` folder. Younger = J. G. Younger's Linear A texts, as quoted in the commentary on the item pages.
 - In the figures of sections 9–11, "PR head (c0f074c)", "before (c0f074c)" and "now (PR #14 build)" mean the pull request as it stood with its first ten commits; for the records shown that is the state before the commit in question. c0f074c is the tenth commit as first pushed; because the messages of the sixth, eighth and tenth commits changed, the sixth to thirteenth commits now have other hashes, but the same files.
 - In the figures of section 12, "before (PR head, b91dffd)" is the pull request with its first thirteen commits, as now pushed.
+- In section 13, "before this commit" (c8607d6) is the pull request with its first fourteen commits, as now pushed; positions, areas and entries count from 0.
 
 **Image credits.** GORILA crops are © École française d'Athènes. Most of the site's own pictures are crops of GORILA plates (© École française d'Athènes) and appear here with boxes drawn for this document. Renders, height fields and depth profiles marked INSCRIBE are made from the 3D models of the INSCRIBE project (ERC, University of Bologna; <https://www.inscribercproject.com/Linear_A.php>), named in each caption with, for renders, the light direction. All images are reproduced here only to document the corrections; none of them goes into the repository.
 
@@ -27,6 +28,8 @@ This document accompanies a pull request to [mwenge/lineara.xyz](https://github.
 10. [Misfiled pictures](#misfiled-pictures)
 11. [More optional readings, and errata that depend on the tenth commit](#more-optional-readings-and-errata-that-depend-on-the-tenth-commit)
 12. [Two readings from GORILA V's corrigenda, and a transliteration](#two-readings-from-gorila-vs-corrigenda-and-a-transliteration)
+13. [TLZa1's letters and the Transactions entries](#tlza1s-letters-and-the-transactions-entries)
+14. [The relations graph](#the-relations-graph)
 
 ## Erased text shown as live text
 
@@ -2593,3 +2596,407 @@ This PR adds the entry before GRA+KU 4, on a line of its own, as each of the rec
 ### MYZf2 — a glyph in the transliteration
 
 On the PR head MYZf2's only word holds the glyph `𐁁` (U+10041, Linear B's sign 43, for which Unicode's Linear A block has no character) in `words`, `transliteratedWords` and `translatedWords`. Younger reads the sign on the cauldron (MY Zf 2, NMA 576) as AI, "the only appearance of AB 43", and Palaima 2003, which discusses it (`papers/MYZf1.pdf`, p. 194, PDF p. 8), writes that "the closest parallel, I believe, is Linear B sign \*43 = ai"; G. Owens identified it as A 529 (Palaima's n. 18). The glyph field follows Palaima and Younger. This PR writes AI in `transliteratedWords` and `translatedWords` and keeps the glyph. The image map keeps its label `*`, which the notebook takes from `syllables.txt`, where U+10041 has no row. MYZf1 holds the same object; see the notes in the pull request.
+
+## TLZa1's letters and the Transactions entries
+
+The fifteenth commit changes no reading. Two things derived from the records had not followed the earlier commits, and other parts of the site read both by position: TLZa1's `parsedInscription`, from which the charts take the sign of each explorer area, and the per-token entries of `network/transactions.js`, by which the Transactions page lights the tokens of a transaction. The commit changes data files only: one line in `LinearAInscriptions.js` and the same line in the notebook's copy `items_analysis/inscriptions.json` (TLZa1's `parsedInscription`), `network/transactions.js`, and twelve of the files in `network/transactions/final/`, one per record. No item page changes. It is written on the fourteenth commit and follows the records as the second, ninth, eleventh, thirteenth and fourteenth commits leave them. Without the thirteenth it applies without conflicts, but its entry for HT33's first cup of line .2 then holds that commit's reading, `QA2+[?]+PU` (`𐚻`), where the record keeps `QA2+[?]+RE+PU` (`𐚺`): the entry's two lines (`word` and `transliteratedWord`) in `network/transactions.js` and the same two in `network/transactions/final/HT33.js` would go back to master's. No line it changes is one that the sixth, eighth, tenth or twelfth commit changes, or a line next to one: of these only the sixth touches TLZa1's record, its `imageRightsURL` eight lines above `parsedInscription`, and none changes a token of the twelve records.
+
+### TLZa1 — 24 letters for 27 areas
+
+The charts (`charts/`: the Characters view, and the Tablets and Scribes views), `charts/test.html` and `broken/` file the explorer areas of a picture under signs by order: area i goes under letter i of `lettersWithImages(parsedInscription)`, the record's `parsedInscription` without break marks, line breaks and dividers (`utils.js`). The explorer itself lights words through the letters of `words`, so its boxes are not affected.
+
+Before this commit TLZa1's word arrays and both explorers have 27 letters and areas: the third commit gives the photo explorer 26 areas, as the drawing's has, and the eleventh adds U-NA-KA-NA's SI and, to each explorer, a 27th area for the restored I ([TLZa1 — side-c boxes one sign out of step](#tlza1--side-c-boxes-one-sign-out-of-step), [TLZa1 — U-NA-KA-NA without its SI](#tlza1--u-na-ka-na-without-its-si)); face c reads I-PI-NA-MA SI-RU-TE, with Younger's restored I, PI and TE, which the word arrays already have on master. Its `parsedInscription` has 24 letters: face c is `𐝫𐘅𐙁𐘤𐘘𐝫`, ]-NA MA SI RU[ as GORILA IV p. 59 prints it. So in both pictures areas 0–19 take their own letters, areas 20–23 the letters of areas 22–25, and areas 24–26 none, which puts them in the charts' 'undefined' group. By this pull request's map labels, 8 of TLZa1's 46 labelled crops are filed under another sign or under 'undefined': in both pictures the NA of I-PI-NA-MA under SI, its MA under RU, and the SI and RU of SI-RU-TE under 'undefined'. On master seven of these eight crops were already misfiled, six under another sign and the drawing's RU, (52, 332, 53, 41), under 'undefined'; the photo's NA, (171, 521, 43, 26), is the one that master filed right.
+
+This commit writes `parsedInscription` as the glyphs of TLZa1's words in order. Lines 1 and 2 do not change; line 3 becomes `𐘚𐘢𐝫𐘅𐙁𐘤𐘘𐝫𐘃`, I PI, a break mark, NA MA SI RU, a break mark, TE, with the break marks where the word arrays have them. Its 27 letters equal the words' letters, so in both pictures each area takes the letter of the word the explorer lights for it, and all 46 labelled crops are filed under their own sign. The notebook's copy, `items_analysis/inscriptions.json`, gets the same line, since the notebook reads `parsedInscription` from it. The item page, regenerated with the committed notebook, does not change: the field only decides where the page's parsed lines break, and line 3 is the last. The transcription keeps GORILA's text, as I, PI and TE are Younger's restorations and the image maps have entries only for the dividers and the 24 signs on the object.
+
+| Area | Word the explorer lights | Photo area, map label | Drawing area, map label | Letter before this commit | Letter with this commit |
+|---|---|---|---|---|---|
+| 0–19 | A-TA-I-\*301-WA-JA to U-NA-KA-NA-SI | | | its own | its own |
+| 20 | I-PI-NA-MA | (259, 559, 0, 0) | (207, 515, 0, 0) | NA | I |
+| 21 | I-PI-NA-MA | (229, 559, 0, 0) | (152, 498, 51, 35), no label | MA | PI |
+| 22 | I-PI-NA-MA | (171, 521, 43, 26), NA | (116, 466, 55, 43), NA | SI | NA |
+| 23 | I-PI-NA-MA | (147, 464, 53, 54), MA | (91, 427, 61, 49), MA | RU | MA |
+| 24 | SI-RU-TE | (121, 423, 54, 46), SI | (68, 379, 55, 46), SI | none ('undefined') | SI |
+| 25 | SI-RU-TE | (105, 380, 49, 36), RU | (52, 332, 53, 41), RU | none ('undefined') | RU |
+| 26 | SI-RU-TE | (124, 349, 0, 0) | (40, 283, 65, 44), no label | none ('undefined') | TE |
+
+Areas are (x, y, width, height) in the picture's pixels; an area of size 0 is the maps' place for a sign without a box, and the charts show it as an empty entry. In the Characters view TLZa1 leaves the 'undefined' group (3 crops with the drawings, 6 with the photos as well), and I, PI and TE gain one entry per picture; the group goes from 8 to 5 crops with the drawings and from 17 to 11 with the photos, all of other records. `charts/test.html` (drawings) files TLZa1's crops in the same way. The two drawing boxes without a map label, upstream's boxes at the places of the restored PI and TE, are now filed under PI and TE, the signs the explorer gives them; before, they were under MA and 'undefined'. With the photos, the empty entries of the zero-size areas now stand under NA, SI, I (twice), PI and TE (before: NA three times, MA, SI and 'undefined'). As I now occurs twice in TLZa1's letters, the Tablets and Scribes views, which show a record's repeated signs, gain an I group for TLZa1: the I of A-TA-I and the empty entry of the restored I.
+
+The pairing was computed with the site's own functions and checked in Chrome against the state before this commit, on every view of the charts (with and without the photos), on `charts/test.html` and on the explorer for every record: in the charts only TLZa1's entries move, and the explorer, which computes these letters but does not use them, does not change. `broken/` draws nothing in Chrome, on master as on this branch.
+
+### Transactions page — entries off their tokens
+
+**How the page uses the entries.** For each of its 129 records, `network/transactions.js` holds a list `words` with one entry per token of the record, line breaks and dividers included, and a list `transactions` of parties the text does not name (for example the Haghia Triada Magazine). An entry with a `description` (sender, recipient, commodity, quantity) and a `transactionID` makes its token part of a transaction. `network.js` builds the graph from these entries (senders and recipients are the nodes; each commodity of a transaction is an edge, labelled with the commodity and its quantity) and, when an edge is hovered, lights the tokens of the record by their position in `words`. A party from `transactions` has no token: its position falls past the end of the record and nothing is lit, unless its transliteration is that of an entry in `words`. The file is written by the last cell of the notebook `network/transactions/035 - Transaction Classification.ipynb`, which joins the record files in `transactions/final/` and adds each classified record's `type` (`037 - Update transactions.js.ipynb` also writes it, joining the files without a `type`). Re-running it would not give the committed file back: that cell writes no licence header and takes the files in directory order, and an earlier cell reads a file outside the repository (`../../../Minoan Notebooks/CommodityOrderData/150-inscriptions.js`). So this commit changes each of these records in the same way in both files, its file in `transactions/final/` and its record in `network/transactions.js`, and keeps each file's format: JSON with an indent of 4 and unescaped characters, with sorted keys in `network/transactions.js` as the notebook writes it, the header of `network/transactions.js`, and each file's final newline or its absence.
+
+**What the pull request did to the page.** Twelve of the 129 records have their tokens split, joined, added, removed or moved by the pull request, and in these the entries no longer sit on their tokens: before this commit, 33 edges in 9 records light another token than their entry's, or nothing, where master lit the entry's own token (counted by transliteration; compared by glyphs alone, HT99b-1, whose entry on master already has the glyph of SI+SE only, is off on master too, which leaves 32), and in HT36, whose entries were already out of step on master, every entry after the first word sits one token later still. PE1 goes the other way: its entries were written with U-KA-RE and A-SE-SI-NA apart, so on master six of its eight edges lit other tokens, and the second commit's split already puts them right; here only the glyphs of its first two entries change.
+
+**What this commit changes.** In these twelve records only, `words` is rewritten from the record: one entry per token, in order, with the token's `word` and `transliteratedWord`; each master entry's role (`description`, `transactionID`, `commodityID`) goes to the token that carries it. Where a word is split, the role goes to the part that carries it (a commodity to the logogram the numeral counts, a recipient to the first part, where a name stands, a quantity to the numeral that is not erased) and the other parts get none, nor a `transactionID` (`network.js` does nothing with one without a role); tokens the pull request adds get entries with neither. In HT36, whose entries were written for an older division of its text, only the split word gets new entries, and master's other entries are kept as master wrote them, one token on, so that both its edges light what they lit on master (see HT36 below). The new entry ]GRA 1 of HT128a (fourteenth commit) is in no transaction, and this commit adds none. The parties in `transactions` are not changed. Records whose tokens are only re-read keep their entries, and with them the old readings listed at the end.
+
+**Effect on the graph.**
+
+| | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|
+| nodes | 424 | 424 | 422 |
+| edges | 816 | 816 | 816 |
+| edges whose hover lights a token that is not the entry's, or nothing where the entry has one | 19 | 46 | 13 |
+| edges whose hover stops at a missing list ('p.i is not iterable') | 43 | 43 | 43 |
+
+The 13 edges that still light another token are HT36's two, whose entries this commit keeps as master wrote them, and 11 in records the pull request does not re-divide (HT34, HT42+59, TY3b, ZA11a); all of them were already out of step on master. The 43 edges whose hover stops are the same at all three states (36 no recipient; 5 have fewer quantities than commodities; 2 no sender).
+
+Changes to nodes and labels:
+
+- HT99b: the recipient SI+SE-NI becomes SI+SE, which is already a node (HT116a, HT42+59): the two nodes are one.
+- HT96a: the recipients \*323-\*317 and \*323-\*344 both become \*323: one node with two edges.
+- HT99b: the recipient \*79-DU becomes ZU-DU, as the record (already on master) reads it.
+- Edge HT36-1: label '\*307+\*387-GRA+QE 64¹⁄₂' becomes 'grain 64¹⁄₂'.
+- Edge HT28a-4: label 'VIR+KA-VIN 6' becomes 'wine 6'.
+- Edge HT10a-5: label 'men 14' becomes 'men 10'.
+- Edge KH9-3: label 'SI+TA2-\*304 1' becomes 'olive oil 1'.
+- Edge HT24a-1: label 'KI-MA-RU 6' becomes '\*546 6'.
+- Edge HT24a-1: label 'MA-RU-ME 10' becomes '\*561 10'.
+- Edge HT24a-1: label 'MA-RU-ME 6' becomes '\*561 6'.
+- Edge HT24a-2: label 'MA-RU-ME ?' becomes '\*561 ?'.
+
+In the tables below, positions count every token of the record (line breaks and dividers included), from 0. In the edge tables, s, r, c and q are the sender, recipient, commodity and quantity that a hover lights; a token in bold is not the entry's own token (a bold – : nothing is lit where the entry has a token); a plain – is a party with no token, which lights nothing.
+
+#### HT24a — \*546 and \*561 for the MA+RU monograms; the .4 \*561 back before the line break (second commit)
+
+Tokens: 19 on master, 19 with the pull request. Entries: 19 on master, 19 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0 | `KU-PA₃-RI-JA` | 0: `KU-PA₃-RI-JA` | recipient (HT24a-1) | same position |
+| 1 | `*546` | 1: `KI-MA-RU` | commodity (HT24a-1, commodityID 0) | re-read by commit 2; keeps its role |
+| 2–4 | (unchanged tokens) | 2–4 | as on master | same position |
+| 5 | `*561` | 5: `MA-RU-ME` | commodity (HT24a-1, commodityID 1) | re-read by commit 2; keeps its role |
+| 6–10 | (unchanged tokens) | 6–10 | as on master | same position |
+| 11 | `*561` | 11: `MA-RU-ME` | commodity (HT24a-1, commodityID 0) | re-read by commit 2; keeps its role |
+| 12–14 | (unchanged tokens) | 12–14 | as on master | same position |
+| 15 | `*561` | 16: `MA-RU-ME` | commodity (HT24a-2, commodityID 0) | moved before the line break by commit 2; keeps its role |
+| 16 | line break | 15: line break | – | the line break after it |
+| 17–18 | (unchanged tokens) | 17–18 | as on master | same position |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| HT24a-1 (1) | KI-MA-RU 6 → \*546 6 | s – · r `KU-PA₃-RI-JA` · c `KI-MA-RU` · q `6` | s – · r `KU-PA₃-RI-JA` · c `*546` · q `6` | s – · r `KU-PA₃-RI-JA` · c `*546` · q `6` |
+| HT24a-1 (2) | MA-RU-ME 10 → \*561 10 | s – · r `KU-PA₃-RI-JA` · c `MA-RU-ME` · q `10` | s – · r `KU-PA₃-RI-JA` · c `*561` · q `10` | s – · r `KU-PA₃-RI-JA` · c `*561` · q `10` |
+| HT24a-1 (3) | MA-RU-ME 6 → \*561 6 | s – · r `KU-PA₃-RI-JA` · c `MA-RU-ME` · q `6` | s – · r `KU-PA₃-RI-JA` · c `*561` · q `6` | s – · r `KU-PA₃-RI-JA` · c `*561` · q `6` |
+| HT24a-2 | MA-RU-ME ? → \*561 ? | s – · r `PA-SA-RI-JA` · c `MA-RU-ME` · q – | s – · r `PA-SA-RI-JA` · c **–** · q – | s – · r `PA-SA-RI-JA` · c `*561` · q – |
+| HT24a-3 | \*560 ? | s – · r `RU-I-KO` · c `*560` · q – | s – · r `RU-I-KO` · c `*560` · q – | s – · r `RU-I-KO` · c `*560` · q – |
+
+#### PE1 — U-KA-RE and A-SE-SI-NA are two words (second commit)
+
+Tokens: 16 on master, 17 with the pull request. Entries: 17 on master, 17 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0 | `U-KA-RE` | 0: `U-KA-RE` | sender (PE1-1) | glyphs from the record; the entries were written for the two words |
+| 1 | `A-SE-SI-NA` | 1: `A-SE-SI-NA` | recipient (PE1-2) | glyphs from the record |
+| 2–16 | (unchanged tokens) | 2–16 | as on master | same position |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| PE1-1 (1) | men 50 | s `U-KA-RE-A-SE-SI-NA` · (hover stops: no recipient) | s `U-KA-RE` · (hover stops: no recipient) | s `U-KA-RE` · (hover stops: no recipient) |
+| PE1-1 (2) | grain 26¹⁄₂ | s `U-KA-RE-A-SE-SI-NA` · (hover stops: no recipient) | s `U-KA-RE` · (hover stops: no recipient) | s `U-KA-RE` · (hover stops: no recipient) |
+| PE1-2 (1) | men 50 | s `U-KA-RE-A-SE-SI-NA` · r **–** · c **`50`** · q **–** | s `U-KA-RE` · r `A-SE-SI-NA` · c `VIR+[?]` · q `50` | s `U-KA-RE` · r `A-SE-SI-NA` · c `VIR+[?]` · q `50` |
+| PE1-2 (2) | grain 26¹⁄₂ | s `U-KA-RE-A-SE-SI-NA` · r **–** · c **`26`** · q **`¹⁄₂`** **–** | s `U-KA-RE` · r `A-SE-SI-NA` · c `GRA+PA` · q `26` `¹⁄₂` | s `U-KA-RE` · r `A-SE-SI-NA` · c `GRA+PA` · q `26` `¹⁄₂` |
+| PE1-3 (1) | men 50 | s `U-KA-RE-A-SE-SI-NA` · r **`VIR+[?]`** · c **`50`** · q **–** | s `U-KA-RE` · r `KU-PA-RI` · c `VIR+[?]` · q `50` | s `U-KA-RE` · r `KU-PA-RI` · c `VIR+[?]` · q `50` |
+| PE1-3 (2) | grain 26¹⁄₂ | s `U-KA-RE-A-SE-SI-NA` · r **`VIR+[?]`** · c **`26`** · q **`¹⁄₂`** **–** | s `U-KA-RE` · r `KU-PA-RI` · c `GRA+PA` · q `26` `¹⁄₂` | s `U-KA-RE` · r `KU-PA-RI` · c `GRA+PA` · q `26` `¹⁄₂` |
+| PE1-4 (1) | men 72 | s `U-KA-RE-A-SE-SI-NA` · r **`VIR+[?]`** · c **`72`** · q **–** | s `U-KA-RE` · r `E-KA` · c `VIR+[?]` · q `72` | s `U-KA-RE` · r `E-KA` · c `VIR+[?]` · q `72` |
+| PE1-4 (2) | grain 36 | s `U-KA-RE-A-SE-SI-NA` · r **`VIR+[?]`** · c **`36`** · q **–** | s `U-KA-RE` · r `E-KA` · c `GRA+PA` · q `36` | s `U-KA-RE` · r `E-KA` · c `GRA+PA` · q `36` |
+
+#### ZA6a — false divider removed; line breaks as GORILA III p. 157 (second commit)
+
+Tokens: 35 on master, 34 with the pull request. Entries: 35 on master, 34 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0–24 | (unchanged tokens) | 0–24 | as on master | same position |
+| 25 | `OLIV` | 30: `OLIV` | – (ZA6a-4) | on its own line (commit 2), with its leading damage mark |
+| 26 | line break | 25: line break | – | moves +1 |
+| 27 | `25` | 31: `25` | quantity (ZA6a-4, commodityID 0) | on its own line (commit 2) |
+| 28 | line break | 26: line break | – | moves +2 |
+| 29 | `*304` | 32: `*304` | – (ZA6a-4) | on its own line (commit 2) |
+| 30 | line break | 27: line break | – | moves +3 |
+| 31 | `20` | 33: `20` | quantity (ZA6a-4, commodityID 0) | on its own line (commit 2) |
+| 32 | line break | 28: line break | – | moves +4 |
+| 33 | `I-SE` | 34: `I-SE` | recipient (ZA6a-5) | moves -1 |
+| – | (no token) | 29: `𐄁` | – (ZA6a-4) | dropped: commit 2 removes its divider |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| ZA6a-1 | fodder? 19 | s – · r `*305-WA-NA` · c `*171` · q `19` | s – · r `*305-WA-NA` · c `*171` · q `19` | s – · r `*305-WA-NA` · c `*171` · q `19` |
+| ZA6a-2 | ? 180 | s – · r `*34-JU-TE-MI` · c – · q `180` | s – · r `*34-JU-TE-MI` · c – · q `180` | s – · r `*34-JU-TE-MI` · c – · q `180` |
+| ZA6a-3 (1) | OLIV 15 | s – · r `I-SE` · c `OLIV` · q `15` | s – · r `I-SE` · c `OLIV` · q `15` | s – · r `I-SE` · c `OLIV` · q `15` |
+| ZA6a-3 (2) | OLIV 10 | s – · r `I-SE` · c `OLIV` · q `10` | s – · r `I-SE` · c `OLIV` · q `10` | s – · r `I-SE` · c `OLIV` · q `10` |
+| ZA6a-4 | GRA+PA 20 | s – · r `PU₂-RA₂` · c `GRA+PA` · q `20` | s – · r `PU₂-RA₂` · c `GRA+PA` · q `20` | s – · r `PU₂-RA₂` · c `GRA+PA` · q `20` |
+
+#### HT23b — the divider after NI-RA (ninth commit)
+
+Tokens: 22 on master, 23 with the pull request. Entries: 22 on master, 23 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0 | `NI-RA` | 0: `NI-RA` | recipient (HT23b-1) | same position |
+| 1 | `𐄁` | new | – | added by commit 9; no role |
+| 2–22 | (unchanged tokens) | 1–21 | as on master | moves +1 |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| HT23b-1 (1) | cyperus ¹⁄₃ | s – · r `NI-RA` · c `CYP` · q `¹⁄₃` | s **`𐝫`** · r `NI-RA` · c **`𐄁`** · q **`CYP`** | s – · r `NI-RA` · c `CYP` · q `¹⁄₃` |
+| HT23b-1 (2) | liquid? ¹⁄₃ | s – · r `NI-RA` · c `QA2+[?]+RE` · q `¹⁄₃` | s **`𐝫`** · r `NI-RA` · c **–** · q **`OLE`** | s – · r `NI-RA` · c `QA2+[?]+RE` · q `¹⁄₃` |
+| HT23b-1 (3) | E 1 | s – · r `NI-RA` · c `E` · q `1` | s **`𐝫`** · r `NI-RA` · c **–** · q **`QA2+[?]+RE`** | s – · r `NI-RA` · c `E` · q `1` |
+
+#### HT28a — VIR+KA apart from VIN (ninth commit)
+
+Tokens: 46 on master, 47 with the pull request. Entries: 46 on master, 47 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0–29 | (unchanged tokens) | 0–29 | as on master | same position |
+| 30 | `VIR+KA` | new | – | part of the split word; no role |
+| 31 | `VIN` | 30: `VIR+KA-VIN` | commodity (HT28a-4, commodityID 1) | the commodity of HT28a-4 goes to VIN, the logogram the numeral 6 counts (`annotations.js` tags VIN 'commodity', VIR+KA 'logogram') |
+| 32–46 | (unchanged tokens) | 31–45 | as on master | moves +1 |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| HT28a-2 (1) | grain 5 | s `A-SI-JA-KA` · r `JA-*21F` · c `GRA+QE` · q `5` | s `A-SI-JA-KA` · r `JA-*21F` · c `GRA+QE` · q `5` | s `A-SI-JA-KA` · r `JA-*21F` · c `GRA+QE` · q `5` |
+| HT28a-2 (2) | oil 2 | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+U` · q `2` | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+U` · q `2` | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+U` · q `2` |
+| HT28a-2 (3) | oil ¹⁄₂ | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+KI` · q `¹⁄₂` | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+KI` · q `¹⁄₂` | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+KI` · q `¹⁄₂` |
+| HT28a-2 (4) | oil 1 | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+MI` · q `1` | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+MI` · q `1` | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+MI` · q `1` |
+| HT28a-2 (5) | oil 𐝉 | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+TU` · q `𐝉` | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+TU` · q `𐝉` | s `A-SI-JA-KA` · r `JA-*21F` · c `OLE+TU` · q `𐝉` |
+| HT28a-3 (1) | oil 1 | s `A-SI-JA-KA` · r `SA-RA₂` · c `OLE+DI` · q `1` | s `A-SI-JA-KA` · r `SA-RA₂` · c `OLE+DI` · q `1` | s `A-SI-JA-KA` · r `SA-RA₂` · c `OLE+DI` · q `1` |
+| HT28a-3 (2) | figs 2 | s `A-SI-JA-KA` · r `SA-RA₂` · c `NI` · q `2` | s `A-SI-JA-KA` · r `SA-RA₂` · c `NI` · q `2` | s `A-SI-JA-KA` · r `SA-RA₂` · c `NI` · q `2` |
+| HT28a-3 (3) | wine 3 | s `A-SI-JA-KA` · r `SA-RA₂` · c `VIN` · q `3` | s `A-SI-JA-KA` · r `SA-RA₂` · c `VIN` · q `3` | s `A-SI-JA-KA` · r `SA-RA₂` · c `VIN` · q `3` |
+| HT28a-4 | VIR+KA-VIN 6 → wine 6 | s `A-SI-JA-KA` · (hover stops: no recipient) | s `A-SI-JA-KA` · (hover stops: no recipient) | s `A-SI-JA-KA` · (hover stops: no recipient) |
+| HT28a-5 (1) | grain 5 | s `A-SI-JA-KA` · r `A-RU-DA-RA` · c `GRA` · q `5` | s `A-SI-JA-KA` · r **–** · c **`A-RU-DA-RA`** · q **`GRA`** | s `A-SI-JA-KA` · r `A-RU-DA-RA` · c `GRA` · q `5` |
+| HT28a-5 (2) | olive oil 2 | s `A-SI-JA-KA` · r `A-RU-DA-RA` · c `*304` · q `2` | s `A-SI-JA-KA` · r **–** · c **–** · q **`*304`** | s `A-SI-JA-KA` · r `A-RU-DA-RA` · c `*304` · q `2` |
+| HT28a-5 (3) | oil 3 | s `A-SI-JA-KA` · r `A-RU-DA-RA` · c `OLE+DI` · q `3` | s `A-SI-JA-KA` · r **–** · c **–** · q **`OLE+DI`** | s `A-SI-JA-KA` · r `A-RU-DA-RA` · c `OLE+DI` · q `3` |
+| HT28a-6 | oil 10 | s `A-SI-JA-KA` · r `I-TA-JA` · c `OLE+DI` · q `10` | s `A-SI-JA-KA` · r **–** · c **`I-TA-JA`** · q **`OLE+DI`** | s `A-SI-JA-KA` · r `I-TA-JA` · c `OLE+DI` · q `10` |
+
+#### HT33 — the trace and the divider before SA-RA₂ (ninth commit); the cup A510 (thirteenth commit)
+
+Tokens: 27 on master, 30 with the pull request. Entries: 27 on master, 30 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0 | `𐝫` | new | – | added by commit 9; no role |
+| 1 | `𐄁` | new | – | added by commit 9; no role |
+| 2 | line break | new | – | added by commit 9; no role |
+| 3–6 | (unchanged tokens) | 0–3 | as on master | moves +3 |
+| 7 | `QA2+[?]+PU` | 4: `QA2+[?]+RE+PU` | commodity (HT33-1, commodityID 1) | re-read by commit 13; keeps its role |
+| 8–29 | (unchanged tokens) | 5–26 | as on master | moves +3 |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| HT33-1 (1) | liquid? 1¹⁄₄ | s – · r `SA-RA₂` · c `QA2+[?]+RE+PU` · q `1` `¹⁄₄` | s – · r **`𐝫`** · c **`𐄁`** · q **`*401+*304`** **–** | s – · r `SA-RA₂` · c `QA2+[?]+PU` · q `1` `¹⁄₄` |
+| HT33-1 (2) | liquid? 𐝉𐝋𐝫 | s – · r `SA-RA₂` · c `QA2+[?]+RE` · q `𐝉𐝋𐝫` | s – · r **`𐝫`** · c **`1`** · q **`¹⁄₄`** | s – · r `SA-RA₂` · c `QA2+[?]+RE` · q `𐝉𐝋𐝫` |
+| HT33-1 (3) | E+KA 3 | s – · r `SA-RA₂` · c `E+KA` · q `3` | s – · r **`𐝫`** · c **–** · q **`QA2+[?]+RE`** | s – · r `SA-RA₂` · c `E+KA` · q `3` |
+| HT33-1 (4) | liquid? 𐝃𐝉 | s – · r `SA-RA₂` · c `MI+JA+KA` · q `𐝃𐝉` | s – · r **`𐝫`** · c **`E+KA`** · q **`3`** | s – · r `SA-RA₂` · c `MI+JA+KA` · q `𐝃𐝉` |
+| HT33-1 (5) | \*305 ¹⁄₅ | s – · r `SA-RA₂` · c `*305` · q `¹⁄₅` | s – · r **`𐝫`** · c **`MI+JA+KA`** · q **`𐝃𐝉`** | s – · r `SA-RA₂` · c `*305` · q `¹⁄₅` |
+| HT33-1 (6) | \*341+PI 90 | s – · r `SA-RA₂` · c `*341+PI` · q `90` | s – · r **`𐝫`** · c **`*305`** · q **`¹⁄₅`** | s – · r `SA-RA₂` · c `*341+PI` · q `90` |
+| HT33-1 (7) | PA3+QE 100 | s – · r `SA-RA₂` · c `PA3+QE` · q `100` | s – · r **`𐝫`** · c **`*341+PI`** · q **`90`** | s – · r `SA-RA₂` · c `PA3+QE` · q `100` |
+
+#### HT36 — \*307+\*307 and GRA+QE are two words (ninth commit)
+
+Tokens: 13 on master, 14 with the pull request. Entries: 13 on master, 14 with this commit.
+
+Master's entries were written for an older division of the text: `64` as one numeral where the record reads `[[20]]` and `44`, and `DU-ZU` and `TE-LA` (the sign WA, 'cloth') as two words where it reads one, `DU-ZU-WA`. So on master its entries 2 to 6 already sat on other tokens, and the ninth commit's split puts every entry after the first word one token later still. This commit gives the split word its two entries and keeps master's other entries as master wrote them, one token on: both edges of HT36 then light what they lit on master, except that the commodity of HT36-1 lights GRA+QE, the part of the split word that carries it, and its label becomes 'grain 64¹⁄₂', with master's quantity entry.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0 | `JE-DI` | 0: `JE-DI` | recipient (HT36-1) | same position |
+| 1 | `*307+*307` | new | – | part of the split word; no role |
+| 2 | `GRA+QE` | 1: `*307+*387-GRA+QE` | commodity (HT36-1, commodityID 0) | the commodity of HT36-1 goes to GRA+QE, the logogram the numeral counts (`annotations.js` tags it 'commodity'; GRA+QE is a commodity in HT18, HT28a and HT101) |
+| 3–13 | (unchanged tokens, `[[20]]` to `[[6]]`) | 2–12 (`64` to `6`) | as on master | moves +1; kept as master wrote them |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| HT36-1 | \*307+\*387-GRA+QE 64¹⁄₂ → grain 64¹⁄₂ | s – · r `JE-DI` · c `*307+*387-GRA+QE` · q **`[[20]]`** **`44`** | s **`[[6]]`** · r `JE-DI` · c **`*307+*307`** · q **`GRA+QE`** **`[[20]]`** | s – · r `JE-DI` · c `GRA+QE` · q **`[[20]]`** **`44`** |
+| HT36-3 | cloth 7¹⁄₂ | s – · r **–** · c **`DU-ZU-WA`** · q `7` `¹⁄₂` | s – · r **`¹⁄₂`** · c **–** · q **`DU-ZU-WA`** **`7`** | s – · r **–** · c **`DU-ZU-WA`** · q `7` `¹⁄₂` |
+
+#### HT99b — SI+SE apart from NI (ninth commit)
+
+Tokens: 11 on master, 12 with the pull request. Entries: 11 on master, 12 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0 | `SI+SE` | 0: `SI+SE-NI` | recipient (HT99b-1, commodityID 1) | the recipient of HT99b-1 goes to SI+SE: the entry's own glyph is SI+SE alone, `annotations.js` tags SI+SE 'head word', and SI+SE is a sender or recipient in HT116a and HT42+59 |
+| 1 | `NI` | new | – | part of the split word; no role (NI is a commodity elsewhere in the file, but HT99b-1's entries give it none) |
+| 2–6 | (unchanged tokens) | 1–5 | as on master | moves +1 |
+| 7 | `ZU-DU` | 6: `*79-DU` | recipient (HT99b-3, commodityID 1) | the entry read \*79-DU; the record (already on master) reads ZU-DU |
+| 8–11 | (unchanged tokens) | 7–10 | as on master | moves +1 |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| HT99b-1 | men 6 | s – · r `SI+SE-NI` · c – · q `6` | s **`1`** · r `SI+SE` · c – · q **`NI`** | s – · r `SI+SE` · c – · q `6` |
+| HT99b-2 | men 2 | s – · r `DA-SI-*118` · c – · q `2` | s – · r **–** · c – · q **`DA-SI-*118`** | s – · r `DA-SI-*118` · c – · q `2` |
+| HT99b-3 | men 1 | s – · r `ZU-DU` · c – · q `1` | s – · r **–** · c – · q **`ZU-DU`** | s – · r `ZU-DU` · c – · q `1` |
+| HT99b-4 | men 1 | s – · r `RU-MA-TA` · c – · q `1` | s – · r **–** · c – · q **`RU-MA-TA`** | s – · r `RU-MA-TA` · c – · q `1` |
+
+#### HT128a — the divider after PA-RA (ninth commit); the new entry ]GRA 1 (fourteenth commit)
+
+Tokens: 28 on master, 32 with the pull request. Entries: 28 on master, 32 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0–3 | (unchanged tokens) | 0–3 | as on master | same position |
+| 4 | `𐄁` | new | – | added by commit 9; no role |
+| 5–22 | (unchanged tokens) | 4–21 | as on master | moves +1 |
+| 23 | `GRA` | new | – | added by commit 14 (the new entry ]GRA 1); no role: the transactions do not include it |
+| 24 | `1` | new | – | added by commit 14; no role |
+| 25 | line break | new | – | added by commit 14 (the line break of the new line) |
+| 26–31 | (unchanged tokens) | 22–27 | as on master | moves +4 |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| HT128a-1 | GRA 10 | s `TU-RU-NU-SE-ME` · r `PA-RA` · c `GRA` · q `10` | s **–** · r `PA-RA` · c **`TU-RU-NU-SE-ME`** · q **`GRA`** | s `TU-RU-NU-SE-ME` · r `PA-RA` · c `GRA` · q `10` |
+| HT128a-2 | grain 12 | s `WA-TU-MA-RE` · r `PA-RA` · c `GRA+KU` · q `12` | s **–** · r `PA-RA` · c **`WA-TU-MA-RE`** · q **`GRA+KU`** | s `WA-TU-MA-RE` · r `PA-RA` · c `GRA+KU` · q `12` |
+| HT128a-3 | grain ¹⁄₂ | s `MI-TA` · r `PA-RA` · c `GRA+PA` · q `¹⁄₂` | s **–** · r `PA-RA` · c **`MI-TA`** · q **`GRA+PA`** | s `MI-TA` · r `PA-RA` · c `GRA+PA` · q `¹⁄₂` |
+| HT128a-4 | grain 6 | s `MI-TA` · r `PA-RA` · c `GRA+KU` · q `6` | s **–** · r `PA-RA` · c **–** · q **`GRA+KU`** | s `MI-TA` · r `PA-RA` · c `GRA+KU` · q `6` |
+| HT128a-5 | ?  | s `MA-RI` · r `PA-RA` · c – | s **–** · r `PA-RA` · c – | s `MA-RI` · r `PA-RA` · c – |
+
+#### KH9 — SI+TA2 apart from \*304 (ninth commit)
+
+Tokens: 30 on master, 31 with the pull request. Entries: 30 on master, 31 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0–27 | (unchanged tokens) | 0–27 | as on master | same position |
+| 28 | `SI+TA2` | new | – | part of the split word; no role |
+| 29 | `*304` | 28: `SI+TA2-*304` | commodity (KH9-3, commodityID 1) | the commodity of KH9-3 goes to \*304, the logogram the numeral 1 counts (`annotations.js` tags \*304 'commodity', SI+TA2 'logogram'; \*304 is a commodity in HT28a) |
+| 30 | `1` | 29: `1` | quantity (KH9-3, commodityID 1) | moves +1 |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| KH9-1 | figs ¹⁄₁₆ | s – · r `A-SI-SU-PO-A` · c `NI` · q `¹⁄₁₆` | s **`1`** · r `A-SI-SU-PO-A` · c `NI` · q `¹⁄₁₆` | s – · r `A-SI-SU-PO-A` · c `NI` · q `¹⁄₁₆` |
+| KH9-2 (1) | cyperus ¹⁄₂ | s – · r `I-SI` · c `CYP+D` · q `¹⁄₂` | s – · r `I-SI` · c `CYP+D` · q `¹⁄₂` | s – · r `I-SI` · c `CYP+D` · q `¹⁄₂` |
+| KH9-2 (2) | cyperus 2 | s – · r `I-SI` · c `CYP` · q `2` | s – · r `I-SI` · c `CYP` · q `2` | s – · r `I-SI` · c `CYP` · q `2` |
+| KH9-2 (3) | CYP ¹⁄₄ | s – · r `I-SI` · c `CYP` · q `¹⁄₄` | s – · r `I-SI` · c `CYP` · q `¹⁄₄` | s – · r `I-SI` · c `CYP` · q `¹⁄₄` |
+| KH9-3 | SI+TA2-\*304 1 → olive oil 1 | s – · (hover stops: no recipient) | s – · (hover stops: no recipient) | s – · (hover stops: no recipient) |
+
+#### HT10a — 10 and an erased 4, not 14 (eleventh commit)
+
+Tokens: 32 on master, 33 with the pull request. Entries: 32 on master, 33 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0–20 | (unchanged tokens) | 0–20 | as on master | same position |
+| 21 | `10` | 21: `14` | quantity (HT10a-5, commodityID 1) | the quantity of HT10a-5 goes to the numeral 10 |
+| 22 | `[[4]]` | new | – | erased; no role |
+| 23–32 | (unchanged tokens) | 22–31 | as on master | moves +1 |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| HT10a-1 | men 4 | s `KU-NI-SU` · r `SA-MA` · c – · q `4` | s `KU-NI-SU` · r `SA-MA` · c **`3`** · q `4` | s `KU-NI-SU` · r `SA-MA` · c – · q `4` |
+| HT10a-2 | men 16¹⁄₂ | s `PA` · r `DA-RE` · c – · q `16` `¹⁄₂` | s `PA` · r `DA-RE` · c – · q `16` `¹⁄₂` | s `PA` · r `DA-RE` · c – · q `16` `¹⁄₂` |
+| HT10a-3 | men 4 | s `PA` · r `U-*325-ZA` · c – · q `4` | s `PA` · r `U-*325-ZA` · c – · q `4` | s `PA` · r `U-*325-ZA` · c – · q `4` |
+| HT10a-4 | men 6 | s `PA` · r `*301` · c – · q `6` | s `PA` · r `*301` · c – · q `6` | s `PA` · r `*301` · c – · q `6` |
+| HT10a-5 | men 14 → men 10 | s `PA` · r `U-*325-ZA` · c – · q `14` | s `PA` · r `U-*325-ZA` · c – · q **`10`** | s `PA` · r `U-*325-ZA` · c – · q `10` |
+| HT10a-6 | men 2¹⁄₂ | s `PA` · r `*305-RU` · c – · q `2` `¹⁄₂` | s `PA` · r **–** · c – · q **`*305-RU`** **`2`** | s `PA` · r `*305-RU` · c – · q `2` `¹⁄₂` |
+| HT10a-7 | men 8 | s `PA` · r `DA-RI-DA` · c – · q `8` | s `PA` · r **–** · c – · q **`DA-RI-DA`** | s `PA` · r `DA-RI-DA` · c – · q `8` |
+| HT10a-8 | men 3 | s `PA` · r `ME-ZA` · c – · q `3` | s `PA` · r **–** · c – · q **`ME-ZA`** | s `PA` · r `ME-ZA` · c – · q `3` |
+
+#### HT96a — \*323 and \*317, \*323 and \*344, TE and NI apart (eleventh commit)
+
+Tokens: 38 on master, 41 with the pull request. Entries: 38 on master, 41 with this commit.
+
+| Position | Token (pull request) | Master entry | Role | Note |
+|---|---|---|---|---|
+| 0–13 | (unchanged tokens) | 0–13 | as on master | same position |
+| 14 | `*323` | 14: `*323-*317` | recipient (HT96a-3, commodityID 1) | the recipient of HT96a-3 goes to \*323, the first sign, where SI-MI-TA stands in SI-MI-TA GRA 5 (name, logogram, number); \*317 is a commodity in ARKH3a |
+| 15 | `*317` | new | – | part of the split word; no role |
+| 16–21 | (unchanged tokens) | 15–20 | as on master | moves +1 |
+| 22 | `*323` | 21: `*323-*344` | recipient (HT96a-5, commodityID 1) | the recipient of HT96a-5 goes to \*323, as for HT96a-3 |
+| 23 | `*344` | new | – | part of the split word; no role |
+| 24–30 | (unchanged tokens) | 22–28 | as on master | moves +2 |
+| 31 | `TE` | new | – | part of TE-NI, which had no role |
+| 32 | `NI` | new | – | part of TE-NI, which had no role |
+| 33–40 | (unchanged tokens) | 30–37 | as on master | moves +3 |
+| – | (no token) | 29: `TE-NI` | – | dropped: TE-NI is split into TE and NI (above) |
+
+| Edge | Label | master (9c81beb) | before this commit (c8607d6) | this commit |
+|---|---|---|---|---|
+| HT96a-1 | grain 5 | s `I-TI-TI-KU-NI` · r `SI-MI-TA` · c `GRA` · q `5` | s `I-TI-TI-KU-NI` · r `SI-MI-TA` · c `GRA` · q `5` | s `I-TI-TI-KU-NI` · r `SI-MI-TA` · c `GRA` · q `5` |
+| HT96a-2 | grain 4 | s `I-TI-TI-KU-NI` · r `RU-SA` · c `GRA` · q `4` | s `I-TI-TI-KU-NI` · r `RU-SA` · c `GRA` · q `4` | s `I-TI-TI-KU-NI` · r `RU-SA` · c `GRA` · q `4` |
+| HT96a-3 | grain 1 | s `I-TI-TI-KU-NI` · r `*323-*317` · c `GRA` · q `1` | s `I-TI-TI-KU-NI` · r **`*323`** · c `GRA` · q **`*317`** | s `I-TI-TI-KU-NI` · r `*323` · c `GRA` · q `1` |
+| HT96a-4 | grain 1 | s `I-TI-TI-KU-NI` · r `PI-TA-RA` · c `GRA` · q `1` | s `I-TI-TI-KU-NI` · r **–** · c `GRA` · q **`𐄁`** | s `I-TI-TI-KU-NI` · r `PI-TA-RA` · c `GRA` · q `1` |
+| HT96a-5 | grain 1 | s `I-TI-TI-KU-NI` · r `*323-*344` · c `GRA` · q `1` | s `I-TI-TI-KU-NI` · r **–** · c `GRA` · q **`*323`** | s `I-TI-TI-KU-NI` · r `*323` · c `GRA` · q `1` |
+| HT96a-6 | grain 5 | s `I-TI-TI-KU-NI` · r `A-PA-RA-NE` · c `GRA` · q `5` | s `I-TI-TI-KU-NI` · r `A-PA-RA-NE` · c `GRA` · q `5` | s `I-TI-TI-KU-NI` · r `A-PA-RA-NE` · c `GRA` · q `5` |
+| HT96a-7 | grain 5 | s `I-TI-TI-KU-NI` · r `A-AROM-TE` · c `GRA` · q `5` | s `I-TI-TI-KU-NI` · r `A-AROM-TE` · c `GRA` · q `5` | s `I-TI-TI-KU-NI` · r `A-AROM-TE` · c `GRA` · q `5` |
+
+**Checks.**
+
+- The graph was built with the page's own `createNodes` and `createEdges` from `network.js` for master's file and for this commit's; a separate re-implementation that keeps the entry behind each position gives the same labels, endpoints and positions for every edge. What a hover lights follows `showTablet` (sender, recipient, commodity, quantity; a missing list stops the hover; a line break has no id).
+- With this commit no edge lights another token where master lit the entry's own, none of the 33 edges that the pull request had shifted does so any more (HT10a-5 lit its 10 before as now; only its label changes), and 6 edges that master lit wrongly now light their own tokens, all in PE1.
+- Of the 84 hover positions that light something else than on master, 50 light the same token re-read by the pull request, 13 the part of a split word that carries the role, 1 HT24a's \*561 in its new place, and 20 the entry's own token where master lit another.
+- The parties in `transactions` of the twelve records are unchanged; those that fell past the end of their record on master do so again (before this commit five of them lit their record's last token, pushed into their position by the tokens the pull request added), and those found by their transliteration light the same token as on master, or in PE1 the right one.
+- Outside the twelve records `network/transactions.js` is unchanged byte for byte, and every record still equals its file in `transactions/final/` apart from `type`.
+- In Chrome every edge was hovered through the page's own `hoverEdge`, before this commit and with it: the tokens lit equal the static rule on every edge, as on master; the 51 edges that differ between the two states (34 in the tokens they light, the rest in their label or in the index of a party that lights nothing) are all in the twelve records; and against master the same tokens are lit on 802 of the 816 edges and other tokens on none, the other 14 sitting on tokens that the pull request itself splits, joins or moves, each lighting its own entry's, apart from HT36-1's quantity, which lights `[[20]]` and `44` as on master.
+
+Entries left as they were, whose labels the pull request's re-readings make old (the token they light is the right one):
+
+- ARKH3a: commodity `*317` (now `[[*317]]`); quantity `2` (now `[[2]]`)
+- HT115a: commodity `GRA+BOSm` (now `GRA+CAPm`); sender `*301-U-RA` (now `[[*301-U-RA]]`)
+- HT12: recipient `*560` (now `*559`)
+- HT132: commodity `*904` (now `*319`); commodity `*22F` (now `*21F`)
+- HT17: sender `RA-?-TI`, with a private-use character for ? (now `RA-*164-TI`); quantity `37` (now `38`)
+- HT20: commodity `*21M` (now `*22M`)
+- HT23a: commodity `QA2+[?]+RE` (now `QA2+[?]+PU`); commodity `QA2+[?]+RE+PU` (now `QA2+[?]+RE`)
+- HT86b: sender `A-KA-RU` (now `[[A-KA-RU]]`); recipient `KU-NI-SU` (now `[[KU-NI-SU]]`); commodity `GRA+K+L` (now `[[GRA+K+L2]]`); quantity `20` (now `[[20]]`); recipient `SA-RU` (now `[[SA-RU]]`); quantity `20` (now `[[20]]`); recipient `DI-DE` (now `[[DI-DE]]`)
+- TY3a: commodity `NE-KI` (now `NE-KI+[?]`); commodity `KI` (now `KI+[?]`)
+- ZA9: commodity `*22F` (now `*21F`); commodity `*22F` (now `*21F`)
+
+Of the edges of these entries, 11 show a label with the old reading (for example 'wine 37' on HT17-1 and 'she-goat 27' on HT132-2), and 7 node names differ from the records' words (\*301-U-RA, \*560, RA-?-TI and HT86b's four). A further 53 entries in records the pull request leaves as they are differ from their tokens already on master.
+
+## The relations graph
+
+`relations/` draws a graph whose nodes are the words tagged `word` in `annotations.js`, with an edge for every pair of them within a record. No page of the site links to it (`inscriptionsandwords/` loads its script and style sheet), and this pull request does not regenerate it. On master 31 of its node labels already occur in no record's `transliteratedWords`, mostly words with `*79` where the records now read ZU. After this pull request 74 do: the 43 below, each the old form of a word that the pull request changes in one record. Hovering an edge throws an error, on master as on this branch (206 of 206 edges tried in Chrome).
+
+| Label in `relations/` | Record | Commit | The record now has |
+|---|---|---|---|
+| `*301-U-RA` | HT115a | 1 | `[[*301-U-RA]]` |
+| `A-TI-KA-A-DU-KO-MI`, with its self-loop | ZAWc2 | 1 | `A-TI-KA`, `A-DU-KO`, `[[MI]]` |
+| `DI-DE` | HT86b | 1 | `[[DI-DE]]` |
+| `U-KA-RE-A-SE-SI-NA` | PE1 | 2 | `U-KA-RE`, `A-SE-SI-NA` |
+| `JA-SU-MA-TU-OLIV` | SYZa2 | 2 | `JA-SU-MA-TU`, `OLIV` |
+| `U-NA-KA-NA-SI-OLE` | SYZa2 | 2 | `U-NA-KA-NA-SI`, `OLE` |
+| `QA-KI-TI` | SKOZc1 | 2 | `QA-KI-ZU` |
+| `NA-MA-MA-TI-TI-*904` | HTZd155 | 2 | `NA-MA-MA-TI-TI-*319` |
+| `*560-RE` | KH43 | 2 | `*562` |
+| `𐄑,𐄈` (the old 20,2) | GOWc3 | 2 | `20`, `2` |
+| `*307+*387-GRA+QE` | HT36 | 9 | `*307+*307`, `GRA+QE` |
+| `SI+ME-KI-*118` | HT24b | 9 | `SI+ME-KI`, `*118` |
+| `*539-*118` | HT24b | 9 | `*539`, `*118` |
+| `*554-*118` | HT38 | 9 | `*554`, `*118` |
+| `SI+TA2-*304` | KH9 | 9 | `SI+TA2`, `*304` |
+| `SI+SE-NI` | HT99b | 9 | `SI+SE`, `NI` |
+| `VIR+KA-VIN` | HT28a | 9 | `VIR+KA`, `VIN` |
+| `TE-GRA+F` | HT44b | 9 | `TE`, `GRA+F` |
+| `SI+SE-RA+KA` | HTWa1021 | 9 | `SI+SE`, `RA+KA` |
+| `JA-SA-SA-RA-MA` | KNZa10 | 9 | `JA-SA-SA-RA-MA-NA` |
+| `JA-SA-SA-RA` | IOZa16 | 9 | `JA-SA-SA-RA-ME` |
+| `SA-RA-ME` | IOZa12 | 9 | `JA-SA-SA-RA-ME` |
+| `TU-ME` | PKZa14 | 9 | `TU-ME-I` |
+| `GRA+L4+L4` | HT15 | 9 | `GRA+L3+L3` |
+| `SI-*805-MI` | KH74 | 10 | `SI`, `*805-MI` |
+| `TA-HIDE+B` | MA4a | 10 | `TA`, `HIDE+B` |
+| `*323-*317` | HT96a | 11 | `*323`, `*317` |
+| `*323-*344` | HT96a | 11 | `*323`, `*344` |
+| `TE-NI` | HT96a | 11 | `TE`, `NI` |
+| `*34-TI-RI-A-DI-DA-KI-TI-PA-KU` | KNZc6 | 11 | `*34-TI-RI`, `A-DI-DA-KI-TI-PA-KU` |
+| `RE-A-JA` | KH97a | 11 | `RE`, `A-JA` |
+| `NE-*22M` | PH(?)31b | 11 | `NE`, `*22M` |
+| `QI-VIN+TE` | THEZb13 | 11 | `QI`, `VIN+TE` |
+| `*810-PI-KA` | KHWc2123 | 11 | `[[*810]]`, `[[PI-KA]]` |
+| `U-NA-KA-NA` | TLZa1 | 11 | `U-NA-KA-NA-SI` |
+| `A-SA-SA-*802-ME` | PRZa1 | 11 | `A-SA-SA-RA-ME` |
+| `𐄌-JA-TI` | PSZa2 | 11 | `JA-TI` |
+| `RA-?-TI`, with a private-use character for ? | HT17 | 11 | `RA-*164-TI` |
+| `𐝫𐘂𐘀𐝫` (glyphs) | KH79 | 11 | `PA-DA` |
+| `DI-𐄉-TI-DU` | HTZb162 | 13 | `DI`, `3`, `TI-DU` |
+| `WI-JA-SU-MA-TI-TI` | HTZd157+156 | 13 | `WI-JA-SU-MA-TI-TI-*319` |
+| `*903-I-DU-WI` | MA1a | 13 | `*903`, `I-DU-WI` |
+| `*806-VIN` | PYR1 | 13 | `*806`, `VIN` |
+
+By commit: 3 labels from the first, 7 from the second, 14 from the ninth, 2 from the tenth, 13 from the eleventh and 4 from the thirteenth. The labels were compared with every record's `transliteratedWords` on master and on this branch; the fifteenth commit changes none of them.
