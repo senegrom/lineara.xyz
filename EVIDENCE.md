@@ -2,13 +2,13 @@
 
 This document accompanies a pull request to [mwenge/lineara.xyz](https://github.com/mwenge/lineara.xyz) from the branch `fix/lost-signs` of [senegrom/lineara.xyz](https://github.com/senegrom/lineara.xyz). The pull request corrects how the site's word arrays write lost and illegible signs. For each change it shows what the record has now, what each source prints, what the pull request writes, and which side it takes where the sources differ. This branch holds only this document and its images; none of it is part of the pull request.
 
-**It depends on #14.** Its branch starts at #14's tip, `fix/second-errata` at c8607d6, and 23 of its 81 records carry #14's changes in their text fields, so it cannot go on master (9c81beb) without #14.
+**It depends on #14.** Its branch starts at #14's tip, `fix/second-errata` at 0b34f3c (commit 15), and 23 of its 81 records carry #14's changes in their text fields, so it cannot go on master (9c81beb) without #14.
 
 In all it changes 105 places in 81 records: 119 lost signs written, 3 gaps, 74 divider tokens removed, and 4 sign readings replaced by the lost sign. In `parsedInscription` a divider between two break marks falls from 69 places to 5, and in the transcription from 74 places in 61 records to 6; those that stay are explained under [Checked, not changed](#checked-not-changed). At most of the places below the record has a divider token where Younger prints `[•]` and GORILA `[·]`: the bullet has been stored as the word divider, so that one lost sign cuts a word in two. This list is not complete: the same section says what was looked at and what was not.
 
 **Conventions**
 
-- "The tip" is #14's tip, c8607d6, the state before this pull request. "Master (9c81beb)" is upstream's.
+- "The tip" is #14's tip, its commit 15 (0b34f3c), the state before this pull request. "Master (9c81beb)" is upstream's.
 - Tokens are given as in `transliteratedWords`, in code spans. `𐄁` is the divider U+10101, `𐝫` the mark U+1076B, and ⏎ a line-break token.
 - Word numbers are those of the item pages and of `items_image_map.js`: line breaks and trace-only tokens are not counted.
 - Image-map overlays, as in the evidence for #14: red boxes are the `items_image_map.js` entries, labelled "index:label (word)"; blue boxes are the explorer areas of `imagemaps.js`, numbered from 0; green marks the entries a change is about.
@@ -66,11 +66,11 @@ Why the mark: U+1076B is the one character that every letter-counting path of th
 
 ## Commit 1: Write apart what editions print apart; drop gap dividers
 
-*Plain: 6 records, 11 files.*
+*Plain: 6 records, 13 files.*
 
 Four tokens that join fragments are split (KN Zb 35, KN Zf 31, PK Za 8, KH 94); two dividers between fragments that do not join (AP Za 2) and one divider for a lost element of NE (PH(?) 31a) go. There is no `[?]` in this commit, so it needs none of the new notation.
 
-At a split both glyph strings stay, as for the splits of #14. `wordsInCorpus`, `annotations.js`, the notebook's inputs `items_analysis/supplement.json` and `items_analysis/inscriptions.json`, the word numbers in `items_image_map.js` and the item pages follow. No box moves.
+At a split both glyph strings stay, as for the splits of #14. `wordsInCorpus`, `annotations.js`, the notebook's inputs `items_analysis/supplement.json` and `items_analysis/inscriptions.json`, the word numbers in `items_image_map.js`, the item pages and KN Zb 35's [Transactions](#transactions) entries follow. No box moves.
 
 ### AP Za 2 — two dividers in the gaps between two fragments
 
@@ -264,9 +264,9 @@ III p. 157's normalised copy and Younger count one sign; GORILA's tabular copy a
 
 ## Commit 3: Join words cut or ended by a divider for a lost sign
 
-*Plain: 41 records, 46 files.*
+*Plain: 41 records, 62 files.*
 
-A divider token that stands for a lost sign joins its word. In the sections below the divider token goes from the three word arrays and the divider glyph from both strings, both image maps lose a box-less `*900` entry, and the later word numbers fall. Where two words become one, their boxes light up together; no box moves. `wordsInCorpus` loses the divider's count; a word joined across a lost sign also loses its parts' counts and takes no new key, and a word with the lost sign at its edge keeps its key. `annotations.js` takes an explicit list for each record, and the tabulations and item pages follow.
+A divider token that stands for a lost sign joins its word. In the sections below the divider token goes from the three word arrays and the divider glyph from both strings, both image maps lose a box-less `*900` entry, and the later word numbers fall. Where two words become one, their boxes light up together; no box moves. `wordsInCorpus` loses the divider's count; a word joined across a lost sign also loses its parts' counts and takes no new key, and a word with the lost sign at its edge keeps its key. `annotations.js` takes an explicit list for each record, and the tabulations, the item pages and the [Transactions](#transactions) entries of 15 of the records follow.
 
 **Five places take only the divider here:** HT 29 .4, HT 31, HT 72, IO Za 2 and KH 7a. The divider is false on every reading. The `[?]` or the join takes a side against GORILA V, so it is in commit 5, which is optional.
 
@@ -770,9 +770,9 @@ This pull request writes `RA-[?]`.
 
 ## Commit 4: Write lost signs that stand alone
 
-*Plain: 6 records, 11 files.*
+*Plain: 6 records, 13 files.*
 
-A divider that stands for a sign with no word to join becomes a trace-only token with `[?]`. This is new on the site: no token on the tip is a bare `[?]`. The token loses its word number and the later numbers fall by one; both maps lose a box-less `*900` entry. A lone `[?]` has no glyphs, so hovering or clicking it acts as on a bare break mark: the count and the filter are those of all empty tokens.
+A divider that stands for a sign with no word to join becomes a trace-only token with `[?]`. This is new on the site: no token on the tip is a bare `[?]`. The token loses its word number and the later numbers fall by one; both maps lose a box-less `*900` entry, and HT 95b's [Transactions](#transactions) entries follow. A lone `[?]` has no glyphs, so hovering or clicking it acts as on a bare break mark: the count and the filter are those of all empty tokens.
 
 ### HT 95b .2 — a lone illegible sign
 
@@ -844,9 +844,9 @@ This pull request writes the second divider as a trace-only token, `[?]`. The fi
 
 ## Commit 5: Optional: readings where the editions differ
 
-*Optional: 9 records, 6 files.*
+*Optional: 9 records, 8 files.*
 
-Each change here takes a side, and each section says which. Five places take their second step: HT 29 .4, HT 31, HT 72, IO Za 2 and KH 7a, where commit 3 took the false divider. The others are places where one edition counts a sign and the other does not. The commit can be left out: no false divider and no false word stays, and the marks stay right at all five places. The count lines of commits 6 and 7 above it then need a rebase (3 conflicts in the test, all visible, no wrong line).
+Each change here takes a side, and each section says which. Five places take their second step: HT 29 .4, HT 31, HT 72, IO Za 2 and KH 7a, where commit 3 took the false divider; KH 7a's [Transactions](#transactions) entries follow the join `NE-[?]-KI`. The others are places where one edition counts a sign and the other does not. The commit can be left out: no false divider and no false word stays, and the marks stay right at all five places. The count lines of commits 6 and 7 above it then need a rebase (3 conflicts in the test, all visible, no wrong line).
 
 ### HT 29 .4 — `KI-TA` becomes `[?]-KI-TA`, against GORILA V's A 340
 
@@ -1276,15 +1276,30 @@ Corpus-wide tags stay as computed, as in #14. A word with a lost sign inside tak
 
 `[?]-QE` finds the record but highlights only in quotes, as `VIR+[?]` does on the tip. `[?]` alone hits every `?` in the corpus: 167 records, against 111 on the tip. `-[?]-` finds 34, `[?]-` 57 and `-[?]` 54. In 131 search terms with `[?]`, `[ ]`, `[[` and quotes, typed in Chrome, no exception arises that the tip does not have.
 
+### Transactions
+
+22 of the 81 records are in `network/transactions.js`, and 21 of them match their record on the tip. 16 of those change their token count, which would put 187 indexed entries out of step, since the network page lights a transaction's tokens by their position among the record's entries. So, as #14's commit 15 does for the records whose tokens #14 splits, joins, adds, removes or moves, the commits that re-sequence a record re-align its entries in `network/transactions.js` and in its file in `network/transactions/final/`, one entry per token, in order:
+
+- commit 1: KN Zb 35, where the recipient of JA-DI-WI goes to JA, and DI and WI get entries without a role;
+- commit 3: HT 11a, HT 29, HT 31, HT 87, HT 94b, HT 97a, HT 106, HT 108, HT 122a, HT 126a, KH 7a, KH 11, TY 3a, ZA 4a and ZA 9;
+- commit 4: HT 95b;
+- commit 5: KH 7a again, for `NE-[?]-KI`.
+
+In such a record an entry whose token the commit leaves as it is moves with its token unchanged, and an entry whose token is joined, split or written anew takes the token's word and transliteration and keeps its role; split parts and added tokens get entries without one. So 13 parties take their word's new reading, `[?]-RA₂-TI` for RA₂-TI for example, two of them KH 11's and TY 3a's recipients, which leave A-DU for `A-DU-[?]-ZA` and `A-DU-[?]-[?]`: the page has 424 nodes where the tip has 422. At two places a join meets two roles in one word. HT 87's `A-RA-[?]-A-TU` joins two commodities of one transaction: the word keeps one, and the edge 'A-TU undefined', which throws on hover, goes, so the page has 815 edges where the tip has 816. HT 94b's `RA-[?]-DE-ME-TE` joins a sender and a recipient: the word keeps the recipient, so HT 94b-7 has no sender, and the sender RA that HT 94b-8 and -9 name lights nothing.
+
+In Chrome, on the tip, with commit 7 and with commit 8, no edge lights another token than its entry's beyond the 13 that do so on the tip; without the re-alignment 82 more would, in 15 records. 36 of the tip's 816 edges light other words, or go, with commit 7 and with commit 8: 32 the same tokens, read anew, the 3 of HT 94b, and the one that goes.
+
+Left as they are: the parties in each record's transactions list; the entries of the words that commits 2, 5, 6 and 7 change in place (HT 6b, HT 9b, HT 29, HT 31, HT 115b, PE 2 and ZA 6a), which keep the old reading; and 12 entries in 8 of the re-aligned records that were older than their tokens on the tip already, such as ZA 9's two `*22F` for `*21F`. These move with their tokens unchanged, so that no label or party changes but those of the words this pull request rewrites.
+
 ### Pages left as they are
 
-`network/transactions.js`, `relations/` and `inscriptionsandwords` are left as they are. 22 of the 81 records are in `network/transactions.js`, and 20 of them match their record on the tip. 16 of those change their token count, which puts 187 indexed entries out of step: on the page 88 of its 816 edges now light other words, with no error. On `relations/`, 53 node labels stop occurring in the corpus, beside the 74 already stale on the tip:
+`relations/` and `inscriptionsandwords` are left as they are. On `relations/`, 53 node labels stop occurring in the corpus, beside the 74 already stale on the tip:
 
 `*21F-TU` `*28B-TI` `*309-RI-WA-JU` `*309B-*34-PU-PI` `*309B-KI-PU` `*309C-DA-JU` `*309C-RU-KA` `*47-TE` `A-DI-KI-TE-TE` `A-I` `A-NA` `A-RU-RA` `A-TA-NA` `A-TU` `DA-*118` `DA-DA` `DA-WA` `DE-ME-TE` `DE-SU` `DU-WA-TO` `I-NA` `I-NA-I-DA` `I-WA-JA` `I-ZA` `JA-DI-WI` `JA-SA-U-NA-KA-NA-SI` `JA-U-PA-MA-I-DA` `KA-A-SI-TE` `KI-TA` `KO-E` `MA-I` `MA-JU` `MA-RI-RE-I` `NE-TI` `O-TI` `PI-TI-NE-A` `QA-*305` `RA-KI-NI-SE` `RA₂-DU` `RA₂-TI` `RU-PI-*305-MI` `SA-RA` `SI-SI-ZA-NE-*310` `SI-VIR+[?]` `SU-KI` `TA-NA-SU-TE-KE` `TA-NE` `TI-SA` `TU-ME-SE` `TU-SE-SU-KI` `U-NA-RU-KA-JA-SI` `WA-JA-PI` `WI-PI`
 
 On `inscriptionsandwords`, HT 122a's PA and HT 62+73's SA-RA stop matching, on 4 of its 107 edges.
 
-These pages ran in Chrome on the tip, with commit 7 and with commit 8. 43 of the network page's 816 edges throw 'p.i is not iterable' on hover on the tip and after, and `relations/` throws on hover on the tip and after, on all 206 of its 3,080 edges tried: its nodes are words, and `showTablet` looks them up as inscriptions. `broken/` fails at load the same way at all three.
+These pages ran in Chrome on the tip, with commit 7 and with commit 8, as did the network page. 43 of the network page's 816 edges throw 'p.i is not iterable' on hover on the tip, and 42 of its 815 with commit 7 and with commit 8, all of them on the tip too; `relations/` throws on hover on the tip and after, on all 206 of its 3,080 edges tried: its nodes are words, and `showTablet` looks them up as inscriptions. `broken/` fails at load the same way at all three.
 
 ### Glosses that go
 
@@ -1298,7 +1313,7 @@ With commit 8 the pages print the lost sign. If commit 8 is dropped, the pages p
 
 On the tip, with commit 7 and with commit 8, in Chrome 156: the explorer on all 1,721 records with the real pictures, 0 page errors; 6,370 tokens hovered in all three rows and 16,224 boxes hovered with commit 7 and 8 (6,458 and 16,232 on the tip), each tooltip right; 12,740 clicks on tokens with commit 7, each leaving the clicked record shown and the token lit; all 1,720 item pages, 0 page errors from the pages. Against the tip 16,224 boxes keep their letter, 0 change letter, and 8 go, commit 7's. 149 boxes sit on another word, in 22 records, all among the 81, each word holding the letter. On the 1,639 untouched pages readings, boxes, maps and specs are the same.
 
-That pass ran before a last correction to six tags in `annotations.js` (the 'place name' above); the corrected build was checked in Chrome on those six tokens, in all three rows, with 0 errors, and its dumps of the records and maps are the same. The trees with commit 5 or commit 6 left out were built and checked by script, and not opened in Chrome. No other browser, no phone width and no visitor's local Aegean font was tried, nor the real GitHub Pages. The drop figures above come from `git merge-file` on each commit above the one left out.
+That pass ran on the commits as they stand here, the 'place name' tags above included. The trees with commit 5 or commit 6 left out were built and checked by script, and not opened in Chrome. No other browser, no phone width and no visitor's local Aegean font was tried, nor the real GitHub Pages. The drop figures above come from `git merge-file` on each commit above the one left out.
 
 ## Checked, not changed
 
@@ -1335,7 +1350,7 @@ Five places keep `𐝫𐄁𐝫` in `parsedInscription`, and those five and ZA 20
 
 ### Marks that are not lost signs
 
-- **Restored signs.** IO Za 2's JA-SA-SA-RA-ME and U-NA-KA-NA-SI, IO Za 9's JA-SA-SA-RA-ME and U-NA-KA-NA-SI, IO Za 14's and IO Za 15's SI-RU-TE, IO Za 16's U-NA-RU-KA-NA-SI, SY Za 8's A-TA-I-\*301-WA-JA and TL Za 1's I-PI-NA-MA and SI-RU-TE: the mark is the edge of signs Younger restores from the formula, not a lost sign. GORILA prints less (V p. 19, PDF p. 72; V p. 33, PDF p. 86; IV p. 59, PDF p. 102), and a fix needs glyph, map and explorer edits.
+- **Restored signs.** IO Za 2's JA-SA-SA-RA-ME and U-NA-KA-NA-SI, IO Za 9's JA-SA-SA-RA-ME and U-NA-KA-NA-SI, IO Za 14's and IO Za 15's SI-RU-TE, IO Za 16's U-NA-RU-KA-NA-SI, SY Za 8's A-TA-I-\*301-WA-JA and TL Za 1's I-PI-NA-MA and SI-RU-TE: the mark is the edge of signs Younger restores from the formula, not a lost sign. GORILA prints less (V p. 19, PDF p. 72; V p. 33, PDF p. 86; IV p. 59, PDF p. 102), and a fix needs glyph, map and explorer edits. #14's commit 15 gave TL Za 1's `parsedInscription` the glyphs of its words, so on the tip it holds the restored signs too.
 - **Lost elements of one sign.** KH 13's `*304-CYP`, where the mark is the lost lower part of the ligature (GORILA III p. 43, PDF p. 68, apparatus: \*304+PA), KH 94's QA-PU (one damaged compound sign, a candidate for a later reading fix), and complex signs such as `*180+[•]`, `VIR+[•][` in Younger, which the tip already writes with `+[ ]`, `+[?]` or a sign number.
 - **ZA 11a.** The mark is a small destroyed space between ME and TA₂, at most a word divider (GORILA III p. 173, PDF p. 198). No sign is lost.
 - **ARKH 2 .3-4.** Younger's `[•]` is a conjecture in a note, not in the text or GORILA's.
