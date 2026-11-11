@@ -1,6 +1,6 @@
 # Evidence for the lost-sign corrections to lineara.xyz
 
-This document accompanies commits 16 to 23 of [pull request #14](https://github.com/mwenge/lineara.xyz/pull/14) to [mwenge/lineara.xyz](https://github.com/mwenge/lineara.xyz), from the branch `fix/second-errata` of [senegrom/lineara.xyz](https://github.com/senegrom/lineara.xyz). These commits correct how the site's word arrays write lost and illegible signs; the evidence for commits 1 to 15 is [EVIDENCE.md on the branch `pr2-evidence`](https://github.com/senegrom/lineara.xyz/blob/pr2-evidence/EVIDENCE.md). For each change this document shows what the record has before it, what each source prints, what the commit writes, and which side it takes where the sources differ. This branch holds only this document and its images; none of it is part of the pull request.
+This document accompanies commits 16 to 23 of [pull request #14](https://github.com/mwenge/lineara.xyz/pull/14) to [mwenge/lineara.xyz](https://github.com/mwenge/lineara.xyz), from the branch `fix/second-errata` of [senegrom/lineara.xyz](https://github.com/senegrom/lineara.xyz). These commits correct how the site's word arrays write lost and illegible signs; the evidence for commits 1 to 15, 24 and 25 is [EVIDENCE.md on the branch `pr2-evidence`](https://github.com/senegrom/lineara.xyz/blob/pr2-evidence/EVIDENCE.md). For each change this document shows what the record has before it, what each source prints, what the commit writes, and which side it takes where the sources differ. This branch holds only this document and its images; none of it is part of the pull request.
 
 **Commits 16 to 23 depend on commits 1 to 15.** They start at commit 15 (0b34f3c), and 23 of their 81 records carry changes of commits 1 to 15 in their text fields, so they cannot go on master (9c81beb) without them.
 
@@ -1110,7 +1110,7 @@ This commit writes `[?]-RA-KI-[?]-NI-SE`, with a mark between KI and NI in `word
 
 *Can be left out: 4 records, 10 files.*
 
-HT 6b's RE, HT 49a's KI and `*370`, and KN Wa 51's MI go, with KN Wb 51's divider for the same unread sign and HT 49a's other place. A letter goes, so each needs its map entries and explorer areas taken out, the only change to `imagemaps.js` in commits 16 to 23. This commit removes readings the site shows, so it is the one most likely to be argued. It is the top data commit, so it drops clean, with no conflict and no wrong line. The overlays show the boxes that go, on the pictures at commit 15, whose files commits 16 to 23 do not change.
+HT 6b's RE, HT 49a's KI and `*370`, and KN Wa 51's MI go, with KN Wb 51's divider for the same unread sign and HT 49a's other place. A letter goes, so each needs its map entries and explorer areas taken out, the only change to `imagemaps.js` in commits 16 to 23. This commit removes readings the site shows, so it is the one most likely to be argued. It is the top data commit of commits 16 to 23, so, with commit 23 left out or rebuilt and the optional commits 24 and 25 left out, it drops clean, with no conflict and no wrong line; with commit 24 or 25 kept it does not ([EVIDENCE.md on `pr2-evidence`](https://github.com/senegrom/lineara.xyz/blob/pr2-evidence/EVIDENCE.md#leaving-out-commits-24-and-25-or-a-commit-below-them) says what each adds). The overlays show the boxes that go, on the pictures at commit 15, whose files commits 16 to 23 do not change.
 
 ### HT 6b .2-3 — `MA-RI-RE-I` becomes `MA-RI-[?]-I`
 
@@ -1214,7 +1214,7 @@ The commit can be left out, with no effect on the data. Its cells stand in the r
 
 ## The notation on the explorer and the item pages
 
-Screenshots from Chrome, with the site served locally and its own fonts. "At commit 15" is the state before commit 16; "after commit 23" is the record after the last commit, which differs from commit 22 only on the item pages.
+Screenshots from Chrome, with the site served locally and its own fonts. "At commit 15" is the state before commit 16; "after commit 23" is the record after the last of commits 16 to 23, which differs from commit 22 only on the item pages.
 
 ![explorer, commit 15](evidence/screenshots/explorer_HT45b_before.png)
 
@@ -1313,7 +1313,7 @@ With commit 23 the pages print the lost sign. If commit 23 is dropped, the pages
 
 At commit 15, with commit 22 and with commit 23, in Chrome 156: the explorer on all 1,721 records with the real pictures, 0 page errors; 6,370 tokens hovered in all three rows and 16,224 boxes hovered with commit 22 and 23 (6,458 and 16,232 at commit 15), each tooltip right; 12,740 clicks on tokens with commit 22, each leaving the clicked record shown and the token lit; all 1,720 item pages, 0 page errors from the pages. Against commit 15, 16,224 boxes keep their letter, 0 change letter, and 8 go, commit 22's. 149 boxes sit on another word, in 22 records, all among the 81, each word holding the letter. On the 1,639 untouched pages readings, boxes, maps and specs are the same.
 
-That pass ran on the commits as they stand here, the 'place name' tags above included. The trees with commit 20 or commit 21 left out were built and checked by script, and not opened in Chrome. No other browser, no phone width and no visitor's local Aegean font was tried, nor the real GitHub Pages. The drop figures above come from `git merge-file` on each commit above the one left out.
+That pass ran on the commits as they stand here, the 'place name' tags above included. The trees with commit 20 or commit 21 left out were built and checked by script, and not opened in Chrome. No other browser, no phone width and no visitor's local Aegean font was tried, nor the real GitHub Pages. The drop figures above come from `git merge-file` on each commit above the one left out, among commits 16 to 23: they hold with the optional commits 24 and 25 left out as well, and [EVIDENCE.md on `pr2-evidence`](https://github.com/senegrom/lineara.xyz/blob/pr2-evidence/EVIDENCE.md#leaving-out-commits-24-and-25-or-a-commit-below-them) says what those two add when they are kept.
 
 ## Checked, not changed
 
@@ -1351,7 +1351,7 @@ Five places keep `𐝫𐄁𐝫` in `parsedInscription`, and those five and ZA 20
 ### Marks that are not lost signs
 
 - **Restored signs.** IO Za 2's JA-SA-SA-RA-ME and U-NA-KA-NA-SI, IO Za 9's JA-SA-SA-RA-ME and U-NA-KA-NA-SI, IO Za 14's and IO Za 15's SI-RU-TE, IO Za 16's U-NA-RU-KA-NA-SI, SY Za 8's A-TA-I-\*301-WA-JA and TL Za 1's I-PI-NA-MA and SI-RU-TE: the mark is the edge of signs Younger restores from the formula, not a lost sign. GORILA prints less (V p. 19, PDF p. 72; V p. 33, PDF p. 86; IV p. 59, PDF p. 102), and a fix needs glyph, map and explorer edits. Commit 15 gave TL Za 1's `parsedInscription` the glyphs of its words, so from commit 15 on it holds the restored signs too.
-- **Lost elements of one sign.** KH 13's `*304-CYP`, where the mark is the lost lower part of the ligature (GORILA III p. 43, PDF p. 68, apparatus: \*304+PA), KH 94's QA-PU (one damaged compound sign, a candidate for a later reading fix), and complex signs such as `*180+[•]`, `VIR+[•][` in Younger, which commit 15 already writes with `+[ ]`, `+[?]` or a sign number.
+- **Lost elements of one sign.** KH 13's `*304-CYP`, where the mark is the lost lower part of the ligature (GORILA III p. 43, PDF p. 68, apparatus: \*304+PA), KH 94's QA-PU (one damaged compound sign, which the optional commit 25 writes as A 510), and complex signs such as `*180+[•]`, `VIR+[•][` in Younger, which commit 15 already writes with `+[ ]`, `+[?]` or a sign number.
 - **ZA 11a.** The mark is a small destroyed space between ME and TA₂, at most a word divider (GORILA III p. 173, PDF p. 198). No sign is lost.
 - **ARKH 2 .3-4.** Younger's `[•]` is a conjecture in a note, not in the text or GORILA's.
 
