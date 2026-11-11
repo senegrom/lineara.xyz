@@ -2461,7 +2461,7 @@ HT33 stores line .2's first cup as A509 (`𐚺`, `QA2+[?]+RE+PU`), a cup with RE
 
 ![GORILA V p. 173 and p. XXIV, the cups](evidence/optional-readings/HT33_gorila_V173_index_and_V_pXXIV_cups.jpg)
 
-*GORILA V p. 173 (PDF p. 226), index of sign 16: A 508 = 16+[?]+27 at HT 33.2 (with HT 23a, 32, 34, 60), A 509 = 16+[?]+27+50 only at HT 45b.1, and A 510 = 16+[?]+50 at HT 33.2 (with HT 12, 23a, 30, 32, 34, 35, 45b, 60 and KH 8). Below, GORILA V p. XXIV (PDF p. 25): the table cells of A 508 (RE's prongs), A 509 (prongs and PU), A 510 (PU only) and A 511.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
+*GORILA V p. 173 (PDF p. 226), index of sign 16: A 508 = 16+[?]+27 at HT 33.2 (with HT 23a, 23b, 32, 34, 60), A 509 = 16+[?]+27+50 only at HT 45b.1, and A 510 = 16+[?]+50 at HT 33.2 (with HT 12, 23a, 23b, 30, 32, 34, 35, 45b, 60 and KH 8). Below, GORILA V p. XXIV (PDF p. 25): the table cells of A 508 (RE's prongs), A 509 (prongs and PU), A 510 (PU only) and A 511.* (GORILA V (L. Godart and J.-P. Olivier 1985), © École française d'Athènes)
 
 ![HT33 maps](evidence/optional-readings/HT33_maps_before_after.jpg)
 
@@ -2956,7 +2956,7 @@ Of the edges of these entries, 11 show a label with the old reading (for example
 
 ## Optional refinements: two erasures and a complex sign
 
-Commits 24 and 25 are optional, and either can be left out. They are refinements that the editions support, not corrections of something false. Commit 24 makes explicit the erasures that both editions print at KH 99 and THE Zb 3. At both places the site ends the word with a damage mark, which already stands for the trace of the erased signs, so the data say nothing false there. Commit 25 corrects a reading: at KH 94 .1 the site writes two signs, QA-PU, where both editions read one damaged complex sign, tentatively A 510, whose identified parts are QA and PU. "Commit 23" (a527928) is the pull request without these two commits.
+Commits 24 and 25 are optional, and either can be left out. They are refinements that the editions support. Commit 24 makes explicit the erasures that both editions print at KH 99 and THE Zb 3. At both places the site ends the word with a damage mark, which already stands for the trace of the erased signs, so the data say nothing false there. Commit 25 corrects a reading: at KH 94 .1 the site writes two signs, QA-PU, where both editions read one damaged complex sign, tentatively A 510, whose identified parts are QA and PU. "Commit 23" (a527928) is the pull request without these two commits.
 
 ### KH99, THEZb3 — erasures that both editions print
 
@@ -2974,7 +2974,7 @@ Commits 24 and 25 are optional, and either can be left out. They are refinements
 
 ![THE Zb 3, GORILA IV p. 103, both copies](evidence/optional-refinements/THEZb3_gorila_IV103_both_copies.jpg)
 
-*GORILA IV p. 103 (PDF p. 146), THE Zb 3, normalised copy (top) and tabular copy (bottom): A NE, then empty erasure brackets. No sign and no break mark stand between the brackets. The note under the first copy says that NE is partly effaced ('en partie effacé').* (GORILA IV (L. Godart and J.-P. Olivier 1982), © École française d'Athènes)
+*GORILA IV p. 103 (PDF p. 146), THE Zb 3, normalised copy (top) and tabular copy (bottom): A NE, then empty erasure brackets. No sign and no break mark stand between the brackets. The note under the first copy says that NE is partly erased ('en partie effacé').* (GORILA IV (L. Godart and J.-P. Olivier 1982), © École française d'Athènes)
 
 ![THE Zb 3, GORILA IV p. 103, photograph and drawing](evidence/optional-refinements/THEZb3_gorila_IV103_photo_drawing.jpg)
 
