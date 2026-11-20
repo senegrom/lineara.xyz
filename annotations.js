@@ -47817,12 +47817,14 @@ var wordAnnotations =
             {
                 "tags": [
                     "lacuna at end",
-                    "logogram",
-                    "Appears at 7 find sites",
-                    "word or logoram"
+                    "place name",
+                    "word",
+                    "Appears at 3 find sites",
+                    "word or logoram",
+                    "head word elsewhere"
                 ],
-                "transliteratedWord": "I-[?]-[?]",
-                "word": "𐘚𐝫𐝫"
+                "transliteratedWord": "I-DA-[?]",
+                "word": "𐘚𐘀𐝫"
             }
         ]
     },

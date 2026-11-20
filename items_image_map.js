@@ -98665,6 +98665,16 @@ const coordinates =
                 "width": 69,
                 "height": 84
             }
+        },
+        {
+            "word": "14",
+            "ideogram": "DA",
+            "coords": {
+                "x": 74,
+                "y": 797,
+                "width": 80,
+                "height": 36
+            }
         }
     ],
     "IOZa2-Facsimile": [
@@ -99051,6 +99061,16 @@ const coordinates =
                 "y": 457,
                 "width": 66,
                 "height": 75
+            }
+        },
+        {
+            "word": "14",
+            "ideogram": "DA",
+            "coords": {
+                "x": 71,
+                "y": 797,
+                "width": 75,
+                "height": 34
             }
         }
     ],

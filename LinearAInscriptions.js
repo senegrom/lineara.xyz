@@ -44886,11 +44886,11 @@ var inscriptions = new Map([
     "names": [
         "IOZa2"
     ],
-    "parsedInscription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘆𐘸𐘹𐄁𐘱𐘞𐘞𐘴𐝫𐘋𐄁𐘉𐘅𐘾𐘅𐝫𐘤𐝫𐄁𐝫𐘚𐘢𐘅𐙁𐄁\n𐘤𐘘𐘃𐄁𐘳𐘅𐘴𐘃𐘉𐘠𐘯𐄁𐘚𐝫𐝫",
+    "parsedInscription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘆𐘸𐘹𐄁𐘱𐘞𐘞𐘴𐝫𐘋𐄁𐘉𐘅𐘾𐘅𐝫𐘤𐝫𐄁𐝫𐘚𐘢𐘅𐙁𐄁\n𐘤𐘘𐘃𐄁𐘳𐘅𐘴𐘃𐘉𐘠𐘯𐄁𐘚𐘀𐝫",
     "scribe": "",
     "site": "Iouktas",
     "support": "Stone vessel",
-    "transcription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘆𐘸𐘹𐄁𐘱𐘞𐘞𐘴𐝫𐘋𐄁𐘉𐘅𐘾𐘅𐝫𐘤𐝫𐄁𐝫𐘚𐘢𐘅𐙁𐄁\n𐘤𐘘𐘃𐄁𐘳𐘅𐘴𐘃𐘉𐘠𐘯𐄁𐘚𐝫𐝫",
+    "transcription": "𐘇𐘳𐘚𐙕𐘮𐘱𐄁𐘱𐘆𐘸𐘹𐄁𐘱𐘞𐘞𐘴𐝫𐘋𐄁𐘉𐘅𐘾𐘅𐝫𐘤𐝫𐄁𐝫𐘚𐘢𐘅𐙁𐄁\n𐘤𐘘𐘃𐄁𐘳𐘅𐘴𐘃𐘉𐘠𐘯𐄁𐘚𐘀𐝫",
     "translatedWords": [
         "gives",
         "𐄁",
@@ -44907,7 +44907,7 @@ var inscriptions = new Map([
         "𐄁",
         "TA-NA-RA-TE-U-TI-NU",
         "𐄁",
-        "I-[?]-[?]"
+        "I-DA-[?]"
     ],
     "transliteratedWords": [
         "A-TA-I-*301-WA-JA",
@@ -44925,7 +44925,7 @@ var inscriptions = new Map([
         "𐄁",
         "TA-NA-RA-TE-U-TI-NU",
         "𐄁",
-        "I-[?]-[?]"
+        "I-DA-[?]"
     ],
     "words": [
         "𐘇𐘳𐘚𐙕𐘮𐘱",
@@ -44943,7 +44943,7 @@ var inscriptions = new Map([
         "𐄁",
         "𐘳𐘅𐘴𐘃𐘉𐘠𐘯",
         "𐄁",
-        "𐘚𐝫𐝫"
+        "𐘚𐘀𐝫"
     ]
 }],
 ["IOZa3",{
@@ -76195,7 +76195,7 @@ var wordsInCorpus = new Map([
 ["𐙗", 53],
 ["𐘼", 47],
 ["𐄑", 42],
-["𐘚", 38],
+["𐘚", 37],
 ["𐙂𐘁", 37],
 ["𐄍", 32],
 ["𐙇", 31],
@@ -76302,6 +76302,7 @@ var wordsInCorpus = new Map([
 ["𐙈", 6],
 ["𐘔", 6],
 ["𐘻", 6],
+["𐘚𐘀", 6],
 ["𐄖", 5],
 ["𐝃𐝄", 5],
 ["𐄒𐄇", 5],
@@ -76313,7 +76314,6 @@ var wordsInCorpus = new Map([
 ["𐘀𐘾", 5],
 ["𐝇𐝉", 5],
 ["𐚩", 5],
-["𐘚𐘀", 5],
 ["𐙂𐘂", 5],
 ["𐛱", 5],
 ["𐛉", 5],
